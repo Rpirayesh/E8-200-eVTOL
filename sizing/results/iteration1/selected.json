@@ -1,0 +1,167 @@
+{
+ "x": {
+  "D": 1.75,
+  "vtip": 180.0,
+  "span": 8.8,
+  "chord": 1.2000000000000002,
+  "V": 41.666666666666664,
+  "Dp": 1.8,
+  "delta_w": 0.25,
+  "nb": 2,
+  "flap": 0,
+  "lm": 1,
+  "pm": 2,
+  "cell": 0,
+  "npk": 2,
+  "airfoil": 4
+ },
+ "cfg": {
+  "n_rot": 8,
+  "coax": false,
+  "seating": "tandem",
+  "range_km": 50.0
+ },
+ "objective": 445311.5798204394,
+ "results": {
+  "disk_loading_N_m2": 510.486,
+  "hover_shaft_power_per_motor_kw": 27.119,
+  "hover_electrical_power_kw": 246.905,
+  "hover_electrical_power_ceiling_kw": 250.566,
+  "rotor_out_max_shaft_power_kw": 48.888,
+  "rotor_out_max_torque_nm": 196.233,
+  "cruise_drag_N": 987.345,
+  "cruise_LD": 9.9488,
+  "cruise_electrical_power_kw": 57.976,
+  "mission_energy_kwh": 34.396,
+  "range_km": 50.064,
+  "stall_speed_ms": 30.437,
+  "tip_mach_hover": 0.5185,
+  "c_rate_hover": 6.6495,
+  "cost_usd": 386812,
+  "mtow_kg": 1001.657,
+  "static_margin_mtow": 0.1,
+  "static_margin_range": [
+   0.0954,
+   0.1209
+  ],
+  "reserve_energy_kwh": 8.605,
+  "transition_speed_ms": 38.39,
+  "gust_load_factor_vc": 2.3802,
+  "climb_rate_ms": 1.1245,
+  "note": "rotor-out values: linear programme, worst failed rotor, 1000 m ISA+15, incl. 10 % control margin (WP M evaluates at 500 m)"
+ },
+ "mass": {
+  "mtow": 1001.657,
+  "payload": 200.0,
+  "battery": 303.069,
+  "empty": 498.588,
+  "breakdown": {
+   "wing": 73.709,
+   "tail": 8.281,
+   "fuselage": 39.663,
+   "booms": 33.833,
+   "landing_gear": 26.985,
+   "lift_motors": 96.0,
+   "lift_rotors": 28.756,
+   "inverters": 36.0,
+   "cooling": 9.4,
+   "hv_harness": 18.453,
+   "pusher_motor": 23.8,
+   "pusher_propeller": 4.583,
+   "parachute": 21.7,
+   "seats": 24.0,
+   "avionics": 10.684,
+   "lv_electrical": 10.0,
+   "flight_controls": 9.0,
+   "growth": 23.742
+  }
+ },
+ "cost": {
+  "units_produced_5yr": 10,
+  "composite_fraction": 0.8,
+  "f_cert": 0.5,
+  "labour_rates_usd_h": {
+   "engineering": 95,
+   "tooling": 65,
+   "manufacturing": 55
+  },
+  "cots_propulsion_systems_usd": 258689.834,
+  "breakdown_usd": {
+   "lift_motors": 56000,
+   "inverters": 63000,
+   "lift_propellers": 11475,
+   "pusher_motor": 11000,
+   "pusher_propeller": 2008,
+   "battery": 38400,
+   "parachute": 14000,
+   "hv_cooling_harness": 7175,
+   "systems_avionics_cabin": 55632,
+   "airframe_recurring": 128122
+  },
+  "complexity": {
+   "distinct_part_types": 8,
+   "propulsion_lru": 37,
+   "penalty_usd": 58500,
+   "objective_usd": 445312
+  }
+ },
+ "loading_cases": {
+  "pilot + passenger (MTOW)": {
+   "mass_kg": 1001.657,
+   "cg_m": [
+    1.9735,
+    0.0,
+    1.134
+   ],
+   "static_margin": 0.1,
+   "hover_max_rotor_thrust_all_rotors_N": 1265.155,
+   "hover_mean_rotor_thrust_N": 1265.155,
+   "oei_worst_failed_rotor": "R1",
+   "oei_max_thrust_N": 1686.874,
+   "oei_thrust_ratio_to_hover": 1.3333,
+   "oei_shaft_power_kw_1000m": 48.888,
+   "oei_torque_Nm_1000m": 196.233,
+   "oei_rpm": 2379.039,
+   "oei_power_margin": 0.0222,
+   "oei_torque_margin": 0.0188
+  },
+  "pilot + cargo (MTOW)": {
+   "mass_kg": 1001.657,
+   "cg_m": [
+    1.979,
+    0.0,
+    1.1204
+   ],
+   "static_margin": 0.0954,
+   "hover_max_rotor_thrust_all_rotors_N": 1267.238,
+   "hover_mean_rotor_thrust_N": 1265.155,
+   "oei_worst_failed_rotor": "R4",
+   "oei_max_thrust_N": 1693.11,
+   "oei_thrust_ratio_to_hover": 1.3383,
+   "oei_shaft_power_kw_1000m": 49.159,
+   "oei_torque_Nm_1000m": 196.959,
+   "oei_rpm": 2383.433,
+   "oei_power_margin": 0.0168,
+   "oei_torque_margin": 0.0152
+  },
+  "pilot only": {
+   "mass_kg": 901.657,
+   "cg_m": [
+    1.9484,
+    0.0,
+    1.1489
+   ],
+   "static_margin": 0.1209,
+   "hover_max_rotor_thrust_all_rotors_N": 1147.426,
+   "hover_mean_rotor_thrust_N": 1138.849,
+   "oei_worst_failed_rotor": "L1",
+   "oei_max_thrust_N": 1544.148,
+   "oei_thrust_ratio_to_hover": 1.2205,
+   "oei_shaft_power_kw_1000m": 42.817,
+   "oei_torque_Nm_1000m": 179.63,
+   "oei_rpm": 2276.17,
+   "oei_power_margin": 0.1437,
+   "oei_torque_margin": 0.1019
+  }
+ }
+}

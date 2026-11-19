@@ -1,0 +1,30 @@
+{
+ "LG_LEG": {
+  "section": "76.2 x 2.41 mm 6061-T6 (CAD, 3 x 0.095 in)",
+  "MS": 0.3152111577094192,
+  "basis": "beam model with the CAD leg section (airframe_final33.json), scaled to MTOW 1,350.4 kg"
+ },
+ "LG_SKID": {
+  "section": "57.1 x 3.17 mm 6061-T6 (CAD)",
+  "MS": 2.979720609984764,
+  "basis": "model MS scaled by min(Z, A) ratio"
+ },
+ "W_PIN_M": {
+  "P_design_N": 76902.31098817578,
+  "shear_MS": 2.8331046283884924,
+  "bending_MS": 0.26771949949306917,
+  "basis": "3/4 in close-tolerance bolt, double shear; bending arm t_lug/4 + 2 mm"
+ },
+ "W_CHUTE_ANG": {
+  "P_design_N": 49507.49999999999,
+  "bolts_MS": 1.0674098493953492,
+  "bearing_MS": 1.1247108013937286,
+  "basis": "front riser leg 50 % of 57.4 kN x 1.5 x 1.15; 4 x AN5 single shear; 6 mm 6061 angle bearing"
+ },
+ "HT_SPAR": {
+  "section": "50 x 4.84 mm (CAD) = sized",
+  "MS": 0.10248222016143882,
+  "basis": "beam model, final 3.3 configuration (R9 gyroscopic)"
+ },
+ "note": "CAD sections against the final iteration-3.3 global model (rotor structural thrust 4,267 N; MTOW 1,350.4 kg)"
+}

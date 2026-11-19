@@ -1,0 +1,173 @@
+{
+ "rows": [
+  {
+   "quantity": "lift-rotor disk loading",
+   "M": 13.066620827844607,
+   "NASA": 13.1,
+   "unit": "lb/ft^2",
+   "diff": -0.002548028408808566,
+   "source": "[S18] T3",
+   "note": "DGW / (8 pi R^2)"
+  },
+  {
+   "quantity": "hover shaft power per lifter, 6000 ft ISA, FM = 0.74 (published)",
+   "M": 144.59523714831133,
+   "NASA": 139.0,
+   "unit": "hp",
+   "diff": 0.04025350466411026,
+   "source": "[S18] T3 MRP per lifter",
+   "note": "M uses [H1] + published FM; NASA MRP is the installed rating"
+  },
+  {
+   "quantity": "aircraft hover figure of merit (M blade-element [H2])",
+   "M": 0.6822470964442972,
+   "NASA": 0.74,
+   "unit": "-",
+   "diff": -0.07804446426446329,
+   "source": "[S18] T3",
+   "note": ""
+  },
+  {
+   "quantity": "hover shaft power per lifter with M's FM",
+   "M": 156.83536954193042,
+   "NASA": 139.0,
+   "unit": "hp",
+   "diff": 0.1283120110930246,
+   "source": "[S18] T3",
+   "note": ""
+  },
+  {
+   "quantity": "battery mass from published capacity at 530 Wh/kg cell-usable (sec. VI A)",
+   "M": 1659.2442793369191,
+   "NASA": 1693.0,
+   "unit": "lb",
+   "diff": -0.019938405589533883,
+   "source": "[S18] T3 + sec. VI A",
+   "note": "1436 MJ / 530 Wh/kg; check of NASA's capacity bookkeeping"
+  },
+  {
+   "quantity": "usable energy at 400 Wh/kg pack x battery mass",
+   "M": 1105.8219106704003,
+   "NASA": 1113.0,
+   "unit": "MJ",
+   "diff": -0.006449316558490335,
+   "source": "[S18] T3 + sec. VI A",
+   "note": "battery is sized by the design mission: usable = energy burn"
+  },
+  {
+   "quantity": "hover C-rate = P_hover,elec / capacity",
+   "M": 2.446106410378635,
+   "NASA": 2.4,
+   "unit": "1/h",
+   "diff": 0.019211004324431274,
+   "source": "[S18] T3",
+   "note": "M drive efficiency 0.884"
+  },
+  {
+   "quantity": "cruise C-rate = (W V / (L/De)) / eta_drive / capacity",
+   "M": 0.7019950971248604,
+   "NASA": 0.7,
+   "unit": "1/h",
+   "diff": 0.0028501387498006524,
+   "source": "[S18] T3",
+   "note": ""
+  },
+  {
+   "quantity": "propulsion group excl. battery (8 lift + 1 cruise motor, eq. 1 x 1.63)",
+   "M": 1677.6072687465614,
+   "NASA": 1493.0,
+   "unit": "lb",
+   "diff": 0.12364853901310209,
+   "source": "[S18] T3 + eq. 1",
+   "note": "cruise motor at 2000-2500 rpm: 306-371 lb"
+  },
+  {
+   "quantity": "rotor group (8 lift rotors, AFDD00, no tech factor)",
+   "M": 383.2339932429059,
+   "NASA": 948.0,
+   "unit": "lb",
+   "diff": -0.595744732866133,
+   "source": "[S18] T3",
+   "note": "NASA's rotor group also contains the pusher, spinners and rotor supports (not separately published)"
+  },
+  {
+   "quantity": "design-mission energy, reading A: 2 x 37.5 nm + 20 min reserve",
+   "M": 1414.7834962258273,
+   "NASA": 1113.0,
+   "unit": "MJ",
+   "diff": 0.2711442014607613,
+   "source": "[S18] T1, T3",
+   "note": "M hover with published FM, cruise from published L/De at Vbr, 10 kt headwind"
+  },
+  {
+   "quantity": "design-mission energy, reading B: 2 x 37.5 nm, reserve not in 'energy burn'",
+   "M": 1078.7618430687273,
+   "NASA": 1113.0,
+   "unit": "MJ",
+   "diff": -0.030762045760352803,
+   "source": "[S18] T1, T3",
+   "note": "same segments without segment 10"
+  },
+  {
+   "quantity": "design-mission energy, reading C: 1 x 37.5 nm + 20 min reserve (Table 1 as listed)",
+   "M": 875.4025746914635,
+   "NASA": 1113.0,
+   "unit": "MJ",
+   "diff": -0.2134747756590624,
+   "source": "[S18] T1, T3",
+   "note": ""
+  },
+  {
+   "quantity": "empty-weight fraction incl. battery",
+   "M": 0.8527405602923265,
+   "NASA": 0.8527405602923265,
+   "unit": "-",
+   "diff": 0.0,
+   "source": "[S18] T3",
+   "note": "identity check"
+  },
+  {
+   "quantity": "[2022] lift-rotor disk loading",
+   "M": 15.091071703973515,
+   "NASA": 15.1,
+   "unit": "lb/ft^2",
+   "diff": -0.0005912778825486266,
+   "source": "[JS22] T3",
+   "note": ""
+  },
+  {
+   "quantity": "[2022] hover shaft power per lifter, 6000 ft ISA, FM 0.74",
+   "M": 179.46889079763486,
+   "NASA": 189.0,
+   "unit": "hp",
+   "diff": -0.0504291492188632,
+   "source": "[JS22] T3",
+   "note": "published power is the installed rating"
+  },
+  {
+   "quantity": "[2022] propulsion group (8 lift + 1 cruise motor, eq. 1 x 1.63)",
+   "M": 2267.6728679990906,
+   "NASA": 1866.0,
+   "unit": "lb",
+   "diff": 0.21525877170369273,
+   "source": "[JS22] T3",
+   "note": "2022 table lists battery separately"
+  }
+ ],
+ "cruise_span_backout": {
+  "q_Pa": 1501.607268046688,
+  "D_parasite_N": 2357.6155734809836,
+  "D_from_LDe_N": 3651.9899461288705,
+  "b_required_m": 16.52347964195589,
+  "eta_p": 0.85,
+  "e": 0.8
+ },
+ "mission": {
+  "per_flight_kwh": 149.82803375954546,
+  "reserve_kwh": 93.3393480991944,
+  "total_kwh": 392.99541561828534,
+  "t_climb_s": 263.33333333333337
+ },
+ "motor_torque_lifter_Nm": 885.9169419487179,
+ "motor_mass_lifter_kg": 46.58459070930148
+}

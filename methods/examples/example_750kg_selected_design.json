@@ -1,0 +1,182 @@
+{
+ "schema_version": "1.0",
+ "name": "Hand-built test case: 750 kg lift + cruise, 8 x 1.7 m lift rotors, 200 kg payload",
+ "notes": "Test input for the checker only; numbers in 'results' imitate an optimistic sizing tool, not an E8-200 design.",
+ "requirements": {
+  "range_km": 100,
+  "cruise_speed_kmh_min": 150,
+  "payload_kg": 200
+ },
+ "mass_kg": {
+  "mtow": 750.0,
+  "payload": 200.0,
+  "battery": 230.0,
+  "empty": 320.0,
+  "breakdown": {
+   "wing": 55.0,
+   "fuselage": 45.0,
+   "tail": 12.0,
+   "booms": 22.0,
+   "landing_gear": 15.0,
+   "lift_motors": 72.0,
+   "lift_rotors": 16.0,
+   "inverters": 16.0,
+   "hv_harness": 10.0,
+   "cooling": 6.0,
+   "pusher_motor": 9.0,
+   "pusher_propeller": 4.0,
+   "parachute": 15.0,
+   "seats": 12.0,
+   "avionics": 10.0,
+   "lv_electrical": 6.0,
+   "growth": 0.0
+  }
+ },
+ "environment": {
+  "hover_design_altitude_m": 500,
+  "hover_ceiling_m": 1000,
+  "hover_isa_offset_C": 15,
+  "cruise_altitude_m": 500,
+  "cruise_isa_offset_C": 15
+ },
+ "lift_rotors": {
+  "count": 8,
+  "coaxial": false,
+  "diameter_m": 1.7,
+  "blades": 2,
+  "blade_chord_m": 0.17,
+  "tip_speed_hover_ms": 150.0,
+  "figure_of_merit": 0.75,
+  "download_fraction": 0.03,
+  "motor_diameter_m": 0.24,
+  "motor_exposed_height_m": 0.08,
+  "pylon_frontal_area_m2": 0.012,
+  "motor": {
+   "name": "example 30 kW-class direct-drive motor",
+   "mass_kg": 9.0,
+   "continuous_power_kw": 30.0,
+   "peak_power_kw": 45.0,
+   "max_torque_nm": 220.0
+  }
+ },
+ "pusher": {
+  "diameter_m": 1.6,
+  "blades": 3,
+  "rpm_cruise": 2300,
+  "eta_cruise": 0.82,
+  "motor": {
+   "mass_kg": 9.0,
+   "continuous_power_kw": 40.0,
+   "peak_power_kw": 60.0
+  }
+ },
+ "wing": {
+  "span_m": 9.0,
+  "area_m2": 9.45,
+  "mac_m": 1.07,
+  "thickness_ratio": 0.15,
+  "max_thickness_x_c": 0.3,
+  "sweep_deg": 0.0,
+  "taper": 0.68,
+  "cl_max": 1.5,
+  "oswald": 0.8,
+  "removable_for_transport": true
+ },
+ "fuselage": {
+  "length_m": 4.8,
+  "max_width_m": 1.15,
+  "max_height_m": 1.35,
+  "wetted_area_m2": 15.5,
+  "tail_arm_m": 3.3
+ },
+ "booms": {
+  "count": 2,
+  "length_m": 8.1,
+  "diameter_m": 0.12,
+  "rotor_arms_m": [
+   1.55,
+   3.45
+  ]
+ },
+ "tail": {
+  "horizontal_area_m2": 2.9,
+  "vertical_area_m2": 1.6,
+  "vertical_count": 2,
+  "mac_m": 0.75,
+  "thickness_ratio": 0.1
+ },
+ "landing_gear": {
+  "type": "skid",
+  "length_m": 0.5,
+  "frontal_area_m2": 0.05
+ },
+ "drag": {
+  "cd0": 0.032,
+  "drag_area_m2": 0.3
+ },
+ "battery": {
+  "energy_nominal_kwh": 41.6,
+  "series": 110,
+  "parallel": 21,
+  "independent_packs": 2,
+  "cell": {
+   "name": "21700 high-energy class",
+   "energy_wh": 18.0,
+   "mass_kg": 0.071,
+   "capacity_ah": 5.0,
+   "v_nom": 3.6,
+   "max_continuous_discharge_a": 40.0,
+   "max_peak_discharge_a": 60.0
+  }
+ },
+ "efficiencies": {
+  "motor": 0.94,
+  "inverter": 0.98,
+  "wiring": 0.98
+ },
+ "aux_power_kw": 1.5,
+ "mission": {
+  "range_km": 100,
+  "cruise_speed_kmh": 160,
+  "hover_takeoff_s": 60,
+  "hover_landing_s": 60,
+  "transition_each_s": 30,
+  "transitions": 2
+ },
+ "cabin": {
+  "seats": 2
+ },
+ "systems": {
+  "avionics_uninstalled_kg": 10.0,
+  "hv_cable_length_m": 40.0
+ },
+ "structure": {
+  "limit_load_factor_positive": 3.8,
+  "limit_load_factor_negative": -1.5,
+  "landing_load_factor": 3.0
+ },
+ "limits": {
+  "footprint_max_m": 9.0
+ },
+ "cost": {
+  "units_produced_5yr": 10,
+  "composite_fraction": 0.8,
+  "cots_propulsion_systems_usd": 150000
+ },
+ "results": {
+  "disk_loading_N_m2": 405.0,
+  "hover_shaft_power_per_motor_kw": 18.5,
+  "hover_electrical_power_kw": 163.0,
+  "hover_electrical_power_ceiling_kw": 170.0,
+  "rotor_out_max_shaft_power_kw": 30.0,
+  "cruise_drag_N": 820.0,
+  "cruise_LD": 9.0,
+  "cruise_electrical_power_kw": 48.0,
+  "mission_energy_kwh": 40.0,
+  "range_km": 101.0,
+  "stall_speed_ms": 29.5,
+  "tip_mach_hover": 0.43,
+  "c_rate_hover": 4.5,
+  "cost_usd": 320000
+ }
+}

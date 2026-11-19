@@ -1,0 +1,41 @@
+{
+ "_about": "FEA-owned inputs that are not in design/geometry.json (WP F). Sized sections go to fea/results/sizing_update.json.",
+ "parachute": {
+  "opening_load_N": 57400.0,
+  "max_share": 0.5,
+  "source": "Galaxy GRS 6 1200-1390 (geometry.json parachute.model CHUTE-GRS1390, iteration 3.3): opening shock 57.4 kN, limit load; x 1.5 ultimate, x 1.15 fitting factor",
+  "bridle": "3 legs: two to the wing carry-through main spar at y = +-0.3 m, one to the tail-cone keel; one leg may carry up to 50 % of the total at canopy line stretch (uneven inflation)"
+ },
+ "rotor_pylon_section": {
+  "type": "tube",
+  "od": 0.1,
+  "t": 0.004,
+  "material": "al6061_t6_extr"
+ },
+ "rotor_hub_mass_fraction": 0.68,
+ "rotor_hub_mass_note": "iteration 3.2: rotor-station mass 29.2 kg with its cg 0.204 m below the hub (design/mass_calibration.json); the pylon is 0.63 m (hub z 2.405, boom z 1.775), so 68 % at the hub and 32 % at the boom",
+ "battery_forward_g": 18.0,
+ "battery_note": "battery packs (151.5 kg each) are designed for 18 g forward (team choice: the CS-23.561(e) rule for heavy items is applied although they sit under the occupants), 6 g down, 3 g up, 4.5 g side (3 x CS-23.561 side)",
+ "landing": {
+  "drop_height_m": 0.33,
+  "rotor_lift_fraction": 0.667,
+  "note": "CS-27.725 style drop: limit drop height 13 in (0.33 m) with rotor lift 2/3 W; gear reaction in the global landing cases = (3.0 - 2/3) W = 2.33 W (limit inertia factor 3.0); the damped gear (4 oleos, 80 mm stroke) is checked by energy in fea/gear.py"
+ },
+ "gear_model": "damped",
+ "min_gauge": {
+  "t_cap": 0.001,
+  "t_web": 0.0005,
+  "skin_t": 0.0005,
+  "boom_t": 0.0016
+ },
+ "ms_target": {
+  "composite": 0.115,
+  "metal": 0.05
+ },
+ "seat_note": "seats with 150 mm energy-absorbing stroke: forward attachment loads still max(9 g x 1.33, 26 g AC 23.562 test 2)",
+ "oei_flare_g": 1.1,
+ "oei_flare_note": "owner relaxation of iteration 3.2 (requirements.yaml iteration_3_2_relaxation): one-motor-out flare 1.10 g (was 1.2)",
+ "VD_ms": 63.64,
+ "VD_note": "iteration 3.3: V_D = 63.64 m/s EAS (= geometry aero.VD_ms = selected_design structure.dive_speed_eas_ms)",
+ "ms_target_note": "iteration 3.3: target 0.115 so that the converged members end at MS >= +0.10 (fixed-point iteration stops within 1 %)"
+}

@@ -1,0 +1,74 @@
+{
+ "case": "NAFEMS LE1 elliptic membrane, plane stress, t=0.1 m, E=210 GPa, nu=0.3, p=10 MPa outward",
+ "quantity": "sigma_yy at D (2.0, 0) [MPa]",
+ "reference": 92.7,
+ "source": "NAFEMS, The Standard NAFEMS Benchmarks, TNSB Rev. 3 (1990), LE1",
+ "mesh": [
+  {
+   "mesh": "CPS8 2x3",
+   "elems": 6,
+   "h_mm": 625.0,
+   "syy_D": 81.6288,
+   "err_pct": -11.943042071197414
+  },
+  {
+   "mesh": "CPS8 4x6",
+   "elems": 24,
+   "h_mm": 312.5,
+   "syy_D": 89.9157,
+   "err_pct": -3.0035598705501636
+  },
+  {
+   "mesh": "CPS8 8x12",
+   "elems": 96,
+   "h_mm": 156.25,
+   "syy_D": 93.0092,
+   "err_pct": 0.3335490830636506
+  },
+  {
+   "mesh": "CPS8 16x24",
+   "elems": 384,
+   "h_mm": 78.125,
+   "syy_D": 93.3489,
+   "err_pct": 0.6999999999999974
+  },
+  {
+   "mesh": "CPS8 32x48",
+   "elems": 1536,
+   "h_mm": 39.0625,
+   "syy_D": 93.1776,
+   "err_pct": 0.51521035598705
+  }
+ ],
+ "mesh_gmsh": [
+  {
+   "mesh": "gmsh CPS6 h=250.0",
+   "elems": 227,
+   "h_mm": 250.0,
+   "syy_D": 88.1303,
+   "err_pct": -4.929557713052856
+  },
+  {
+   "mesh": "gmsh CPS6 h=125.0",
+   "elems": 862,
+   "h_mm": 125.0,
+   "syy_D": 91.0444,
+   "err_pct": -1.7859762675296729
+  },
+  {
+   "mesh": "gmsh CPS6 h=62.5",
+   "elems": 3315,
+   "h_mm": 62.5,
+   "syy_D": 92.4995,
+   "err_pct": -0.21628910463862483
+  },
+  {
+   "mesh": "gmsh CPS6 h=31.25",
+   "elems": 13152,
+   "h_mm": 31.25,
+   "syy_D": 92.8858,
+   "err_pct": 0.2004314994606261
+  }
+ ],
+ "_wall_s": 9.1
+}

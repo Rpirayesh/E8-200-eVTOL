@@ -1,0 +1,151 @@
+aircraft,parameter,value,unit,quality,source_url,note
+Jetson One,empty_mass_incl_battery,115,kg,claim,https://jetson.com/jetson-one,'mass including batteries'; empty mass without batteries 55 kg
+Jetson One,payload,95,kg,claim,https://jetson.com/jetson-one,maximum pilot weight
+Jetson One,endurance,20,min,claim,https://jetson.com/jetson-one,approx.
+Jetson One,max_speed,102,km/h,claim,https://jetson.com/jetson-one,software-limited
+Jetson One,lift_rotors,8,-,claim,https://jetson.com/jetson-one,
+Jetson One,installed_power,76.1,kW,secondary,https://en.wikipedia.org/wiki/Jetson_One,102 hp total
+Opener/Pivotal BlackFly,empty_mass_incl_battery,142,kg,secondary,https://en.wikipedia.org/wiki/Opener_BlackFly,
+Opener/Pivotal BlackFly,mtow,255,kg,secondary,https://en.wikipedia.org/wiki/Opener_BlackFly,
+Opener/Pivotal BlackFly,payload,113,kg,secondary,https://en.wikipedia.org/wiki/Opener_BlackFly,
+Opener/Pivotal BlackFly,battery_energy,12,kWh,secondary,https://en.wikipedia.org/wiki/Opener_BlackFly,
+Opener/Pivotal BlackFly,range,64,km,secondary,https://en.wikipedia.org/wiki/Opener_BlackFly,BlackFly International (non-US) figures; range 'plus reserves'
+Opener/Pivotal BlackFly,cruise_speed,130,km/h,secondary,https://en.wikipedia.org/wiki/Opener_BlackFly,BlackFly International (non-US) figures; range 'plus reserves'
+Opener/Pivotal BlackFly,lift_rotors,8,-,secondary,https://en.wikipedia.org/wiki/Opener_BlackFly,
+Opener/Pivotal BlackFly,rotor_diameter,0.91,m,secondary,https://en.wikipedia.org/wiki/Opener_BlackFly,
+Opener/Pivotal BlackFly,installed_power,250.4,kW,secondary,https://en.wikipedia.org/wiki/Opener_BlackFly,8 x 31.3 kW (42 hp) per motor
+Opener/Pivotal BlackFly,span,4.14,m,secondary,https://en.wikipedia.org/wiki/Opener_BlackFly,
+Pivotal Helix,empty_mass_incl_battery,158,kg,claim,https://evtol.news/pivotal-helix-production-model,
+Pivotal Helix,mtow,258,kg,claim,https://evtol.news/pivotal-helix-production-model,
+Pivotal Helix,payload,100,kg,claim,https://evtol.news/pivotal-helix-production-model,
+Pivotal Helix,battery_energy,8,kWh,claim,https://evtol.news/pivotal-helix-production-model,
+Pivotal Helix,range,32,km,claim,https://evtol.news/pivotal-helix-production-model,range '20+ miles'
+Pivotal Helix,cruise_speed,101,km/h,claim,https://evtol.news/pivotal-helix-production-model,
+Pivotal Helix,lift_rotors,8,-,claim,https://evtol.news/pivotal-helix-production-model,
+Volocopter 2X,empty_mass_incl_battery,290,kg,secondary,https://en.wikipedia.org/wiki/Volocopter_2X,
+Volocopter 2X,mtow,450,kg,secondary,https://en.wikipedia.org/wiki/Volocopter_2X,
+Volocopter 2X,payload,160,kg,secondary,https://en.wikipedia.org/wiki/Volocopter_2X,
+Volocopter 2X,range,27,km,secondary,https://en.wikipedia.org/wiki/Volocopter_2X,range quoted at 70 km/h
+Volocopter 2X,cruise_speed,70,km/h,secondary,https://en.wikipedia.org/wiki/Volocopter_2X,range quoted at 70 km/h
+Volocopter 2X,endurance,27,min,secondary,https://en.wikipedia.org/wiki/Volocopter_2X,
+Volocopter 2X,max_speed,100,km/h,secondary,https://en.wikipedia.org/wiki/Volocopter_2X,
+Volocopter 2X,lift_rotors,18,-,secondary,https://en.wikipedia.org/wiki/Volocopter_2X,
+Volocopter 2X,rotor_diameter,1.8,m,secondary,https://en.wikipedia.org/wiki/Volocopter_2X,
+Volocopter VoloCity,empty_mass_incl_battery,700,kg,document,https://key4biz.it/wp-content/uploads/2021/10/20190819_VoloCity_Specs.pdf,Volocopter design specification Aug 2019: 'calculated approximations not yet tested in flight'
+Volocopter VoloCity,mtow,900,kg,document,https://key4biz.it/wp-content/uploads/2021/10/20190819_VoloCity_Specs.pdf,Volocopter design specification Aug 2019: 'calculated approximations not yet tested in flight'
+Volocopter VoloCity,payload,200,kg,document,https://key4biz.it/wp-content/uploads/2021/10/20190819_VoloCity_Specs.pdf,Volocopter design specification Aug 2019: 'calculated approximations not yet tested in flight'
+Volocopter VoloCity,range,35,km,document,https://key4biz.it/wp-content/uploads/2021/10/20190819_VoloCity_Specs.pdf,Volocopter design specification Aug 2019: 'calculated approximations not yet tested in flight'
+Volocopter VoloCity,max_speed,110,km/h,document,https://key4biz.it/wp-content/uploads/2021/10/20190819_VoloCity_Specs.pdf,Volocopter design specification Aug 2019: 'calculated approximations not yet tested in flight'
+Volocopter VoloCity,lift_rotors,18,-,document,https://key4biz.it/wp-content/uploads/2021/10/20190819_VoloCity_Specs.pdf,Volocopter design specification Aug 2019: 'calculated approximations not yet tested in flight'
+Volocopter VoloCity,rotor_diameter,2.3,m,document,https://key4biz.it/wp-content/uploads/2021/10/20190819_VoloCity_Specs.pdf,Volocopter design specification Aug 2019: 'calculated approximations not yet tested in flight'
+EHang EH216-S,mtow,620,kg,claim,https://flightplan.forecastinternational.com/2024/05/02/uam-snapshot-ehang-eh216-s/,
+EHang EH216-S,payload,220,kg,claim,https://flightplan.forecastinternational.com/2024/05/02/uam-snapshot-ehang-eh216-s/,
+EHang EH216-S,battery_energy,17,kWh,secondary,https://www.batterydesign.net/ehang-eh216-s-evtol-battery/,12 batteries
+EHang EH216-S,range,35,km,secondary,https://www.batterydesign.net/ehang-eh216-s-evtol-battery/,21 min flight; Forecast International gives 30 km
+EHang EH216-S,endurance,21,min,secondary,https://www.batterydesign.net/ehang-eh216-s-evtol-battery/,
+EHang EH216-S,lift_rotors,16,-,secondary,https://www.batterydesign.net/ehang-eh216-s-evtol-battery/,
+EHang EH216-S,empty_mass_incl_battery,400,kg,derived,https://flightplan.forecastinternational.com/2024/05/02/uam-snapshot-ehang-eh216-s/,MTOW - payload
+Wisk Cora (Gen 5),payload,181,kg,claim,https://evtol.news/kitty-hawk-cora,MTOW and empty mass not published
+Wisk Cora (Gen 5),range,100,km,claim,https://evtol.news/kitty-hawk-cora,MTOW and empty mass not published
+Wisk Cora (Gen 5),cruise_speed,180,km/h,claim,https://evtol.news/kitty-hawk-cora,MTOW and empty mass not published
+Wisk Cora (Gen 5),lift_rotors,12,-,claim,https://evtol.news/kitty-hawk-cora,MTOW and empty mass not published
+Wisk Cora (Gen 5),span,11,m,claim,https://evtol.news/kitty-hawk-cora,MTOW and empty mass not published
+Kitty Hawk Heaviside 2 Block 2,empty_mass_incl_battery,310,kg,document,https://www.wingsofhistory.org/wp-content/uploads/2025/11/Heaviside-2.2-Aircraft-Flight-Manual_Rev-IR_09-21-21.pdf,Heaviside 2 Block 2 with Puma controllers
+Kitty Hawk Heaviside 2 Block 2,mtow,400,kg,document,https://www.wingsofhistory.org/wp-content/uploads/2025/11/Heaviside-2.2-Aircraft-Flight-Manual_Rev-IR_09-21-21.pdf,MGW
+Kitty Hawk Heaviside 2 Block 2,payload,80,kg,document,https://www.wingsofhistory.org/wp-content/uploads/2025/11/Heaviside-2.2-Aircraft-Flight-Manual_Rev-IR_09-21-21.pdf,
+Kitty Hawk Heaviside 2 Block 2,battery_energy,18,kWh,document,https://www.wingsofhistory.org/wp-content/uploads/2025/11/Heaviside-2.2-Aircraft-Flight-Manual_Rev-IR_09-21-21.pdf,"four 528 V packs, ~39 Ah"
+Kitty Hawk Heaviside 2 Block 2,range,129,km,document,https://www.wingsofhistory.org/wp-content/uploads/2025/11/Heaviside-2.2-Aircraft-Flight-Manual_Rev-IR_09-21-21.pdf,"~80 miles at 96 kt, calculated; flight tests reported 100 miles + minimal reserve"
+Kitty Hawk Heaviside 2 Block 2,cruise_speed,178,km/h,document,https://www.wingsofhistory.org/wp-content/uploads/2025/11/Heaviside-2.2-Aircraft-Flight-Manual_Rev-IR_09-21-21.pdf,96 kt (range speed)
+Kitty Hawk Heaviside 2 Block 2,max_speed,198,km/h,document,https://www.wingsofhistory.org/wp-content/uploads/2025/11/Heaviside-2.2-Aircraft-Flight-Manual_Rev-IR_09-21-21.pdf,VH 107 KTAS
+Kitty Hawk Heaviside 2 Block 2,stall_speed,111,km/h,document,https://www.wingsofhistory.org/wp-content/uploads/2025/11/Heaviside-2.2-Aircraft-Flight-Manual_Rev-IR_09-21-21.pdf,~60 kt wing stall
+Kitty Hawk Heaviside 2 Block 2,lift_rotors,8,-,document,https://www.wingsofhistory.org/wp-content/uploads/2025/11/Heaviside-2.2-Aircraft-Flight-Manual_Rev-IR_09-21-21.pdf,tilting
+Kitty Hawk Heaviside 2 Block 2,installed_power,224,kW,document,https://www.wingsofhistory.org/wp-content/uploads/2025/11/Heaviside-2.2-Aircraft-Flight-Manual_Rev-IR_09-21-21.pdf,"8 x 28 kW PMSM, 60 N m, 5000 rpm"
+Kitty Hawk Heaviside 2 Block 2,span,6.5,m,document,https://www.wingsofhistory.org/wp-content/uploads/2025/11/Heaviside-2.2-Aircraft-Flight-Manual_Rev-IR_09-21-21.pdf,~23 ft
+Kitty Hawk Heaviside 2 Block 2,limit_load_factor,4.4,g,document,https://www.wingsofhistory.org/wp-content/uploads/2025/11/Heaviside-2.2-Aircraft-Flight-Manual_Rev-IR_09-21-21.pdf,+4.4 / -2.4
+CityAirbus NextGen,empty_mass_incl_battery,2000,kg,claim,https://evtol.news/airbus-helicopters-cityairbus-nextgen-technology-demonstrator,page states all specifications are estimates
+CityAirbus NextGen,range,80,km,claim,https://evtol.news/airbus-helicopters-cityairbus-nextgen-technology-demonstrator,page states all specifications are estimates
+CityAirbus NextGen,cruise_speed,120,km/h,claim,https://evtol.news/airbus-helicopters-cityairbus-nextgen-technology-demonstrator,page states all specifications are estimates
+CityAirbus NextGen,lift_rotors,8,-,claim,https://evtol.news/airbus-helicopters-cityairbus-nextgen-technology-demonstrator,page states all specifications are estimates
+CityAirbus NextGen,span,12,m,claim,https://evtol.news/airbus-helicopters-cityairbus-nextgen-technology-demonstrator,page states all specifications are estimates
+Beta Alia A250,mtow,2720,kg,secondary,https://en.wikipedia.org/wiki/Beta_Technologies_Alia,"6,000 lb aircraft weight (not labelled MTOW)"
+Beta Alia A250,range,463,km,secondary,https://en.wikipedia.org/wiki/Beta_Technologies_Alia,planned maximum 250 nmi
+Beta Alia A250,cruise_speed,270,km/h,secondary,https://en.wikipedia.org/wiki/Beta_Technologies_Alia,
+Beta Alia A250,lift_rotors,4,-,secondary,https://en.wikipedia.org/wiki/Beta_Technologies_Alia,
+Beta Alia A250,span,15,m,secondary,https://en.wikipedia.org/wiki/Beta_Technologies_Alia,
+Joby S4,mtow,2404,kg,claim,https://evtol.news/joby-aviation-s4-production-prototype,"approx. 5,300 lb"
+Joby S4,empty_mass_incl_battery,1950,kg,claim,https://evtol.news/joby-aviation-s4-production-prototype,"approx. 4,300 lb"
+Joby S4,payload,453,kg,claim,https://evtol.news/joby-aviation-s4-production-prototype,
+Joby S4,range,161,km,claim,https://evtol.news/joby-aviation-s4-production-prototype,100 miles incl. energy reserves
+Joby S4,cruise_speed,322,km/h,claim,https://evtol.news/joby-aviation-s4-production-prototype,maximum cruise
+Joby S4,lift_rotors,6,-,claim,https://evtol.news/joby-aviation-s4-production-prototype,tilting
+Joby S4,installed_power,1416,kW,claim,https://evtol.news/joby-aviation-s4-production-prototype,6 x 236 kW peak
+Joby S4,pack_specific_energy,235,Wh/kg,claim,https://evtol.news/joby-aviation-s4-production-prototype,cell 288 Wh/kg
+Archer Midnight,mtow,2948,kg,claim,https://www.avweb.com/aviation-news/archers-midnight-evtol-completes-first-transition-flight/,"design MTOW 6,500 lb"
+Archer Midnight,payload,454,kg,claim,https://verticalmag.com/news/archer-unveils-midnight-first-production-evtol/,"> 1,000 lb expected"
+Archer Midnight,max_speed,241,km/h,claim,https://verticalmag.com/news/archer-unveils-midnight-first-production-evtol/,
+Archer Midnight,lift_rotors,12,-,claim,https://verticalmag.com/news/archer-unveils-midnight-first-production-evtol/,6 tilting + 6 lift-only
+Archer Midnight,range,161,km,secondary,https://en.wikipedia.org/wiki/Archer_Midnight,
+Archer Midnight,span,14.3,m,secondary,https://backend.ainonline.com/news-article/2022-11-17/archer-aviation-reveals-full-sized-midnight-evtol-air-taxi,47 ft
+Vertical VX4,payload,450,kg,secondary,https://evtol.news/vertical-aerospace-va-1x,
+Vertical VX4,range,161,km,secondary,https://evtol.news/vertical-aerospace-va-1x,
+Vertical VX4,cruise_speed,241,km/h,secondary,https://evtol.news/vertical-aerospace-va-1x,
+Vertical VX4,lift_rotors,8,-,secondary,https://evtol.news/vertical-aerospace-va-1x,
+Vertical VX4,span,15,m,secondary,https://evtol.news/vertical-aerospace-va-1x,
+LIFT Hexa,empty_mass_incl_battery,196,kg,claim,https://www.evtol.news/lift-hexa,432 lb
+LIFT Hexa,payload,113,kg,claim,https://www.evtol.news/lift-hexa,250 lb; company page elsewhere 220 lb
+LIFT Hexa,battery_mass,60.3,kg,secondary,https://www.navair.navy.mil/osbp/node/10826,133 lb of batteries included in empty weight
+LIFT Hexa,endurance,15,min,claim,https://www.evtol.news/lift-hexa,plus reserve
+LIFT Hexa,cruise_speed,72,km/h,claim,https://www.evtol.news/lift-hexa,
+LIFT Hexa,lift_rotors,18,-,claim,https://www.evtol.news/lift-hexa,
+LIFT Hexa,mtow,309,kg,derived,https://www.evtol.news/lift-hexa,empty + payload
+Airbus Vahana Alpha,empty_mass_incl_battery,695,kg,secondary,https://en.wikipedia.org/wiki/Airbus_A%C2%B3_Vahana,
+Airbus Vahana Alpha,mtow,815,kg,secondary,https://en.wikipedia.org/wiki/Airbus_A%C2%B3_Vahana,
+Airbus Vahana Alpha,payload,90,kg,secondary,https://en.wikipedia.org/wiki/Airbus_A%C2%B3_Vahana,Alpha One; Alpha Two 200 kg
+Airbus Vahana Alpha,range,50,km,secondary,https://en.wikipedia.org/wiki/Airbus_A%C2%B3_Vahana,
+Airbus Vahana Alpha,cruise_speed,200,km/h,secondary,https://en.wikipedia.org/wiki/Airbus_A%C2%B3_Vahana,
+Airbus Vahana Alpha,rotor_diameter,1.5,m,secondary,https://en.wikipedia.org/wiki/Airbus_A%C2%B3_Vahana,
+Airbus Vahana Alpha,span,6.25,m,secondary,https://en.wikipedia.org/wiki/Airbus_A%C2%B3_Vahana,
+Pipistrel Velis Electro,empty_mass_incl_battery,428,kg,secondary,https://en.wikipedia.org/wiki/Pipistrel_Velis_Electro,
+Pipistrel Velis Electro,mtow,600,kg,certified,https://en.wikipedia.org/wiki/Pipistrel_Velis_Electro,EASA TC (CS-LSA based)
+Pipistrel Velis Electro,payload,172,kg,secondary,https://en.wikipedia.org/wiki/Pipistrel_Velis_Electro,useful load
+Pipistrel Velis Electro,battery_energy,24.8,kWh,secondary,https://en.wikipedia.org/wiki/Pipistrel_Velis_Electro,
+Pipistrel Velis Electro,battery_mass,140,kg,secondary,https://en.wikipedia.org/wiki/Pipistrel_Velis_Electro,two 70 kg packs
+Pipistrel Velis Electro,endurance,50,min,secondary,https://en.wikipedia.org/wiki/Pipistrel_Velis_Electro,plus VFR reserve
+Pipistrel Velis Electro,cruise_speed,170,km/h,secondary,https://en.wikipedia.org/wiki/Pipistrel_Velis_Electro,
+Pipistrel Velis Electro,stall_speed,83,km/h,secondary,https://en.wikipedia.org/wiki/Pipistrel_Velis_Electro,flaps down
+Pipistrel Velis Electro,span,10.71,m,secondary,https://en.wikipedia.org/wiki/Pipistrel_Velis_Electro,
+Pipistrel Velis Electro,wing_area,9.51,m2,secondary,https://en.wikipedia.org/wiki/Pipistrel_Velis_Electro,
+Pipistrel Velis Electro,installed_power,57.6,kW,secondary,https://en.wikipedia.org/wiki/Pipistrel_Velis_Electro,take-off rating 90 s; 49.2 kW continuous
+Pipistrel Velis Electro,range,142,km,derived,https://en.wikipedia.org/wiki/Pipistrel_Velis_Electro,endurance 50 min x cruise 170 km/h
+LIFT Hexa,range,18,km,derived,https://www.evtol.news/lift-hexa,endurance 15 min x cruise 72 km/h
+NASA Lift+Cruise E (2018),mtow,3724,kg,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,"DGW 8,210 lb"
+NASA Lift+Cruise E (2018),empty_mass_incl_battery,3176,kg,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,"7,001 lb"
+NASA Lift+Cruise E (2018),payload,544,kg,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,"1,200 lb, 6 occupants"
+NASA Lift+Cruise E (2018),battery_mass,768,kg,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,"1,693 lb"
+NASA Lift+Cruise E (2018),battery_energy,399,kWh,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,"1,436 MJ capacity"
+NASA Lift+Cruise E (2018),range,139,km,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,75 nm design mission + 20 min reserve
+NASA Lift+Cruise E (2018),cruise_speed,207,km/h,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,Vbr 112 kt
+NASA Lift+Cruise E (2018),lift_rotors,8,-,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,
+NASA Lift+Cruise E (2018),rotor_diameter,3.048,m,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,R = 5 ft
+NASA Lift+Cruise E (2018),disk_loading,627.2,N/m2,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,13.1 lb/ft2
+NASA Lift+Cruise E (2018),installed_power_lift,829.2,kW,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,8 x 139 hp MRP
+NASA Lift+Cruise E (2018),installed_power,1297.5,kW,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,8 x 139 hp + 628 hp cruise
+NASA Lift+Cruise E (2018),hover_FM,0.74,-,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,aircraft FM
+NASA Lift+Cruise E (2018),tip_speed,178.3,m/s,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,585 ft/s
+NASA Lift+Cruise E (2018),L_De,8.5,-,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,W V / P
+NASA Lift+Cruise E (2018),drag_area,1.57,m2,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,D/q 16.9 ft2
+NASA Lift+Cruise E (2018),pack_specific_energy,400,Wh/kg,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,"sec. VI A, usable at pack level"
+NASA Lift+Cruise E (2018),c_rate_hover,2.4,1/h,study,https://www.nasa.gov/wp-content/uploads/2026/03/silva2018.pdf,
+NASA Lift+Cruise E (2022),mtow,4301,kg,study,https://ntrs.nasa.gov/api/citations/20210026170/downloads/1521_Johnson%20%26%20Silva_122721%20.pdf,"DGW 9,482 lb"
+NASA Lift+Cruise E (2022),empty_mass_incl_battery,3753,kg,study,https://ntrs.nasa.gov/api/citations/20210026170/downloads/1521_Johnson%20%26%20Silva_122721%20.pdf,
+NASA Lift+Cruise E (2022),payload,544,kg,study,https://ntrs.nasa.gov/api/citations/20210026170/downloads/1521_Johnson%20%26%20Silva_122721%20.pdf,
+NASA Lift+Cruise E (2022),battery_mass,933,kg,study,https://ntrs.nasa.gov/api/citations/20210026170/downloads/1521_Johnson%20%26%20Silva_122721%20.pdf,
+NASA Lift+Cruise E (2022),range,139,km,study,https://ntrs.nasa.gov/api/citations/20210026170/downloads/1521_Johnson%20%26%20Silva_122721%20.pdf,75 nm
+NASA Lift+Cruise E (2022),cruise_speed,154,km/h,study,https://ntrs.nasa.gov/api/citations/20210026170/downloads/1521_Johnson%20%26%20Silva_122721%20.pdf,Vbr 83 kt
+NASA Lift+Cruise E (2022),lift_rotors,8,-,study,https://ntrs.nasa.gov/api/citations/20210026170/downloads/1521_Johnson%20%26%20Silva_122721%20.pdf,
+NASA Lift+Cruise E (2022),rotor_diameter,3.048,m,study,https://ntrs.nasa.gov/api/citations/20210026170/downloads/1521_Johnson%20%26%20Silva_122721%20.pdf,
+NASA Lift+Cruise E (2022),disk_loading,723.0,N/m2,study,https://ntrs.nasa.gov/api/citations/20210026170/downloads/1521_Johnson%20%26%20Silva_122721%20.pdf,15.1 lb/ft2
+NASA Lift+Cruise E (2022),installed_power_lift,1127.5,kW,study,https://ntrs.nasa.gov/api/citations/20210026170/downloads/1521_Johnson%20%26%20Silva_122721%20.pdf,8 x 189 hp
+NASA Lift+Cruise E (2022),installed_power,1752.4,kW,study,https://ntrs.nasa.gov/api/citations/20210026170/downloads/1521_Johnson%20%26%20Silva_122721%20.pdf,
+NASA Lift+Cruise E (2022),tip_speed,167.6,m/s,study,https://ntrs.nasa.gov/api/citations/20210026170/downloads/1521_Johnson%20%26%20Silva_122721%20.pdf,
+NASA Lift+Cruise E (2022),L_De,7.9,-,study,https://ntrs.nasa.gov/api/citations/20210026170/downloads/1521_Johnson%20%26%20Silva_122721%20.pdf,

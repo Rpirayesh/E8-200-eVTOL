@@ -1,0 +1,534 @@
+{
+ "threshold_cm3": 2.0,
+ "failed_pairs": 106,
+ "overlaps": [
+  {
+   "a": "SEAT-CUSH#0",
+   "b": "OCC#0",
+   "volume_cm3": 3753.0,
+   "expected_contact": true
+  },
+  {
+   "a": "SEAT-CUSH#1",
+   "b": "OCC#1",
+   "volume_cm3": 3753.0,
+   "expected_contact": true
+  },
+  {
+   "a": "HARN#0",
+   "b": "OCC#0",
+   "volume_cm3": 852.8,
+   "expected_contact": true
+  },
+  {
+   "a": "HARN#1",
+   "b": "OCC#1",
+   "volume_cm3": 852.8,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CORE-2#0",
+   "b": "HV-WING#0",
+   "volume_cm3": 700.8,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CORE-2#1",
+   "b": "HV-WING#0",
+   "volume_cm3": 700.8,
+   "expected_contact": true
+  },
+  {
+   "a": "SEAT-SHELL#0",
+   "b": "OCC#0",
+   "volume_cm3": 504.1,
+   "expected_contact": true
+  },
+  {
+   "a": "SEAT-SHELL#1",
+   "b": "OCC#1",
+   "volume_cm3": 504.1,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CORE-1#0",
+   "b": "HV-WING#0",
+   "volume_cm3": 458.9,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CORE-1#0",
+   "b": "CH-RISER#0",
+   "volume_cm3": 44.5,
+   "expected_contact": true
+  },
+  {
+   "a": "SH-AFT#0",
+   "b": "BH-4#0",
+   "volume_cm3": 40.2,
+   "expected_contact": true
+  },
+  {
+   "a": "SH-AFT#0",
+   "b": "BH-5#0",
+   "volume_cm3": 29.5,
+   "expected_contact": true
+  },
+  {
+   "a": "SH-NOSE#0",
+   "b": "BH-0#0",
+   "volume_cm3": 20.9,
+   "expected_contact": true
+  },
+  {
+   "a": "CHUTE#0",
+   "b": "CH-RISER#0",
+   "volume_cm3": 18.5,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-DAMP#0",
+   "b": "LG-DCL#0",
+   "volume_cm3": 16.6,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-DAMP#1",
+   "b": "LG-DCL#1",
+   "volume_cm3": 16.6,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-DAMP#2",
+   "b": "LG-DCL#2",
+   "volume_cm3": 16.6,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-DAMP#3",
+   "b": "LG-DCL#3",
+   "volume_cm3": 16.6,
+   "expected_contact": true
+  },
+  {
+   "a": "SH-NOSE#0",
+   "b": "BH-1#0",
+   "volume_cm3": 16.1,
+   "expected_contact": true
+  },
+  {
+   "a": "F-CLV-MS#1",
+   "b": "CAN-FRM#0",
+   "volume_cm3": 16.0,
+   "expected_contact": true
+  },
+  {
+   "a": "F-CLV-MS#0",
+   "b": "CAN-FRM#0",
+   "volume_cm3": 15.9,
+   "expected_contact": true
+  },
+  {
+   "a": "SH-NOSE#0",
+   "b": "CAN-FRM#0",
+   "volume_cm3": 15.8,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-LEG#0",
+   "b": "LG-DCL#0",
+   "volume_cm3": 14.7,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-LEG#1",
+   "b": "LG-DCL#1",
+   "volume_cm3": 14.7,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-LEG#2",
+   "b": "LG-DCL#2",
+   "volume_cm3": 14.7,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-LEG#3",
+   "b": "LG-DCL#3",
+   "volume_cm3": 14.7,
+   "expected_contact": true
+  },
+  {
+   "a": "CAN-FRM#0",
+   "b": "CAN-HINGE#1",
+   "volume_cm3": 13.2,
+   "expected_contact": true
+  },
+  {
+   "a": "W-SPR-CL#0",
+   "b": "W-FIT-RP#0",
+   "volume_cm3": 12.6,
+   "expected_contact": true
+  },
+  {
+   "a": "W-SPR-CL#0",
+   "b": "W-FIT-RP#1",
+   "volume_cm3": 12.6,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-DAMP#0",
+   "b": "LG-FAIR#0",
+   "volume_cm3": 12.1,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-DAMP#1",
+   "b": "LG-FAIR#1",
+   "volume_cm3": 12.1,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-DAMP#2",
+   "b": "LG-FAIR#2",
+   "volume_cm3": 12.1,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-DAMP#3",
+   "b": "LG-FAIR#3",
+   "volume_cm3": 12.1,
+   "expected_contact": true
+  },
+  {
+   "a": "CAN-FRM#0",
+   "b": "CAN-HINGE#0",
+   "volume_cm3": 12.0,
+   "expected_contact": true
+  },
+  {
+   "a": "W-H45-U#0",
+   "b": "CH-RISER#0",
+   "volume_cm3": 11.7,
+   "expected_contact": true
+  },
+  {
+   "a": "SEAT-CUSH#0",
+   "b": "HARN#0",
+   "volume_cm3": 10.0,
+   "expected_contact": true
+  },
+  {
+   "a": "SEAT-CUSH#1",
+   "b": "HARN#1",
+   "volume_cm3": 10.0,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CORE-4#0",
+   "b": "W-HINGE#0",
+   "volume_cm3": 9.5,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CORE-4#1",
+   "b": "W-HINGE#1",
+   "volume_cm3": 9.5,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CORE-5#0",
+   "b": "W-HINGE#4",
+   "volume_cm3": 9.5,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CORE-5#1",
+   "b": "W-HINGE#5",
+   "volume_cm3": 9.5,
+   "expected_contact": true
+  },
+  {
+   "a": "CAN-FRM#0",
+   "b": "CAN-LATCH#0",
+   "volume_cm3": 9.4,
+   "expected_contact": true
+  },
+  {
+   "a": "SH-TAIL#0",
+   "b": "BH-7#0",
+   "volume_cm3": 7.9,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-DCL#0",
+   "b": "LG-FAIR#0",
+   "volume_cm3": 7.9,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-DCL#1",
+   "b": "LG-FAIR#1",
+   "volume_cm3": 7.9,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-DCL#2",
+   "b": "LG-FAIR#2",
+   "volume_cm3": 7.9,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-DCL#3",
+   "b": "LG-FAIR#3",
+   "volume_cm3": 7.9,
+   "expected_contact": true
+  },
+  {
+   "a": "CAN-R#0",
+   "b": "CAN-LATCH#1",
+   "volume_cm3": 7.2,
+   "expected_contact": true
+  },
+  {
+   "a": "SH-AFT#0",
+   "b": "BH-6#0",
+   "volume_cm3": 7.0,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-LEG#0",
+   "b": "LG-DAMP#0",
+   "volume_cm3": 7.0,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-LEG#1",
+   "b": "LG-DAMP#1",
+   "volume_cm3": 7.0,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-LEG#2",
+   "b": "LG-DAMP#2",
+   "volume_cm3": 7.0,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-LEG#3",
+   "b": "LG-DAMP#3",
+   "volume_cm3": 7.0,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-LEGEND#0",
+   "b": "LG-SADDLE#0",
+   "volume_cm3": 7.0,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-LEGEND#1",
+   "b": "LG-SADDLE#1",
+   "volume_cm3": 7.0,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-LEGEND#2",
+   "b": "LG-SADDLE#2",
+   "volume_cm3": 7.0,
+   "expected_contact": true
+  },
+  {
+   "a": "LG-LEGEND#3",
+   "b": "LG-SADDLE#3",
+   "volume_cm3": 7.0,
+   "expected_contact": true
+  },
+  {
+   "a": "W-RIB-R#0",
+   "b": "HV-WING#0",
+   "volume_cm3": 6.7,
+   "expected_contact": true
+  },
+  {
+   "a": "W-RIB-R#1",
+   "b": "HV-WING#0",
+   "volume_cm3": 6.7,
+   "expected_contact": true
+  },
+  {
+   "a": "F-CLV-MS#0",
+   "b": "CAN-F#0",
+   "volume_cm3": 5.9,
+   "expected_contact": true
+  },
+  {
+   "a": "F-CLV-MS#1",
+   "b": "CAN-F#0",
+   "volume_cm3": 5.9,
+   "expected_contact": true
+  },
+  {
+   "a": "CAN-F#0",
+   "b": "CAN-HINGE#0",
+   "volume_cm3": 5.9,
+   "expected_contact": true
+  },
+  {
+   "a": "CAN-F#0",
+   "b": "CAN-HINGE#1",
+   "volume_cm3": 5.4,
+   "expected_contact": true
+  },
+  {
+   "a": "FLOOR-A#0",
+   "b": "HV-RISER#0",
+   "volume_cm3": 5.4,
+   "expected_contact": true
+  },
+  {
+   "a": "FLOOR-A#0",
+   "b": "HV-RISER#1",
+   "volume_cm3": 5.4,
+   "expected_contact": true
+  },
+  {
+   "a": "CAN-R#0",
+   "b": "CAN-HINGE#2",
+   "volume_cm3": 5.3,
+   "expected_contact": true
+  },
+  {
+   "a": "CAN-R#0",
+   "b": "CAN-HINGE#3",
+   "volume_cm3": 4.8,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CORE-4#0",
+   "b": "W-HINGE#2",
+   "volume_cm3": 4.7,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CORE-4#1",
+   "b": "W-HINGE#3",
+   "volume_cm3": 4.7,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CORE-5#0",
+   "b": "W-HINGE#2",
+   "volume_cm3": 4.7,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CORE-5#1",
+   "b": "W-HINGE#3",
+   "volume_cm3": 4.7,
+   "expected_contact": true
+  },
+  {
+   "a": "CAN-F#0",
+   "b": "CAN-LATCH#0",
+   "volume_cm3": 3.8,
+   "expected_contact": true
+  },
+  {
+   "a": "BAT-TIER1#0",
+   "b": "BAT-VENT#0",
+   "volume_cm3": 3.6,
+   "expected_contact": true
+  },
+  {
+   "a": "BAT-TIER1#1",
+   "b": "BAT-VENT#1",
+   "volume_cm3": 3.6,
+   "expected_contact": true
+  },
+  {
+   "a": "BAT-TIER1#2",
+   "b": "BAT-VENT#2",
+   "volume_cm3": 3.6,
+   "expected_contact": true
+  },
+  {
+   "a": "BAT-TIER1#3",
+   "b": "BAT-VENT#3",
+   "volume_cm3": 3.6,
+   "expected_contact": true
+  },
+  {
+   "a": "W-RIB-B#0",
+   "b": "HV-WING#0",
+   "volume_cm3": 3.4,
+   "expected_contact": true
+  },
+  {
+   "a": "W-RIB-B#1",
+   "b": "HV-WING#0",
+   "volume_cm3": 3.4,
+   "expected_contact": true
+  },
+  {
+   "a": "F-CLV-MS#0",
+   "b": "SH-MID#0",
+   "volume_cm3": 3.4,
+   "expected_contact": true
+  },
+  {
+   "a": "F-CLV-MS#1",
+   "b": "SH-MID#0",
+   "volume_cm3": 3.4,
+   "expected_contact": true
+  },
+  {
+   "a": "HATCH-AV#0",
+   "b": "BH-0#0",
+   "volume_cm3": 3.1,
+   "expected_contact": true
+  },
+  {
+   "a": "SH-AFT#0",
+   "b": "BH-7#0",
+   "volume_cm3": 2.8,
+   "expected_contact": true
+  },
+  {
+   "a": "CH-ATT-R#0",
+   "b": "CH-RISER#0",
+   "volume_cm3": 2.8,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CHUTE-FIT#0",
+   "b": "CH-RISER#0",
+   "volume_cm3": 2.2,
+   "expected_contact": true
+  },
+  {
+   "a": "W-CHUTE-FIT#1",
+   "b": "CH-RISER#0",
+   "volume_cm3": 2.2,
+   "expected_contact": true
+  },
+  {
+   "a": "SH-AFT#0",
+   "b": "CH-ATT-R#0",
+   "volume_cm3": 2.1,
+   "expected_contact": false
+  },
+  {
+   "a": "CAN-FRM#0",
+   "b": "SIDE-F#0",
+   "volume_cm3": 2.1,
+   "expected_contact": true
+  },
+  {
+   "a": "CAN-FRM#0",
+   "b": "SIDE-F#1",
+   "volume_cm3": 2.1,
+   "expected_contact": true
+  }
+ ]
+}

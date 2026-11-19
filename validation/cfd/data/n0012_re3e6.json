@@ -1,0 +1,180 @@
+{
+ "openfoam": [
+  {
+   "alpha": 0,
+   "Cd": 0.008230265508554201,
+   "Cl": 8.3462012876398e-07,
+   "CmPitch": -1.330812967127e-07,
+   "Cl_std": 1.0066942822710231e-07,
+   "Cd_std": 3.359839441157496e-08,
+   "iterations": 1485,
+   "yplus_max": 108.2999317,
+   "yplus_mean": 71.10255771390625,
+   "mesh": {
+    "mesh_ok": true,
+    "failed_checks": 0,
+    "cells": 81920,
+    "max_skewness": 2.318719123,
+    "max_non_orth": 33.03790403,
+    "max_aspect_ratio": 23.34079921,
+    "n_skew_faces": 0
+   },
+   "wall": "wallfn",
+   "Re": 3000000.0
+  },
+  {
+   "alpha": 2,
+   "Cd": 0.0084036637025452,
+   "Cl": 0.22592786740003998,
+   "CmPitch": -4.9223933095764e-05,
+   "Cl_std": 1.99168574600938e-05,
+   "Cd_std": 4.5961067364721326e-06,
+   "iterations": 2575,
+   "yplus_max": 123.8663573,
+   "yplus_mean": 70.69610427576171,
+   "mesh": {
+    "mesh_ok": true,
+    "failed_checks": 0,
+    "cells": 81920,
+    "max_skewness": 2.318719123,
+    "max_non_orth": 33.03790403,
+    "max_aspect_ratio": 23.34079921,
+    "n_skew_faces": 0
+   },
+   "wall": "wallfn",
+   "Re": 3000000.0
+  },
+  {
+   "alpha": 4,
+   "Cd": 0.0092325680333526,
+   "Cl": 0.44732229189629996,
+   "CmPitch": 0.00045369807467144,
+   "Cl_std": 4.097771150671359e-07,
+   "Cd_std": 1.4938819623380493e-08,
+   "iterations": 1431,
+   "yplus_max": 144.3158472,
+   "yplus_mean": 70.1824191615039,
+   "mesh": {
+    "mesh_ok": true,
+    "failed_checks": 0,
+    "cells": 81920,
+    "max_skewness": 2.318719123,
+    "max_non_orth": 33.03790403,
+    "max_aspect_ratio": 23.34079921,
+    "n_skew_faces": 0
+   },
+   "wall": "wallfn",
+   "Re": 3000000.0
+  },
+  {
+   "alpha": 6,
+   "Cd": 0.011405109486583999,
+   "Cl": 0.65635729359756,
+   "CmPitch": 0.00267913080728,
+   "Cl_std": 1.88206340923901e-05,
+   "Cd_std": 9.78353828751779e-07,
+   "iterations": 1253,
+   "yplus_max": 166.4458421,
+   "yplus_mean": 67.21328460260742,
+   "mesh": {
+    "mesh_ok": true,
+    "failed_checks": 0,
+    "cells": 81920,
+    "max_skewness": 2.318719123,
+    "max_non_orth": 33.03790403,
+    "max_aspect_ratio": 23.34079921,
+    "n_skew_faces": 0
+   },
+   "wall": "wallfn",
+   "Re": 3000000.0
+  },
+  {
+   "alpha": 8,
+   "Cd": 0.018166908816182003,
+   "Cl": 0.82864881790936,
+   "CmPitch": 0.008523674194912999,
+   "Cl_std": 0.0015534931404738972,
+   "Cd_std": 0.0002321086115785696,
+   "iterations": 1756,
+   "yplus_max": 185.4669719,
+   "yplus_mean": 61.97794724069922,
+   "mesh": {
+    "mesh_ok": true,
+    "failed_checks": 0,
+    "cells": 81920,
+    "max_skewness": 2.318719123,
+    "max_non_orth": 33.03790403,
+    "max_aspect_ratio": 23.34079921,
+    "n_skew_faces": 0
+   },
+   "wall": "wallfn",
+   "Re": 3000000.0
+  },
+  {
+   "alpha": 0,
+   "Cd": 0.0091168917906618,
+   "Cl": -1.829871758143e-06,
+   "CmPitch": 2.8548542989992003e-07,
+   "Cl_std": 2.2019375995740297e-07,
+   "Cd_std": 3.356301728420192e-06,
+   "iterations": 1846,
+   "yplus_max": 0.1788814982,
+   "yplus_mean": 0.12886629547101563,
+   "mesh": {
+    "mesh_ok": false,
+    "failed_checks": 1,
+    "cells": 131072,
+    "max_skewness": 17.54412399,
+    "max_non_orth": 39.14164367,
+    "max_aspect_ratio": 739.0787658,
+    "n_skew_faces": 55
+   },
+   "wall": "resolved",
+   "Re": 3000000.0
+  },
+  {
+   "alpha": 4,
+   "Cd": 0.0097532316464372,
+   "Cl": 0.4417586814911,
+   "CmPitch": 0.0010924440214222,
+   "Cl_std": 6.42941542998837e-05,
+   "Cd_std": 1.5569135809087575e-06,
+   "iterations": 2416,
+   "yplus_max": 0.2539551677,
+   "yplus_mean": 0.12924569818652343,
+   "mesh": {
+    "mesh_ok": false,
+    "failed_checks": 1,
+    "cells": 131072,
+    "max_skewness": 17.54412399,
+    "max_non_orth": 39.14164367,
+    "max_aspect_ratio": 739.0787658,
+    "n_skew_faces": 55
+   },
+   "wall": "resolved",
+   "Re": 3000000.0
+  },
+  {
+   "alpha": 8,
+   "Cd": 0.011963061267452,
+   "Cl": 0.8728407625853599,
+   "CmPitch": 0.0027070816280246,
+   "Cl_std": 0.0001003817076136233,
+   "Cd_std": 4.5621440355968885e-06,
+   "iterations": 2791,
+   "yplus_max": 0.3302294984,
+   "yplus_mean": 0.12887537292279103,
+   "mesh": {
+    "mesh_ok": false,
+    "failed_checks": 1,
+    "cells": 131072,
+    "max_skewness": 17.54412399,
+    "max_non_orth": 39.14164367,
+    "max_aspect_ratio": 739.0787658,
+    "n_skew_faces": 55
+   },
+   "wall": "resolved",
+   "Re": 3000000.0
+  }
+ ]
+}

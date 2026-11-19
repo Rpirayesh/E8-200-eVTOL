@@ -1,0 +1,509 @@
+{
+ "B1a tip load EB": {
+  "case": "CF tube 80x3 mm, L=2 m, 1 kN tip",
+  "reference": {
+   "tip_m": 0.07072266757789882,
+   "root_moment_Nm": 2000.0,
+   "sigma_root_Pa": 148517601.9135875
+  },
+  "mesh": [
+   {
+    "n": 1,
+    "tip_m": 0.07072266757789877,
+    "root_moment_Nm": 1999.999999999999,
+    "sigma_root_Pa": 148517601.91358745,
+    "err_tip_pct": -5.88684856627976e-14,
+    "err_sigma_pct": -4.013305090266041e-14
+   },
+   {
+    "n": 2,
+    "tip_m": 0.07072266757789843,
+    "root_moment_Nm": 1999.99999999999,
+    "sigma_root_Pa": 148517601.91358677,
+    "err_tip_pct": -5.494391995194443e-13,
+    "err_sigma_pct": -5.016631362832551e-13
+   },
+   {
+    "n": 4,
+    "tip_m": 0.07072266757789565,
+    "root_moment_Nm": 1999.9999999999059,
+    "sigma_root_Pa": 148517601.91358054,
+    "err_tip_pct": -4.474004910372617e-12,
+    "err_sigma_pct": -4.6955669556112675e-12
+   },
+   {
+    "n": 8,
+    "tip_m": 0.07072266757786318,
+    "root_moment_Nm": 1999.999999998935,
+    "sigma_root_Pa": 148517601.91350842,
+    "err_tip_pct": -5.0391423727354744e-11,
+    "err_sigma_pct": -5.325655854783036e-11
+   },
+   {
+    "n": 16,
+    "tip_m": 0.07072266757775875,
+    "root_moment_Nm": 1999.999999995976,
+    "sigma_root_Pa": 148517601.91328868,
+    "err_tip_pct": -1.9805320859820538e-10,
+    "err_sigma_pct": -2.0120705070048796e-10
+   }
+  ]
+ },
+ "B1b uniform load EB": {
+  "case": "same tube, 2 kN/m",
+  "reference": {
+   "tip_m": 0.10608400136684822,
+   "root_moment_Nm": 4000.0
+  },
+  "mesh": [
+   {
+    "n": 1,
+    "tip_m": 0.10608400136684815,
+    "root_moment_Nm": 3333.3333333333308,
+    "err_tip_pct": -6.540942851421956e-14,
+    "err_moment_pct": -16.66666666666673
+   },
+   {
+    "n": 2,
+    "tip_m": 0.10608400136684763,
+    "root_moment_Nm": 3833.3333333333185,
+    "err_tip_pct": -5.494391995194443e-13,
+    "err_moment_pct": -4.166666666667038
+   },
+   {
+    "n": 4,
+    "tip_m": 0.1060840013668433,
+    "root_moment_Nm": 3958.3333333331857,
+    "err_tip_pct": -4.630987538806745e-12,
+    "err_moment_pct": -1.0416666666703578
+   },
+   {
+    "n": 8,
+    "tip_m": 0.10608400136679291,
+    "root_moment_Nm": 3989.583333331687,
+    "err_tip_pct": -5.213131452583299e-11,
+    "err_moment_pct": -0.26041666670782887
+   },
+   {
+    "n": 16,
+    "tip_m": 0.10608400136664015,
+    "root_moment_Nm": 3997.395833327335,
+    "err_tip_pct": -1.9613671234273877e-10,
+    "err_moment_pct": -0.06510416681662719
+   }
+  ],
+  "note": "element-end moments of consistent loads are exact at nodes"
+ },
+ "B1c tip load Timoshenko": {
+  "case": "CF tube 80x6, L=0.4 m, G=5 GPa, k=0.5",
+  "reference": {
+   "tip_bending_m": 0.0003171090339109991,
+   "tip_shear_m": 0.00011470626529145612,
+   "tip_m": 0.00043181529920245524,
+   "shear_share_pct": 26.563733499788864
+  },
+  "mesh": [
+   {
+    "n": 1,
+    "tip_m": 0.00043181529920245524,
+    "err_tip_pct": 0.0
+   },
+   {
+    "n": 4,
+    "tip_m": 0.0004318152992024548,
+    "err_tip_pct": -1.0043202957264186e-13
+   },
+   {
+    "n": 16,
+    "tip_m": 0.00043181529920244916,
+    "err_tip_pct": -1.406048414016986e-12
+   }
+  ]
+ },
+ "B2 tapered cantilever": {
+  "case": "CF tube OD 100->40 mm, t 2.5 mm, L 3 m, 500 N tip; piecewise-constant elements",
+  "reference": {
+   "tip_m": 0.13695700186613943,
+   "slope": 0.0916923346291692,
+   "sigma_max_Pa": 87634438.43814935,
+   "x_sigma_max_m": 1.18
+  },
+  "mesh": [
+   {
+    "n": 2,
+    "tip_m": 0.15838099774406017,
+    "slope": 0.10012721659568623,
+    "sigma_max_Pa": 144854660.55164135,
+    "err_tip_pct": 15.642862786132222,
+    "err_slope_pct": 9.199113536186172,
+    "err_sigma_pct": 65.29421895466004
+   },
+   {
+    "n": 4,
+    "tip_m": 0.14220995656612687,
+    "slope": 0.09461677309351436,
+    "sigma_max_Pa": 110332716.18155754,
+    "err_tip_pct": 3.835477287332578,
+    "err_slope_pct": 3.1894034285117194,
+    "err_sigma_pct": 25.90109339198674
+   },
+   {
+    "n": 8,
+    "tip_m": 0.13823925338853166,
+    "slope": 0.09250406166223843,
+    "sigma_max_Pa": 97523507.63783175,
+    "err_tip_pct": 0.9362438611539454,
+    "err_slope_pct": 0.8852725108942741,
+    "err_sigma_pct": 11.284455490248744
+   },
+   {
+    "n": 16,
+    "tip_m": 0.13727476874265354,
+    "slope": 0.09190118362872336,
+    "sigma_max_Pa": 92382382.42164448,
+    "err_tip_pct": 0.23201944565396587,
+    "err_slope_pct": 0.2277714930029932,
+    "err_sigma_pct": 5.417897424933162
+   },
+   {
+    "n": 32,
+    "tip_m": 0.13703625075256168,
+    "slope": 0.09174493417488708,
+    "sigma_max_Pa": 89951070.97512071,
+    "err_tip_pct": 0.05786406342313357,
+    "err_slope_pct": 0.05736525951771444,
+    "err_sigma_pct": 2.6435184366547793
+   },
+   {
+    "n": 64,
+    "tip_m": 0.13697680173454527,
+    "slope": 0.09170550901899521,
+    "sigma_max_Pa": 88776348.46161029,
+    "err_tip_pct": 0.014456996090777798,
+    "err_slope_pct": 0.014368038374516914,
+    "err_sigma_pct": 1.3030379880472185
+   }
+  ],
+  "note": "stress compared at element ends with section of the element mid-point: O(h) in stress, O(h^2) in deflection"
+ },
+ "B3a round tube torsion": {
+  "case": "CF tube 60x1.5, L 1.5 m, 400 N m",
+  "twist_rad": 0.5084486153886745,
+  "twist_ref": 0.5084486153886745,
+  "tau_Pa": 50844861.53886746,
+  "tau_ref": 50844861.538867444,
+  "err_twist_pct": 0.0,
+  "err_tau_pct": 2.930711333033473e-14,
+  "J_thin_wall_vs_exact_pct": -0.06570302233905234
+ },
+ "B3b box torsion (Bredt)": {
+  "case": "box 200x120, webs 2 mm, flanges 3 mm, G 4 GPa, 2 kN m",
+  "J_m4": 8.621101301204818e-06,
+  "J_bredt": 8.621101301204818e-06,
+  "twist_rad": 0.08699584586660476,
+  "twist_ref": 0.08699584586660475,
+  "err_twist_pct": 1.5952241937039144e-14,
+  "tau_web_Pa": 21583354.91668826,
+  "tau_ref": 21583354.916688252,
+  "note": "CalculiX S8R shell model of the same box: case C7 in verify_ccx.py"
+ },
+ "B4a free-free central load (consistent mass)": {
+  "case": "uniform free-free beam 2 m, 10 kg, 100 N at mid-span",
+  "M_center_Nm": 24.98958333334228,
+  "M_ref": 25.0,
+  "err_pct": -0.04166666663087426,
+  "accel": [
+   0.0,
+   0.0,
+   10.0
+  ],
+  "accel_ref": [
+   0,
+   0,
+   10.0
+  ],
+  "support_reaction_N": 1.1242118347354335e-11
+ },
+ "B4b free-free end load (consistent mass)": {
+  "case": "same beam, 100 N at one end: a = P/m, alpha = 6P/(mL)",
+  "M_max_Nm": 29.6376041666755,
+  "M_max_ref": 29.629629629629626,
+  "err_pct": 0.02691406252982898,
+  "max_abs_err_over_span_pct_of_max": 0.13752593999612336,
+  "alpha": -29.99999999999999,
+  "alpha_ref": -30.0,
+  "accel_z": 9.999999999999996,
+  "accel_ref": 10.0,
+  "support_reaction_N": 1.673061689189126e-11
+ },
+ "B4a free-free central load (lumped mass)": {
+  "case": "uniform free-free beam 2 m, 10 kg, 100 N at mid-span",
+  "M_center_Nm": 25.000000000008924,
+  "M_ref": 25.0,
+  "err_pct": 3.5697667044587433e-11,
+  "accel": [
+   0.0,
+   0.0,
+   10.0
+  ],
+  "accel_ref": [
+   0,
+   0,
+   10.0
+  ],
+  "support_reaction_N": 1.09969811035171e-11
+ },
+ "B4b free-free end load (lumped mass)": {
+  "case": "same beam, 100 N at one end: a = P/m, alpha = 6P/(mL)",
+  "M_max_Nm": 29.60603531912134,
+  "M_max_ref": 29.629629629629626,
+  "err_pct": -0.0796307979654678,
+  "max_abs_err_over_span_pct_of_max": 0.04049141056028451,
+  "alpha": -29.962528112560104,
+  "alpha_ref": -30.0,
+  "accel_z": 10.000000000000002,
+  "accel_ref": 10.0,
+  "support_reaction_N": 1.7140955321792717e-11
+ },
+ "B4c 3-D frame random loads": {
+  "case": "5-node space frame, 10 tubes, random nodal forces/moments and lumped masses",
+  "resultant_force_of_balanced_loads_N": 3.044907763200854e-12,
+  "resultant_moment_Nm": 6.9358871308834e-12,
+  "applied_force_norm_N": 5550.138000104651,
+  "support_reaction_N": 5.893514081477537e-09,
+  "gravity_only_max_disp_m": 3.185013948542568e-17,
+  "gravity_only_accel": [
+   9.405198325674595e-19,
+   -2.276565269257949e-19,
+   -9.806650000000003
+  ]
+ },
+ "B5a free-free beam modes (consistent mass)": {
+  "case": "CF tube 100x3, L 3 m, free-free",
+  "f_ref_hz": [
+   91.22732764812488,
+   251.47163850729197,
+   492.9849257762257
+  ],
+  "mesh": [
+   {
+    "n": 4,
+    "f_hz": [
+     91.326507,
+     253.037457,
+     496.886915
+    ],
+    "err_pct": [
+     0.10871671288856485,
+     0.6226620632062307,
+     0.7915027457747233
+    ],
+    "n_rigid": 6
+   },
+   {
+    "n": 8,
+    "f_hz": [
+     91.234675,
+     251.618365,
+     494.025521
+    ],
+    "err_pct": [
+     0.008053893569535581,
+     0.05834713352924929,
+     0.21108053600947027
+    ],
+    "n_rigid": 6
+   },
+   {
+    "n": 16,
+    "f_hz": [
+     91.227796,
+     251.481508,
+     493.058441
+    ],
+    "err_pct": [
+     0.000513389887863555,
+     0.0039246941589932425,
+     0.014912266061398035
+    ],
+    "n_rigid": 6
+   },
+   {
+    "n": 32,
+    "f_hz": [
+     91.227348,
+     251.472244,
+     492.989639
+    ],
+    "err_pct": [
+     2.230896776956971e-05,
+     0.00024077972037431802,
+     0.0009560583960878892
+    ],
+    "n_rigid": 6
+   },
+   {
+    "n": 64,
+    "f_hz": [
+     91.22732,
+     251.471654,
+     492.985209
+    ],
+    "err_pct": [
+     -8.383589737277956e-06,
+     6.160817228620449e-06,
+     5.7450798089176425e-05
+    ],
+    "n_rigid": 6
+   }
+  ]
+ },
+ "B5a free-free beam modes (lumped mass)": {
+  "case": "CF tube 100x3, L 3 m, free-free",
+  "f_ref_hz": [
+   91.22732764812488,
+   251.47163850729197,
+   492.9849257762257
+  ],
+  "mesh": [
+   {
+    "n": 4,
+    "f_hz": [
+     77.090496,
+     195.690291,
+     354.062744
+    ],
+    "err_pct": [
+     -15.496268511396492,
+     -22.181963675269273,
+     -28.17980317704173
+    ],
+    "n_rigid": 6
+   },
+   {
+    "n": 8,
+    "f_hz": [
+     87.058697,
+     232.829964,
+     444.163966
+    ],
+    "err_pct": [
+     -4.569497710383247,
+     -7.413032586078858,
+     -9.903134400987007
+    ],
+    "n_rigid": 6
+   },
+   {
+    "n": 16,
+    "f_hz": [
+     90.138627,
+     246.443096,
+     479.309748
+    ],
+    "err_pct": [
+     -1.1933931160673017,
+     -1.9996459788232381,
+     -2.7739545493593987
+    ],
+    "n_rigid": 6
+   },
+   {
+    "n": 32,
+    "f_hz": [
+     90.952132,
+     250.191417,
+     489.479542
+    ],
+    "err_pct": [
+     -0.30165922341421864,
+     -0.5090918064920655,
+     -0.7110529334555866
+    ],
+    "n_rigid": 6
+   },
+   {
+    "n": 64,
+    "f_hz": [
+     91.158332,
+     251.150133,
+     492.103421
+    ],
+    "err_pct": [
+     -0.07563046063456727,
+     -0.12784960928412487,
+     -0.17880968162214847
+    ],
+    "n_rigid": 6
+   }
+  ]
+ },
+ "B5b cantilever with tip mass": {
+  "case": "CF tube 30x27, 1 m, 0.3 kg tip mass, 20 elements",
+  "f1_hz": 14.430896823839294,
+  "f1_ref_hz": 14.43089680811779,
+  "err_pct": 1.0894336164694194e-07
+ },
+ "B6 Euler buckling pinned-pinned": {
+  "case": "CF tube 50x2, L 2 m, pinned-pinned",
+  "Pcr_ref_N": 15028.122181407729,
+  "mesh": [
+   {
+    "n": 2,
+    "Pcr_N": 15141.168636323815,
+    "err_pct": 0.7522327377398037
+   },
+   {
+    "n": 4,
+    "Pcr_N": 15035.818692053876,
+    "err_pct": 0.051214054246035416
+   },
+   {
+    "n": 8,
+    "Pcr_N": 15028.614594145803,
+    "err_pct": 0.0032766085618052736
+   },
+   {
+    "n": 16,
+    "Pcr_N": 15028.15314250569,
+    "err_pct": 0.000206021068943317
+   }
+  ]
+ },
+ "B6 Euler buckling cantilever": {
+  "case": "CF tube 50x2, L 2 m, cantilever",
+  "Pcr_ref_N": 3757.0305453519322,
+  "mesh": [
+   {
+    "n": 2,
+    "Pcr_N": 3758.954673013462,
+    "err_pct": 0.05121405424585385
+   },
+   {
+    "n": 4,
+    "Pcr_N": 3757.153648536153,
+    "err_pct": 0.003276608553877217
+   },
+   {
+    "n": 8,
+    "Pcr_N": 3757.0382856274537,
+    "err_pct": 0.0002060210963949701
+   },
+   {
+    "n": 16,
+    "Pcr_N": 3757.0310298605036,
+    "err_pct": 1.2896050898202414e-05
+   }
+  ]
+ },
+ "B7 3-D L-frame": {
+  "case": "L-shaped CF tube cantilever 1.2 m + 0.8 m, 300 N tip load normal to the plane",
+  "tip_m": 0.21366003270376016,
+  "tip_ref_m": 0.21366003270373699,
+  "err_pct": 1.084709449201764e-11,
+  "root_torque_Nm": 240.00000000001396,
+  "root_torque_ref": 240.0,
+  "root_moment_Nm": 360.0000000001121,
+  "root_moment_ref": 360.0
+ }
+}

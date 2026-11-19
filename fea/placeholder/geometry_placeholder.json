@@ -1,0 +1,71 @@
+{
+ "_about": "PLACEHOLDER design used only to exercise and test the FEA tool chain before design/geometry.json is frozen. Not a design. Same schema as design/geometry.json (see fea/README.md).",
+ "units": "m, kg, N, rpm",
+ "frame": "x aft from the nose, y right, z up",
+ "mtow_kg": 725.0,
+ "limits": {"n_pos": 3.8, "n_neg": -1.5, "n_land": 3.0},
+ "aero": {"CLalpha_per_rad": 5.0, "CLmax": 1.5, "CLmin": -0.8, "Cm0": -0.06, "VC_ms": 45.0, "VD_ms": null,
+          "cruise_thrust_N": 700.0, "gust_altitude_m": 500.0},
+ "wing": {
+  "span": 8.6, "root_chord": 1.15, "tip_chord": 0.75, "x_le_root": 1.85, "z_root": 1.65,
+  "sweep_le_deg": 0.0, "dihedral_deg": 2.0, "incidence_deg": 2.0, "airfoil": "NACA 4415", "t_c": 0.15,
+  "mass_kg": 60.0,
+  "spars": [
+   {"name": "front", "x_c": 0.25,
+    "section_root": {"type": "cap_web", "h": 0.150, "b_cap": 0.060, "t_cap": 0.0090, "n_web": 2, "t_web": 0.0015,
+                     "cap_material": "cf_ud_wet", "web_material": "cf_fabric_wet", "web_layup": "+-45"},
+    "section_tip":  {"type": "cap_web", "h": 0.100, "b_cap": 0.040, "t_cap": 0.0015, "n_web": 2, "t_web": 0.0010,
+                     "cap_material": "cf_ud_wet", "web_material": "cf_fabric_wet", "web_layup": "+-45"}},
+   {"name": "rear", "x_c": 0.65,
+    "section_root": {"type": "cap_web", "h": 0.110, "b_cap": 0.040, "t_cap": 0.0030, "n_web": 1, "t_web": 0.0015,
+                     "cap_material": "cf_ud_wet", "web_material": "cf_fabric_wet", "web_layup": "+-45"},
+    "section_tip":  {"type": "cap_web", "h": 0.075, "b_cap": 0.030, "t_cap": 0.0010, "n_web": 1, "t_web": 0.0010,
+                     "cap_material": "cf_ud_wet", "web_material": "cf_fabric_wet", "web_layup": "+-45"}}
+  ],
+  "torsion_box": {"skin_t": 0.0008, "skin_material": "cf_fabric_wet", "skin_layup": "+-45", "depth_factor": 0.85},
+  "root_fittings_y": 0.55
+ },
+ "fuselage": {"x_nose": 0.0, "x_tail": 4.9, "z_axis": 0.85, "mass_kg": 60.0,
+              "section": {"type": "rect_tube", "b": 1.10, "h": 1.20, "t_web": 0.0015, "t_flange": 0.0015, "material": "cf_fabric_wet_qi"}},
+ "booms": [
+  {"name": "boom_L", "y": -1.70, "z": 1.50, "x_front": 0.0, "x_aft": 5.6, "mass_kg": 15.0,
+   "section": {"type": "tube", "od": 0.120, "t": 0.0030, "material": "cf_tube_rollwrapped_ud"}},
+  {"name": "boom_R", "y": 1.70, "z": 1.50, "x_front": 0.0, "x_aft": 5.6, "mass_kg": 15.0,
+   "section": {"type": "tube", "od": 0.120, "t": 0.0030, "material": "cf_tube_rollwrapped_ud"}}
+ ],
+ "rotors": [
+  {"name": "FL_up", "boom": "boom_L", "x": 0.80, "y": -1.70, "z": 1.80, "diameter": 1.9, "blades": 2, "spin": 1,  "max_thrust_N": 1300.0, "max_torque_Nm": 180.0, "rpm_max": 1700, "rotor_inertia_kgm2": 0.6, "mass_kg": 11.0},
+  {"name": "FL_lo", "boom": "boom_L", "x": 0.80, "y": -1.70, "z": 1.40, "diameter": 1.9, "blades": 2, "spin": -1, "max_thrust_N": 1300.0, "max_torque_Nm": 180.0, "rpm_max": 1700, "rotor_inertia_kgm2": 0.6, "mass_kg": 11.0},
+  {"name": "FR_up", "boom": "boom_R", "x": 0.80, "y": 1.70,  "z": 1.80, "diameter": 1.9, "blades": 2, "spin": -1, "max_thrust_N": 1300.0, "max_torque_Nm": 180.0, "rpm_max": 1700, "rotor_inertia_kgm2": 0.6, "mass_kg": 11.0},
+  {"name": "FR_lo", "boom": "boom_R", "x": 0.80, "y": 1.70,  "z": 1.40, "diameter": 1.9, "blades": 2, "spin": 1,  "max_thrust_N": 1300.0, "max_torque_Nm": 180.0, "rpm_max": 1700, "rotor_inertia_kgm2": 0.6, "mass_kg": 11.0},
+  {"name": "RL_up", "boom": "boom_L", "x": 3.90, "y": -1.70, "z": 1.80, "diameter": 1.9, "blades": 2, "spin": -1, "max_thrust_N": 1300.0, "max_torque_Nm": 180.0, "rpm_max": 1700, "rotor_inertia_kgm2": 0.6, "mass_kg": 11.0},
+  {"name": "RL_lo", "boom": "boom_L", "x": 3.90, "y": -1.70, "z": 1.40, "diameter": 1.9, "blades": 2, "spin": 1,  "max_thrust_N": 1300.0, "max_torque_Nm": 180.0, "rpm_max": 1700, "rotor_inertia_kgm2": 0.6, "mass_kg": 11.0},
+  {"name": "RR_up", "boom": "boom_R", "x": 3.90, "y": 1.70,  "z": 1.80, "diameter": 1.9, "blades": 2, "spin": 1,  "max_thrust_N": 1300.0, "max_torque_Nm": 180.0, "rpm_max": 1700, "rotor_inertia_kgm2": 0.6, "mass_kg": 11.0},
+  {"name": "RR_lo", "boom": "boom_R", "x": 3.90, "y": 1.70,  "z": 1.40, "diameter": 1.9, "blades": 2, "spin": -1, "max_thrust_N": 1300.0, "max_torque_Nm": 180.0, "rpm_max": 1700, "rotor_inertia_kgm2": 0.6, "mass_kg": 11.0}
+ ],
+ "pusher": {"name": "pusher", "x": 5.0, "y": 0.0, "z": 0.95, "diameter": 1.6, "axis": [-1.0, 0.0, 0.0], "spin": 1,
+            "max_thrust_N": 1500.0, "max_torque_Nm": 120.0, "rpm_max": 2400, "rotor_inertia_kgm2": 0.3, "mass_kg": 20.0, "attach": "fuselage"},
+ "tail": {"type": "H", "x_ac": 5.40, "x_spar": 5.40, "z": 1.60, "span": 3.40, "mass_kg": 12.0,
+          "spar_section": {"type": "tube", "od": 0.050, "t": 0.0020, "material": "cf_tube_rollwrapped_twill"},
+          "fins": [{"boom": "boom_L"}, {"boom": "boom_R"}]},
+ "landing_gear": [
+  {"name": "skid_FL", "x": 1.20, "y": -0.65, "z": 0.0, "attach": "fuselage", "mass_kg": 3.75},
+  {"name": "skid_FR", "x": 1.20, "y": 0.65,  "z": 0.0, "attach": "fuselage", "mass_kg": 3.75},
+  {"name": "skid_RL", "x": 3.30, "y": -0.65, "z": 0.0, "attach": "fuselage", "mass_kg": 3.75},
+  {"name": "skid_RR", "x": 3.30, "y": 0.65,  "z": 0.0, "attach": "fuselage", "mass_kg": 3.75}
+ ],
+ "gear_strut_section": {"type": "tube", "od": 0.050, "t": 0.0035, "material": "al6061_t6_extr"},
+ "masses": [
+  {"name": "battery_A", "kg": 90.0, "x": 2.30, "y": -0.30, "z": 0.45, "attach": "fuselage"},
+  {"name": "battery_B", "kg": 90.0, "x": 2.30, "y": 0.30,  "z": 0.45, "attach": "fuselage"},
+  {"name": "avionics", "kg": 8.0, "x": 0.70, "y": 0.0, "z": 0.90, "attach": "fuselage"},
+  {"name": "parachute", "kg": 15.0, "x": 2.90, "y": 0.0, "z": 1.75, "attach": "fuselage"},
+  {"name": "harness_misc", "kg": 20.0, "x": 2.40, "y": 0.0, "z": 0.80, "attach": "fuselage"}
+ ],
+ "seats": [
+  {"name": "seat_L", "x": 1.55, "y": -0.30, "z": 0.55, "occupant_kg": 100.0, "seat_kg": 8.0, "attach": "fuselage"},
+  {"name": "seat_R", "x": 1.55, "y": 0.30,  "z": 0.55, "occupant_kg": 100.0, "seat_kg": 8.0, "attach": "fuselage"}
+ ],
+ "parachute": {"n_open_limit": 6.0, "attach": [
+  {"name": "chute_front", "x": 2.05, "y": 0.0, "z": 1.70}, {"name": "chute_rear", "x": 3.10, "y": 0.0, "z": 1.70}]}
+}

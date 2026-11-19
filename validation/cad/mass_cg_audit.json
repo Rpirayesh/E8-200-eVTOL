@@ -1,0 +1,766 @@
+{
+ "reductions": [
+  {
+   "part": "CH-CRADLE",
+   "target_fraction": 0.4,
+   "target_kg_iteration1": 1.71,
+   "built_fraction": 0.26,
+   "removed_kg_as_built": 1.85,
+   "cad_kg_as_built": 5.26
+  },
+  {
+   "part": "LG-SADDLE",
+   "target_fraction": 0.2,
+   "target_kg_iteration1": 3.3,
+   "built_fraction": null,
+   "removed_kg_as_built": null,
+   "cad_kg_as_built": null
+  },
+  {
+   "part": "LG-SKCL",
+   "target_fraction": 0.3,
+   "target_kg_iteration1": 2.2,
+   "built_fraction": 0.317,
+   "removed_kg_as_built": 2.28,
+   "cad_kg_as_built": 4.92
+  },
+  {
+   "part": "MP",
+   "target_fraction": 0.5,
+   "target_kg_iteration1": 6.43,
+   "built_fraction": 0.484,
+   "removed_kg_as_built": 6.23,
+   "cad_kg_as_built": 6.64
+  },
+  {
+   "part": "PY-C",
+   "target_fraction": 0.3,
+   "target_kg_iteration1": 6.56,
+   "built_fraction": 0.106,
+   "removed_kg_as_built": 2.59,
+   "cad_kg_as_built": 21.93
+  },
+  {
+   "part": "PY-HEAD",
+   "target_fraction": 0.25,
+   "target_kg_iteration1": 1.85,
+   "built_fraction": 0.262,
+   "removed_kg_as_built": 1.94,
+   "cad_kg_as_built": 5.45
+  },
+  {
+   "part": "TL-CLAMP",
+   "target_fraction": 0.3,
+   "target_kg_iteration1": 1.07,
+   "built_fraction": 0.04,
+   "removed_kg_as_built": 0.19,
+   "cad_kg_as_built": 4.5
+  },
+  {
+   "part": "W-CORE (all)",
+   "target_fraction": 0.4,
+   "target_kg_iteration1": 16.54,
+   "built_fraction": 0.514,
+   "removed_kg_as_built": 16.9,
+   "cad_kg_as_built": 15.99
+  },
+  {
+   "part": "W-SPM-F",
+   "target_fraction": 0.4375,
+   "target_kg_iteration1": 2.72,
+   "built_fraction": 0.4,
+   "removed_kg_as_built": 1.99,
+   "cad_kg_as_built": 2.98
+  }
+ ],
+ "calibration_groups": [
+  {
+   "key": "wing",
+   "calibration_kg": 70.49,
+   "cad_kg": 63.95
+  },
+  {
+   "key": "flight_controls",
+   "calibration_kg": 9.0,
+   "cad_kg": 9.0
+  },
+  {
+   "key": "fuselage",
+   "calibration_kg": 55.31,
+   "cad_kg": 75.91
+  },
+  {
+   "key": "parachute",
+   "calibration_kg": 28.23,
+   "cad_kg": 38.97
+  },
+  {
+   "key": "booms",
+   "calibration_kg": 85.04,
+   "cad_kg": 84.23
+  },
+  {
+   "key": "hv_harness",
+   "calibration_kg": 18.45,
+   "cad_kg": 15.28
+  },
+  {
+   "key": "cooling",
+   "calibration_kg": 10.36,
+   "cad_kg": 16.2
+  },
+  {
+   "key": "lift_motors",
+   "calibration_kg": 96.0,
+   "cad_kg": 175.2
+  },
+  {
+   "key": "inverters",
+   "calibration_kg": 36.0,
+   "cad_kg": 40.0
+  },
+  {
+   "key": "lift_rotors",
+   "calibration_kg": 28.76,
+   "cad_kg": 31.61
+  },
+  {
+   "key": "tail",
+   "calibration_kg": 11.09,
+   "cad_kg": 13.22
+  },
+  {
+   "key": "landing_gear",
+   "calibration_kg": 50.04,
+   "cad_kg": 37.05
+  },
+  {
+   "key": "battery",
+   "calibration_kg": 254.37,
+   "cad_kg": 316.66
+  },
+  {
+   "key": "pusher_motor",
+   "calibration_kg": 26.66,
+   "cad_kg": 56.92
+  },
+  {
+   "key": "pusher_propeller",
+   "calibration_kg": 5.25,
+   "cad_kg": 7.87
+  },
+  {
+   "key": "seats",
+   "calibration_kg": 22.67,
+   "cad_kg": 25.17
+  },
+  {
+   "key": "payload",
+   "calibration_kg": 200.0,
+   "cad_kg": 200.0
+  },
+  {
+   "key": "avionics",
+   "calibration_kg": 12.53,
+   "cad_kg": 18.61
+  },
+  {
+   "key": "lv_electrical",
+   "calibration_kg": 10.0,
+   "cad_kg": 10.0
+  }
+ ],
+ "wpf_checks": {
+  "machined_fittings": {
+   "cad_kg": 108.65,
+   "fea_assumed_kg": 48.0,
+   "parts": {
+    "PY-C": 21.93,
+    "PB-PLUG": 7.93,
+    "MP": 6.64,
+    "F-CLV-MS": 5.61,
+    "PY-HEAD": 5.45,
+    "CH-CRADLE": 5.26,
+    "F-CLV-RS": 5.19,
+    "BC-W": 5.04,
+    "BC-WR": 4.94,
+    "LG-SKCL": 4.92,
+    "MP-EMX": 4.67,
+    "TL-CLAMP": 4.5,
+    "LG-SADDLE": 3.51,
+    "W-CHUTE-FIT": 2.82,
+    "W-FIT-RP": 2.45,
+    "W-FIT-MS": 2.4,
+    "LG-LEGEND": 2.33,
+    "LG-DCL": 2.24,
+    "LG-DUP": 2.19,
+    "SEAT-FIT": 1.6,
+    "W-FIT-RS": 1.59,
+    "W-FIT-MP": 1.57,
+    "CH-ATT-R": 1.41,
+    "CAN-HINGE": 0.82,
+    "W-HINGE": 0.43,
+    "W-CHUTE-ANG": 0.4,
+    "HA-FIT": 0.39,
+    "TL-HINGE": 0.23,
+    "CH-ANG-R": 0.19
+   },
+   "note": "all machined aluminium/steel parts outside the battery packs (pack cold plates and brackets are in the pack mass)"
+  },
+  "cabin_primary_members": {
+   "cad_kg": 21.22,
+   "fea_assumed_kg": 43.0,
+   "parts": {
+    "SIDE-F": 5.29,
+    "SIDE-A": 2.97,
+    "BH-3": 2.3,
+    "FLOOR-F": 2.22,
+    "FLOOR-A": 1.62,
+    "AF-KEEL": 1.14,
+    "BH-0": 0.85,
+    "BH-1": 0.66,
+    "AF-KEEL-CAP": 0.64,
+    "BH-4": 0.52,
+    "NOSE-EA": 0.46,
+    "BH-2": 0.4,
+    "BH-2B": 0.4,
+    "BH-2C": 0.4,
+    "BH-5": 0.39,
+    "SIDE-DBL": 0.37,
+    "BH-6": 0.24,
+    "BH-7": 0.23,
+    "FLOOR-DBL": 0.1
+   },
+   "note": "sandwich floor, side panels, bulkheads BH-0..BH-7, aft keel, nose crush block; shell, canopy and fittings excluded"
+  }
+ },
+ "categories": [
+  {
+   "category": "wing",
+   "design_kg": 74.775,
+   "cad_kg": 63.955,
+   "diff_kg": -10.82,
+   "diff_pct": -14.5,
+   "design_cg_m": [
+    2.6821,
+    0.0,
+    1.9125
+   ],
+   "cad_cg_m": [
+    2.6525,
+    0.0,
+    1.9402
+   ],
+   "dx_m": -0.0296,
+   "dz_m": 0.0277,
+   "note": ""
+  },
+  {
+   "category": "boom tubes (+ wing saddles)",
+   "design_kg": 72.754,
+   "cad_kg": 84.228,
+   "diff_kg": 11.474,
+   "diff_pct": 15.8,
+   "design_cg_m": [
+    3.367,
+    0.0,
+    1.7705
+   ],
+   "cad_cg_m": [
+    3.3471,
+    0.0,
+    1.7742
+   ],
+   "dx_m": -0.0199,
+   "dz_m": 0.0037,
+   "note": ""
+  },
+  {
+   "category": "rotor stations (motors, rotors, inverters, pylons, clamps)",
+   "design_kg": 287.648,
+   "cad_kg": 293.903,
+   "diff_kg": 6.255,
+   "diff_pct": 2.2,
+   "design_cg_m": [
+    2.5634,
+    0.0,
+    2.2005
+   ],
+   "cad_cg_m": [
+    2.5627,
+    0.0,
+    2.1607
+   ],
+   "dx_m": -0.0007,
+   "dz_m": -0.0398,
+   "note": ""
+  },
+  {
+   "category": "tail",
+   "design_kg": 12.969,
+   "cad_kg": 13.216,
+   "diff_kg": 0.247,
+   "diff_pct": 1.9,
+   "design_cg_m": [
+    7.2626,
+    0.0,
+    1.6605
+   ],
+   "cad_cg_m": [
+    7.2433,
+    0.0,
+    1.6892
+   ],
+   "dx_m": -0.0193,
+   "dz_m": 0.0287,
+   "note": ""
+  },
+  {
+   "category": "landing gear",
+   "design_kg": 48.516,
+   "cad_kg": 37.051,
+   "diff_kg": -11.465,
+   "diff_pct": -23.6,
+   "design_cg_m": [
+    2.1371,
+    0.0,
+    0.31
+   ],
+   "cad_cg_m": [
+    2.0562,
+    0.0,
+    0.261
+   ],
+   "dx_m": -0.0809,
+   "dz_m": -0.049,
+   "note": ""
+  },
+  {
+   "category": "fuselage",
+   "design_kg": 88.61,
+   "cad_kg": 75.91,
+   "diff_kg": -12.7,
+   "diff_pct": -14.3,
+   "design_cg_m": [
+    2.0501,
+    0.0,
+    1.17
+   ],
+   "cad_cg_m": [
+    2.0723,
+    0.005,
+    1.2262
+   ],
+   "dx_m": 0.0222,
+   "dz_m": 0.0562,
+   "note": ""
+  },
+  {
+   "category": "pusher unit (motor, propeller, inverter, mount)",
+   "design_kg": 72.752,
+   "cad_kg": 72.789,
+   "diff_kg": 0.037,
+   "diff_pct": 0.1,
+   "design_cg_m": [
+    7.6001,
+    -0.0,
+    1.7595
+   ],
+   "cad_cg_m": [
+    7.632,
+    0.0,
+    1.7486
+   ],
+   "dx_m": 0.0319,
+   "dz_m": -0.0109,
+   "note": ""
+  },
+  {
+   "category": "seats + furnishings",
+   "design_kg": 25.17,
+   "cad_kg": 25.166,
+   "diff_kg": -0.004,
+   "diff_pct": -0.0,
+   "design_cg_m": [
+    1.6216,
+    0.0,
+    0.7809
+   ],
+   "cad_cg_m": [
+    1.62,
+    0.0,
+    0.8762
+   ],
+   "dx_m": -0.0016,
+   "dz_m": 0.0953,
+   "note": ""
+  },
+  {
+   "category": "avionics",
+   "design_kg": 17.091,
+   "cad_kg": 18.61,
+   "diff_kg": 1.519,
+   "diff_pct": 8.9,
+   "design_cg_m": [
+    0.4007,
+    0.0,
+    1.04
+   ],
+   "cad_cg_m": [
+    0.3976,
+    0.0069,
+    1.0247
+   ],
+   "dx_m": -0.0031,
+   "dz_m": -0.0153,
+   "note": ""
+  },
+  {
+   "category": "LV electrical",
+   "design_kg": 10.0,
+   "cad_kg": 10.0,
+   "diff_kg": 0.0,
+   "diff_pct": 0.0,
+   "design_cg_m": [
+    0.5315,
+    0.0,
+    0.73
+   ],
+   "cad_cg_m": [
+    0.5315,
+    -0.0885,
+    0.7298
+   ],
+   "dx_m": -0.0,
+   "dz_m": -0.0002,
+   "note": ""
+  },
+  {
+   "category": "flight controls",
+   "design_kg": 9.0,
+   "cad_kg": 9.0,
+   "diff_kg": 0.0,
+   "diff_pct": 0.0,
+   "design_cg_m": [
+    2.9574,
+    0.0,
+    1.3805
+   ],
+   "cad_cg_m": [
+    2.9357,
+    0.0267,
+    1.3523
+   ],
+   "dx_m": -0.0217,
+   "dz_m": -0.0282,
+   "note": ""
+  },
+  {
+   "category": "parachute",
+   "design_kg": 36.77,
+   "cad_kg": 38.97,
+   "diff_kg": 2.2,
+   "diff_pct": 6.0,
+   "design_cg_m": [
+    3.5424,
+    0.0,
+    1.42
+   ],
+   "cad_cg_m": [
+    3.4703,
+    0.0,
+    1.4339
+   ],
+   "dx_m": -0.0721,
+   "dz_m": 0.0139,
+   "note": ""
+  },
+  {
+   "category": "HV harness",
+   "design_kg": 15.277,
+   "cad_kg": 15.277,
+   "diff_kg": -0.0,
+   "diff_pct": -0.0,
+   "design_cg_m": [
+    3.1998,
+    0.0,
+    1.7385
+   ],
+   "cad_cg_m": [
+    3.1352,
+    0.0,
+    1.7407
+   ],
+   "dx_m": -0.0645,
+   "dz_m": 0.0022,
+   "note": ""
+  },
+  {
+   "category": "cooling",
+   "design_kg": 15.006,
+   "cad_kg": 16.198,
+   "diff_kg": 1.192,
+   "diff_pct": 7.9,
+   "design_cg_m": [
+    2.6671,
+    0.0,
+    1.6605
+   ],
+   "cad_cg_m": [
+    2.6269,
+    -0.0145,
+    1.7067
+   ],
+   "dx_m": -0.0402,
+   "dz_m": 0.0462,
+   "note": ""
+  },
+  {
+   "category": "growth allowance",
+   "design_kg": 39.317,
+   "cad_kg": 39.317,
+   "diff_kg": 0.0,
+   "diff_pct": 0.0,
+   "design_cg_m": [
+    2.5601,
+    0.0,
+    1.15
+   ],
+   "cad_cg_m": [
+    2.5601,
+    0.0,
+    1.15
+   ],
+   "dx_m": 0.0,
+   "dz_m": 0.0,
+   "note": "not modelled: design allowance carried at the design point"
+  },
+  {
+   "category": "battery",
+   "design_kg": 324.716,
+   "cad_kg": 316.656,
+   "diff_kg": -8.06,
+   "diff_pct": -2.5,
+   "design_cg_m": [
+    1.9253,
+    0.0,
+    0.5473
+   ],
+   "cad_cg_m": [
+    1.9311,
+    0.0065,
+    0.5414
+   ],
+   "dx_m": 0.0058,
+   "dz_m": -0.0059,
+   "note": ""
+  },
+  {
+   "category": "payload (occupants)",
+   "design_kg": 200.0,
+   "cad_kg": 200.0,
+   "diff_kg": 0.0,
+   "diff_pct": 0.0,
+   "design_cg_m": [
+    1.6,
+    0.0,
+    1.1268
+   ],
+   "cad_cg_m": [
+    1.6,
+    0.0,
+    1.1268
+   ],
+   "dx_m": 0.0,
+   "dz_m": 0.0,
+   "note": ""
+  }
+ ],
+ "totals": {
+  "empty (incl. growth)": {
+   "design_kg": 825.66,
+   "cad_kg": 813.59,
+   "diff_kg": -12.07,
+   "diff_pct": -1.46,
+   "design_cg_m": [
+    3.0458,
+    0.0,
+    1.6703
+   ],
+   "cad_cg_m": [
+    3.0676,
+    -0.0005,
+    1.6923
+   ],
+   "dx_m": 0.0218,
+   "dz_m": 0.022
+  },
+  "MTOW (pilot + passenger)": {
+   "design_kg": 1350.37,
+   "cad_kg": 1330.25,
+   "diff_kg": -20.12,
+   "diff_pct": -1.49,
+   "design_cg_m": [
+    2.5622,
+    0.0,
+    1.3198
+   ],
+   "cad_cg_m": [
+    2.5764,
+    0.0013,
+    1.3333
+   ],
+   "dx_m": 0.0142,
+   "dz_m": 0.0135
+  },
+  "pilot only": {
+   "design_kg": 1250.378,
+   "cad_kg": 1230.25,
+   "diff_kg": -20.13,
+   "diff_pct": -1.61,
+   "design_cg_m": [
+    2.6032,
+    0.0,
+    1.3352
+   ],
+   "cad_cg_m": [
+    2.6192,
+    0.0014,
+    1.3501
+   ],
+   "dx_m": 0.016,
+   "dz_m": 0.0149
+  }
+ },
+ "static_margin_shift": -0.0123,
+ "static_margin_design": 0.0982,
+ "static_margin_cad": 0.0859,
+ "breakdown": [
+  {
+   "key": "wing",
+   "design_kg": 74.775,
+   "cad_kg": 63.955,
+   "diff_kg": -10.82,
+   "diff_pct": -14.5
+  },
+  {
+   "key": "tail",
+   "design_kg": 12.969,
+   "cad_kg": 13.216,
+   "diff_kg": 0.247,
+   "diff_pct": 1.9
+  },
+  {
+   "key": "fuselage",
+   "design_kg": 88.61,
+   "cad_kg": 75.91,
+   "diff_kg": -12.7,
+   "diff_pct": -14.3
+  },
+  {
+   "key": "booms",
+   "design_kg": 72.755,
+   "cad_kg": 84.228,
+   "diff_kg": 11.473,
+   "diff_pct": 15.8
+  },
+  {
+   "key": "rotor_pylons_mounts",
+   "design_kg": 48.84,
+   "cad_kg": 55.092,
+   "diff_kg": 6.252,
+   "diff_pct": 12.8
+  },
+  {
+   "key": "landing_gear",
+   "design_kg": 48.516,
+   "cad_kg": 37.051,
+   "diff_kg": -11.465,
+   "diff_pct": -23.6
+  },
+  {
+   "key": "lift_motors",
+   "design_kg": 175.2,
+   "cad_kg": 175.2,
+   "diff_kg": 0.0,
+   "diff_pct": 0.0
+  },
+  {
+   "key": "lift_rotors",
+   "design_kg": 31.611,
+   "cad_kg": 31.611,
+   "diff_kg": -0.0,
+   "diff_pct": -0.0
+  },
+  {
+   "key": "inverters",
+   "design_kg": 40.0,
+   "cad_kg": 40.0,
+   "diff_kg": 0.0,
+   "diff_pct": 0.0
+  },
+  {
+   "key": "cooling",
+   "design_kg": 15.007,
+   "cad_kg": 16.198,
+   "diff_kg": 1.191,
+   "diff_pct": 7.9
+  },
+  {
+   "key": "hv_harness",
+   "design_kg": 15.277,
+   "cad_kg": 15.277,
+   "diff_kg": -0.0,
+   "diff_pct": -0.0
+  },
+  {
+   "key": "pusher_motor",
+   "design_kg": 57.92,
+   "cad_kg": 56.918,
+   "diff_kg": -1.002,
+   "diff_pct": -1.7
+  },
+  {
+   "key": "pusher_propeller",
+   "design_kg": 6.831,
+   "cad_kg": 7.871,
+   "diff_kg": 1.04,
+   "diff_pct": 15.2
+  },
+  {
+   "key": "parachute",
+   "design_kg": 36.77,
+   "cad_kg": 38.97,
+   "diff_kg": 2.2,
+   "diff_pct": 6.0
+  },
+  {
+   "key": "seats",
+   "design_kg": 25.17,
+   "cad_kg": 25.166,
+   "diff_kg": -0.004,
+   "diff_pct": -0.0
+  },
+  {
+   "key": "avionics",
+   "design_kg": 17.091,
+   "cad_kg": 18.61,
+   "diff_kg": 1.519,
+   "diff_pct": 8.9
+  },
+  {
+   "key": "lv_electrical",
+   "design_kg": 10.0,
+   "cad_kg": 10.0,
+   "diff_kg": 0.0,
+   "diff_pct": 0.0
+  },
+  {
+   "key": "flight_controls",
+   "design_kg": 9.0,
+   "cad_kg": 9.0,
+   "diff_kg": 0.0,
+   "diff_pct": 0.0
+  }
+ ]
+}

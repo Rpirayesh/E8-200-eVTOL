@@ -1,0 +1,118 @@
+{
+ "groups": {
+  "wing": {
+   "kg": 62.8,
+   "usd_per_kg": 107.88,
+   "h_per_kg": 7.114,
+   "usd": 5139.9,
+   "cons": 1634.9,
+   "hours": 446.7
+  },
+  "fuselage": {
+   "kg": 61.35,
+   "usd_per_kg": 98.94,
+   "h_per_kg": 5.325,
+   "usd": 4666.9,
+   "cons": 1402.7,
+   "hours": 326.7
+  },
+  "parachute": {
+   "kg": 5.89,
+   "usd_per_kg": 45.0,
+   "h_per_kg": 5.179,
+   "usd": 265.0,
+   "cons": 0.0,
+   "hours": 30.5
+  },
+  "booms": {
+   "kg": 48.95,
+   "usd_per_kg": 194.54,
+   "h_per_kg": 5.067,
+   "usd": 8303.1,
+   "cons": 1220.5,
+   "hours": 248.1
+  },
+  "cooling": {
+   "kg": 1.18,
+   "usd_per_kg": 87.95,
+   "h_per_kg": 9.0,
+   "usd": 76.8,
+   "cons": 26.9,
+   "hours": 10.6
+  },
+  "rotor_pylons_mounts": {
+   "kg": 43.38,
+   "usd_per_kg": 54.36,
+   "h_per_kg": 3.161,
+   "usd": 2142.7,
+   "cons": 215.7,
+   "hours": 137.1
+  },
+  "tail": {
+   "kg": 9.81,
+   "usd_per_kg": 143.19,
+   "h_per_kg": 7.366,
+   "usd": 1238.8,
+   "cons": 165.9,
+   "hours": 72.3
+  },
+  "landing_gear": {
+   "kg": 29.32,
+   "usd_per_kg": 48.56,
+   "h_per_kg": 3.023,
+   "usd": 1364.1,
+   "cons": 59.9,
+   "hours": 88.6
+  },
+  "pusher_motor": {
+   "kg": 2.86,
+   "usd_per_kg": 78.66,
+   "h_per_kg": 4.026,
+   "usd": 224.7,
+   "cons": 0.0,
+   "hours": 11.5
+  },
+  "pusher_propeller": {
+   "kg": 0.66,
+   "usd_per_kg": 87.95,
+   "h_per_kg": 9.0,
+   "usd": 43.2,
+   "cons": 15.1,
+   "hours": 6.0
+  },
+  "seats": {
+   "kg": 19.17,
+   "usd_per_kg": 115.71,
+   "h_per_kg": 5.971,
+   "usd": 1745.4,
+   "cons": 472.1,
+   "hours": 114.4
+  },
+  "avionics": {
+   "kg": 1.52,
+   "usd_per_kg": 66.53,
+   "h_per_kg": 4.281,
+   "usd": 84.2,
+   "cons": 16.8,
+   "hours": 6.5
+  }
+ },
+ "tooling": {
+  "kg": 1031.3,
+  "usd": 2455.8,
+  "hours": 318.5,
+  "cons": 786.3
+ },
+ "basis": {
+  "CF_FABRIC": 127.2,
+  "EPOXY": 97.0,
+  "LAMINATE_CF": 137.6,
+  "LAMINATE_GL": 65.1,
+  "PVC_CORE": 60.4,
+  "XPS": 16.900000000000002,
+  "TUBE_CF": 329.7,
+  "AL_PLATE": 45.0,
+  "AL_SHEET": 33.9,
+  "PC": 42.1
+ }
+}

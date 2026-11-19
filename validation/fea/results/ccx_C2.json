@@ -1,0 +1,99 @@
+{
+ "case": "NAFEMS LE10 thick elliptic plate, t=0.6 m, E=210 GPa, nu=0.3, 1 MPa on the top face",
+ "quantity": "sigma_yy at D (2.0, 0, 0.3) [MPa]",
+ "reference": -5.38,
+ "source": "NAFEMS TNSB Rev. 3 (1990), LE10",
+ "mesh": [
+  {
+   "element": "C3D20R",
+   "mesh": "2x3x2",
+   "elems": 12,
+   "nodes": 111,
+   "syy_D": -5.27261,
+   "err_pct": -1.9960966542750864,
+   "cpu_s": 0.0
+  },
+  {
+   "element": "C3D20R",
+   "mesh": "4x6x2",
+   "elems": 48,
+   "nodes": 349,
+   "syy_D": -5.42432,
+   "err_pct": 0.8237918215613367,
+   "cpu_s": 0.1
+  },
+  {
+   "element": "C3D20R",
+   "mesh": "8x12x4",
+   "elems": 384,
+   "nodes": 2113,
+   "syy_D": -5.38681,
+   "err_pct": 0.12657992565055318,
+   "cpu_s": 0.3
+  },
+  {
+   "element": "C3D20R",
+   "mesh": "16x24x4",
+   "elems": 1536,
+   "nodes": 7865,
+   "syy_D": -5.49687,
+   "err_pct": 2.1723048327137633,
+   "cpu_s": 1.1
+  },
+  {
+   "element": "C3D20R",
+   "mesh": "32x48x8",
+   "elems": 12288,
+   "nodes": 55857,
+   "syy_D": -5.41821,
+   "err_pct": 0.7102230483271431,
+   "cpu_s": 27.6
+  },
+  {
+   "element": "C3D20",
+   "mesh": "2x3x2",
+   "elems": 12,
+   "nodes": 111,
+   "syy_D": -5.16584,
+   "err_pct": -3.9806691449814067,
+   "cpu_s": 0.0
+  },
+  {
+   "element": "C3D20",
+   "mesh": "4x6x2",
+   "elems": 48,
+   "nodes": 349,
+   "syy_D": -5.52297,
+   "err_pct": 2.6574349442379193,
+   "cpu_s": 0.1
+  },
+  {
+   "element": "C3D20",
+   "mesh": "8x12x4",
+   "elems": 384,
+   "nodes": 2113,
+   "syy_D": -5.5053,
+   "err_pct": 2.3289962825278847,
+   "cpu_s": 0.3
+  },
+  {
+   "element": "C3D20",
+   "mesh": "16x24x4",
+   "elems": 1536,
+   "nodes": 7865,
+   "syy_D": -5.48064,
+   "err_pct": 1.8706319702602283,
+   "cpu_s": 1.2
+  },
+  {
+   "element": "C3D20",
+   "mesh": "32x48x8",
+   "elems": 12288,
+   "nodes": 55857,
+   "syy_D": -5.39768,
+   "err_pct": 0.3286245353159919,
+   "cpu_s": 31.4
+  }
+ ],
+ "_wall_s": 62.9
+}

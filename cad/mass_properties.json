@@ -1,0 +1,381 @@
+{
+ "cad_mass_kg": 1290.7363936697743,
+ "cg_mm": [
+  2576.763949698619,
+  1.3081919231969221,
+  1338.8867249540308
+ ],
+ "by_group": {
+  "wing": {
+   "kg": 63.95470291321755,
+   "cg_mm": [
+    2652.5309407468712,
+    2.244530721213833e-07,
+    1940.1548091111197
+   ],
+   "parts": [
+    "W-CORE-1",
+    "W-CORE-2",
+    "W-CORE-3",
+    "W-CORE-4",
+    "W-CORE-5",
+    "W-CORE-6",
+    "W-SPM-CU",
+    "W-SPM-CL",
+    "W-SPM-W",
+    "W-SPM-F",
+    "W-SPR-CU",
+    "W-SPR-CL",
+    "W-SPR-W",
+    "W-H45-U",
+    "W-SKIN",
+    "W-RIB-R",
+    "W-RIB-B",
+    "W-RIB-A",
+    "W-FS-AIL",
+    "W-AIL",
+    "W-HINGE",
+    "W-TIP",
+    "W-FIT-MS",
+    "W-FIT-MP",
+    "W-PIN-M",
+    "W-FIT-RS",
+    "W-FIT-RP",
+    "W-PIN-R"
+   ]
+  },
+  "flight_controls": {
+   "kg": 9.0,
+   "cg_mm": [
+    2935.6960212704635,
+    26.666666666666668,
+    1352.3432059534855
+   ],
+   "parts": [
+    "W-AIL-ACT",
+    "TL-ACT",
+    "FC-STICK",
+    "FC-MISC"
+   ]
+  },
+  "fuselage": {
+   "kg": 75.88426496538095,
+   "cg_mm": [
+    2072.317642891603,
+    4.962694528999328,
+    1226.2194918183664
+   ],
+   "parts": [
+    "F-CLV-MS",
+    "F-CLV-RS",
+    "SH-NOSE",
+    "SH-CAB",
+    "SH-MID",
+    "SH-AFT",
+    "SH-TAIL",
+    "HATCH-AV",
+    "HATCH-CH",
+    "HATCH-SVC",
+    "HATCH-BATA",
+    "HATCH-BATB",
+    "HATCH-BATC",
+    "HATCH-BATD",
+    "CAN-F",
+    "CAN-R",
+    "WIN-L",
+    "CAN-FRM",
+    "CAN-HINGE",
+    "CAN-LATCH",
+    "FLOOR-F",
+    "FLOOR-A",
+    "FLOOR-DBL",
+    "SIDE-F",
+    "SIDE-A",
+    "SIDE-DBL",
+    "BH-0",
+    "BH-1",
+    "BH-2",
+    "BH-2B",
+    "BH-2C",
+    "BH-7",
+    "BH-3",
+    "BH-4",
+    "BH-5",
+    "BH-6",
+    "AF-KEEL",
+    "AF-KEEL-CAP",
+    "NOSE-EA"
+   ]
+  },
+  "parachute": {
+   "kg": 38.80355034721687,
+   "cg_mm": [
+    3470.3269132692812,
+    0.015034184096192052,
+    1433.9333564405879
+   ],
+   "parts": [
+    "W-CHUTE-FIT",
+    "W-CHUTE-ANG",
+    "CHUTE",
+    "CH-CRADLE",
+    "CH-ATT-R",
+    "CH-ANG-R",
+    "CH-RISER"
+   ]
+  },
+  "booms": {
+   "kg": 84.22839404699006,
+   "cg_mm": [
+    3347.075515740778,
+    0.0,
+    1774.1849379778582
+   ],
+   "parts": [
+    "BM-T1",
+    "BM-T2",
+    "BM-T3",
+    "BM-T4",
+    "BM-SLV",
+    "BM-WRAP1",
+    "BM-WRAP2",
+    "BM-WRAP3",
+    "BM-BAND1",
+    "BM-BAND2",
+    "BM-CAP-F",
+    "BC-W",
+    "BC-WR"
+   ]
+  },
+  "hv_harness": {
+   "kg": 15.276999999999997,
+   "cg_mm": [
+    3135.2283822145578,
+    0.0,
+    1740.6989837968067
+   ],
+   "parts": [
+    "HV-BOOM",
+    "HV-WING",
+    "HV-RISER"
+   ]
+  },
+  "cooling": {
+   "kg": 16.198416096709508,
+   "cg_mm": [
+    2626.8833486669473,
+    -14.541957904628122,
+    1706.6777330964205
+   ],
+   "parts": [
+    "COOL-LINE",
+    "COOL-PK",
+    "COOL-FAIR",
+    "COOL-MOT"
+   ]
+  },
+  "rotor_pylons_mounts": {
+   "kg": 55.091980066519035,
+   "cg_mm": [
+    2571.420761946946,
+    1.6768670180494802e-11,
+    1971.2760336216318
+   ],
+   "parts": [
+    "PY-C",
+    "PY-TUBE",
+    "PY-HEAD",
+    "MP-ISO",
+    "MP",
+    "MP-EMX",
+    "INV-POD",
+    "NAC"
+   ]
+  },
+  "lift_motors": {
+   "kg": 175.20000000000002,
+   "cg_mm": [
+    2560.0499937277796,
+    3.18948531619828e-05,
+    2279.2158253116427
+   ],
+   "parts": [
+    "MOT-L"
+   ]
+  },
+  "inverters": {
+   "kg": 40.0,
+   "cg_mm": [
+    3412.0800000000004,
+    0.0,
+    1601.3500000000001
+   ],
+   "parts": [
+    "INV-L",
+    "INV-PB"
+   ]
+  },
+  "lift_rotors": {
+   "kg": 31.610999999999997,
+   "cg_mm": [
+    2560.0499999999997,
+    -5.754292504336645e-14,
+    2400.5
+   ],
+   "parts": [
+    "ROT-CCW",
+    "ROT-CW"
+   ]
+  },
+  "tail": {
+   "kg": 13.21566243484101,
+   "cg_mm": [
+    7243.277414477052,
+    1.4107988516104477e-12,
+    1689.2122390083573
+   ],
+   "parts": [
+    "HT",
+    "ELEV",
+    "HT-SPAR",
+    "TL-CLAMP",
+    "VF",
+    "RUD",
+    "VF-SPAR",
+    "TL-HINGE"
+   ]
+  },
+  "landing_gear": {
+   "kg": 37.05062678665927,
+   "cg_mm": [
+    2056.2176568667896,
+    0.0,
+    261.0113187396409
+   ],
+   "parts": [
+    "LG-SKID",
+    "LG-LEG",
+    "LG-LEGEND",
+    "LG-SADDLE",
+    "LG-PIN",
+    "LG-DAMP",
+    "LG-DCL",
+    "LG-DUP",
+    "LG-SKCL",
+    "LG-SHOE",
+    "LG-FAIR"
+   ]
+  },
+  "battery": {
+   "kg": 316.656130111879,
+   "cg_mm": [
+    1931.1333047226735,
+    6.517878358431797,
+    541.3870410441475
+   ],
+   "parts": [
+    "BAT-TIER1",
+    "BAT-TIER2",
+    "BAT-BOX",
+    "BAT-LID",
+    "BAT-CP",
+    "BMS",
+    "HV-SW",
+    "BAT-MNT",
+    "BAT-VENT"
+   ]
+  },
+  "pusher_motor": {
+   "kg": 56.91793025398486,
+   "cg_mm": [
+    7719.82588098211,
+    0.0,
+    1766.2728199860178
+   ],
+   "parts": [
+    "PB-PLUG",
+    "MOT-PB",
+    "INV-POD-P"
+   ]
+  },
+  "pusher_propeller": {
+   "kg": 7.87072994497944,
+   "cg_mm": [
+    7842.289256338806,
+    0.0,
+    1770.5000000000023
+   ],
+   "parts": [
+    "PROP-PCW",
+    "SPIN-P"
+   ]
+  },
+  "seats": {
+   "kg": 25.165680859700725,
+   "cg_mm": [
+    1619.964747260669,
+    1.938403703652148e-15,
+    876.2351109065672
+   ],
+   "parts": [
+    "SEAT-SHELL",
+    "SEAT-CUSH",
+    "SEAT-EA",
+    "SEAT-FIT",
+    "SR",
+    "HA-FIT",
+    "HARN",
+    "FURN"
+   ]
+  },
+  "payload": {
+   "kg": 200.0,
+   "cg_mm": [
+    1600.0,
+    0.0,
+    1126.8
+   ],
+   "parts": [
+    "OCC"
+   ]
+  },
+  "avionics": {
+   "kg": 18.610324841696805,
+   "cg_mm": [
+    397.58862042714617,
+    6.883864257693848,
+    1024.6583468597885
+   ],
+   "parts": [
+    "IP",
+    "AV-EFIS",
+    "AV-G5",
+    "AV-RADIO",
+    "AV-FCC",
+    "AV-GNSS",
+    "AV-MISC",
+    "AV-TRAY"
+   ]
+  },
+  "lv_electrical": {
+   "kg": 10.0,
+   "cg_mm": [
+    531.45,
+    -88.5,
+    729.76
+   ],
+   "parts": [
+    "LV-BATT",
+    "LV-DCDC",
+    "LV-PANEL"
+   ]
+  }
+ },
+ "design_mtow_kg": 1350.378,
+ "design_cg_m": [
+  2.5622,
+  0.0,
+  1.3198
+ ],
+ "note_incremental": "updated by cad/update_parts.py; assembly files and the audit refresh on the next full build"
+}

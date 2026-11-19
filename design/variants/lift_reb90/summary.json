@@ -1,0 +1,55 @@
+{
+ "feasible": false,
+ "x": {
+  "D": 1.85,
+  "vtip": 169.0,
+  "span": 9.0,
+  "chord": 1.2000000000000002,
+  "V": 39.72222222222222,
+  "Dp": 1.4000000000000001,
+  "delta_w": 0.4,
+  "nb": 2,
+  "flap": 1,
+  "lm": 3,
+  "pm": 2,
+  "pnb": 2,
+  "cell": 0,
+  "npk": 8,
+  "airfoil": 4
+ },
+ "cfg": {
+  "n_rot": 8,
+  "coax": false,
+  "seating": "tandem",
+  "range_km": 20.0,
+  "assumptions": {
+   "hv_conductor": "al",
+   "swet_f": 16.60602131601683,
+   "fus_h": 1.5735
+  }
+ },
+ "violated": {
+  "pusher_cont_power": 0.1841,
+  "pusher_climb": 0.0009,
+  "stall_margin": 0.0199
+ },
+ "battery_sag": {
+  "i_cell_one_pack_out": 53.41933242877972,
+  "v_bus_one_pack_out": 407.29060131772815,
+  "i_cell_flare": 43.887187407408874,
+  "v_bus_flare": 438.03748829866197,
+  "P_cruise_shaft": 64.58759716197979,
+  "cells": 2688.0,
+  "Ns": 168.0,
+  "Np_pack": 2.0,
+  "npk": 8.0,
+  "prototype_cash": 358787.920204054,
+  "cost_total": 467732.90522045136,
+  "range_km": 23.065829157495486
+ },
+ "mtow": 1199.566,
+ "range_km": 24.794,
+ "cost_per_aircraft_N10": 469119.60927186423,
+ "prototype_cash": 359850.71797553235,
+ "geometry_checks_failed": []
+}

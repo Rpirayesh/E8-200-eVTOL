@@ -1,0 +1,136 @@
+{
+ "iteration": 2,
+ "x": {
+  "D": 1.85,
+  "vtip": 179.0,
+  "span": 8.6,
+  "chord": 1.1500000000000001,
+  "V": 41.666666666666664,
+  "Dp": 1.55,
+  "delta_w": 0.4,
+  "nb": 2,
+  "flap": 1,
+  "lm": 2,
+  "pm": 2,
+  "cell": 0,
+  "npk": 3,
+  "airfoil": 4
+ },
+ "cfg": {
+  "n_rot": 8,
+  "coax": false,
+  "seating": "tandem",
+  "range_km": 20.0,
+  "assumptions": {
+   "oei_flare_g": 1.188,
+   "swet_f": 15.78834856970624,
+   "fus_h": 1.5721
+  }
+ },
+ "objective": 512765.3522434713,
+ "feasible": true,
+ "selected_range_km": 20.0,
+ "flare_g_frozen": 1.188,
+ "flare_search": [
+  {
+   "flare_g": 1.1,
+   "feasible": true,
+   "mtow": 1086.9585386097801
+  },
+  {
+   "flare_g": 1.15,
+   "feasible": true,
+   "mtow": 1088.1358913099114
+  },
+  {
+   "flare_g": 1.175,
+   "feasible": true,
+   "mtow": 1088.1469052467078
+  },
+  {
+   "flare_g": 1.188,
+   "feasible": true,
+   "mtow": 1089.7249147607258
+  },
+  {
+   "flare_g": 1.194,
+   "feasible": false,
+   "mtow": 1086.6939477645892
+  }
+ ],
+ "capability_range_km": 23.281,
+ "results": {
+  "disk_loading_N_m2": 496.952,
+  "hover_shaft_power_per_motor_kw": 29.802,
+  "hover_electrical_power_kw": 271.18,
+  "hover_electrical_power_ceiling_kw": 275.203,
+  "rotor_out_max_shaft_power_kw": 53.729,
+  "rotor_out_max_torque_nm": 229.256,
+  "cruise_drag_N": 1131.624,
+  "cruise_LD": 9.4436,
+  "cruise_electrical_power_kw": 68.879,
+  "mission_energy_kwh": 25.889,
+  "range_km": 23.281,
+  "stall_speed_ms": 29.552,
+  "tip_mach_hover": 0.5156,
+  "c_rate_hover": 9.6654,
+  "cost_usd": 447765,
+  "mtow_kg": 1089.725,
+  "static_margin_mtow": 0.1001,
+  "static_margin_range": [
+   0.0957,
+   0.1026
+  ],
+  "reserve_energy_kwh": 6.869,
+  "transition_speed_ms": 37.273,
+  "gust_load_factor_vc": 2.2246,
+  "climb_rate_ms": 1.0356,
+  "rotor_out_flare_1p2g_shaft_power_kw": 59.418,
+  "rotor_out_flare_1p2g_torque_nm": 243.957,
+  "note": "rotor-out values: linear programme, worst failed rotor, 1000 m ISA+15, incl. 10 % control margin (WP M evaluates at 500 m); flare: 1.2 g with one motor out at 500 m ISA+15"
+ },
+ "mass": {
+  "mtow": 1089.725,
+  "payload": 200.0,
+  "battery": 225.78,
+  "empty": 663.945,
+  "breakdown": {
+   "wing": 72.731,
+   "tail": 10.566,
+   "fuselage": 66.265,
+   "booms": 46.423,
+   "rotor_pylons_mounts": 39.504,
+   "landing_gear": 52.709,
+   "lift_motors": 122.4,
+   "lift_rotors": 31.611,
+   "inverters": 36.0,
+   "cooling": 10.363,
+   "hv_harness": 21.177,
+   "pusher_motor": 27.32,
+   "pusher_propeller": 3.63,
+   "parachute": 35.429,
+   "seats": 22.67,
+   "avionics": 12.531,
+   "lv_electrical": 10.0,
+   "flight_controls": 11.0,
+   "growth": 31.616
+  }
+ },
+ "cost": {
+  "units_produced_5yr": 10,
+  "composite_fraction": 0.8,
+  "f_cert": 0.5,
+  "labour_rates_usd_h": {
+   "engineering": 95,
+   "tooling": 65,
+   "manufacturing": 55
+  },
+  "cots_propulsion_systems_usd": 269854.213,
+  "breakdown_usd": {
+   "lift_motors": 64000,
+   "inverters": 63000,
+   "lift_propellers": 11475,
+   "pusher_motor": 11000,
+   "pusher_propeller": 3102,
+   "battery": 37468,
+   "p

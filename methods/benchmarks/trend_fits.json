@@ -1,0 +1,9 @@
+{
+ "empty_fraction_vs_mtow": {
+  "form": "We/W0 = A * W0^C (W0 in kg)",
+  "A": 0.3121139394780086,
+  "C": 0.1262759934591727,
+  "n": 12,
+  "note": "all configurations; empty mass includes battery"
+ }
+}

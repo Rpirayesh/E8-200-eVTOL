@@ -1,0 +1,5 @@
+A: iteration-2 parts, bottom-up cost (double counts removed) False 1087 400109 306190 {'oei_flare_power': 0.0071, 'pusher_cont_power': 0.0009}
+B: + aluminium HV conductors (closes the 1.2 g flare) True 1043 393541 301932 {}
+C: + 2-blade DUC pusher propeller True 1043 392453 301049 {}
+D: + 400 V bus, REB LV windings on HBCi 400400 inverters False 1076 389024 295580 {'oei_flare_torque': 0.0098, 'pusher_cont_power': 0.0013}
+E: free optimum over all options True 1043 392446 301047 {}

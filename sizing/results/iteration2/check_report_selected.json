@@ -1,0 +1,947 @@
+{
+ "design_name": "E8-200 selected design: 8 x 1.85 m lift rotors (MOT-REB60), CELL-P50B 159s5p x 3 packs, 8.6 m wing, 150 km/h",
+ "summary": {
+  "PASS": 48,
+  "WARN": 10,
+  "FAIL": 1,
+  "INFO": 0,
+  "MISSING": 0
+ },
+ "rows": [
+  {
+   "quantity": "wing span: geometry.json vs selected_design",
+   "unit": "m",
+   "M": 8.6,
+   "D": 8.6,
+   "eq": "-",
+   "tol": "\u00b11% warn / \u00b15% fail",
+   "note": "",
+   "diff": 0.0,
+   "status": "PASS"
+  },
+  {
+   "quantity": "wing area from geometry.json chords",
+   "unit": "m^2",
+   "M": 9.889999999999999,
+   "D": 9.89,
+   "eq": "trapezoid",
+   "tol": "\u00b11% warn / \u00b15% fail",
+   "note": "",
+   "diff": -1.7961140944390803e-16,
+   "status": "PASS"
+  },
+  {
+   "quantity": "MTOW = empty (excl. battery) + battery + payload",
+   "unit": "kg",
+   "M": 1089.7250000000001,
+   "D": 1089.725,
+   "eq": "[M0]",
+   "tol": "\u00b11% warn / \u00b15% fail",
+   "note": "bookkeeping closure of D's own numbers",
+   "diff": 2.0865234388789106e-16,
+   "status": "PASS"
+  },
+  {
+   "quantity": "wing span <= footprint limit",
+   "unit": "m",
+   "M": 8.6,
+   "D": null,
+   "eq": "req.",
+   "tol": "<= 9",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "overall length incl. booms and rotor discs <= footprint limit",
+   "unit": "m",
+   "M": 8.468499999999999,
+   "D": null,
+   "eq": "req.",
+   "tol": "<= 9",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "disk loading",
+   "unit": "N/m^2",
+   "M": 496.95179637294154,
+   "D": 496.952,
+   "eq": "[H0]",
+   "tol": "\u00b11% warn / \u00b15% fail",
+   "note": "",
+   "diff": -4.097519648859516e-07,
+   "status": "PASS"
+  },
+  {
+   "quantity": "figure of merit (M: blade-element estimate)",
+   "unit": "-",
+   "M": 0.7184250979271978,
+   "D": 0.7185,
+   "eq": "[H2]-[H3]",
+   "tol": "\u00b110% warn / \u00b120% fail",
+   "note": "",
+   "diff": -0.00010424783966910511,
+   "status": "PASS"
+  },
+  {
+   "quantity": "hover shaft power per motor, site (500 m ISA+15)",
+   "unit": "kW",
+   "M": 29.80135428638886,
+   "D": 29.802,
+   "eq": "[H1]-[H3]",
+   "tol": "\u00b110% warn / \u00b120% fail",
+   "note": "",
+   "diff": -2.1666787837683105e-05,
+   "status": "PASS"
+  },
+  {
+   "quantity": "hover electrical power total, site",
+   "unit": "kW",
+   "M": 271.17782011034444,
+   "D": 271.18,
+   "eq": "[H1]-[H3],[E1]",
+   "tol": "\u00b110% warn / \u00b120% fail",
+   "note": "",
+   "diff": -8.03853402007946e-06,
+   "status": "PASS"
+  },
+  {
+   "quantity": "hover electrical power total, 1000 m ISA+15 ceiling",
+   "unit": "kW",
+   "M": 275.19995511485973,
+   "D": 275.203,
+   "eq": "[H1]-[H3],[E1]",
+   "tol": "\u00b110% warn / \u00b120% fail",
+   "note": "",
+   "diff": -1.1064142252232532e-05,
+   "status": "PASS"
+  },
+  {
+   "quantity": "hover shaft power per motor at 1000 m ISA+15 <= motor continuous",
+   "unit": "kW",
+   "M": 30.245829364866584,
+   "D": null,
+   "eq": "[H1]",
+   "tol": "<= 36",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "lift-rotor hover tip Mach (ISA+15)",
+   "unit": "-",
+   "M": 0.5156081046356243,
+   "D": 0.5156,
+   "eq": "[H7]",
+   "tol": "\u00b13% warn / \u00b18% fail",
+   "note": "",
+   "diff": 1.571884333668586e-05,
+   "status": "PASS"
+  },
+  {
+   "quantity": "lift-rotor tip Mach (noise screen)",
+   "unit": "-",
+   "M": 0.5156081046356243,
+   "D": null,
+   "eq": "[H7]",
+   "tol": "<= 0.55",
+   "diff": null,
+   "status": "PASS",
+   "note": "NASA UAM concepts use 550-600 ft/s (Mtip ~0.49-0.54)"
+  },
+  {
+   "quantity": "hover blade loading CT/sigma (stall margin for transition)",
+   "unit": "-",
+   "M": 0.11418636146844949,
+   "D": null,
+   "eq": "[H5]",
+   "tol": "<= 0.14",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "rotor-out shaft power, most loaded motor (incl. 10 % thrust control margin)",
+   "unit": "kW",
+   "M": 49.74659422520078,
+   "D": 53.729,
+   "eq": "[H6]",
+   "tol": "\u00b110% warn / \u00b120% fail",
+   "note": "",
+   "diff": -0.07412022882985388,
+   "status": "PASS"
+  },
+  {
+   "quantity": "rotor-out power <= motor peak power",
+   "unit": "kW",
+   "M": 49.74659422520078,
+   "D": null,
+   "eq": "[H6] req.",
+   "tol": "<= 60",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "rotor-out torque <= motor max torque",
+   "unit": "N m",
+   "M": 212.26498361100687,
+   "D": null,
+   "eq": "[H6]",
+   "tol": "<= 250",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "Oswald efficiency",
+   "unit": "-",
+   "M": 0.8253578279218025,
+   "D": 0.8254,
+   "eq": "[I2]",
+   "tol": "\u00b115% warn / \u00b130% fail",
+   "note": "",
+   "diff": -5.10928982282124e-05,
+   "status": "PASS"
+  },
+  {
+   "quantity": "zero-lift drag area D/q",
+   "unit": "m^2",
+   "M": 0.5333536909990695,
+   "D": 0.5329,
+   "eq": "[D1]-[D9]",
+   "tol": "\u00b115% warn / \u00b130% fail",
+   "note": "",
+   "diff": 0.0008513623551687837,
+   "status": "PASS"
+  },
+  {
+   "quantity": "cruise drag",
+   "unit": "N",
+   "M": 1132.052331088178,
+   "D": 1131.624,
+   "eq": "[I1]",
+   "tol": "\u00b115% warn / \u00b130% fail",
+   "note": "",
+   "diff": 0.000378510077709631,
+   "status": "PASS"
+  },
+  {
+   "quantity": "cruise L/D",
+   "unit": "-",
+   "M": 9.439980271033601,
+   "D": 9.4436,
+   "eq": "[I1]",
+   "tol": "\u00b115% warn / \u00b130% fail",
+   "note": "",
+   "diff": -0.0003832996914734676,
+   "status": "PASS"
+  },
+  {
+   "quantity": "pusher propulsive efficiency",
+   "unit": "-",
+   "M": 0.7915296765822055,
+   "D": 0.7916,
+   "eq": "[P1]-[P2]",
+   "tol": "\u00b110% warn / \u00b120% fail",
+   "note": "",
+   "diff": -8.883706138763132e-05,
+   "status": "PASS"
+  },
+  {
+   "quantity": "cruise electrical power",
+   "unit": "kW",
+   "M": 68.90735726002602,
+   "D": 68.879,
+   "eq": "[E1]",
+   "tol": "\u00b110% warn / \u00b120% fail",
+   "note": "",
+   "diff": 0.000411696743942463,
+   "status": "PASS"
+  },
+  {
+   "quantity": "cruise shaft power <= pusher motor continuous",
+   "unit": "kW",
+   "M": 59.59201344458408,
+   "D": null,
+   "eq": "[E1]",
+   "tol": "<= 60",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "pusher helical tip Mach in cruise",
+   "unit": "-",
+   "M": 0.5602991619560492,
+   "D": null,
+   "eq": "[H7]",
+   "tol": "<= 0.7",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "stall speed (sea level ISA, MTOW)",
+   "unit": "m/s",
+   "M": 29.552349417200507,
+   "D": 29.552,
+   "eq": "[S1]",
+   "tol": "\u00b13% warn / \u00b18% fail",
+   "note": "",
+   "diff": 1.1823808896418614e-05,
+   "status": "PASS"
+  },
+  {
+   "quantity": "cruise speed >= 1.3 x stall (TAS at cruise altitude)",
+   "unit": "-",
+   "M": 1.3414427196978456,
+   "D": null,
+   "eq": "[S2]",
+   "tol": ">= 1.3",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "cruise speed >= requirement",
+   "unit": "km/h",
+   "M": 150.0,
+   "D": null,
+   "eq": "req.",
+   "tol": ">= 150",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "gust load factor at VC (Ude 15.24 m/s) <= design limit",
+   "unit": "g",
+   "M": 2.224630109165854,
+   "D": null,
+   "eq": "[L3]",
+   "tol": "<= 3.8",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "nominal energy from cells (series x parallel x cell Wh)",
+   "unit": "kWh",
+   "M": 42.93,
+   "D": 42.93,
+   "eq": "[B1]",
+   "tol": "\u00b11% warn / \u00b15% fail",
+   "note": "",
+   "diff": 0.0,
+   "status": "PASS"
+  },
+  {
+   "quantity": "battery pack mass (cells / (1 - overhead))",
+   "unit": "kg",
+   "M": 241.90714285714284,
+   "D": 225.78,
+   "eq": "[B2]",
+   "tol": "\u00b110% warn / \u00b120% fail",
+   "note": "overhead fraction 0.30",
+   "diff": 0.07142857142857137,
+   "status": "PASS"
+  },
+  {
+   "quantity": "mission energy (design range, at battery terminals / eta_batt)",
+   "unit": "kWh",
+   "M": 24.341973128065955,
+   "D": 25.889,
+   "eq": "[E2]-[E4]",
+   "tol": "\u00b110% warn / \u00b120% fail",
+   "note": "",
+   "diff": -0.05975614631442095,
+   "status": "PASS"
+  },
+  {
+   "quantity": "range to 20 % reserve at EOL capacity",
+   "unit": "km",
+   "M": 26.479494309522924,
+   "D": 23.281,
+   "eq": "[R1]",
+   "tol": "\u00b110% warn / \u00b120% fail",
+   "note": "",
+   "diff": 0.13738646576706004,
+   "status": "WARN"
+  },
+  {
+   "quantity": "range at EOL with 20 % reserve >= design range",
+   "unit": "km",
+   "M": 26.479494309522924,
+   "D": null,
+   "eq": "[R1]",
+   "tol": ">= 20",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "nominal battery energy >= required (EOL, reserve)",
+   "unit": "kWh",
+   "M": 42.93,
+   "D": null,
+   "eq": "[B3]",
+   "tol": ">= 36.1326",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "hover C-rate at EOL capacity (ceiling)",
+   "unit": "1/h",
+   "M": 8.434782299056597,
+   "D": 9.6654,
+   "eq": "[B4]",
+   "tol": "\u00b110% warn / \u00b120% fail",
+   "note": "",
+   "diff": -0.12732196297550058,
+   "status": "WARN"
+  },
+  {
+   "quantity": "hover C-rate <= cell continuous rating - 0.3 C margin",
+   "unit": "1/h",
+   "M": 8.434782299056597,
+   "D": null,
+   "eq": "[B4] req.",
+   "tol": "<= 9.7",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "rotor-out C-rate <= cell peak rating",
+   "unit": "1/h",
+   "M": 7.969800929541399,
+   "D": null,
+   "eq": "[B4]",
+   "tol": "<= 15",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "independent battery packs/buses",
+   "unit": "-",
+   "M": 3,
+   "D": null,
+   "eq": "req.",
+   "tol": ">= 2",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "C-rate with one pack failed (hover landing) <= cell peak rating",
+   "unit": "1/h",
+   "M": 12.652173448584895,
+   "D": null,
+   "eq": "[B4]",
+   "tol": "<= 15",
+   "diff": null,
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "quantity": "lift motor mass each (catalog) vs NDARC torque regression",
+   "unit": "kg",
+   "M": 13.658605253975223,
+   "D": 15.3,
+   "eq": "[M8]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": -0.10728070235456065,
+   "status": "PASS"
+  },
+  {
+   "quantity": "inverters + HV harness (vs NASA 0.63 x motor accessory factor)",
+   "unit": "kg",
+   "M": 57.6748988865372,
+   "D": 67.53999999999999,
+   "eq": "[M16]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": -0.14606309022005912,
+   "status": "PASS"
+  },
+  {
+   "quantity": "wing mass",
+   "unit": "kg",
+   "M": 73.95979520751968,
+   "D": 72.731,
+   "eq": "[M1]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": 0.016895068231148773,
+   "status": "PASS"
+  },
+  {
+   "quantity": "fuselage mass",
+   "unit": "kg",
+   "M": 47.51786321603809,
+   "D": 66.265,
+   "eq": "[M5]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": -0.2829115941139653,
+   "status": "WARN"
+  },
+  {
+   "quantity": "landing gear mass",
+   "unit": "kg",
+   "M": 40.37431125,
+   "D": 52.709,
+   "eq": "[M6]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": -0.23401485040505424,
+   "status": "PASS"
+  },
+  {
+   "quantity": "booms mass",
+   "unit": "kg",
+   "M": 47.425878358073405,
+   "D": 46.423,
+   "eq": "[M10]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": 0.021603049309036528,
+   "status": "PASS"
+  },
+  {
+   "quantity": "lift motors mass",
+   "unit": "kg",
+   "M": 109.26884203180178,
+   "D": 122.4,
+   "eq": "[M8]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": -0.10728070235456065,
+   "status": "PASS"
+  },
+  {
+   "quantity": "lift rotors mass",
+   "unit": "kg",
+   "M": 27.68472357834508,
+   "D": 31.611,
+   "eq": "[M9]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": -0.12420601757789763,
+   "status": "PASS"
+  },
+  {
+   "quantity": "parachute mass",
+   "unit": "kg",
+   "M": 21.346753426749096,
+   "D": 35.429,
+   "eq": "[M15]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": -0.3974779579793645,
+   "status": "WARN"
+  },
+  {
+   "quantity": "tail (H + V) mass",
+   "unit": "kg",
+   "M": 7.889072877246404,
+   "D": 10.566,
+   "eq": "[M3]-[M4]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": -0.25335293609252285,
+   "status": "WARN"
+  },
+  {
+   "quantity": "pusher motor mass",
+   "unit": "kg",
+   "M": 18.585068157817375,
+   "D": 27.32,
+   "eq": "[M8]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": -0.3197266413683245,
+   "status": "WARN"
+  },
+  {
+   "quantity": "pusher propeller mass",
+   "unit": "kg",
+   "M": 1.861027115429412,
+   "D": 3.63,
+   "eq": "[M9]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": -0.48732035387619504,
+   "status": "WARN"
+  },
+  {
+   "quantity": "seats mass",
+   "unit": "kg",
+   "M": 33.938490949999995,
+   "D": 22.67,
+   "eq": "[M11]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": 0.49706620864578704,
+   "status": "WARN"
+  },
+  {
+   "quantity": "avionics mass",
+   "unit": "kg",
+   "M": 10.683968016415234,
+   "D": 12.531,
+   "eq": "[M12]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": -0.1473970140918336,
+   "status": "PASS"
+  },
+  {
+   "quantity": "lv electrical mass",
+   "unit": "kg",
+   "M": 10.0,
+   "D": 10.0,
+   "eq": "[M13]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": 0.0,
+   "status": "PASS"
+  },
+  {
+   "quantity": "wing mass, NDARC AFDD93 cross-check",
+   "unit": "kg",
+   "M": 102.24688527394544,
+   "D": 72.731,
+   "eq": "[M2]",
+   "tol": "\u00b125% warn / \u00b150% fail",
+   "note": "",
+   "diff": 0.4058226241072644,
+   "status": "WARN"
+  },
+  {
+   "quantity": "empty mass excluding battery",
+   "unit": "kg",
+   "M": 515.3422956807128,
+   "D": 663.945,
+   "eq": "[M0]",
+   "tol": "\u00b110% warn / \u00b120% fail",
+   "note": "D's breakdown contains a growth allowance; M has none",
+   "diff": -0.2238177926172909,
+   "status": "FAIL"
+  },
+  {
+   "quantity": "MTOW recomputed (M empty + D battery + payload)",
+   "unit": "kg",
+   "M": 941.1222956807128,
+   "D": 1089.725,
+   "eq": "[M0]",
+   "tol": "\u00b110% warn / \u00b120% fail",
+   "note": "",
+   "diff": -0.13636716081514796,
+   "status": "WARN"
+  },
+  {
+   "quantity": "acquisition cost per aircraft (Eastlake airframe + COTS propulsion/systems)",
+   "unit": "USD",
+   "M": 413789.7115952048,
+   "D": 447765,
+   "eq": "[C1]-[C9]",
+   "tol": "\u00b130% warn / \u00b160% fail",
+   "note": "recurring airframe (Eastlake hours x rate + materials) + D's COTS propulsion/systems total",
+   "diff": -0.07587749914529994,
+   "status": "PASS"
+  }
+ ],
+ "computed": {
+  "eta_drive_M": 0.884058,
+  "eta_drive_D": 0.884058,
+  "aspect_ratio": 7.478260869565216,
+  "overall_length_m": 8.468499999999999,
+  "disk_loading_N_m2": 496.95179637294154,
+  "hover": {
+   "site": {
+    "T_N": 1398.0681223912811,
+    "area_m2": 2.688025214227767,
+    "vh_ms": 15.314018343356482,
+    "p_ideal_kw": 21.410040871562032,
+    "fm_estimate": 0.7184250979271978,
+    "fm_used": 0.7184250979271978,
+    "p_shaft_kw": 29.80135428638886,
+    "p_shaft_with_D_fm_kw": 29.798247559585292,
+    "ct_sigma": 0.11418636146844949,
+    "p_shaft_total_kw": 238.4108342911109,
+    "p_elec_total_kw": 271.17782011034444,
+    "p_shaft_per_motor_kw": 29.80135428638886
+   },
+   "ceiling": {
+    "T_N": 1398.0681223912811,
+    "area_m2": 2.688025214227767,
+    "vh_ms": 15.697024149229861,
+    "p_ideal_kw": 21.94550907944439,
+    "fm_estimate": 0.7255714106797214,
+    "fm_used": 0.7255714106797214,
+    "p_shaft_kw": 30.245829364866584,
+    "p_shaft_with_D_fm_kw": 30.543506025670684,
+    "ct_sigma": 0.11996942058661357,
+    "p_shaft_total_kw": 241.96663491893267,
+    "p_elec_total_kw": 275.19995511485973,
+    "p_shaft_per_motor_kw": 30.245829364866584
+   },
+   "sea_level_isa": {
+    "T_N": 1398.0681223912811,
+    "area_m2": 2.688025214227767,
+    "vh_ms": 14.57016770364327,
+    "p_ideal_kw": 20.37008700435863,
+    "fm_estimate": 0.7028117051450167,
+    "fm_used": 0.7028117051450167,
+    "p_shaft_kw": 28.983704817715733,
+    "p_shaft_with_D_fm_kw": 28.35085178059656,
+    "ct_sigma": 0.10336297712174129,
+    "p_shaft_total_kw": 231.86963854172586,
+    "p_elec_total_kw": 263.7787628659272,
+    "p_shaft_per_motor_kw": 28.983704817715733
+   }
+  },
+  "tip_mach_hover": 0.5156081046356243,
+  "rotor_out": {
+   "method": "LP min-max thrust, 4 trim equations",
+   "T_max_N": 1864.15940042079,
+   "per_case_T_N": [
+    1864.15940042079,
+    1864.1189947085554,
+    1864.090829855041,
+    1864.090829855042,
+    1864.159400420788,
+    1864.1189947085563,
+    1864.0908298550416,
+    1864.0908298550412
+   ],
+   "p_shaft_most_loaded_kw": 49.74659422520078,
+   "thrust_ratio_to_hover": 1.333382379988965,
+   "torque_most_loaded_nm": 212.26498361100687
+  },
+  "oswald_M": 0.8253578279218025,
+  "cruise": {
+   "V_ms": 41.666666666666664,
+   "q_Pa": 962.5741501345002,
+   "CL": 1.1225536435690107,
+   "CD0": 0.05392858351861168,
+   "CDi": 0.06498624589194811,
+   "drag_N": 1132.052331088178,
+   "LD": 9.439980271033601,
+   "drag_area_breakdown_m2": {
+    "wing": 0.07591447618584382,
+    "fuselage": 0.0889530521685283,
+    "booms": 0.01804950567955787,
+    "tail_h": 0.012732523314753082,
+    "tail_v": 0.007617434468652855,
+    "stopped_lift_rotors": 0.1704,
+    "landing_gear": 0.1012,
+    "other_listed": 0.01,
+    "excrescence_interference": 0.04848669918173363,
+    "total": 0.5333536909990695,
+    "swet_wing_m2": 18.240694272000002,
+    "swet_fuselage_m2": 15.788
+   },
+   "eta_prop_M": 0.7915296765822055,
+   "p_shaft_kw": 59.59201344458408,
+   "p_elec_kw": 68.90735726002602
+  },
+  "pusher_helical_tip_mach": 0.5602991619560492,
+  "stall_speed_ms": 29.552349417200507,
+  "stall_speed_tas_cruise_alt_ms": 31.06108524414066,
+  "gust_load_factor_Vc": 2.224630109165854,
+  "wing_loading_N_m2": 1080.541119438827,
+  "battery_cells_kg": 169.33499999999998,
+  "pack_voltage_nominal_V": 572.4,
+  "mission": {
+   "E_nom_kwh": 42.93,
+   "E_eol_kwh": 34.344,
+   "E_reserve_kwh": 6.8688,
+   "E_hover_kwh": 9.588808534645967,
+   "E_transitions_kwh": 2.9832033102664073,
+   "E_climb_kwh": 2.098753246658701,
+   "E_cruise_kwh": 9.67120803649488,
+   "E_mission_kwh": 24.341973128065955,
+   "E_nominal_required_kwh": 36.13261636197289,
+   "range_km": 26.479494309522924,
+   "P_transition_kw": 170.04258868518522,
+   "eta_battery": 0.95
+  },
+  "c_rates_eol": {
+   "hover (site)": 8.311505268991885,
+   "hover (ceiling)": 8.434782299056597,
+   "cruise": 2.111986381135325,
+   "rotor-out (approx.)": 7.969800929541399
+  },
+  "c_rate_one_pack_out": 12.652173448584895,
+  "wing_mass_afdd93_kg": 102.24688527394544,
+  "landing_gear_raymer_ga_kg": 66.1170198467683,
+  "lift_motor_design_torque_nm": 212.26498361100687,
+  "hv_harness_physics_kg": 41.30646563723249,
+  "mass_estimates_kg": {
+   "wing": 73.95979520751968,
+   "tail_horizontal": 4.454847746189693,
+   "tail_vertical": 3.4342251310567113,
+   "fuselage": 47.51786321603809,
+   "landing_gear": 40.37431125,
+   "flight_controls": 7.131602608740137,
+   "booms_and_fittings": 47.425878358073405,
+   "lift_motors": 109.26884203180178,
+   "pusher_motor": 18.585068157817375,
+   "lift_rotors_blades_hubs": 27.68472357834508,
+   "pusher_propeller": 1.861027115429412,
+   "inverters_cooling_accessories": 57.6748988865372,
+   "parachute": 21.346753426749096,
+   "avionics_installed": 10.683968016415234,
+   "electrical_lv": 10.0,
+   "furnishings_seats": 33.938490949999995
+  },
+  "empty_excl_battery_M_kg": 515.3422956807128,
+  "mtow_M_kg": 941.1222956807128,
+  "cost": {
+   "eastlake": {
+    "items": {
+     "engineering": 659482.577003196,
+     "development_support": 87636.83214969878,
+     "flight_test": 10353.476305425735,
+     "tooling": 1145041.6928981806,
+     "manufacturing": 1202245.9942735396,
+     "materials": 127704.60619961597,
+     "quality_control": 109404.3854788921
+    },
+    "total": 3341869.564308549,
+    "per_unit_total": 334186.95643085486,
+    "per_unit_recurring": 143935.49859520476,
+    "hours": {
+     "eng": 6941.921863191537,
+     "tool": 17616.026044587394,
+     "mfg": 21859.018077700723,
+     "mfg_per_unit": 2185.901807770072
+    }
+   },
+   "airframe_structure_kg": 224.2985235176177,
+   "VH_kts": 89.09294954034517,
+   "units": 10
+  }
+ },
+ "assumptions": {
+  "kappa_induced": 1.2,
+  "cd0_blade": 0.015,
+  "coax_factor": 1.0,
+  "download_fraction": 0.03,
+  "control_thrust_margin": 0.1,
+  "eta_motor": 0.93,
+  "eta_inverter": 0.97,
+  "eta_wiring": 0.98,
+  "eta_battery": 0.95,
+  "aux_power_kw": 1.5,
+  "battery_eol_fraction": 0.8,
+  "reserve_fraction": 0.2,
+  "c_rate_margin": 0.3,
+  "pack_overhead_fraction": 0.3,
+  "laminar_fraction_wing": 0.1,
+  "laminar_fraction_body": 0.05,
+  "excrescence_factor": 1.1,
+  "cl_max_default": 1.4,
+  "prop_profile_factor": 0.9,
+  "eta_prop_cap": 0.86,
+  "climb_rate_ms": 2.5,
+  "cruise_alt_m": 500.0,
+  "takeoff_alt_m": 0.0,
+  "gust_ude_ms": 15.24,
+  "transition_power_rule": "mean",
+  "tech_factor_structure": 0.85,
+  "tech_factor_rotor": 1.0,
+  "flap_frequency": 1.1,
+  "parachute_points": [
+   [
+    600.0,
+    12.3
+   ],
+   [
+    750.0,
+    14.8
+   ],
+   [
+    1050.0,
+    21.7
+   ],
+   [
+    757.0,
+    12.4
+   ],
+   [
+    950.0,
+    17.6
+   ]
+  ],
+  "cfrp_allowable_mpa": 300.0,
+  "cfrp_density": 1550.0,
+  "boom_fitting_factor": 1.6,
+  "copper_density": 8960.0,
+  "hv_current_density_a_mm2": 5.0,
+  "harness_overhead": 1.4,
+  "seat_mass_kg": 8.0,
+  "accessory_factor": 0.4511,
+  "lv_electrical_kg": 10.0,
+  "_reasons": {
+   "tech_factor_structure": "foam-core / wet-laid carbon sandwich structure; Raymer table 15.4 composite factor 0.85 (the WP M 'light' scenario uses the same value)",
+   "accessory_factor": "inverters from the catalog (MGM HBCi, 1 per motor), HV harness from [M14] physics, cooling build-up; replaces the NASA 1.63 technology factor",
+   "lv_electrical_kg": "COTS build-up (2 x 600 W DC-DC, 24 V LiFePO4, LV harness, panel, lights) instead of the Raymer GA electrical-system regression"
+  }
+ },
+ "tolerances": {
+  "mass": [
+   0.1,
+   0.2
+  ],
+  "mass_component": [
+   0.25,
+   0.5
+  ],
+  "power": [
+   0.1,
+   0.2
+  ],
+  "drag": [
+   0.15,
+   0.3
+  ],
+  "energy": [
+   0.1,
+   0.2
+  ],
+  "range": [
+   0.1,
+   0.2
+  ],
+  "speed": [
+   0.03,
+   0.08
+  ],
+  "mach": [
+   0.03,
+   0.08
+  ],
+  "c_rate": [
+   0.1,
+   0.2
+  ],
+  "geometry": [
+   0.01,
+   0.05
+  ],
+  "cost": [
+   0.3,
+   0.6
+  ]
+ },
+ "notes": []
+}

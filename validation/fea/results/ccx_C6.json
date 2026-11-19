@@ -1,0 +1,67 @@
+{
+ "case": "sandwich beam 3-point bending: span 300 mm, b 50 mm, faces 1 mm (E 50 GPa), core 20 mm (E 70, G 26.9 MPa), P 500 N over 20 mm",
+ "reference_mm": 1.7278125288709263,
+ "reference_line_load_mm": 1.7710339679966882,
+ "bending_mm": 0.5065621239470518,
+ "shear_mm": 1.2212504049238744,
+ "shear_share_pct": 70.68188154197058,
+ "formula": "delta = P(8L^3-4Lc^2+c^3)/(384 D) + P(L-c/2)/(4S); D = Ef b tf^3/6 + Ef b tf d^2/2 + Ec b tc^3/12; S = Gc b d^2/tc",
+ "source": "H.G. Allen, Analysis and Design of Structural Sandwich Panels (1969); D. Zenkert, An Introduction to Sandwich Construction (1995)",
+ "mesh": [
+  {
+   "model": "CPS8 layered",
+   "mesh": "32 x (1+4+1)",
+   "deflection_mm": 1.69661,
+   "err_pct": -1.80589782453518
+  },
+  {
+   "model": "CPS8 layered",
+   "mesh": "64 x (1+8+1)",
+   "deflection_mm": 1.70326,
+   "err_pct": -1.421018105880424
+  },
+  {
+   "model": "CPS8 layered",
+   "mesh": "128 x (2+12+2)",
+   "deflection_mm": 1.70499,
+   "err_pct": -1.320891502380766
+  },
+  {
+   "model": "CPS8 layered",
+   "mesh": "256 x (2+16+2)",
+   "deflection_mm": 1.70526,
+   "err_pct": -1.3052648070368893
+  },
+  {
+   "model": "S8R composite shell (3 layers), line load",
+   "mesh": "16x4",
+   "deflection_mm": 0.5244856666666666,
+   "err_pct": -70.38534121059573
+  },
+  {
+   "model": "S8R composite shell (3 layers), line load",
+   "mesh": "32x4",
+   "deflection_mm": 0.5247420222222223,
+   "err_pct": -70.37086630157714
+  },
+  {
+   "model": "S8R composite shell (3 layers), line load",
+   "mesh": "64x4",
+   "deflection_mm": 0.5250563444444444,
+   "err_pct": -70.35311835162801
+  },
+  {
+   "model": "C3D20R layered solid strip",
+   "mesh": "32x2x(1+2+1)",
+   "deflection_mm": 1.7064540000000001,
+   "err_pct": -1.236160087627291
+  },
+  {
+   "model": "C3D20R layered solid strip",
+   "mesh": "64x2x(1+4+1)",
+   "deflection_mm": 1.706438,
+   "err_pct": -1.237086114018053
+  }
+ ],
+ "_wall_s": 4.1
+}

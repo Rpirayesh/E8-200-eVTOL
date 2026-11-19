@@ -1,0 +1,335 @@
+[
+ {
+  "id": "C1",
+  "check": "rotor tip-to-tip plan clearance, minimum (LR_L1-LR_L2)",
+  "value": 100.0,
+  "reference": 100.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "same reference as validation/sizing A6a (0.1 m)"
+ },
+ {
+  "id": "C2",
+  "check": "rotor blade plane above the wing upper surface where the disc overlaps the wing (LR_L3)",
+  "value": 458.2435,
+  "reference": 150.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "reference as validation/sizing A6c (0.15 m)"
+ },
+ {
+  "id": "C3",
+  "check": "front rotor tips to the wing leading edge, plan gap",
+  "value": 220.3,
+  "reference": 0.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "no plan overlap ahead of the wing"
+ },
+ {
+  "id": "C4",
+  "check": "rotor tip to fuselage side, plan gap",
+  "value": 150.0,
+  "reference": 150.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "reference as validation/sizing A6b"
+ },
+ {
+  "id": "C5",
+  "check": "rotor blade plane above the fuselage / canopy top",
+  "value": 426.2923,
+  "reference": 0.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "id": "C6",
+  "check": "rear rotor tips to the H-tail leading edge, plan gap",
+  "value": 100.0,
+  "reference": 0.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "rear tip path is 100 mm ahead of the H-tail in plan; blade plane 575 mm above the H-tail, so no contact, but the rear-rotor wake impinges on the tail"
+ },
+ {
+  "id": "C7",
+  "check": "blade plane above the station hardware outside the hub radius (nacelle / motor plate)",
+  "value": 185.9923,
+  "reference": 50.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "motor (r 134 mm) and motor plate (r 140 mm) lie inside the hub radius 144 mm"
+ },
+ {
+  "id": "C8",
+  "check": "rotor plane (blade) above the highest occupant point (no blade in the occupant plane)",
+  "value": 552.526,
+  "reference": 0.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "requirements.yaml safety.occupant"
+ },
+ {
+  "id": "C9",
+  "check": "blade-release fan: minimum depression angle from the tip path to an occupant",
+  "value": 5.3745,
+  "reference": 5.0,
+  "unit": "deg",
+  "status": "PASS",
+  "note": "reference: +/-5 deg rotor-burst fan (FAA AC 20-128A practice for rotating parts); occupants outside the fan"
+ },
+ {
+  "id": "C10",
+  "check": "pusher tip ground clearance (level, on skids)",
+  "value": 895.5,
+  "reference": 200.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "reference as validation/sizing A6e"
+ },
+ {
+  "id": "C11",
+  "check": "tail-down rotation about the skid aft end to the first ground strike",
+  "value": 12.207,
+  "reference": 10.0,
+  "unit": "deg",
+  "status": "PASS",
+  "note": "first strike: pusher tip (pusher tip 12.2 deg, fin 14.9 deg, boom end 23.3 deg); reference 10 deg tail-low touchdown"
+ },
+ {
+  "id": "C12",
+  "check": "pusher disc behind the H-tail trailing edge (axial gap)",
+  "value": 328.2,
+  "reference": 200.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "props run in the H-tail wake (noise, blade loads): open item in the design"
+ },
+ {
+  "id": "C12b",
+  "check": "pusher disc behind the fin trailing edge (axial gap)",
+  "value": 250.0,
+  "reference": 200.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "id": "C13",
+  "check": "pusher tip-to-tip gap (twin props)",
+  "value": 1320.0,
+  "reference": 300.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "id": "C14",
+  "check": "pusher disc to the nearest lift-rotor tip path (axial, no plan overlap)",
+  "value": 804.3,
+  "reference": 100.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "id": "C15",
+  "check": "boom-end fitting engagement in the boom",
+  "value": 150.0,
+  "reference": 150.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "id": "C16",
+  "check": "pilot canopy opening length (x)",
+  "value": 1664.6397,
+  "reference": 660.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "14 CFR 23.807 exit 19 x 26 in (483 x 660 mm)"
+ },
+ {
+  "id": "C17",
+  "check": "passenger door clear width between the wing-spar posts",
+  "value": 488.3391,
+  "reference": 483.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "posts at the main and rear spar stations carry the wing fittings"
+ },
+ {
+  "id": "C18",
+  "check": "passenger door clear height (sill to wing lower surface)",
+  "value": 671.93,
+  "reference": 660.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "id": "C19",
+  "check": "front canopy swing radius vs boom (canopy fully open)",
+  "value": 109.0039,
+  "reference": 50.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "canopy radius 1064 mm about the right sill hinge"
+ },
+ {
+  "id": "C20",
+  "check": "front canopy swing radius vs lift-rotor disc edge",
+  "value": 137.0502,
+  "reference": 0.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "opening the canopy with rotors turning is prohibited regardless"
+ },
+ {
+  "id": "C21",
+  "check": "boom underside height above ground on the egress path",
+  "value": 1715.5,
+  "reference": 1900.0,
+  "unit": "mm",
+  "status": "WARN",
+  "note": "occupants leave sideways under the booms (y = +/-1.535 m); P95 standing height ~1.85 m -> head-strike hazard, pad/mark the boom"
+ },
+ {
+  "id": "C22a",
+  "check": "head clearance, seat_1_pilot (P95 sitting height 970 mm) to the canopy",
+  "value": 82.9703,
+  "reference": 50.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "id": "C22b",
+  "check": "head clearance, seat_2_passenger (P95 sitting height 970 mm) to the wing lower surface",
+  "value": 74.6056,
+  "reference": 50.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "id": "C23",
+  "check": "seat energy-absorber stroke available under the pan",
+  "value": 160.0,
+  "reference": 150.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "vertical crash stroke under the seat is limited by the SRP height above the floor; the packs under the floor give no belly crush zone"
+ },
+ {
+  "id": "C24",
+  "check": "static lateral tip-over angle (CAD CG, MTOW)",
+  "value": 27.6014,
+  "reference": 25.0,
+  "unit": "deg",
+  "status": "PASS",
+  "note": "reference 25 deg"
+ },
+ {
+  "id": "C25",
+  "check": "static forward tip-over angle (CAD CG, MTOW)",
+  "value": 57.8093,
+  "reference": 25.0,
+  "unit": "deg",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "id": "C26",
+  "check": "static aft tip-over angle (CAD CG, MTOW)",
+  "value": 38.9738,
+  "reference": 25.0,
+  "unit": "deg",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "id": "C27",
+  "check": "boom crown above the wing lower surface (penetration, max over the chord)",
+  "value": -21.9912,
+  "reference": 0.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "at the main spar -47 mm, at the rear spar -37 mm (negative = below the wing)"
+ },
+ {
+  "id": "C27a",
+  "check": "boom-wing saddle pad top (FEA P2) above the wing lower surface, main spar",
+  "value": -13.128,
+  "reference": 0.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "gap 13 mm to the lower skin, filled by a bonded hard-point shim"
+ },
+ {
+  "id": "C27b",
+  "check": "boom-wing saddle pad top (FEA P2) above the wing lower surface, rear spar",
+  "value": -3.1824,
+  "reference": 0.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "gap 3 mm to the lower skin, filled by a bonded hard-point shim"
+ },
+ {
+  "id": "C28",
+  "check": "battery box corner outside the fuselage OML (max lateral protrusion)",
+  "value": 0.0,
+  "reference": 0.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "id": "C29",
+  "check": "parachute canister top above the fuselage OML",
+  "value": -112.4047,
+  "reference": 0.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "inside the OML under the frangible hatch"
+ },
+ {
+  "id": "C30",
+  "check": "wing root fitting (y = root_fittings_y) outside the fuselage OML at its height",
+  "value": -7.9127,
+  "reference": 0.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "must be inside the shoulder fairing of the OML"
+ },
+ {
+  "id": "C31",
+  "check": "H-tail exposed planform area (between the booms) vs design",
+  "value": 1.1064,
+  "reference": 1.1126,
+  "unit": "m2",
+  "status": "PASS",
+  "note": "design value = exposed area between the boom surfaces"
+ },
+ {
+  "id": "C32",
+  "check": "ventral fin exposed area (each) vs design",
+  "value": 0.31,
+  "reference": 0.3096,
+  "unit": "m2",
+  "status": "PASS",
+  "note": "design value = exposed area below the boom underside"
+ },
+ {
+  "id": "C33",
+  "check": "H-tail spar (50 mm) inside the NACA0014 section at the spar",
+  "value": 1.4603,
+  "reference": 0.0,
+  "unit": "mm",
+  "status": "PASS",
+  "note": "clearance left for the core between the spar tube and the skins"
+ }
+]

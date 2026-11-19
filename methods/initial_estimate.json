@@ -1,0 +1,2064 @@
+{
+ "base": {
+  "payload": 200.0,
+  "cruise_kmh": 150.0,
+  "disk_loading": 450.0,
+  "wing_loading": 650.0,
+  "span_max": 9.0,
+  "cl_max": 1.4,
+  "cell": {
+   "name": "21700 high-energy class (Molicel P50B data, resources ledger S04/S05)",
+   "energy_wh": 18.0,
+   "mass_kg": 0.071,
+   "capacity_ah": 5.0,
+   "v_nom": 3.6,
+   "max_continuous_discharge_a": 40.0,
+   "max_peak_discharge_a": 60.0
+  },
+  "series": 110,
+  "vtip": 150.0,
+  "blades": 2,
+  "chord_over_R": 0.1,
+  "pusher_D": 1.6,
+  "pusher_rpm": 2400,
+  "fuselage": {
+   "length_m": 4.6,
+   "max_width_m": 1.15,
+   "max_height_m": 1.35
+  }
+ },
+ "scenarios": {
+  "conservative": {
+   "assumptions": {},
+   "growth": 0.1,
+   "note": "M default regressions: Raymer GA structure (no composite credit), NASA 1.63 motor accessory factor, Raymer GA electrical system, 30 % pack overhead, 10 % growth"
+  },
+  "light": {
+   "assumptions": {
+    "tech_factor_structure": 0.85,
+    "accessory_factor": 0.35,
+    "lv_electrical_kg": 12.0,
+    "pack_overhead_fraction": 0.25
+   },
+   "growth": 0.05,
+   "note": "composite credit 0.85 on structure (Raymer table 15.4 order), COTS inverter/cooling/harness 0.35 x motor mass, 12 kg LV system, 25 % pack overhead, 5 % growth"
+  }
+ },
+ "range_limits": [
+  {
+   "scenario": "conservative",
+   "variant": "as_required",
+   "n_rot": 6,
+   "coax": false,
+   "max_range_km": 24.17388916015625,
+   "mtow_kg": 1744.790684711188,
+   "battery_kwh": 63.36
+  },
+  {
+   "scenario": "conservative",
+   "variant": "as_required",
+   "n_rot": 8,
+   "coax": false,
+   "max_range_km": 27.93487548828125,
+   "mtow_kg": 1598.1366378255188,
+   "battery_kwh": 61.38
+  },
+  {
+   "scenario": "conservative",
+   "variant": "as_required",
+   "n_rot": 8,
+   "coax": true,
+   "max_range_km": null
+  },
+  {
+   "scenario": "conservative",
+   "variant": "BOL_capacity",
+   "n_rot": 6,
+   "coax": false,
+   "max_range_km": 36.81365966796875,
+   "mtow_kg": 1744.790684711188,
+   "battery_kwh": 63.36
+  },
+  {
+   "scenario": "conservative",
+   "variant": "BOL_capacity",
+   "n_rot": 8,
+   "coax": false,
+   "max_range_km": 41.65771484375,
+   "mtow_kg": 1598.1366378255188,
+   "battery_kwh": 61.38
+  },
+  {
+   "scenario": "conservative",
+   "variant": "BOL_capacity",
+   "n_rot": 8,
+   "coax": true,
+   "max_range_km": null
+  },
+  {
+   "scenario": "conservative",
+   "variant": "cell_300Whkg",
+   "n_rot": 6,
+   "coax": false,
+   "max_range_km": 33.64776611328125,
+   "mtow_kg": 1749.5879073161632,
+   "battery_kwh": 75.24
+  },
+  {
+   "scenario": "conservative",
+   "variant": "cell_300Whkg",
+   "n_rot": 8,
+   "coax": false,
+   "max_range_km": 37.64678955078125,
+   "mtow_kg": 1641.8032186571509,
+   "battery_kwh": 75.24
+  },
+  {
+   "scenario": "conservative",
+   "variant": "cell_300Whkg",
+   "n_rot": 8,
+   "coax": true,
+   "max_range_km": 21.6387939453125,
+   "mtow_kg": 1696.5075235813856,
+   "battery_kwh": 59.4
+  },
+  {
+   "scenario": "conservative",
+   "variant": "BOL_and_300Whkg",
+   "n_rot": 6,
+   "coax": false,
+   "max_range_km": 48.656005859375,
+   "mtow_kg": 1749.5879073161632,
+   "battery_kwh": 75.24
+  },
+  {
+   "scenario": "conservative",
+   "variant": "BOL_and_300Whkg",
+   "n_rot": 8,
+   "coax": false,
+   "max_range_km": 53.8690185546875,
+   "mtow_kg": 1543.4170752763748,
+   "battery_kwh": 69.3
+  },
+  {
+   "scenario": "conservative",
+   "variant": "BOL_and_300Whkg",
+   "n_rot": 8,
+   "coax": true,
+   "max_range_km": 33.43353271484375,
+   "mtow_kg": 1696.5075235813856,
+   "battery_kwh": 59.4
+  },
+  {
+   "scenario": "conservative",
+   "variant": "span_11m",
+   "n_rot": 6,
+   "coax": false,
+   "max_range_km": 24.93560791015625,
+   "mtow_kg": 1740.7908251974732,
+   "battery_kwh": 57.42
+  },
+  {
+   "scenario": "conservative",
+   "variant": "span_11m",
+   "n_rot": 8,
+   "coax": false,
+   "max_range_km": 29.755859375,
+   "mtow_kg": 1797.7124076802284,
+   "battery_kwh": 65.34
+  },
+  {
+   "scenario": "conservative",
+   "variant": "span_11m",
+   "n_rot": 8,
+   "coax": true,
+   "max_range_km": null
+  },
+  {
+   "scenario": "light",
+   "variant": "as_required",
+   "n_rot": 6,
+   "coax": false,
+   "max_range_km": 61.16485595703125,
+   "mtow_kg": 1349.9901018571109,
+   "battery_kwh": 77.22
+  },
+  {
+   "scenario": "light",
+   "variant": "as_required",
+   "n_rot": 8,
+   "coax": false,
+   "max_range_km": 61.85516357421875,
+   "mtow_kg": 1439.5601735450327,
+   "battery_kwh": 87.12
+  },
+  {
+   "scenario": "light",
+   "variant": "as_required",
+   "n_rot": 8,
+   "coax": true,
+   "max_range_km": 49.560546875,
+   "mtow_kg": 1593.6490917112678,
+   "battery_kwh": 87.12
+  },
+  {
+   "scenario": "light",
+   "variant": "BOL_capacity",
+   "n_rot": 6,
+   "coax": false,
+   "max_range_km": 83.84979248046875,
+   "mtow_kg": 1349.9901018571109,
+   "battery_kwh": 77.22
+  },
+  {
+   "scenario": "light",
+   "variant": "BOL_capacity",
+   "n_rot": 8,
+   "coax": false,
+   "max_range_km": 84.3377685546875,
+   "mtow_kg": 1439.5601735450327,
+   "battery_kwh": 87.12
+  },
+  {
+   "scenario": "light",
+   "variant": "BOL_capacity",
+   "n_rot": 8,
+   "coax": true,
+   "max_range_km": 68.52020263671875,
+   "mtow_kg": 1593.6490917112678,
+   "battery_kwh": 87.12
+  },
+  {
+   "scenario": "light",
+   "variant": "cell_300Whkg",
+   "n_rot": 6,
+   "coax": false,
+   "max_range_km": 77.6727294921875,
+   "mtow_kg": 1499.9078942928463,
+   "battery_kwh": 104.94
+  },
+  {
+   "scenario": "light",
+   "variant": "cell_300Whkg",
+   "n_rot": 8,
+   "coax": false,
+   "max_range_km": 78.92242431640625,
+   "mtow_kg": 1373.1891295406967,
+   "battery_kwh": 97.02
+  },
+  {
+   "scenario": "light",
+   "variant": "cell_300Whkg",
+   "n_rot": 8,
+   "coax": true,
+   "max_range_km": 63.9141845703125,
+   "mtow_kg": 1474.7233354020864,
+   "battery_kwh": 93.06
+  },
+  {
+   "scenario": "light",
+   "variant": "BOL_and_300Whkg",
+   "n_rot": 6,
+   "coax": false,
+   "max_range_km": 104.22576904296875,
+   "mtow_kg": 1346.7628616373986,
+   "battery_kwh": 91.08
+  },
+  {
+   "scenario": "light",
+   "variant": "BOL_and_300Whkg",
+   "n_rot": 8,
+   "coax": false,
+   "max_range_km": 105.74920654296875,
+   "mtow_kg": 1373.1891295406967,
+   "battery_kwh": 97.02
+  },
+  {
+   "scenario": "light",
+   "variant": "BOL_and_300Whkg",
+   "n_rot": 8,
+   "coax": true,
+   "max_range_km": 86.63482666015625,
+   "mtow_kg": 1474.7233354020864,
+   "battery_kwh": 93.06
+  },
+  {
+   "scenario": "light",
+   "variant": "span_11m",
+   "n_rot": 6,
+   "coax": false,
+   "max_range_km": 69.7222900390625,
+   "mtow_kg": 1598.6928314901888,
+   "battery_kwh": 91.08
+  },
+  {
+   "scenario": "light",
+   "variant": "span_11m",
+   "n_rot": 8,
+   "coax": false,
+   "max_range_km": 70.3411865234375,
+   "mtow_kg": 1694.2039829213172,
+   "battery_kwh": 100.98
+  },
+  {
+   "scenario": "light",
+   "variant": "span_11m",
+   "n_rot": 8,
+   "coax": true,
+   "max_range_km": 56.4874267578125,
+   "mtow_kg": 1698.491363413632,
+   "battery_kwh": 89.1
+  }
+ ],
+ "variants": {
+  "as_required": {
+   "b": {},
+   "extra": {}
+  },
+  "BOL_capacity": {
+   "b": {},
+   "extra": {
+    "battery_eol_fraction": 1.0
+   }
+  },
+  "cell_300Whkg": {
+   "b": {
+    "cell_wh_per_kg": 300
+   },
+   "extra": {}
+  },
+  "BOL_and_300Whkg": {
+   "b": {
+    "cell_wh_per_kg": 300
+   },
+   "extra": {
+    "battery_eol_fraction": 1.0
+   }
+  },
+  "span_11m": {
+   "b": {
+    "span_max": 11.0
+   },
+   "extra": {}
+  }
+ },
+ "variant_cases": [
+  {
+   "feasible": true,
+   "scenario": "light",
+   "range_km": 50,
+   "n_rot": 6,
+   "coax": false,
+   "mtow_kg": 811.5371704567224,
+   "empty_excl_batt_kg": 444.92383712338903,
+   "battery_kg": 166.61333333333332,
+   "battery_kwh": 31.68,
+   "rotor_D_m": 1.937259160762406,
+   "span_m": 9.0,
+   "wing_area_m2": 12.243786142552947,
+   "hover_elec_kw_site": 186.0620264538087,
+   "hover_elec_kw_ceiling": 188.9422159257766,
+   "hover_shaft_per_motor_kw": 27.193922663783535,
+   "rotor_out_shaft_kw": 53.72609054708868,
+   "rotor_out_thrust_ratio": 1.5,
+   "cruise_elec_kw": 44.6938724921473,
+   "LD": 10.514492540583378,
+   "CD0": 0.03842688158645641,
+   "mission_kwh": 25.78702694369079,
+   "c_rate_hover": 6.277984314386516,
+   "stall_ms": 27.532123506658056,
+   "cost_usd": {
+    "battery": 21120.0,
+    "motors_controllers": 66616.00270957989,
+    "propellers": 10150.0,
+    "parachute": 8000.0,
+    "avionics_fcs": 25000.0,
+    "misc": 10000.0,
+    "airframe_recurring_eastlake_N10": 123888.47307017709
+   },
+   "cost_total_usd": 264774.47577975696,
+   "parts": {
+    "motors": 7,
+    "controllers": 7,
+    "propellers": 7,
+    "pylons": 6,
+    "distinct_motor_types": 1
+   },
+   "mass_items": {
+    "wing": 71.1040037674347,
+    "tail_horizontal": 5.76604216742334,
+    "tail_vertical": 5.062494886554816,
+    "fuselage": 41.82641400711761,
+    "landing_gear": 30.067452165421567,
+    "flight_controls": 5.543181539996875,
+    "booms_and_fittings": 23.549606785380142,
+    "lift_motors": 100.78701194057437,
+    "pusher_motor": 12.414424461012349,
+    "lift_rotors_blades_hubs": 24.180469926673446,
+    "pusher_propeller": 1.3052890270840283,
+    "inverters_cooling_accessories": 39.62050274055535,
+    "parachute": 15.55464754775608,
+    "avionics_installed": 17.207487495831263,
+    "electrical_lv": 12.0,
+    "furnishings_seats": 17.747959270581237
+   },
+   "growth": 0.05,
+   "eastlake": {
+    "nonrecurring_usd": 1622596.3427989879,
+    "mfg_hours_per_unit": 1879.7105162539942
+   },
+   "variant": "BOL_capacity"
+  },
+  {
+   "feasible": true,
+   "scenario": "light",
+   "range_km": 50,
+   "n_rot": 8,
+   "coax": false,
+   "mtow_kg": 776.5111248940229,
+   "empty_excl_batt_kg": 409.8977915606896,
+   "battery_kg": 166.61333333333332,
+   "battery_kwh": 31.68,
+   "rotor_D_m": 1.6411111183731988,
+   "span_m": 9.0,
+   "wing_area_m2": 11.715342804526108,
+   "hover_elec_kw_site": 178.09630635736858,
+   "hover_elec_kw_ceiling": 180.8521864922576,
+   "hover_shaft_per_motor_kw": 19.51517217571032,
+   "rotor_out_shaft_kw": 32.71745605478129,
+   "rotor_out_thrust_ratio": 1.3333333333333335,
+   "cruise_elec_kw": 44.889263481776716,
+   "LD": 10.018581329664592,
+   "CD0": 0.042460695375027856,
+   "mission_kwh": 25.441386092070882,
+   "c_rate_hover": 6.009176850487028,
+   "stall_ms": 27.532123506658053,
+   "cost_usd": {
+    "battery": 21120.0,
+    "motors_controllers": 55743.82745529888,
+    "propellers": 13050.0,
+    "parachute": 8000.0,
+    "avionics_fcs": 25000.0,
+    "misc": 10000.0,
+    "airframe_recurring_eastlake_N10": 123986.40267150772
+   },
+   "cost_total_usd": 256900.2301268066,
+   "parts": {
+    "motors": 9,
+    "controllers": 9,
+    "propellers": 9,
+    "pylons": 8,
+    "distinct_motor_types": 2
+   },
+   "mass_items": {
+    "wing": 69.09997657308519,
+    "tail_horizontal": 5.442234513531883,
+    "tail_vertical": 4.79107357759676,
+    "fuselage": 41.50105928590356,
+    "landing_gear": 28.769737177323552,
+    "flight_controls": 5.350945339429658,
+    "booms_and_fittings": 28.160804156491423,
+    "lift_motors": 80.06959820984497,
+    "pusher_motor": 12.462631656136388,
+    "lift_rotors_blades_hubs": 21.00635598013006,
+    "pusher_propeller": 1.3052890270840283,
+    "inverters_cooling_accessories": 32.38628045309347,
+    "parachute": 14.825375657053087,
+    "avionics_installed": 17.207487495831263,
+    "electrical_lv": 12.0,
+    "furnishings_seats": 16.0
+   },
+   "growth": 0.05,
+   "eastlake": {
+    "nonrecurring_usd": 1623957.1651830978,
+    "mfg_hours_per_unit": 1881.2055955729593
+   },
+   "variant": "BOL_capacity"
+  },
+  {
+   "feasible": false,
+   "range_km": 100,
+   "n_rot": 6,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 62.17092273106982,
+   "at_mtow_kg": 1250.0,
+   "variant": "BOL_capacity"
+  },
+  {
+   "feasible": false,
+   "range_km": 100,
+   "n_rot": 8,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 57.284479209331266,
+   "at_mtow_kg": 1300.0,
+   "variant": "BOL_capacity"
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 6,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 189.7569893629743,
+   "at_mtow_kg": 850.0,
+   "variant": "BOL_capacity"
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 8,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 189.43184634532895,
+   "at_mtow_kg": 950.0,
+   "variant": "BOL_capacity"
+  },
+  {
+   "feasible": true,
+   "scenario": "light",
+   "range_km": 50,
+   "n_rot": 6,
+   "coax": false,
+   "mtow_kg": 831.0147467534989,
+   "empty_excl_batt_kg": 455.0147467534989,
+   "battery_kg": 176.0,
+   "battery_kwh": 39.6,
+   "rotor_D_m": 1.9603692441545313,
+   "span_m": 9.0,
+   "wing_area_m2": 12.537647332692615,
+   "hover_elec_kw_site": 190.49167069267781,
+   "hover_elec_kw_ceiling": 193.4409871402565,
+   "hover_shaft_per_motor_kw": 27.84659973487123,
+   "rotor_out_shaft_kw": 55.01556201660809,
+   "rotor_out_thrust_ratio": 1.5,
+   "cruise_elec_kw": 45.76125356595301,
+   "LD": 10.525500048618632,
+   "CD0": 0.037883645306665735,
+   "mission_kwh": 26.40512004955408,
+   "c_rate_hover": 6.427465016622026,
+   "stall_ms": 27.532123506658056,
+   "cost_usd": {
+    "battery": 26400.0,
+    "motors_controllers": 68220.94792156381,
+    "propellers": 10150.0,
+    "parachute": 8000.0,
+    "avionics_fcs": 25000.0,
+    "misc": 10000.0,
+    "airframe_recurring_eastlake_N10": 125252.16845359509
+   },
+   "cost_total_usd": 273023.1163751589,
+   "parts": {
+    "motors": 7,
+    "controllers": 7,
+    "propellers": 7,
+    "pylons": 6,
+    "distinct_motor_types": 1
+   },
+   "mass_items": {
+    "wing": 72.20523063718865,
+    "tail_horizontal": 5.948003641060613,
+    "tail_vertical": 5.214704338796092,
+    "fuselage": 42.00236914660927,
+    "landing_gear": 30.789096367217137,
+    "flight_controls": 5.649361337072772,
+    "booms_and_fittings": 23.853641333230332,
+    "lift_motors": 103.91348003379187,
+    "pusher_motor": 12.677398923642398,
+    "lift_rotors_blades_hubs": 24.932766573880635,
+    "pusher_propeller": 1.3052890270840283,
+    "inverters_cooling_accessories": 40.80680763510199,
+    "parachute": 15.96018715875313,
+    "avionics_installed": 17.207487495831263,
+    "electrical_lv": 12.0,
+    "furnishings_seats": 18.881554211053636
+   },
+   "growth": 0.05,
+   "eastlake": {
+    "nonrecurring_usd": 1641552.214585092,
+    "mfg_hours_per_unit": 1900.5305042319483
+   },
+   "variant": "cell_300Whkg"
+  },
+  {
+   "feasible": true,
+   "scenario": "light",
+   "range_km": 50,
+   "n_rot": 8,
+   "coax": false,
+   "mtow_kg": 795.5860266461968,
+   "empty_excl_batt_kg": 419.58602664619684,
+   "battery_kg": 176.0,
+   "battery_kwh": 39.6,
+   "rotor_D_m": 1.6611456761532586,
+   "span_m": 9.0,
+   "wing_area_m2": 12.003128781861424,
+   "hover_elec_kw_site": 182.43437323828206,
+   "hover_elec_kw_ceiling": 185.25795123496403,
+   "hover_shaft_per_motor_kw": 19.994560017036147,
+   "rotor_out_shaft_kw": 33.52115640087897,
+   "rotor_out_thrust_ratio": 1.3333333333333335,
+   "cruise_elec_kw": 45.91719193564459,
+   "LD": 10.043929668796746,
+   "CD0": 0.04182527659712142,
+   "mission_kwh": 26.04030363867541,
+   "c_rate_hover": 6.155567226042132,
+   "stall_ms": 27.532123506658056,
+   "cost_usd": {
+    "battery": 26400.0,
+    "motors_controllers": 57105.62433762018,
+    "propellers": 13050.0,
+    "parachute": 8000.0,
+    "avionics_fcs": 25000.0,
+    "misc": 10000.0,
+    "airframe_recurring_eastlake_N10": 125758.51730448761
+   },
+   "cost_total_usd": 265314.1416421078,
+   "parts": {
+    "motors": 9,
+    "controllers": 9,
+    "propellers": 9,
+    "pylons": 8,
+    "distinct_motor_types": 2
+   },
+   "mass_items": {
+    "wing": 70.19520928265042,
+    "tail_horizontal": 5.618028665654688,
+    "tail_vertical": 4.938517894490328,
+    "fuselage": 41.67970794588322,
+    "landing_gear": 29.476462287241596,
+    "flight_controls": 5.4558457882170215,
+    "booms_and_fittings": 29.31994876269131,
+    "lift_motors": 82.61197531487237,
+    "pusher_motor": 12.715742527601586,
+    "lift_rotors_blades_hubs": 21.67468946798875,
+    "pusher_propeller": 1.3052890270840283,
+    "inverters_cooling_accessories": 33.364701244865884,
+    "parachute": 15.222531243483196,
+    "avionics_installed": 17.207487495831263,
+    "electrical_lv": 12.0,
+    "furnishings_seats": 16.81960270080866
+   },
+   "growth": 0.05,
+   "eastlake": {
+    "nonrecurring_usd": 1648593.9635103096,
+    "mfg_hours_per_unit": 1908.2614358457915
+   },
+   "variant": "cell_300Whkg"
+  },
+  {
+   "feasible": false,
+   "range_km": 100,
+   "n_rot": 6,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 78.64867901076741,
+   "at_mtow_kg": 1200.0,
+   "variant": "cell_300Whkg"
+  },
+  {
+   "feasible": false,
+   "range_km": 100,
+   "n_rot": 8,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 76.59399551021625,
+   "at_mtow_kg": 1150.0,
+   "variant": "cell_300Whkg"
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 6,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 210.87698936297443,
+   "at_mtow_kg": 850.0,
+   "variant": "cell_300Whkg"
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 8,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 209.10471928667448,
+   "at_mtow_kg": 800.0,
+   "variant": "cell_300Whkg"
+  },
+  {
+   "feasible": true,
+   "scenario": "light",
+   "range_km": 50,
+   "n_rot": 6,
+   "coax": false,
+   "mtow_kg": 744.8008630424738,
+   "empty_excl_batt_kg": 412.8008630424738,
+   "battery_kg": 132.0,
+   "battery_kwh": 29.7,
+   "rotor_D_m": 1.8558958500015637,
+   "span_m": 9.0,
+   "wing_area_m2": 11.236925205469962,
+   "hover_elec_kw_site": 170.8846709575888,
+   "hover_elec_kw_ceiling": 173.528009651786,
+   "hover_shaft_per_motor_kw": 24.95764557290401,
+   "rotor_out_shaft_kw": 49.307955401290734,
+   "rotor_out_thrust_ratio": 1.5,
+   "cruise_elec_kw": 41.17854942179007,
+   "LD": 10.443695848340285,
+   "CD0": 0.04048927275114843,
+   "mission_kwh": 23.72142572831266,
+   "c_rate_hover": 6.150204134389013,
+   "stall_ms": 27.532123506658056,
+   "cost_usd": {
+    "battery": 19800.0,
+    "motors_controllers": 61145.173118457984,
+    "propellers": 10150.0,
+    "parachute": 8000.0,
+    "avionics_fcs": 25000.0,
+    "misc": 10000.0,
+    "airframe_recurring_eastlake_N10": 119121.86480525955
+   },
+   "cost_total_usd": 253217.03792371752,
+   "parts": {
+    "motors": 7,
+    "controllers": 7,
+    "propellers": 7,
+    "pylons": 6,
+    "distinct_motor_types": 1
+   },
+   "mass_items": {
+    "wing": 67.25804400819555,
+    "tail_horizontal": 5.152955747980668,
+    "tail_vertical": 4.547959193330812,
+    "fuselage": 41.1959149142849,
+    "landing_gear": 27.594871975723656,
+    "flight_controls": 5.175406964104854,
+    "booms_and_fittings": 22.491117968382046,
+    "lift_motors": 90.2404404836466,
+    "pusher_motor": 11.541691214419156,
+    "lift_rotors_blades_hubs": 21.643612806842558,
+    "pusher_propeller": 1.3052890270840283,
+    "inverters_cooling_accessories": 35.62374609432301,
+    "parachute": 14.165141187427617,
+    "avionics_installed": 17.207487495831263,
+    "electrical_lv": 12.0,
+    "furnishings_seats": 16.0
+   },
+   "growth": 0.05,
+   "eastlake": {
+    "nonrecurring_usd": 1556442.5802134827,
+    "mfg_hours_per_unit": 1806.9477137984868
+   },
+   "variant": "BOL_and_300Whkg"
+  },
+  {
+   "feasible": true,
+   "scenario": "light",
+   "range_km": 50,
+   "n_rot": 8,
+   "coax": false,
+   "mtow_kg": 697.3676581401378,
+   "empty_excl_batt_kg": 374.1676581401378,
+   "battery_kg": 123.19999999999999,
+   "battery_kwh": 27.72,
+   "rotor_D_m": 1.5552315138169923,
+   "span_m": 9.0,
+   "wing_area_m2": 10.52129314569228,
+   "hover_elec_kw_site": 160.09728038982593,
+   "hover_elec_kw_ceiling": 162.57227606492944,
+   "hover_shaft_per_motor_kw": 17.52614931335859,
+   "rotor_out_shaft_kw": 29.38283171711109,
+   "rotor_out_thrust_ratio": 1.3333333333333335,
+   "cruise_elec_kw": 40.81298467671291,
+   "LD": 9.863438750836744,
+   "CD0": 0.04544429555674479,
+   "mission_kwh": 23.02581149655493,
+   "c_rate_hover": 6.173474446150583,
+   "stall_ms": 27.532123506658053,
+   "cost_usd": {
+    "battery": 18480.0,
+    "motors_controllers": 50131.1433592882,
+    "propellers": 13050.0,
+    "parachute": 8000.0,
+    "avionics_fcs": 25000.0,
+    "misc": 10000.0,
+    "airframe_recurring_eastlake_N10": 116781.2578241117
+   },
+   "cost_total_usd": 241442.4011833999,
+   "parts": {
+    "motors": 9,
+    "controllers": 9,
+    "propellers": 9,
+    "pylons": 8,
+    "distinct_motor_types": 2
+   },
+   "mass_items": {
+    "wing": 64.45037519691905,
+    "tail_horizontal": 4.727360798323441,
+    "tail_vertical": 4.189113973734574,
+    "fuselage": 40.71887599073061,
+    "landing_gear": 25.83747173409211,
+    "flight_controls": 4.910003601446048,
+    "booms_and_fittings": 23.966191110289042,
+    "lift_motors": 69.71623121291445,
+    "pusher_motor": 11.450321341121652,
+    "lift_rotors_blades_hubs": 18.28559397919594,
+    "pusher_propeller": 1.3052890270840283,
+    "inverters_cooling_accessories": 28.408293393912633,
+    "parachute": 13.177541746340063,
+    "avionics_installed": 17.207487495831263,
+    "electrical_lv": 12.0,
+    "furnishings_seats": 16.0
+   },
+   "growth": 0.05,
+   "eastlake": {
+    "nonrecurring_usd": 1524018.6463741884,
+    "mfg_hours_per_unit": 1771.2242632914247
+   },
+   "variant": "BOL_and_300Whkg"
+  },
+  {
+   "feasible": true,
+   "scenario": "light",
+   "range_km": 100,
+   "n_rot": 6,
+   "coax": false,
+   "mtow_kg": 1177.9399302322417,
+   "empty_excl_batt_kg": 643.5399302322418,
+   "battery_kg": 334.4,
+   "battery_kwh": 75.24,
+   "rotor_D_m": 2.3339690191898055,
+   "span_m": 9.0,
+   "wing_area_m2": 17.77176094894156,
+   "hover_elec_kw_site": 269.39035484618535,
+   "hover_elec_kw_ceiling": 273.57092760264476,
+   "hover_shaft_per_motor_kw": 39.47176855410149,
+   "rotor_out_shaft_kw": 77.98300515929807,
+   "rotor_out_thrust_ratio": 1.5,
+   "cruise_elec_kw": 68.09307849958348,
+   "LD": 10.254947290876894,
+   "CD0": 0.0310559352597902,
+   "mission_kwh": 62.52859816944118,
+   "c_rate_hover": 3.827344464067892,
+   "stall_ms": 27.532123506658053,
+   "cost_usd": {
+    "battery": 50160.0,
+    "motors_controllers": 97467.87792528351,
+    "propellers": 10150.0,
+    "parachute": 8000.0,
+    "avionics_fcs": 25000.0,
+    "misc": 10000.0,
+    "airframe_recurring_eastlake_N10": 149799.92544034668
+   },
+   "cost_total_usd": 350577.8033656302,
+   "parts": {
+    "motors": 7,
+    "controllers": 7,
+    "propellers": 7,
+    "pylons": 6,
+    "distinct_motor_types": 1
+   },
+   "mass_items": {
+    "wing": 90.521136799388,
+    "tail_horizontal": 9.39409844651483,
+    "tail_vertical": 8.062527189000733,
+    "fuselage": 44.67780606701904,
+    "landing_gear": 43.64267441510456,
+    "flight_controls": 7.468113058391009,
+    "booms_and_fittings": 33.04789471216127,
+    "lift_motors": 162.8658497319023,
+    "pusher_motor": 18.003964934415798,
+    "lift_rotors_blades_hubs": 39.13783186150996,
+    "pusher_propeller": 1.3052890270840283,
+    "inverters_cooling_accessories": 63.30443513321133,
+    "parachute": 23.18346287896343,
+    "avionics_installed": 17.207487495831263,
+    "electrical_lv": 12.0,
+    "furnishings_seats": 39.07259988951647
+   },
+   "growth": 0.05,
+   "eastlake": {
+    "nonrecurring_usd": 1984883.4351115236,
+    "mfg_hours_per_unit": 2275.5212676206106
+   },
+   "variant": "BOL_and_300Whkg"
+  },
+  {
+   "feasible": true,
+   "scenario": "light",
+   "range_km": 100,
+   "n_rot": 8,
+   "coax": false,
+   "mtow_kg": 1123.8167352508754,
+   "empty_excl_batt_kg": 598.2167352508754,
+   "battery_kg": 325.59999999999997,
+   "battery_kwh": 73.26,
+   "rotor_D_m": 1.9742943117932508,
+   "span_m": 9.0,
+   "wing_area_m2": 16.955195979612302,
+   "hover_elec_kw_site": 257.0815082430237,
+   "hover_elec_kw_ceiling": 261.0699948424352,
+   "hover_shaft_per_motor_kw": 28.24360962678888,
+   "rotor_out_shaft_kw": 47.35080215910158,
+   "rotor_out_thrust_ratio": 1.3333333333333335,
+   "cruise_elec_kw": 66.53904760897028,
+   "LD": 9.99572014237469,
+   "CD0": 0.034095291932014035,
+   "mission_kwh": 60.772760487303664,
+   "c_rate_hover": 3.751167361271825,
+   "stall_ms": 27.532123506658056,
+   "cost_usd": {
+    "battery": 48840.0,
+    "motors_controllers": 81122.27043810177,
+    "propellers": 13050.0,
+    "parachute": 8000.0,
+    "avionics_fcs": 25000.0,
+    "misc": 10000.0,
+    "airframe_recurring_eastlake_N10": 155681.73781465375
+   },
+   "cost_total_usd": 341694.0082527555,
+   "parts": {
+    "motors": 9,
+    "controllers": 9,
+    "propellers": 9,
+    "pylons": 8,
+    "distinct_motor_types": 2
+   },
+   "mass_items": {
+    "wing": 87.80371328130174,
+    "tail_horizontal": 8.832728618569918,
+    "tail_vertical": 7.602511028489775,
+    "fuselage": 44.30738763906387,
+    "landing_gear": 41.63741004104494,
+    "flight_controls": 7.192316078842638,
+    "booms_and_fittings": 52.16910610587255,
+    "lift_motors": 128.90247604901606,
+    "pusher_motor": 17.642586662571716,
+    "lift_rotors_blades_hubs": 33.857237938253874,
+    "pusher_propeller": 1.3052890270840283,
+    "inverters_cooling_accessories": 51.29077194905572,
+    "parachute": 22.056572186598725,
+    "avionics_installed": 17.207487495831263,
+    "electrical_lv": 12.0,
+    "furnishings_seats": 35.922629941600945
+   },
+   "growth": 0.05,
+   "eastlake": {
+    "nonrecurring_usd": 2067702.1267395443,
+    "mfg_hours_per_unit": 2365.4266776087716
+   },
+   "variant": "BOL_and_300Whkg"
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 6,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 121.41305686383726,
+   "at_mtow_kg": 1100.0,
+   "variant": "BOL_and_300Whkg"
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 8,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 120.56784605082908,
+   "at_mtow_kg": 1050.0,
+   "variant": "BOL_and_300Whkg"
+  }
+ ],
+ "cost_inputs": {
+  "cell_usd": 7.5,
+  "pack_build_factor": 1.6,
+  "motor_esc_usd_per_kw_peak": 180.0,
+  "prop_usd_each": 1450.0,
+  "parachute_usd": 8000.0,
+  "avionics_fcs_usd": 25000.0,
+  "misc_systems_usd": 10000.0
+ },
+ "cost_note": "cell price and motor/controller $/kW from dated listings in the first-iteration ledger (S06, S07); propeller from the S08 comparison listing (EUR 1304 ~ USD 1450); parachute, avionics/flight control and misc are estimates to be replaced by bom/catalog.json",
+ "cases": [
+  {
+   "feasible": false,
+   "range_km": 50,
+   "n_rot": 4,
+   "coax": false,
+   "scenario": "conservative",
+   "min_mass_excess_kg": 190.7427160880227,
+   "at_mtow_kg": 900.0
+  },
+  {
+   "feasible": false,
+   "range_km": 50,
+   "n_rot": 6,
+   "coax": false,
+   "scenario": "conservative",
+   "min_mass_excess_kg": 135.19418102405325,
+   "at_mtow_kg": 1100.0
+  },
+  {
+   "feasible": false,
+   "range_km": 50,
+   "n_rot": 8,
+   "coax": false,
+   "scenario": "conservative",
+   "min_mass_excess_kg": 118.2493376161608,
+   "at_mtow_kg": 1250.0
+  },
+  {
+   "feasible": false,
+   "range_km": 50,
+   "n_rot": 8,
+   "coax": true,
+   "scenario": "conservative",
+   "min_mass_excess_kg": 191.7777794901981,
+   "at_mtow_kg": 1100.0
+  },
+  {
+   "feasible": false,
+   "range_km": 100,
+   "n_rot": 4,
+   "coax": false,
+   "scenario": "conservative",
+   "min_mass_excess_kg": 309.45251938534204,
+   "at_mtow_kg": 700.0
+  },
+  {
+   "feasible": false,
+   "range_km": 100,
+   "n_rot": 6,
+   "coax": false,
+   "scenario": "conservative",
+   "min_mass_excess_kg": 289.97601460013584,
+   "at_mtow_kg": 750.0
+  },
+  {
+   "feasible": false,
+   "range_km": 100,
+   "n_rot": 8,
+   "coax": false,
+   "scenario": "conservative",
+   "min_mass_excess_kg": 278.54975093601183,
+   "at_mtow_kg": 750.0
+  },
+  {
+   "feasible": false,
+   "range_km": 100,
+   "n_rot": 8,
+   "coax": true,
+   "scenario": "conservative",
+   "min_mass_excess_kg": 339.0786318583264,
+   "at_mtow_kg": 700.0
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 4,
+   "coax": false,
+   "scenario": "conservative",
+   "min_mass_excess_kg": 400.70241960156295,
+   "at_mtow_kg": 450.0
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 6,
+   "coax": false,
+   "scenario": "conservative",
+   "min_mass_excess_kg": 402.4962702792757,
+   "at_mtow_kg": 550.0
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 8,
+   "coax": false,
+   "scenario": "conservative",
+   "min_mass_excess_kg": 402.41381536133304,
+   "at_mtow_kg": 700.0
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 8,
+   "coax": true,
+   "scenario": "conservative",
+   "min_mass_excess_kg": 445.0670411079715,
+   "at_mtow_kg": 400.0
+  },
+  {
+   "feasible": false,
+   "range_km": 50,
+   "n_rot": 4,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 24.81354310445772,
+   "at_mtow_kg": 1300.0
+  },
+  {
+   "feasible": true,
+   "scenario": "light",
+   "range_km": 50,
+   "n_rot": 6,
+   "coax": false,
+   "mtow_kg": 1008.6136165075004,
+   "empty_excl_batt_kg": 548.2802831741672,
+   "battery_kg": 260.3333333333333,
+   "battery_kwh": 49.5,
+   "rotor_D_m": 2.1597124333106996,
+   "span_m": 9.0,
+   "wing_area_m2": 15.217108803574273,
+   "hover_elec_kw_site": 230.8816965484959,
+   "hover_elec_kw_ceiling": 234.4613210257254,
+   "hover_shaft_per_motor_kw": 33.79778731454503,
+   "rotor_out_shaft_kw": 66.7731170674681,
+   "rotor_out_thrust_ratio": 1.5,
+   "cruise_elec_kw": 56.387818835785765,
+   "LD": 10.474193953155172,
+   "CD0": 0.03384213171047718,
+   "mission_kwh": 32.369964599768714,
+   "c_rate_hover": 6.232358347307959,
+   "stall_ms": 27.532123506658053,
+   "cost_usd": {
+    "battery": 33000.0,
+    "motors_controllers": 83032.86988533915,
+    "propellers": 10150.0,
+    "parachute": 8000.0,
+    "avionics_fcs": 25000.0,
+    "misc": 10000.0,
+    "airframe_recurring_eastlake_N10": 137195.6734640286
+   },
+   "cost_total_usd": 306378.5433493678,
+   "parts": {
+    "motors": 7,
+    "controllers": 7,
+    "propellers": 7,
+    "pylons": 6,
+    "distinct_motor_types": 1
+   },
+   "mass_items": {
+    "wing": 81.86078216967235,
+    "tail_horizontal": 7.6659028630994515,
+    "tail_vertical": 6.64187494474164,
+    "fuselage": 43.46726717220204,
+    "landing_gear": 37.36913449160289,
+    "flight_controls": 6.596175930578587,
+    "booms_and_fittings": 26.538374684319777,
+    "lift_motors": 133.35755588054556,
+    "pusher_motor": 15.250272883927945,
+    "lift_rotors_blades_hubs": 32.0230863772212,
+    "pusher_propeller": 1.3052890270840283,
+    "inverters_cooling_accessories": 52.01274006756572,
+    "parachute": 19.657945825239427,
+    "avionics_installed": 17.207487495831263,
+    "electrical_lv": 12.0,
+    "furnishings_seats": 29.217808430736515
+   },
+   "growth": 0.05,
+   "eastlake": {
+    "nonrecurring_usd": 1808112.8105327575,
+    "mfg_hours_per_unit": 2082.930671282249
+   }
+  },
+  {
+   "feasible": true,
+   "scenario": "light",
+   "range_km": 50,
+   "n_rot": 8,
+   "coax": false,
+   "mtow_kg": 954.3630552478135,
+   "empty_excl_batt_kg": 504.4430552478135,
+   "battery_kg": 249.91999999999996,
+   "battery_kwh": 47.52,
+   "rotor_D_m": 1.8193696936914743,
+   "span_m": 9.0,
+   "wing_area_m2": 14.398622239609185,
+   "hover_elec_kw_site": 218.5438839542689,
+   "hover_elec_kw_ceiling": 221.93097024461463,
+   "hover_shaft_per_motor_kw": 23.984922745105383,
+   "rotor_out_shaft_kw": 40.21105470271092,
+   "rotor_out_thrust_ratio": 1.3333333333333333,
+   "cruise_elec_kw": 55.183871799705216,
+   "LD": 10.114652170172251,
+   "CD0": 0.03746644391064918,
+   "mission_kwh": 31.286946336245634,
+   "c_rate_hover": 6.145084901775834,
+   "stall_ms": 27.53212350665805,
+   "cost_usd": {
+    "battery": 31680.0,
+    "motors_controllers": 68582.34144739209,
+    "propellers": 13050.0,
+    "parachute": 8000.0,
+    "avionics_fcs": 25000.0,
+    "misc": 10000.0,
+    "airframe_recurring_eastlake_N10": 140344.3217198456
+   },
+   "cost_total_usd": 296656.66316723765,
+   "parts": {
+    "motors": 9,
+    "controllers": 9,
+    "propellers": 9,
+    "pylons": 8,
+    "distinct_motor_types": 2
+   },
+   "mass_items": {
+    "wing": 78.97990865398957,
+    "tail_horizontal": 7.130313570188439,
+    "tail_vertical": 6.19870110164171,
+    "fuselage": 43.04397323867341,
+    "landing_gear": 35.35915119693149,
+    "flight_controls": 6.310783247228325,
+    "booms_and_fittings": 39.70098436235813,
+    "lift_motors": 104.431869816323,
+    "pusher_motor": 14.962580304621902,
+    "lift_rotors_blades_hubs": 27.414028778726106,
+    "pusher_propeller": 1.3052890270840283,
+    "inverters_cooling_accessories": 41.78805754233071,
+    "parachute": 18.528403259244392,
+    "avionics_installed": 17.207487495831263,
+    "electrical_lv": 12.0,
+    "furnishings_seats": 26.06042576542275
+   },
+   "growth": 0.05,
+   "eastlake": {
+    "nonrecurring_usd": 1852178.9116389873,
+    "mfg_hours_per_unit": 2131.0322111005707
+   }
+  },
+  {
+   "feasible": false,
+   "range_km": 50,
+   "n_rot": 8,
+   "coax": true,
+   "scenario": "light",
+   "min_mass_excess_kg": 2.0717535472672353,
+   "at_mtow_kg": 1450.0
+  },
+  {
+   "feasible": false,
+   "range_km": 100,
+   "n_rot": 4,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 184.64326478584178,
+   "at_mtow_kg": 800.0
+  },
+  {
+   "feasible": false,
+   "range_km": 100,
+   "n_rot": 6,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 147.70606250760488,
+   "at_mtow_kg": 1050.0
+  },
+  {
+   "feasible": false,
+   "range_km": 100,
+   "n_rot": 8,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 145.91028818942323,
+   "at_mtow_kg": 1000.0
+  },
+  {
+   "feasible": false,
+   "range_km": 100,
+   "n_rot": 8,
+   "coax": true,
+   "scenario": "light",
+   "min_mass_excess_kg": 205.55535017434318,
+   "at_mtow_kg": 950.0
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 4,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 289.77906858195365,
+   "at_mtow_kg": 750.0
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 6,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 281.68213765035193,
+   "at_mtow_kg": 750.0
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 8,
+   "coax": false,
+   "scenario": "light",
+   "min_mass_excess_kg": 280.09138595334116,
+   "at_mtow_kg": 800.0
+  },
+  {
+   "feasible": false,
+   "range_km": 150,
+   "n_rot": 8,
+   "coax": true,
+   "scenario": "light",
+   "min_mass_excess_kg": 335.4023325252383,
+   "at_mtow_kg": 650.0
+  }
+ ],
+ "speed_sensitivity": [
+  {
+   "cruise_kmh": 150,
+   "case": "50 km, as required",
+   "feasible": true,
+   "mtow_kg": 954.3630552478135,
+   "battery_kwh": 47.52,
+   "battery_kg": 249.91999999999996,
+   "LD": 10.114652170172251,
+   "hover_kw": 218.5438839542689,
+   "rotor_D_m": 1.8193696936914743,
+   "c_rate_hover": 6.145084901775834,
+   "cost_usd": 296656.66316723765
+  },
+  {
+   "cruise_kmh": 165,
+   "case": "50 km, as required",
+   "feasible": true,
+   "mtow_kg": 988.1253725383431,
+   "battery_kwh": 49.5,
+   "battery_kg": 260.3333333333333,
+   "LD": 9.77382808855707,
+   "hover_kw": 226.2222034740141,
+   "rotor_D_m": 1.8512717426749976,
+   "c_rate_hover": 6.106568688495473,
+   "cost_usd": 313851.04066145106
+  },
+  {
+   "cruise_kmh": 180,
+   "case": "50 km, as required",
+   "feasible": true,
+   "mtow_kg": 1046.9396568834782,
+   "battery_kwh": 53.46,
+   "battery_kg": 281.15999999999997,
+   "LD": 9.306834727561492,
+   "hover_kw": 239.59791058680057,
+   "rotor_D_m": 1.9055702857092125,
+   "c_rate_hover": 5.988578678151898,
+   "cost_usd": 337278.1186789551
+  },
+  {
+   "cruise_kmh": 200,
+   "case": "50 km, as required",
+   "feasible": true,
+   "mtow_kg": 1185.5632906779647,
+   "battery_kwh": 63.36,
+   "battery_kg": 333.22666666666663,
+   "LD": 8.696626239791668,
+   "hover_kw": 271.12408055028163,
+   "rotor_D_m": 2.0278065357540482,
+   "c_rate_hover": 5.71778037419413,
+   "cost_usd": 383831.2844142449
+  },
+  {
+   "cruise_kmh": 150,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": true,
+   "mtow_kg": 1123.8167352508754,
+   "battery_kwh": 73.26,
+   "battery_kg": 325.59999999999997,
+   "LD": 9.99572014237469,
+   "hover_kw": 257.0815082430237,
+   "rotor_D_m": 1.9742943117932508,
+   "c_rate_hover": 3.751167361271825,
+   "cost_usd": 341694.0082527555
+  },
+  {
+   "cruise_kmh": 165,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": true,
+   "mtow_kg": 1175.6590053904802,
+   "battery_kwh": 77.22,
+   "battery_kg": 343.2,
+   "LD": 9.824198604891718,
+   "hover_kw": 268.8716206140276,
+   "rotor_D_m": 2.0193185467595725,
+   "c_rate_hover": 3.7220259033575203,
+   "cost_usd": 364085.2718905476
+  },
+  {
+   "cruise_kmh": 180,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": true,
+   "mtow_kg": 1250.624395441264,
+   "battery_kwh": 83.16,
+   "battery_kg": 369.59999999999997,
+   "LD": 9.478303948240344,
+   "hover_kw": 285.920456829239,
+   "rotor_D_m": 2.0827042091543047,
+   "c_rate_hover": 3.675337215492982,
+   "cost_usd": 392592.29357748234
+  },
+  {
+   "cruise_kmh": 200,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": true,
+   "mtow_kg": 1486.02873692289,
+   "battery_kwh": 102.96,
+   "battery_kg": 457.59999999999997,
+   "LD": 8.977925078843139,
+   "hover_kw": 339.45676284393704,
+   "rotor_D_m": 2.270271256633834,
+   "c_rate_hover": 3.5244219472031744,
+   "cost_usd": 464810.26843732805
+  }
+ ],
+ "disk_loading_sensitivity": [
+  {
+   "disk_loading": 300,
+   "case": "50 km, as required",
+   "feasible": true,
+   "mtow_kg": 1060.422034189105,
+   "battery_kwh": 51.48,
+   "battery_kg": 270.7466666666666,
+   "LD": 9.801147676832066,
+   "hover_kw": 204.09427108717108,
+   "rotor_D_m": 2.3488168178987436,
+   "c_rate_hover": 5.288030334177688,
+   "cost_usd": 313061.801947306
+  },
+  {
+   "disk_loading": 450,
+   "case": "50 km, as required",
+   "feasible": true,
+   "mtow_kg": 954.3630552478135,
+   "battery_kwh": 47.52,
+   "battery_kg": 249.91999999999996,
+   "LD": 10.114652170172251,
+   "hover_kw": 218.5438839542689,
+   "rotor_D_m": 1.8193696936914743,
+   "c_rate_hover": 6.145084901775834,
+   "cost_usd": 296656.66316723765
+  },
+  {
+   "disk_loading": 600,
+   "case": "50 km, as required",
+   "feasible": true,
+   "mtow_kg": 927.1367667708546,
+   "battery_kwh": 47.52,
+   "battery_kg": 249.91999999999996,
+   "LD": 10.287528513466345,
+   "hover_kw": 240.7809386136738,
+   "rotor_D_m": 1.5529829238292412,
+   "c_rate_hover": 6.777822330371893,
+   "cost_usd": 296876.2511686727
+  },
+  {
+   "disk_loading": 800,
+   "case": "50 km, as required",
+   "feasible": true,
+   "mtow_kg": 927.2191676776856,
+   "battery_kwh": 49.5,
+   "battery_kg": 260.3333333333333,
+   "LD": 10.43885891724106,
+   "hover_kw": 273.6320262699347,
+   "rotor_D_m": 1.3449824285323768,
+   "c_rate_hover": 7.401779130200393,
+   "cost_usd": 304740.1840256441
+  },
+  {
+   "disk_loading": 300,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": false
+  },
+  {
+   "disk_loading": 450,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": true,
+   "mtow_kg": 1123.8167352508754,
+   "battery_kwh": 73.26,
+   "battery_kg": 325.59999999999997,
+   "LD": 9.99572014237469,
+   "hover_kw": 257.0815082430237,
+   "rotor_D_m": 1.9742943117932508,
+   "c_rate_hover": 3.751167361271825,
+   "cost_usd": 341694.0082527555
+  },
+  {
+   "disk_loading": 600,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": true,
+   "mtow_kg": 1031.0202897526324,
+   "battery_kwh": 67.32,
+   "battery_kg": 299.2,
+   "LD": 10.240681811588471,
+   "hover_kw": 267.59181245287135,
+   "rotor_D_m": 1.6376775079110346,
+   "c_rate_hover": 4.253707951620872,
+   "cost_usd": 327482.1000525046
+  },
+  {
+   "disk_loading": 800,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": true,
+   "mtow_kg": 988.1139362230897,
+   "battery_kwh": 65.34,
+   "battery_kg": 290.4,
+   "LD": 10.4150529020998,
+   "hover_kw": 291.50419428712996,
+   "rotor_D_m": 1.3884457721749215,
+   "c_rate_hover": 4.7789512563182805,
+   "cost_usd": 325843.0870822349
+  }
+ ],
+ "cell_sensitivity": [
+  {
+   "cell_wh_per_kg": 200,
+   "case": "50 km, as required",
+   "feasible": false
+  },
+  {
+   "cell_wh_per_kg": 250,
+   "case": "50 km, as required",
+   "feasible": true,
+   "mtow_kg": 962.085271673277,
+   "battery_kwh": 47.52,
+   "battery_kg": 253.43999999999997,
+   "LD": 10.11282907238005,
+   "hover_kw": 220.3000917585231,
+   "rotor_D_m": 1.8267155671446533,
+   "c_rate_hover": 6.194471707595709,
+   "cost_usd": 297924.6432652962
+  },
+  {
+   "cell_wh_per_kg": 300,
+   "case": "50 km, as required",
+   "feasible": true,
+   "mtow_kg": 795.5860266461968,
+   "battery_kwh": 39.6,
+   "battery_kg": 176.0,
+   "LD": 10.043929668796746,
+   "hover_kw": 182.43437323828206,
+   "rotor_D_m": 1.6611456761532586,
+   "c_rate_hover": 6.155567226042132,
+   "cost_usd": 265314.1416421078
+  },
+  {
+   "cell_wh_per_kg": 200,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": false
+  },
+  {
+   "cell_wh_per_kg": 250,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": false
+  },
+  {
+   "cell_wh_per_kg": 300,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": true,
+   "mtow_kg": 1123.8167352508754,
+   "battery_kwh": 73.26,
+   "battery_kg": 325.59999999999997,
+   "LD": 9.99572014237469,
+   "hover_kw": 257.0815082430237,
+   "rotor_D_m": 1.9742943117932508,
+   "c_rate_hover": 3.751167361271825,
+   "cost_usd": 341694.0082527555
+  }
+ ],
+ "wing_loading_sensitivity": [
+  {
+   "wing_loading": 500,
+   "case": "50 km, as required",
+   "feasible": true,
+   "mtow_kg": 994.6312539279461,
+   "battery_kwh": 49.5,
+   "battery_kg": 260.3333333333333,
+   "LD": 9.907914572531974,
+   "hover_kw": 227.70178900237318,
+   "rotor_D_m": 1.8573561904767646,
+   "c_rate_hover": 6.146512209350878,
+   "cost_usd": 308169.0375069495
+  },
+  {
+   "wing_loading": 650,
+   "case": "50 km, as required",
+   "feasible": true,
+   "mtow_kg": 954.3630552478135,
+   "battery_kwh": 47.52,
+   "battery_kg": 249.91999999999996,
+   "LD": 10.114652170172251,
+   "hover_kw": 218.5438839542689,
+   "rotor_D_m": 1.8193696936914743,
+   "c_rate_hover": 6.145084901775834,
+   "cost_usd": 296656.66316723765
+  },
+  {
+   "wing_loading": 800,
+   "case": "50 km, as required",
+   "feasible": true,
+   "mtow_kg": 898.4989818185568,
+   "battery_kwh": 43.56,
+   "battery_kg": 229.09333333333333,
+   "LD": 10.166369059993867,
+   "hover_kw": 205.83912196257185,
+   "rotor_D_m": 1.7653179669629024,
+   "c_rate_hover": 6.313975388567343,
+   "cost_usd": 282602.76226018067
+  },
+  {
+   "wing_loading": 500,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": true,
+   "mtow_kg": 1422.2166122402996,
+   "battery_kwh": 99.0,
+   "battery_kg": 440.0,
+   "LD": 9.380580852498188,
+   "hover_kw": 324.9444330672075,
+   "rotor_D_m": 2.220992133261341,
+   "c_rate_hover": 3.508686411787235,
+   "cost_usd": 413148.4527129534
+  },
+  {
+   "wing_loading": 650,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": true,
+   "mtow_kg": 1123.8167352508754,
+   "battery_kwh": 73.26,
+   "battery_kg": 325.59999999999997,
+   "LD": 9.99572014237469,
+   "hover_kw": 257.0815082430237,
+   "rotor_D_m": 1.9742943117932508,
+   "c_rate_hover": 3.751167361271825,
+   "cost_usd": 341694.0082527555
+  },
+  {
+   "wing_loading": 800,
+   "case": "100 km, BOL + 300 Wh/kg",
+   "feasible": true,
+   "mtow_kg": 1070.8254167344421,
+   "battery_kwh": 69.3,
+   "battery_kg": 308.0,
+   "LD": 10.098293473710577,
+   "hover_kw": 245.03007611410723,
+   "rotor_D_m": 1.9271853347807797,
+   "c_rate_hover": 3.779608014695653,
+   "cost_usd": 327770.2225970733
+  }
+ ],
+ "range_curves_light": [
+  {
+   "variant": "as_required",
+   "n_rot": 6,
+   "coax": false,
+   "points": [
+    [
+     20,
+     731.9788179825991,
+     23.76
+    ],
+    [
+     25,
+     750.9525037836283,
+     25.74
+    ],
+    [
+     30,
+     769.9741406366229,
+     27.72
+    ],
+    [
+     35,
+     833.1485678907484,
+     33.66
+    ],
+    [
+     40,
+     876.5830362215638,
+     37.62
+    ],
+    [
+     45,
+     920.3029294498265,
+     41.58
+    ],
+    [
+     50,
+     1008.6136165075004,
+     49.5
+    ],
+    [
+     55,
+     1126.4687772840261,
+     59.4
+    ],
+    [
+     60,
+     1249.2608788888901,
+     69.3
+    ]
+   ]
+  },
+  {
+   "variant": "as_required",
+   "n_rot": 8,
+   "coax": false,
+   "points": [
+    [
+     20,
+     700.3606888931245,
+     23.76
+    ],
+    [
+     25,
+     718.8555920496583,
+     25.74
+    ],
+    [
+     30,
+     737.9917309153825,
+     27.72
+    ],
+    [
+     35,
+     776.5111248940229,
+     31.68
+    ],
+    [
+     40,
+     819.7459036950022,
+     35.64
+    ],
+    [
+     45,
+     886.4817774388939,
+     41.58
+    ],
+    [
+     50,
+     954.3630552478135,
+     47.52
+    ],
+    [
+     55,
+     1023.431484028697,
+     53.46
+    ],
+    [
+     60,
+     1213.7632182333618,
+     69.3
+    ]
+   ]
+  },
+  {
+   "variant": "as_required",
+   "n_rot": 8,
+   "coax": true,
+   "points": [
+    [
+     20,
+     799.8078833799809,
+     25.74
+    ],
+    [
+     25,
+     847.2959439270198,
+     29.7
+    ],
+    [
+     30,
+     895.2448011841625,
+     33.66
+    ],
+    [
+     35,
+     968.0485321674496,
+     39.6
+    ],
+    [
+     40,
+     1066.8036425951868,
+     47.52
+    ],
+    [
+     45,
+     1193.042187485844,
+     57.42
+    ]
+   ]
+  },
+  {
+   "variant": "BOL_and_300Whkg",
+   "n_rot": 6,
+   "coax": false,
+   "points": [
+    [
+     20,
+     696.830121986568,
+     23.76
+    ],
+    [
+     25,
+     696.830121986568,
+     23.76
+    ],
+    [
+     30,
+     696.830121986568,
+     23.76
+    ],
+    [
+     35,
+     696.830121986568,
+     23.76
+    ],
+    [
+     40,
+     696.830121986568,
+     23.76
+    ],
+    [
+     45,
+     728.7767121568322,
+     27.72
+    ],
+    [
+     50,
+     744.8008630424738,
+     29.7
+    ],
+    [
+     55,
+     760.8591848518699,
+     31.68
+    ],
+    [
+     60,
+     776.9518662709743,
+     33.66
+    ],
+    [
+     65,
+     812.7528513316065,
+     37.62
+    ],
+    [
+     70,
+     831.0147467534989,
+     39.6
+    ],
+    [
+     75,
+     867.6895463373512,
+     43.56
+    ],
+    [
+     80,
+     904.5676322188228,
+     47.52
+    ],
+    [
+     85,
+     941.6512530297041,
+     51.48
+    ],
+    [
+     90,
+     997.6668173447251,
+     57.42
+    ],
+    [
+     95,
+     1075.587580865249,
+     65.34
+    ],
+    [
+     100,
+     1177.9399302322417,
+     75.24
+    ]
+   ]
+  },
+  {
+   "variant": "BOL_and_300Whkg",
+   "n_rot": 8,
+   "coax": false,
+   "points": [
+    [
+     20,
+     652.5739110074937,
+     21.78
+    ],
+    [
+     25,
+     652.5739110074937,
+     21.78
+    ],
+    [
+     30,
+     652.5739110074937,
+     21.78
+    ],
+    [
+     35,
+     652.5739110074937,
+     21.78
+    ],
+    [
+     40,
+     667.4841328989714,
+     23.76
+    ],
+    [
+     45,
+     682.4153063353151,
+     25.74
+    ],
+    [
+     50,
+     697.3676581401378,
+     27.72
+    ],
+    [
+     55,
+     728.8177441805601,
+     31.68
+    ],
+    [
+     60,
+     745.0198356993496,
+     33.66
+    ],
+    [
+     65,
+     777.6009932160378,
+     37.62
+    ],
+    [
+     70,
+     795.5860266461968,
+     39.6
+    ],
+    [
+     75,
+     832.8163480851799,
+     43.56
+    ],
+    [
+     80,
+     870.3999988269061,
+     47.52
+    ],
+    [
+     85,
+     927.4535692762583,
+     53.46
+    ],
+    [
+     90,
+     946.6559081804007,
+     55.44
+    ],
+    [
+     95,
+     1024.412965355441,
+     63.36
+    ],
+    [
+     100,
+     1123.8167352508754,
+     73.26
+    ],
+    [
+     105,
+     1351.7892818897963,
+     95.04
+    ]
+   ]
+  },
+  {
+   "variant": "BOL_and_300Whkg",
+   "n_rot": 8,
+   "coax": true,
+   "points": [
+    [
+     20,
+     755.9537562076002,
+     25.74
+    ],
+    [
+     25,
+     755.9537562076002,
+     25.74
+    ],
+    [
+     30,
+     755.9537562076002,
+     25.74
+    ],
+    [
+     35,
+     755.9537562076002,
+     25.74
+    ],
+    [
+     40,
+     773.3813097234815,
+     27.72
+    ],
+    [
+     45,
+     812.1375631075352,
+     31.68
+    ],
+    [
+     50,
+     852.3390660993755,
+     35.64
+    ],
+    [
+     55,
+     872.5631505716592,
+     37.62
+    ],
+    [
+     60,
+     913.2608192507178,
+     41.58
+    ],
+    [
+     65,
+     974.9395919498056,
+     47.52
+    ],
+    [
+     70,
+     1016.4869789034128,
+     51.48
+    ],
+    [
+     75,
+     1100.6305858492851,
+     59.4
+    ],
+    [
+     80,
+     1207.8272148035467,
+     69.3
+    ],
+    [
+     85,
+     1451.9414848648012,
+     91.08
+    ]
+   ]
+  }
+ ]
+}

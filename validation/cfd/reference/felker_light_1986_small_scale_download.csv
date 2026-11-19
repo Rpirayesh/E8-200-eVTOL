@@ -1,0 +1,11 @@
+# Felker & Light, "Rotor/wing aerodynamic interactions in hover", NASA TM 88255 (1986), https://ntrs.nasa.gov/citations/19860018588
+# Small-scale test (Ames rotor test rig): 4-blade 0.16-scale S-76 rotor, R = 1.067 m, solidity 0.0751, -10 deg linear twist.
+# Wing: NACA 23015, chord 0.447 m, span 1.60 m, untwisted, 25 % plain flap at 0 deg, incidence 0 deg,
+# rotor axis at the wing centre (no image plane), rotor-to-wing distance 0.4 R.
+# Figure 11 (square symbols, NACA 23015 wing, flap 0), digitized by the CFD work package; reading accuracy +-0.003 in DL/T, +-0.0002 in CT.
+# CT,DL_over_T
+0.00193,0.177
+0.00446,0.161
+0.00639,0.159
+0.00810,0.157
+0.00884,0.151

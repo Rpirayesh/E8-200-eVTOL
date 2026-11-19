@@ -1,0 +1,68 @@
+# NASA GA(W)-1 / LS(1)-0417, McGhee & Beasley, NASA TN D-7428 (1973), figure 12(b): M = 0.15,
+# No. 80 grit roughness strip at 0.08c upper and lower (transition fixed). Wind-tunnel boundary corrections (~2 %) not applied.
+# Digitized by the CFD work package from the NTRS scan (https://ntrs.nasa.gov/citations/19740003708) at 250 dpi with
+# axis calibration on the major grid lines. Reading accuracy: alpha +-0.15 deg, cl +-0.015, cd +-0.0004.
+# At alpha <= 6 deg the three Reynolds-number curves coincide within the symbol size; the same points are listed for both Re.
+# kind,Re,alpha_deg,cl,cd
+lift,4.3e6,-7.97,-0.519,
+lift,4.3e6,-4.04,-0.049,
+lift,4.3e6,-1.97,0.204,
+lift,4.3e6,-0.94,0.319,
+lift,4.3e6,0.03,0.435,
+lift,4.3e6,0.99,0.558,
+lift,4.3e6,2.03,0.688,
+lift,4.3e6,4.03,0.905,
+lift,4.3e6,5.89,1.130,
+lift,4.3e6,7.96,1.302,
+lift,4.3e6,9.89,1.461,
+lift,4.3e6,11.89,1.584,
+lift,4.3e6,13.85,1.704,
+lift,4.3e6,15.86,1.786,
+lift,4.3e6,16.81,1.798,
+lift,4.3e6,17.82,1.786,
+lift,4.3e6,18.30,1.772,
+lift,4.3e6,19.02,1.548,
+lift,4.3e6,19.96,1.334,
+lift,6.3e6,-7.97,-0.519,
+lift,6.3e6,-4.04,-0.049,
+lift,6.3e6,-1.97,0.204,
+lift,6.3e6,-0.94,0.319,
+lift,6.3e6,0.03,0.435,
+lift,6.3e6,0.99,0.558,
+lift,6.3e6,2.03,0.688,
+lift,6.3e6,4.03,0.920,
+lift,6.3e6,5.89,1.143,
+lift,6.3e6,7.96,1.360,
+lift,6.3e6,9.96,1.526,
+lift,6.3e6,11.89,1.659,
+lift,6.3e6,13.92,1.772,
+lift,6.3e6,15.89,1.852,
+lift,6.3e6,16.81,1.903,
+lift,6.3e6,17.96,1.927,
+lift,6.3e6,18.79,1.972,
+lift,6.3e6,19.86,1.844,
+lift,6.3e6,21.03,1.230,
+drag,4.3e6,,-0.737,0.0165
+drag,4.3e6,,-0.522,0.0138
+drag,4.3e6,,-0.274,0.0125
+drag,4.3e6,,0.329,0.0116
+drag,4.3e6,,0.476,0.0116
+drag,4.3e6,,0.709,0.0116
+drag,4.3e6,,0.939,0.0125
+drag,4.3e6,,1.143,0.0152
+drag,4.3e6,,1.336,0.0178
+drag,4.3e6,,1.488,0.0219
+drag,6.3e6,,-0.737,0.0148
+drag,6.3e6,,-0.505,0.0127
+drag,6.3e6,,-0.269,0.0113
+drag,6.3e6,,-0.008,0.0108
+drag,6.3e6,,0.238,0.0107
+drag,6.3e6,,0.340,0.0104
+drag,6.3e6,,0.482,0.0108
+drag,6.3e6,,0.607,0.0110
+drag,6.3e6,,0.726,0.0113
+drag,6.3e6,,0.975,0.0117
+drag,6.3e6,,1.168,0.0136
+drag,6.3e6,,1.366,0.0162
+drag,6.3e6,,1.536,0.0175
+drag,6.3e6,,1.672,0.0213

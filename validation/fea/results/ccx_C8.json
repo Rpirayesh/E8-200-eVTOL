@@ -1,0 +1,46 @@
+{
+ "case": "6061 bar 200x20x10 mm, clamped root face, 100 N tip shear traction",
+ "tip_euler_mm": 2.3222060957910013,
+ "tip_timoshenko_mm": 2.3268388969521046,
+ "sigma_mid_ref": 30.0,
+ "mesh": [
+  {
+   "hmax_mm": 5.0,
+   "elems": 1993,
+   "tip_mm": 2.30357350877193,
+   "err_tip_pct": -0.9998710357923604,
+   "sigma_xx_mid": 29.93890232558139,
+   "err_sigma_pct": -0.20365891472869416,
+   "reaction_z": 100.0
+  },
+  {
+   "hmax_mm": 3.0,
+   "elems": 8201,
+   "tip_mm": 2.3063879874213837,
+   "err_tip_pct": -0.8789138585189199,
+   "sigma_xx_mid": 29.988655714285713,
+   "err_sigma_pct": -0.03781428571429046,
+   "reaction_z": 100.0
+  },
+  {
+   "hmax_mm": 2.0,
+   "elems": 24817,
+   "tip_mm": 2.3071948780487803,
+   "err_tip_pct": -0.8442363125808011,
+   "sigma_xx_mid": 29.995723255813953,
+   "err_sigma_pct": -0.014255813953489849,
+   "reaction_z": 100.0
+  },
+  {
+   "hmax_mm": 1.25,
+   "elems": 97127,
+   "tip_mm": 2.307796790490342,
+   "err_tip_pct": -0.8183680652195451,
+   "sigma_xx_mid": 30.026710119047625,
+   "err_sigma_pct": 0.08903373015874887,
+   "reaction_z": 100.0
+  }
+ ],
+ "note": "the clamped face also restrains Poisson contraction and warping, which stiffens the solid by a fraction of a percent",
+ "_wall_s": 96.3
+}

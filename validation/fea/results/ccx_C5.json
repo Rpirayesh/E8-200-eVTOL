@@ -1,0 +1,81 @@
+{
+ "C5a SS square plate, uniaxial compression": {
+  "case": "aluminium 500x500x2 mm, all edges w=0, unloaded edges free in-plane",
+  "Ncr_ref_N_per_mm": 8.098136944483576,
+  "formula": "Ncr = 4 pi^2 D / b^2",
+  "mesh": [
+   {
+    "mesh": "2x2",
+    "Ncr": 7.601167,
+    "err_pct": -6.136842929312403
+   },
+   {
+    "mesh": "4x4",
+    "Ncr": 8.173826,
+    "err_pct": 0.9346477595440412
+   },
+   {
+    "mesh": "8x8",
+    "Ncr": 8.037954,
+    "err_pct": -0.7431702488628978
+   },
+   {
+    "mesh": "16x16",
+    "Ncr": 8.069714,
+    "err_pct": -0.350981277279316
+   }
+  ]
+ },
+ "C5b SS cross-ply [0/90]s plate": {
+  "case": "500x500 mm, 4 x 0.5 mm plies (E1 120, E2 8, G12 4 GPa)",
+  "Ncr_ref_N_per_mm": 3.9373565469070204,
+  "formula": "Ncr = pi^2/b^2 [D11 (mb/a)^2 + 2(D12+2D66) + D22 (a/mb)^2], min over m",
+  "mesh": [
+   {
+    "mesh": "4x4",
+    "Ncr": 3.969931,
+    "err_pct": 0.8273178388827457
+   },
+   {
+    "mesh": "8x8",
+    "Ncr": 3.92704,
+    "err_pct": -0.26201708644152855
+   },
+   {
+    "mesh": "16x16",
+    "Ncr": 3.931446,
+    "err_pct": -0.15011459685212433
+   }
+  ]
+ },
+ "C5c thin cylinder, axial compression": {
+  "case": "aluminium R=100, t=1, L=200 mm; ends: w=v=0 (radial and circumferential), bottom also axially fixed",
+  "Ncr_ref_N_per_mm": 423.65927286816174,
+  "formula": "classical Ncr = E t^2 / (R sqrt(3(1-nu^2)))",
+  "note": "linear bifurcation of the perfect shell; design knock-down (NASA SP-8007) is applied in sizing, not here",
+  "mesh": [
+   {
+    "mesh": "64x20",
+    "elem_mm": 9.82,
+    "Ncr": 419.671,
+    "err_pct": -0.9413868935669093,
+    "cpu_s": 1.9
+   },
+   {
+    "mesh": "128x40",
+    "elem_mm": 4.91,
+    "Ncr": 416.8651,
+    "err_pct": -1.6036879877939143,
+    "cpu_s": 10.7
+   },
+   {
+    "mesh": "192x60",
+    "elem_mm": 3.27,
+    "Ncr": 416.8958,
+    "err_pct": -1.5964415985452651,
+    "cpu_s": 29.3
+   }
+  ]
+ },
+ "_wall_s": 43.7
+}

@@ -1,0 +1,18 @@
+{
+ "damped_gear": {
+  "lever_ratio_Fdamper_per_R": 2.1436666146206615,
+  "skid_travel_at_full_stroke_mm": 171.49332916965292,
+  "stroke_mm": 80.0,
+  "eta": 0.8,
+  "damper_peak_force_N": 8638.641635254837,
+  "gear_reaction_over_W": 1.2172286775094416,
+  "n_inertia": 1.8842286775094417,
+  "drop_height_m": 0.33,
+  "rotor_lift_fraction": 0.667,
+  "MS_inertia_factor": 0.5921634331377315,
+  "note": "leg modelled as a lever on its keel pivot; damper efficiency 0.8 (oleo-pneumatic); the leg's own bending flexibility adds travel (conservative to ignore)",
+  "reserve_drop_1p5h_stroke_needed_mm": 68.42105263157895
+ },
+ "verdict": "PASS",
+ "note": "drop height 0.33 m (13 in) and rotor lift 2/3 W per CS-27.725; strength of legs, saddles and damper hard points from the global landing cases (gear reaction 2.33 W)"
+}

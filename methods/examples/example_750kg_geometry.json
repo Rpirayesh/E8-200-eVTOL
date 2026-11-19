@@ -1,0 +1,189 @@
+{
+ "units": "m; x aft from nose, y right, z up",
+ "cg_mtow_m": [
+  3.1,
+  0.0,
+  0.85
+ ],
+ "wing": {
+  "span_m": 9.0,
+  "root_chord_m": 1.25,
+  "tip_chord_m": 0.85,
+  "le_root_x_m": 2.55,
+  "sweep_le_deg": 2.0,
+  "dihedral_deg": 2.0,
+  "incidence_deg": 2.0,
+  "airfoil": "NACA 4415",
+  "front_spar_x_c": 0.15,
+  "rear_spar_x_c": 0.6,
+  "z_m": 1.65
+ },
+ "lift_rotors": [
+  {
+   "id": "RP1",
+   "hub": [
+    0.0,
+    -1.95,
+    1.55
+   ],
+   "diameter_m": 1.7,
+   "spin": 1
+  },
+  {
+   "id": "RP2",
+   "hub": [
+    1.9,
+    -1.95,
+    1.55
+   ],
+   "diameter_m": 1.7,
+   "spin": -1
+  },
+  {
+   "id": "RP3",
+   "hub": [
+    4.3,
+    -1.95,
+    1.75
+   ],
+   "diameter_m": 1.7,
+   "spin": 1
+  },
+  {
+   "id": "RP4",
+   "hub": [
+    6.2,
+    -1.95,
+    1.75
+   ],
+   "diameter_m": 1.7,
+   "spin": -1
+  },
+  {
+   "id": "RS1",
+   "hub": [
+    0.0,
+    1.95,
+    1.55
+   ],
+   "diameter_m": 1.7,
+   "spin": -1
+  },
+  {
+   "id": "RS2",
+   "hub": [
+    1.9,
+    1.95,
+    1.55
+   ],
+   "diameter_m": 1.7,
+   "spin": 1
+  },
+  {
+   "id": "RS3",
+   "hub": [
+    4.3,
+    1.95,
+    1.75
+   ],
+   "diameter_m": 1.7,
+   "spin": -1
+  },
+  {
+   "id": "RS4",
+   "hub": [
+    6.2,
+    1.95,
+    1.75
+   ],
+   "diameter_m": 1.7,
+   "spin": 1
+  }
+ ],
+ "booms": [
+  {
+   "id": "BP",
+   "y_m": -1.95,
+   "x_start_m": -0.95,
+   "x_end_m": 7.15,
+   "diameter_m": 0.12
+  },
+  {
+   "id": "BS",
+   "y_m": 1.95,
+   "x_start_m": -0.95,
+   "x_end_m": 7.15,
+   "diameter_m": 0.12
+  }
+ ],
+ "fuselage": {
+  "length_m": 4.8,
+  "max_width_m": 1.15,
+  "max_height_m": 1.35,
+  "stations_x_m": [
+   0,
+   0.8,
+   1.6,
+   2.6,
+   3.6,
+   4.8
+  ]
+ },
+ "pusher": {
+  "hub": [
+   4.95,
+   0,
+   0.9
+  ],
+  "diameter_m": 1.6
+ },
+ "tail": {
+  "type": "H-tail between booms",
+  "x_le_m": 6.4,
+  "span_m": 3.9,
+  "chord_m": 0.75
+ },
+ "landing_gear": {
+  "type": "skid",
+  "x_m": [
+   2.2,
+   4.0
+  ]
+ },
+ "battery_packs": [
+  {
+   "id": "BAT1",
+   "center": [
+    2.9,
+    -0.3,
+    0.45
+   ]
+  },
+  {
+   "id": "BAT2",
+   "center": [
+    2.9,
+    0.3,
+    0.45
+   ]
+  }
+ ],
+ "seats": [
+  {
+   "id": "S1",
+   "hip": [
+    1.7,
+    -0.3,
+    0.55
+   ]
+  },
+  {
+   "id": "S2",
+   "hip": [
+    1.7,
+    0.3,
+    0.55
+   ]
+  }
+ ]
+}

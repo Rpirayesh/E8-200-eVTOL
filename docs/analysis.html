@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E8-200 Analysis</title>
+<link rel="stylesheet" href="site.css">
+<style>
+.ok{color:#2f9e44;font-weight:600}.warn{color:#c2410c;font-weight:600}
+td.num,th.num{text-align:right}
+</style>
+</head>
+<body>
+<header><h1>E8-200 lift + cruise eVTOL</h1>
+<nav><a href="index.html">3-D viewer</a><a href="bom.html">Bill of materials</a><a href="analysis.html" aria-current="page">Analysis</a><a href="https://github.com/Rpirayesh/E8-200-eVTOL">Repository</a></nav></header>
+<main class="doc">
+  <h2>Frozen design: iteration 3.3</h2>
+  <p>A crewed electric VTOL for 200 kg of payload over 20 km, sized for the lowest cost and complexity and for a shop with a 3-axis
+  CNC mill and FDM printers. Every number on this page comes from files in the repository; the links point to them.</p>
+  <div class="kpis">
+    <div><b>1,348 kg</b><span>MTOW (5 % growth included)</span></div>
+    <div><b>200 kg</b><span>payload, crew + cargo</span></div>
+    <div><b>24.1 km</b><span>range capability (20 km design, 20 % reserve at end of life)</span></div>
+    <div><b>167 km/h</b><span>cruise, 1.163 x stall speed</span></div>
+    <div><b>63 kWh</b><span>P50B cells, 4 packs, 630 V</span></div>
+    <div><b>$381k</b><span>prototype cash (BOM $389k)</span></div>
+    <div><b>$498k</b><span>per aircraft at a batch of 10</span></div>
+    <div><b>+0.094</b><span>lowest structural margin at ultimate load</span></div>
+  </div>
+
+  <h2>Configuration</h2>
+  <div class="wrap"><table>
+    <tr><th>Item</th><th>Selection</th></tr>
+    <tr><td>Lift</td><td>8 x 1.85 m E-PROPS 2-blade fixed pitch at 183 m/s tip speed; EMRAX 268 MV liquid-cooled motors; MGM HBCi 400800 inverters; flight-controller rpm cap 2,460 rpm</td></tr>
+    <tr><td>Cruise thrust</td><td>2 x REB 90 on the boom tails with 1.75 m E-PROPS, 2,074 rpm, pitch 21.0° at 0.75 R</td></tr>
+    <tr><td>Wing</td><td>8.0 x 1.15 m (9.2 m²), LS(1)-0417, ailerons only, leading edge 2.145 m from the nose</td></tr>
+    <tr><td>Tail</td><td>H-tail on the booms, 1.11 m² horizontal, 0.62 m² of fins</td></tr>
+    <tr><td>Battery</td><td>Molicel P50B, 175s5p x 4 packs (3,500 cells) along the cabin floor</td></tr>
+    <tr><td>Safety</td><td>Galaxy GRS 6 1200-1390 parachute; continued hover with one motor out; operation with one pack out</td></tr>
+    <tr><td>Structure</td><td>carbon tube booms and spars, laminated shells laid up in printed moulds, machined aluminium fittings</td></tr>
+  </table></div>
+
+  <h2>Binding constraints</h2>
+  <div class="wrap"><table>
+    <tr><th>Constraint</th><th class="num">Margin</th><th>Notes</th></tr>
+    <tr><td>Lift-motor continuous torque, hover at 1,000 m ISA+15</td><td class="num">1.6 %</td><td>EMRAX 268 continuous rating (liquid-cooled)</td></tr>
+    <tr><td>Cruise speed over 1.15 Vs</td><td class="num">1.1 %</td><td>on CLmax 1.628 (CFD 1.714 minus 5 %)</td></tr>
+    <tr><td>Pusher continuous power (10 % margin rule)</td><td class="num">2.7 %</td><td>53.1 kW shaft each, against the 60 kW REB 90 rating</td></tr>
+    <tr><td>Parachute weight rating</td><td class="num">2.9 %</td><td>1,348 kg against 1,390 kg</td></tr>
+    <tr><td>One-pack-out cell current / bus voltage</td><td class="num">57.3 A / 411 V</td><td>limits 60 A and 400 V at end of life</td></tr>
+  </table></div>
+
+  <h2>Aerodynamics (CFD)</h2>
+  <p>OpenFOAM v2412, steady RANS, 1.9 million cells, with the pushers modelled as actuator disks.
+  <a href="https://github.com/Rpirayesh/E8-200-eVTOL/blob/main/cfd/results/iteration33/README.md">Full results</a>.</p>
+  <div class="wrap"><table>
+    <tr><th>Quantity</th><th class="num">Sizing (before)</th><th class="num">CFD</th><th>Used now</th></tr>
+    <tr><td>CD0 including pods</td><td class="num">0.0751</td><td class="num">0.0764</td><td>0.0764</td></tr>
+    <tr><td>Oswald e</td><td class="num">0.756</td><td class="num">0.658</td><td>0.658</td></tr>
+    <tr><td>Clean CLmax</td><td class="num">1.64</td><td class="num">≥ 1.71</td><td>1.628 (CFD minus 5 %)</td></tr>
+    <tr><td>Static margin</td><td class="num">0.098</td><td class="num">0.195</td><td>0.098 kept: the CFD Cm level does not converge on the mesh (independent check 0.101)</td></tr>
+    <tr><td>Pusher thrust deduction / wake fraction</td><td class="num">4.5 % / –</td><td class="num">1.9 % / 0.045</td><td>CFD values</td></tr>
+    <tr><td>Hover download</td><td class="num">3.3 %</td><td class="num">2.0 %</td><td>2.0 %</td></tr>
+    <tr><td>Grid convergence (GCI on CD, production mesh)</td><td class="num">–</td><td class="num">2.8 %</td><td></td></tr>
+  </table></div>
+  <p>The CFD lift-dependent drag was 15 % higher than the build-up estimate. That left the pushers 0.8 % inside their rating at
+  172 km/h, so cruise was moved to 167 km/h. No hardware changed.</p>
+  <div class="grid2">
+    <figure><img src="img/cfd_cruise_polar.png" alt="Cruise polar from CFD" loading="lazy"><figcaption>Cruise polar, CFD against the sizing model.</figcaption></figure>
+    <figure><img src="img/cfd_drag_breakdown.png" alt="Drag breakdown" loading="lazy"><figcaption>Drag breakdown by component.</figcaption></figure>
+  </div>
+
+  <h2>Structures (FEA)</h2>
+  <p>Beam model of the airframe plus solid CalculiX models of every machined fitting, built from the CAD. Margins are at ultimate
+  load (limit x 1.5, fittings x 1.15 on top), with B-basis, environmental and process knockdowns in the composite allowables.
+  <a href="https://github.com/Rpirayesh/E8-200-eVTOL/blob/main/fea/README.md">Full results</a>.</p>
+  <div class="wrap"><table>
+    <tr><th>Item</th><th class="num">Margin of safety</th></tr>
+    <tr><td>Booms (all rotors at 4,267 N, 1.25 x torque)</td><td class="num">+0.094</td></tr>
+    <tr><td>Main spar / tail spar / rear spar</td><td class="num">+0.10 / +0.10 / +0.11</td></tr>
+    <tr><td>Wing rear-spar fitting W-FIT-RS</td><td class="num">+0.14</td></tr>
+    <tr><td>Pylon PY-C</td><td class="num">+0.17</td></tr>
+    <tr><td>Parachute riser fitting CH-ATT-R</td><td class="num">+0.24</td></tr>
+    <tr><td>Parachute cradle CH-CRADLE</td><td class="num">+0.32</td></tr>
+    <tr><td>Landing-gear leg LG-LEG</td><td class="num">+0.32</td></tr>
+    <tr><td>Wing main-spar fitting W-FIT-MS</td><td class="num">+0.33</td></tr>
+    <tr><td>Flutter speed margin</td><td class="num">+1.25</td></tr>
+  </table></div>
+  <p class="warn">Open: the pusher 1P (34.6 Hz) sits near the boom modes (35.5–37.6 Hz). A ground vibration test and notch filtering are required before flight.</p>
+
+  <h2>Requirements relaxed</h2>
+  <p>The owner asked for the cheapest design that is still reliable. These rules were relaxed; the reliability core was kept.</p>
+  <div class="wrap"><table>
+    <tr><th>Rule</th><th>Was</th><th>Now</th></tr>
+    <tr><td>One-motor-out landing flare</td><td>1.2 g</td><td>1.1 g</td></tr>
+    <tr><td>Cruise speed margin over stall</td><td>1.3 Vs</td><td>1.15 Vs</td></tr>
+    <tr><td>Ground footprint</td><td>9.0 m</td><td>10.5 m</td></tr>
+    <tr><td>Minimum cruise speed</td><td>135 km/h</td><td>120 km/h</td></tr>
+  </table></div>
+  <p>Kept:</p>
+  <ul>
+    <li>ultimate factor 1.5;</li>
+    <li>continued hover with one motor out and a 10 % control margin;</li>
+    <li>cell current and bus voltage limits with one pack out at end of life;</li>
+    <li>10 % pusher power margin and 1 m/s climb;</li>
+    <li>1,000 m ISA+15 hover ceiling;</li>
+    <li>20 % reserve;</li>
+    <li>parachute.</li>
+  </ul>
+
+  <h2>Iteration history</h2>
+  <div class="wrap"><table>
+    <tr><th>Iteration</th><th class="num">MTOW kg</th><th class="num">Range km</th><th class="num">kUSD at N = 10</th><th>Key change</th></tr>
+    <tr><td>1</td><td class="num">1,002</td><td class="num">50</td><td class="num">387</td><td>first closure</td></tr>
+    <tr><td>2</td><td class="num">1,090</td><td class="num">20</td><td class="num">–</td><td>range 20 km, CAD/FEA mass calibration</td></tr>
+    <tr><td>3</td><td class="num">1,043</td><td class="num">20</td><td class="num">392</td><td>cost-down</td></tr>
+    <tr><td>3.1</td><td class="num">1,078</td><td class="num">20</td><td class="num">431</td><td>one-pack-out battery sag, pusher margin</td></tr>
+    <tr><td>3.2</td><td class="num">1,170</td><td class="num">20</td><td class="num">442</td><td>CFD aero, relaxed rules, twin REB 60 pushers</td></tr>
+    <tr><td><b>3.3</b></td><td class="num"><b>1,348</b></td><td class="num"><b>20 (24.1)</b></td><td class="num"><b>498</b></td><td>exact sag, CAD masses, motors with published ratings, CFD-calibrated cruise</td></tr>
+  </table></div>
+
+  <h2 id="vv">Verification and validation</h2>
+  <div id="vvbody">
+  <p>Each discipline keeps its own verification under <code>validation/&lt;discipline&gt;/</code>. Separately, an independent check
+  re-derives the design from first principles (<a href="https://github.com/Rpirayesh/E8-200-eVTOL/blob/main/validation/independent/check_final.py">check_final.py</a>).
+  The full matrix, with a source link on every row, is in <a href="https://github.com/Rpirayesh/E8-200-eVTOL/blob/main/validation/README.md">validation/README.md</a>.</p>
+  <div class="kpis">
+    <div><b>105 / 0</b><span>sizing checks pass / fail</span></div>
+    <div><b>71 / 19 / 0</b><span>independent hand checks pass / flag / fail</span></div>
+    <div><b>21 / 10 / 2 / 0</b><span>V&amp;V matrix pass / flag / open / fail</span></div>
+  </div>
+  <div class="wrap"><table>
+    <tr><th>Check</th><th class="num">Design</th><th class="num">Independent</th></tr>
+    <tr><td>Range with 20 % reserve at end of life</td><td class="num">24.1 km</td><td class="num">25.3 km</td></tr>
+    <tr><td>Range at the unfavourable CFD band edge, 167 km/h</td><td class="num">–</td><td class="num">20.9 km</td></tr>
+    <tr><td>Pusher continuous margin</td><td class="num">+2.7 %</td><td class="num">+4.4 %</td></tr>
+    <tr><td>Climb rate</td><td class="num">1.55 m/s</td><td class="num">1.66 m/s</td></tr>
+    <tr><td>One-pack-out cell current</td><td class="num">57.3 A</td><td class="num">55.2 A</td></tr>
+    <tr><td>Static margin</td><td class="num">0.098</td><td class="num">0.101</td></tr>
+    <tr><td>MTOW, CAD against sizing</td><td class="num">1,347.8 kg</td><td class="num">−1.3 %</td></tr>
+  </table></div>
+  <figure><img src="img/vv_benchmark_comparison.png" alt="Benchmark comparison" loading="lazy"><figcaption>E8-200 against published eVTOL and light-aircraft benchmarks.</figcaption></figure>
+  </div>
+
+  <h2>Open items before building</h2>
+  <ol>
+    <li>Motor quotes:
+      <ul>
+        <li>EMRAX 268 winding for the 525–756 V bus (MV needs an inverter speed limit; the series is being superseded);</li>
+        <li>EMRAX axial-load limit;</li>
+        <li>REB 90 continuous torque near 2,000 rpm.</li>
+      </ul>
+    </li>
+    <li>EMRAX time limit above its continuous torque: one-motor-out hover needs about 290 N·m, and the datasheet peak is rated for 30 s.</li>
+    <li>Ground vibration test and notch filtering of the pusher speed command.</li>
+    <li>Range at the unfavourable end of the CFD bands: 19.0 km in the CFD check at 172 km/h, 20.9 km in the independent check at 167 km/h.</li>
+    <li>Manufacturing:
+      <ul>
+        <li>CH-CRADLE and PB-PLUG need two set-ups on the 150 mm mill;</li>
+        <li>HT-SPAR needs a bonded splice sleeve;</li>
+        <li>106 part pairs could not be interference-checked.</li>
+      </ul>
+    </li>
+    <li>About two-thirds of the BOM value is estimates or pending quotes.</li>
+  </ol>
+</main>
+</body>
+</html>

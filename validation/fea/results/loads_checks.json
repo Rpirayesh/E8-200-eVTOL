@@ -1,0 +1,268 @@
+{
+ "L1 gust (CS-23 imperial form)": {
+  "n_SI": 2.81831444479195,
+  "n_imperial": 2.8202753636768287,
+  "diff_pct": -0.069529341359148,
+  "mu_SI": 31.543683762896766,
+  "mu_imperial": 31.54374247034442
+ },
+ "L2 span load and tail balance": [
+  {
+   "case": "F A  manoeuvre +n at VA",
+   "lift_integral_err_pct": 0.0,
+   "total_vs_nW_err_pct": 0.0,
+   "pitch_residual_Nm": 4.547473508864641e-13
+  },
+  {
+   "case": "F D  manoeuvre +n at VD",
+   "lift_integral_err_pct": 0.0,
+   "total_vs_nW_err_pct": 0.0,
+   "pitch_residual_Nm": 0.0
+  },
+  {
+   "case": "F G  manoeuvre -n at VG",
+   "lift_integral_err_pct": -1.8253829943782288e-14,
+   "total_vs_nW_err_pct": 0.0,
+   "pitch_residual_Nm": -4.547473508864641e-13
+  },
+  {
+   "case": "F E  -n at VC",
+   "lift_integral_err_pct": 1.8152013937249097e-14,
+   "total_vs_nW_err_pct": 0.0,
+   "pitch_residual_Nm": 2.2737367544323206e-13
+  },
+  {
+   "case": "F F  0 g at VD",
+   "lift_integral_err_pct": 1.6372781524439988e-14,
+   "total_vs_nW_err_pct": 0.0,
+   "pitch_residual_Nm": 0.0
+  },
+  {
+   "case": "F C+ gust at VC",
+   "lift_integral_err_pct": 0.0,
+   "total_vs_nW_err_pct": 0.0,
+   "pitch_residual_Nm": 0.0
+  },
+  {
+   "case": "F C- gust at VC",
+   "lift_integral_err_pct": 0.0,
+   "total_vs_nW_err_pct": 0.0,
+   "pitch_residual_Nm": 0.0
+  },
+  {
+   "case": "F D+ gust at VD",
+   "lift_integral_err_pct": -1.1513077913557723e-14,
+   "total_vs_nW_err_pct": 0.0,
+   "pitch_residual_Nm": 0.0
+  },
+  {
+   "case": "F D- gust at VD",
+   "lift_integral_err_pct": 0.0,
+   "total_vs_nW_err_pct": 0.0,
+   "pitch_residual_Nm": 0.0
+  },
+  {
+   "case": "F rolling: 2/3 nA, 100 % / 75 % semispan (CS-23.349)",
+   "lift_integral_err_pct": null,
+   "total_vs_nW_err_pct": 0.0,
+   "pitch_residual_Nm": 2.2737367544323206e-13
+  }
+ ],
+ "L3 thrust allocation": [
+  {
+   "case": "hover",
+   "Fz_err_N": -9.094947017729282e-13,
+   "roll_Nm": -1.8189894035458565e-12,
+   "pitch_Nm": -4.320099833421409e-12,
+   "yaw_Nm": -1.7053025658242404e-13,
+   "max_fraction": 0.7339951134046703
+  },
+  {
+   "case": "OEI FL_up",
+   "Fz_err_N": 9.094947017729282e-13,
+   "roll_Nm": 1.3642420526593924e-12,
+   "pitch_Nm": 1.1368683772161603e-12,
+   "yaw_Nm": 1.4210854715202004e-13,
+   "max_fraction": 0.9786601512062271
+  },
+  {
+   "case": "OEI FL_lo",
+   "Fz_err_N": -9.094947017729282e-13,
+   "roll_Nm": -9.094947017729282e-13,
+   "pitch_Nm": 2.5011104298755527e-12,
+   "yaw_Nm": -8.526512829121202e-14,
+   "max_fraction": 0.9786601512062264
+  },
+  {
+   "case": "OEI FR_up",
+   "Fz_err_N": 0.0,
+   "roll_Nm": 0.0,
+   "pitch_Nm": 2.2737367544323206e-12,
+   "yaw_Nm": -2.842170943040401e-14,
+   "max_fraction": 0.9786601512062265
+  },
+  {
+   "case": "OEI FR_lo",
+   "Fz_err_N": -9.094947017729282e-13,
+   "roll_Nm": -4.547473508864641e-13,
+   "pitch_Nm": 2.7284841053187847e-12,
+   "yaw_Nm": 1.7053025658242404e-13,
+   "max_fraction": 0.9786601512062265
+  },
+  {
+   "case": "OEI RL_up",
+   "Fz_err_N": 9.094947017729282e-13,
+   "roll_Nm": 9.094947017729282e-13,
+   "pitch_Nm": -1.1368683772161603e-12,
+   "yaw_Nm": -1.1368683772161603e-13,
+   "max_fraction": 0.9115155448717963
+  },
+  {
+   "case": "OEI RL_lo",
+   "Fz_err_N": 0.0,
+   "roll_Nm": -9.094947017729282e-13,
+   "pitch_Nm": 1.3642420526593924e-12,
+   "yaw_Nm": 8.526512829121202e-14,
+   "max_fraction": 0.9115155448717951
+  },
+  {
+   "case": "OEI RR_up",
+   "Fz_err_N": 9.094947017729282e-13,
+   "roll_Nm": 2.7284841053187847e-12,
+   "pitch_Nm": 6.821210263296962e-13,
+   "yaw_Nm": 2.842170943040401e-14,
+   "max_fraction": 0.9115155448717956
+  },
+  {
+   "case": "OEI RR_lo",
+   "Fz_err_N": 0.0,
+   "roll_Nm": -1.3642420526593924e-12,
+   "pitch_Nm": 1.8189894035458565e-12,
+   "yaw_Nm": -5.684341886080802e-14,
+   "max_fraction": 0.9115155448717951
+  }
+ ],
+ "L4 reactions": [
+  {
+   "case": "L1 level landing 3.0 g, all gear (gear reaction 3.00 W)",
+   "sum_Fz_over_W": 3.0,
+   "sum_Fy_over_W": 0.0
+  },
+  {
+   "case": "L2 level landing 3.0 g with drag 0.25 x vertical (inclined reaction)",
+   "sum_Fz_over_W": 3.0,
+   "sum_Fy_over_W": 0.0
+  },
+  {
+   "case": "L3 one-side landing 3.0 g (right skid only, level-landing reactions of that side)",
+   "sum_Fz_over_W": 1.5,
+   "sum_Fy_over_W": 0.0
+  },
+  {
+   "case": "L4 side load (CS-23.485): n = 1.33 vertical, 0.5 W inboard right / 0.33 W outboard left",
+   "sum_Fz_over_W": 1.3299999999999998,
+   "sum_Fy_over_W": -0.8300000000000001
+  },
+  {
+   "case": "C1 parachute opening 6.0 g, aft (deployment along the flight path)",
+   "total_over_W": 6.0
+  },
+  {
+   "case": "C2 parachute opening 6.0 g, aft-up 45 deg",
+   "total_over_W": 6.0
+  },
+  {
+   "case": "C3 parachute opening 6.0 g, vertical (inflated, low speed)",
+   "total_over_W": 6.0
+  },
+  {
+   "case": "C4 parachute opening 6.0 g, aft-up-right 45/30 deg",
+   "total_over_W": 6.0
+  },
+  {
+   "case": "crash battery_A forward",
+   "F_over_mg": 18.0,
+   "aft_or_above": true
+  }
+ ],
+ "L5 model mass": {
+  "model_kg": 724.9999999999999,
+  "budget_kg": 725.0,
+  "cg_model": [
+   2.235822967689479,
+   -3.675221047035002e-18,
+   0.8666029686276281
+  ],
+  "cg_budget": [
+   2.2128701657458563,
+   0.0,
+   0.8722845505277981
+  ]
+ },
+ "L5 inertia relief residual": {
+  "max_support_residual_N": 1.5180149576601702e-05
+ },
+ "L6 wing root bending, case F A (limit)": {
+  "M_beam_model_Nm": 14142.49960589329,
+  "M_strip_integration_Nm": 14216.463625934257,
+  "diff_pct": -0.5202701739836235,
+  "lift_part": 18338.78243047756,
+  "inertia_part": -4316.624404373265,
+  "tail_part": 194.30559982996294,
+  "accel_g": [
+   -0.09845535849442068,
+   -2.726824535663989e-33,
+   2.79505157166648
+  ]
+ },
+ "L7 beam-model discretisation": [
+  {
+   "n_half_span": 5,
+   "elems": 164,
+   "tip_mm_FA": 176.2275244005808,
+   "front_spar_sigma_c_FA": -336036573.6544395,
+   "boom_sigma_c_R2": -140243681.2907345,
+   "boom_end_mm_R2": 38.79750223616809,
+   "tip_mm_FA_diff_pct": -4.815079532575997,
+   "front_spar_sigma_c_FA_diff_pct": 3.7036883141949892,
+   "boom_sigma_c_R2_diff_pct": 0.014490543249714542,
+   "boom_end_mm_R2_diff_pct": 2.8100577473821513
+  },
+  {
+   "n_half_span": 10,
+   "elems": 239,
+   "tip_mm_FA": 181.9676344862198,
+   "front_spar_sigma_c_FA": -332784723.43552834,
+   "boom_sigma_c_R2": -140244389.0705216,
+   "boom_end_mm_R2": 38.192566077795256,
+   "tip_mm_FA_diff_pct": -1.714701632845334,
+   "front_spar_sigma_c_FA_diff_pct": 2.7001402245361614,
+   "boom_sigma_c_R2_diff_pct": 0.01499529493743021,
+   "boom_end_mm_R2_diff_pct": 1.207028743164133
+  },
+  {
+   "n_half_span": 20,
+   "elems": 394,
+   "tip_mm_FA": 184.25760802775383,
+   "front_spar_sigma_c_FA": -324478622.8427658,
+   "boom_sigma_c_R2": -140234742.48823842,
+   "boom_end_mm_R2": 37.83216903844175,
+   "tip_mm_FA_diff_pct": -0.47782929882811503,
+   "front_spar_sigma_c_FA_diff_pct": 0.1368083300026162,
+   "boom_sigma_c_R2_diff_pct": 0.008115854782585736,
+   "boom_end_mm_R2_diff_pct": 0.25200745848518247
+  },
+  {
+   "n_half_span": 40,
+   "elems": 704,
+   "tip_mm_FA": 185.14227204811579,
+   "front_spar_sigma_c_FA": -324035315.53895825,
+   "boom_sigma_c_R2": -140223362.16379395,
+   "boom_end_mm_R2": 37.73706881042579,
+   "tip_mm_FA_diff_pct": 0.0,
+   "front_spar_sigma_c_FA_diff_pct": -0.0,
+   "boom_sigma_c_R2_diff_pct": -0.0,
+   "boom_end_mm_R2_diff_pct": 0.0
+  }
+ ]
+}

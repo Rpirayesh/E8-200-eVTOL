@@ -1,0 +1,2477 @@
+{
+  "description": "E8-200 reference library. key_data entries quote the source (page/table where known). used_for lists work packages: R literature, M methods/benchmarks, P parts/manufacturing, D sizing/design, C CFD, F FEA, G CAD, V verification.",
+  "link_checked": "2026-11-12",
+  "count": 100,
+  "sources": [
+    {
+      "id": "SZ01",
+      "title": "VTOL Urban Air Mobility Concept Vehicles for Technology Development",
+      "authors": "Silva, C.; Johnson, W.; Solis, E.; Patterson, M. D.; Antcliff, K. R.",
+      "year": 2018,
+      "type": "NASA report (conference paper)",
+      "venue": "AIAA Aviation Technology, Integration, and Operations Conference, AIAA 2018-3847, doi:10.2514/6.2018-3847",
+      "url": "https://ntrs.nasa.gov/citations/20180006683",
+      "alt_urls": [],
+      "local_copy": "resources/papers/NASA-20180006683_Silva2018_UAM_concept_vehicles.pdf",
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "M",
+        "D",
+        "V"
+      ],
+      "summary": "Defines the NASA RVLT UAM reference vehicles (quadrotor, side-by-side, lift+cruise) sized in NDARC to a common 6-passenger (1,200 lb payload) mission. The lift+cruise has 8 RPM-controlled fixed-pitch lift rotors on booms, a high wing and one pusher; the paper gives a complete weight/power/drag breakdown and the battery, motor and accessory technology factors.",
+      "project_use": "WP M/D: closest published reference for our configuration; use Table 3 as a scaling and sanity check of weight fractions, disk loading, D/q, L/De and hover C-rate; use the battery derating chain (cell -> usable -> installed) and motor accessory factor in the sizing code. WP V: benchmark for the sizing model.",
+      "credibility": "High. NASA RVLT authors; NDARC-based conceptual design, not flight data. Technology level is 'advanced' (650 Wh/kg cell), so battery numbers must be re-based to today's cells.",
+      "key_data": [
+        "Battery: cell 650 Wh/kg -> minus 20% (5% top + 15% bottom of charge) = 530 Wh/kg usable -> 30% weight for BMS/pack structure -> 400 Wh/kg installed (p.10, Sec. VI.A)",
+        "Motor weight W = 0.3928 Q^0.8587 (NDARC empirical relation; units as defined in the NDARC manual, SZ05), accessory (inverter, cooling, wiring) factor 1.63 x motor weight (p.11, Eq. 1)",
+        "Electric lift+cruise (Table 3): DGW 8,210 lb, empty 7,001 lb, payload 1,200 lb, 8 lifters, radius 5.0 ft, disk loading 13.1 lb/ft2, hover tip speed 585 ft/s, thrust-weighted solidity 0.267",
+        "Electric lift+cruise (Table 3): battery 1,436 MJ, 1,693 lb; MRP 139 hp per lifter; pusher 628 hp; D/q 16.9 ft2; L/De 8.5; aircraft hover FM 0.74; hover C-rate 2.4 /hr; cruise C-rate 0.7 /hr",
+        "Lift rotor diameter capped at 10 ft for RPM-control responsiveness (p.11); hover tip speed kept ~550-600 ft/s for noise (p.14)",
+        "Hover C-rate relation x_hover ~ sqrt(W/2rhoA) * eta_cruise (L/De) / (eta_hover FM Range) (Eq. 3, p.11)",
+        "Lift+cruise FM highest of the three types 'due to the very small download' (p.14)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ02",
+      "title": "Concept Vehicles for VTOL Air Taxi Operations",
+      "authors": "Johnson, W.; Silva, C.; Solis, E.",
+      "year": 2018,
+      "type": "NASA report (conference paper)",
+      "venue": "AHS Technical Conference on Aeromechanics Design for Transformative Vertical Flight, San Francisco, Jan. 2018",
+      "url": "https://ntrs.nasa.gov/citations/20180003381",
+      "alt_urls": [],
+      "local_copy": "resources/papers/NASA-20180003381_Johnson2018_concept_vehicles_air_taxi.pdf",
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "M",
+        "D"
+      ],
+      "summary": "The original NASA air-taxi concept set, including a single-passenger (250 lb payload, 50 nm) electric quadrotor that is the closest NASA reference to our payload class. Gives the battery technology table used across NASA UAM work and weight-vs-range sensitivity.",
+      "project_use": "WP M/D: battery technology levels and installation fractions; the 1-passenger electric quadrotor (DGW ~1,250 lb) is a direct mass-scale benchmark for a 200 kg payload aircraft and for the range sensitivity check (50/100/150 km).",
+      "credibility": "High (NASA). Conceptual design results; the 1-pax vehicle is a multicopter, not lift+cruise.",
+      "key_data": [
+        "Table 2 battery technology: uninstalled 240/300/325/487.5/650 Wh/kg; usable fraction 70/75/80/80/80%; installation fraction 0.8/0.5/0.3/0.3/0.3; installed 93/150/200/300/400 Wh/kg; max burst discharge 4/6/8/14/20 C; DoD max 0.80-0.85",
+        "Discharge currents must be limited to 2-3C for good battery life (p.4)",
+        "1-pax electric quadrotor (Table 9): DGW 1,252 lb, WE 997 lb, battery 272 lb / 178 MJ, disk loading 2.5 lb/ft2, radius 6.31 ft, 4 x 21.6 hp, tip speed 450 ft/s, D/q 3.43 ft2, Vbr 86 kt",
+        "Doubling range to 100 nm increases DGW of the 1-pax electric quadrotor by 50%; no closure at 200 nm (p.8)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ03",
+      "title": "Observations from Exploration of VTOL Urban Air Mobility Designs",
+      "authors": "Johnson, W.; Silva, C.",
+      "year": 2018,
+      "type": "NASA report (conference paper)",
+      "venue": "Asian/Australian Rotorcraft Forum, Jeju, Korea, Oct.-Nov. 2018",
+      "url": "https://ntrs.nasa.gov/citations/20180007847",
+      "alt_urls": [],
+      "local_copy": "resources/papers/NASA-20180007847_Johnson2018_observations_UAM.pdf",
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "D",
+        "P"
+      ],
+      "summary": "Summary of lessons from the NASA UAM concept vehicles: hover vs cruise efficiency, rotor-rotor interference, download, noise and a qualitative cost statement.",
+      "project_use": "WP D: justification text for design choices (stopped lift rotors, rotor placement) and the cost-driver statement used in the objective function.",
+      "credibility": "High (NASA), qualitative overview.",
+      "key_data": [
+        "Purchase cost is roughly (20% accuracy) driven by empty weight, installed power and complexity plus electronics; for electric aircraft battery cost must be included explicitly (p.7)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ04",
+      "title": "NASA concept vehicles and the engineering of advanced air mobility aircraft",
+      "authors": "Johnson, W.; Silva, C.",
+      "year": 2022,
+      "type": "paper (peer-reviewed)",
+      "venue": "The Aeronautical Journal 126(1295), 59-91, doi:10.1017/aer.2021.92",
+      "url": "https://ntrs.nasa.gov/citations/20210026170",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "M",
+        "D"
+      ],
+      "summary": "Journal review of all NASA UAM reference vehicles and the design/technology issues (batteries, rotors, noise, safety) behind them.",
+      "project_use": "WP M/D: overview reference when writing the design rationale; link only (published by Cambridge University Press, not stored).",
+      "credibility": "High; peer-reviewed review by the NDARC author.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ05",
+      "title": "NDARC - NASA Design and Analysis of Rotorcraft: Theory (Vol. 1) and Appendix 3",
+      "authors": "Johnson, W.",
+      "year": 2022,
+      "type": "NASA report (technical publication)",
+      "venue": "NASA TP-20220000355 (theory), NASA TP-2009-215402 Appendix 3",
+      "url": "https://ntrs.nasa.gov/citations/20220000355",
+      "alt_urls": [
+        "https://rotorcraft.arc.nasa.gov/Publications/files/NASA%20TP-2009-215402-app3.pdf",
+        "https://rotorcraft.arc.nasa.gov/ndarc/"
+      ],
+      "local_copy": null,
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "M",
+        "D"
+      ],
+      "summary": "Full theory manual of NDARC: mission and sizing logic, momentum-theory based rotor performance with induced (kappa) and profile power models, weight equations (AFDD), battery and motor models.",
+      "project_use": "WP M: source of the rotor hover/forward-flight power equations (ideal induced power, kappa, profile power coefficient) and the empirical weight equations used in methods/EQUATIONS.md.",
+      "credibility": "High; the standard US government rotorcraft sizing method. Weight equations are calibrated on helicopters and must be used with care for small electric aircraft.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ06",
+      "title": "A Proposed Approach to Studying Urban Air Mobility Missions Including an Initial Exploration of Mission Requirements",
+      "authors": "Patterson, M. D.; Antcliff, K. R.; Kohlman, L. W.",
+      "year": 2018,
+      "type": "NASA report (conference paper)",
+      "venue": "AHS International 74th Annual Forum, Phoenix, May 2018",
+      "url": "https://ntrs.nasa.gov/citations/20190000991",
+      "alt_urls": [],
+      "local_copy": "resources/papers/NASA-20190000991_Patterson2018_UAM_missions.pdf",
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "D",
+        "V"
+      ],
+      "summary": "NASA Langley study of UAM mission definitions (segments, reserves, hover times) and their effect on vehicle size.",
+      "project_use": "WP D: cross-check of our mission profile (60 s hover, 30 s transitions, 20% energy reserve) against published mission assumptions.",
+      "credibility": "High (NASA); mission assumptions, not regulations.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ07",
+      "title": "Benefits of Hybrid-Electric Propulsion to Achieve 4x Increase in Cruise Efficiency for a VTOL Aircraft",
+      "authors": "Fredericks, W. J.; Moore, M. D.; Busan, R. C.",
+      "year": 2013,
+      "type": "NASA report (conference paper)",
+      "venue": "AIAA International Powered Lift Conference, AIAA 2013-4324, doi:10.2514/6.2013-4324",
+      "url": "https://ntrs.nasa.gov/citations/20140001088",
+      "alt_urls": [],
+      "local_copy": "resources/papers/NASA-20140001088_Fredericks2013_GL10.pdf",
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "D",
+        "M"
+      ],
+      "summary": "Design history of NASA's GL-10 'Greased Lightning' distributed-electric tilt-wing, from configuration brainstorm through subscale build and transition flight tests.",
+      "project_use": "WP D/M: supports the argument that a winged electric VTOL can reach a cruise L/D several times that of a helicopter; subscale build lessons relevant to the E8-S demonstrator path.",
+      "credibility": "High (NASA); UAV-scale (20 ft span) hybrid vehicle, so numbers are not directly transferable.",
+      "key_data": [
+        "Helicopters typically achieve L/D 4-5; GL-10 designed for L/D ~20 (abstract)",
+        "Cruise span ~20 ft for the concept variants (design table, p.~9)",
+        "Electric motor/generators assumed 0.5 lb/hp in early sizing (p.3)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ08",
+      "title": "Conceptual Design and Mission Analysis for eVTOL Urban Air Mobility Flight Vehicle Configurations",
+      "authors": "Kadhiresan, A. R.; Duffy, M. J.",
+      "year": 2019,
+      "type": "paper (AIAA conference)",
+      "venue": "AIAA Aviation 2019 Forum, AIAA 2019-2873, doi:10.2514/6.2019-2873",
+      "url": "https://doi.org/10.2514/6.2019-2873",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "D",
+        "M"
+      ],
+      "summary": "Boeing/Purdue study comparing multicopter, lift+cruise and tilting configurations on UAM missions with a common sizing method, including mission-length sensitivity.",
+      "project_use": "WP D/M: configuration trade background for lift+cruise vs multicopter as a function of range; link only (AIAA copyright).",
+      "credibility": "Medium-high: AIAA conference paper (not journal-reviewed) by industry authors. Abstract not available in open indexes; numbers not quoted here until the paper is read in full.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ09",
+      "title": "Vehicle Design and Optimization Model for Urban Air Mobility",
+      "authors": "Brown, A.; Harris, W. L.",
+      "year": 2020,
+      "type": "paper (peer-reviewed)",
+      "venue": "Journal of Aircraft 57(6), 1003-1013, doi:10.2514/1.C035756",
+      "url": "https://doi.org/10.2514/1.C035756",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "D",
+        "M"
+      ],
+      "summary": "MIT geometric-programming sizing tool combining vehicle, mission and cost models for UAM; compares configurations and identifies the battery and pilot as the main cost drivers.",
+      "project_use": "WP D: template for a cost-in-the-loop sizing objective; supports our choice to optimise acquisition cost rather than mass. Sensitivities to reserve, range and battery energy density.",
+      "credibility": "High; peer-reviewed journal paper.",
+      "key_data": [
+        "Configurations with higher L/D but higher disk loading generally weigh less and cost less to operate (abstract)",
+        "Battery and pilot identified as the two main cost drivers (abstract)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ10",
+      "title": "Electric VTOL Configurations Comparison",
+      "authors": "Bacchini, A.; Cestino, E.",
+      "year": 2019,
+      "type": "paper (peer-reviewed, open access)",
+      "venue": "Aerospace 6(3), 26, doi:10.3390/aerospace6030026",
+      "url": "https://doi.org/10.3390/aerospace6030026",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "M",
+        "D"
+      ],
+      "summary": "Compares a multirotor, a lift+cruise and a vectored-thrust eVTOL on disk loading, hover time, cruise speed, range and energy for urban, extra-urban and long-range missions.",
+      "project_use": "WP D/M: published energy comparison of configurations; the paper's mission-energy method is a simple independent check for methods/check_design.py.",
+      "credibility": "Medium-high: open-access MDPI journal; uses public data of real aircraft with simplified models.",
+      "key_data": [
+        "Multirotor most efficient in hover; vectored-thrust jet most efficient in cruise; lift+cruise is the compromise (abstract)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ11",
+      "title": "A Study in Reducing the Cost of Vertical Flight with Electric Propulsion",
+      "authors": "Duffy, M. J.; Wakayama, S. R.; Hupp, R.",
+      "year": 2017,
+      "type": "paper (AIAA conference)",
+      "venue": "17th AIAA Aviation Technology, Integration, and Operations Conference, AIAA 2017-3442, doi:10.2514/6.2017-3442",
+      "url": "https://doi.org/10.2514/6.2017-3442",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "D",
+        "P"
+      ],
+      "summary": "Boeing study of how electric propulsion changes acquisition and operating cost of VTOL aircraft (part count, maintenance, energy cost).",
+      "project_use": "WP D/P: cost-model background for 'minimum acquisition cost and build complexity'. Link only.",
+      "credibility": "Medium-high: AIAA conference paper by industry; numbers not quoted here.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ12",
+      "title": "Propulsion Scaling Methods in the Era of Electric Flight",
+      "authors": "Duffy, M.; Sevier, A.; Hupp, R.; Perdomo, E.; Wakayama, S.",
+      "year": 2018,
+      "type": "paper (AIAA conference)",
+      "venue": "AIAA/IEEE Electric Aircraft Technologies Symposium, AIAA 2018-4978, doi:10.2514/6.2018-4978",
+      "url": "https://doi.org/10.2514/6.2018-4978",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "M",
+        "P"
+      ],
+      "summary": "Scaling relations for electric motors, controllers and rotors used in distributed-propulsion eVTOL sizing.",
+      "project_use": "WP M/P: cross-check of motor mass vs torque/power scaling used for COTS motor selection.",
+      "credibility": "Medium-high: AIAA conference paper.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ13",
+      "title": "Fast-Forwarding to a Future of On-Demand Urban Air Transportation (Uber Elevate white paper)",
+      "authors": "Holden, J.; Goel, N. (Uber Elevate)",
+      "year": 2016,
+      "type": "industry white paper",
+      "venue": "Uber Technologies, Oct. 2016 (hosted by the Vertical Flight Society)",
+      "url": "https://evtol.news/__media/PDFs/UberElevateWhitePaperOct2016.pdf",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "D"
+      ],
+      "summary": "The industry paper that launched the UAM wave; sets out vehicle, battery, noise and cost assumptions for eVTOL air taxis.",
+      "project_use": "WP R/D: historical context and the commonly cited 400 Wh/kg pack target; not used for design numbers.",
+      "credibility": "Low-medium: corporate white paper, not reviewed; battery targets were aspirational.",
+      "key_data": [
+        "Economic model assumes 400 Wh/kg pack-level batteries with 2,000-cycle life (p.~90)",
+        "'nominally a 140 kWh pack' for eVTOLs (p.~30)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ14",
+      "title": "Vahana Configuration Trade Study, Parts I and II (with MATLAB sizing code)",
+      "authors": "Airbus A3 Vahana team (Bower, G. et al.)",
+      "year": 2016,
+      "type": "industry blog + open-source code",
+      "venue": "Airbus A3 blog, Dec. 2016 (archived); code at github.com/VahanaOpenSource",
+      "url": "https://web.archive.org/web/2019/https://acubed.airbus.com/blog/vahana/vahana-configuration-trade-study-part-i/",
+      "alt_urls": [
+        "https://github.com/VahanaOpenSource/vahanaTradeStudy"
+      ],
+      "local_copy": null,
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "D",
+        "M",
+        "V"
+      ],
+      "summary": "Airbus' published sizing trade between an electric helicopter and an 8-fan tandem tilt-wing for a single-passenger eVTOL, solved with MDO; the sizing code is open source.",
+      "project_use": "WP D/M: an open, executable single-seat eVTOL sizing model to benchmark our sizing code against; mission and battery assumptions at our scale.",
+      "credibility": "Medium: company blog, not peer-reviewed, but code is open and inspectable. Original URL now redirects; use the archive copy.",
+      "key_data": [
+        "Installed pack specific energy 'just under 200 Wh/kg' at the time, projected 230 Wh/kg after 3 years (5-6%/yr) (Part I)",
+        "Hover and each transition assumed ~90 s; reserve 20 min at minimum-power speed (Part I)",
+        "8 fans chosen for motor-out redundancy and small footprint (Part I)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "SZ15",
+      "title": "eVTOL Stored Energy Overview (McDonald and German, Uber Elevate Summit 2017) - research summary",
+      "authors": "German, B. J. (Georgia Tech); McDonald, R. (Uber)",
+      "year": 2017,
+      "type": "university research page",
+      "venue": "Presentation, Uber Elevate Summit, Dallas, Apr. 2017; summary on Georgia Tech research page",
+      "url": "https://bgerman.ae.gatech.edu/research.html",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "sizing"
+      ],
+      "used_for": [
+        "R"
+      ],
+      "summary": "Study of how battery specific energy drives eVTOL size and range for Uber's Dallas-Fort Worth market. Only a summary page could be located; the slide deck itself was not found at a stable URL.",
+      "project_use": "Context only; no numbers are taken from it.",
+      "credibility": "Low as a citable source (presentation, not located in full). Listed because the work package brief named it.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BT01",
+      "title": "Molicel INR-21700-P50B product data sheet (v1.1)",
+      "authors": "Molicel (E-One Moli Energy)",
+      "year": 2022,
+      "type": "datasheet",
+      "venue": "Manufacturer data sheet",
+      "url": "https://www.molicel.com/wp-content/uploads/4.TR%E7%B0%A1%E6%98%93%E8%A6%8F%E6%A0%BC_INR21700P50B_1.1_Product-Data-Sheet-of-INR-21700-P50B-80122.pdf",
+      "alt_urls": [
+        "https://www.molicel.com/product/inr-21700-p50b/"
+      ],
+      "local_copy": null,
+      "topics": [
+        "battery"
+      ],
+      "used_for": [
+        "D",
+        "P"
+      ],
+      "summary": "One-page cell data sheet for the high-power/high-energy 21700 cell used in the first E8 iteration.",
+      "project_use": "WP D/P: baseline cell for pack sizing (energy, mass, current limit, resistance for voltage sag).",
+      "credibility": "High for nominal values (manufacturer); data sheet states it is for reference only. Pack-level performance must be derated (see BT06, SZ01, SZ02).",
+      "key_data": [
+        "Capacity 5,000 mAh typ / 4,850 mAh min; 18.0 Wh typ / 17.5 Wh min; 3.6 V nominal, 4.2 V charge, 2.5 V cutoff",
+        "Continuous discharge 60 A (80 C cutoff); max charge 25 A",
+        "260 Wh/kg, 714 Wh/L; DC impedance 12.8 mOhm (50% SOC), AC 6.5 mOhm (30% SOC)",
+        "Mass 71 g max; 21.55 mm x 70.15 mm max"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BT02",
+      "title": "Molicel INR-21700-P45B product page",
+      "authors": "Molicel",
+      "year": 2026,
+      "type": "manufacturer product page",
+      "venue": "Manufacturer web page",
+      "url": "https://www.molicel.com/product/inr-21700-p45b/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "battery"
+      ],
+      "used_for": [
+        "D",
+        "P"
+      ],
+      "summary": "Specification summary of the lower-impedance 4.5 Ah 21700 cell (full data sheet behind a request form).",
+      "project_use": "WP D: alternative cell for a power-limited (hover/OEI) pack design.",
+      "credibility": "High (manufacturer), summary values only.",
+      "key_data": [
+        "4.5 Ah typ, 3.6 V; 45 A continuous; 69 g max; 242 Wh/kg, 643 Wh/L (product page)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BT03",
+      "title": "Samsung SDI INR21700-50G specification of product (V1.0)",
+      "authors": "Samsung SDI",
+      "year": 2018,
+      "type": "datasheet",
+      "venue": "Manufacturer specification (hosted by distributor Master Instruments)",
+      "url": "https://www.master-instruments.com.au/file/67273/1/Samsung-INR21700-50G.pdf",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "battery"
+      ],
+      "used_for": [
+        "D"
+      ],
+      "summary": "Full cell specification for an energy-type 21700 cell.",
+      "project_use": "WP D: energy-optimised cell option; shows the low continuous current of energy cells (relevant to hover C-rate).",
+      "credibility": "High (manufacturer document), distributor-hosted copy.",
+      "key_data": [
+        "4,900 mAh min standard capacity (0.2C); 4,753 mAh min rated (1C); 3.63 V nominal",
+        "Max continuous discharge 3C = 14.7 A (-20 to 30 C) or 2C = 9.8 A (31 to 60 C)",
+        "71 g max; cycle life >= 80% rated capacity after 500 cycles"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BT04",
+      "title": "Samsung SDI INR21700-50S introduction (2021 v2)",
+      "authors": "Samsung SDI",
+      "year": 2021,
+      "type": "manufacturer presentation",
+      "venue": "Manufacturer product introduction (hosted by distributor)",
+      "url": "https://salespot.com.ua/content/files/introduction-of-inr21700-50s_2021_v220210104-66391931.pdf",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "battery"
+      ],
+      "used_for": [
+        "D"
+      ],
+      "summary": "Manufacturer slide set with capacity, discharge capability and cycle-life data for the 50S high-power 21700 cell.",
+      "project_use": "WP D: alternative high-power cell; ratings to compare with P50B.",
+      "credibility": "Medium: genuine manufacturer slides but hosted by a third party and marked confidential; cell mass not stated in this document (vendors list ~70-72 g, not verified here).",
+      "key_data": [
+        "Standard capacity 5,000 mAh typ (0.2C), rated 4,800 mAh min (10 A)",
+        "Max continuous discharge 25 A without temperature cutoff; 45 A with 80 C cutoff",
+        "Cycle life 60% after 250 cycles at 6 A charge / 25 A discharge"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BT05",
+      "title": "Amprius SiCore cells (SA109 450 Wh/kg pouch, aviation cells) - product pages",
+      "authors": "Amprius Technologies",
+      "year": 2025,
+      "type": "manufacturer product page",
+      "venue": "Manufacturer web pages",
+      "url": "https://amprius.com/products/sa109/",
+      "alt_urls": [
+        "https://amprius.com/products"
+      ],
+      "local_copy": null,
+      "topics": [
+        "battery"
+      ],
+      "used_for": [
+        "D"
+      ],
+      "summary": "Silicon-anode pouch cells marketed for aviation; the SA109 is listed as preliminary.",
+      "project_use": "WP D: technology-sensitivity case only (future cell). Not a baseline: pouch format, limited availability, preliminary data.",
+      "credibility": "Low-medium for design use: marketing values, 'preliminary', no full data sheet located. Site blocks automated link checks (HTTP 403) but pages were reached through search on 2026-11-12.",
+      "key_data": [
+        "SA109: 450 Wh/kg, 1,000 Wh/L (product page; press release quotes 950 Wh/L), 11.5 Ah, marked preliminary",
+        "Aviation product line listed as 15+ Ah, 380+ Wh/kg at C/5 with 6C long pulse (products page)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BT06",
+      "title": "Performance Metrics Required of Next-Generation Batteries to Electrify Vertical Takeoff and Landing (VTOL) Aircraft",
+      "authors": "Fredericks, W. L.; Sripad, S.; Bower, G. C.; Viswanathan, V.",
+      "year": 2018,
+      "type": "paper (peer-reviewed)",
+      "venue": "ACS Energy Letters 3(12), 2989-2994, doi:10.1021/acsenergylett.8b02195",
+      "url": "https://doi.org/10.1021/acsenergylett.8b02195",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "battery"
+      ],
+      "used_for": [
+        "D",
+        "M"
+      ],
+      "summary": "Derives the specific power and energy a battery must deliver in the hover/landing segments of an eVTOL mission (high power at low state of charge) and its consequences for cell selection and cycle life.",
+      "project_use": "WP D/M: the reason we check pack power at end-of-mission SOC and end-of-life capacity, not just energy.",
+      "credibility": "High; peer-reviewed. Numbers to be taken from the paper when read in full (publisher blocks automated retrieval).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BT07",
+      "title": "The promise of energy-efficient battery-powered urban aircraft",
+      "authors": "Sripad, S.; Viswanathan, V.",
+      "year": 2021,
+      "type": "paper (peer-reviewed, open access)",
+      "venue": "PNAS 118(45), e2111164118, doi:10.1073/pnas.2111164118",
+      "url": "https://doi.org/10.1073/pnas.2111164118",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "battery"
+      ],
+      "used_for": [
+        "M",
+        "V"
+      ],
+      "summary": "Energy-per-passenger-mile and battery specific power/energy requirements for many published UAM aircraft, compared with ground vehicles.",
+      "project_use": "WP M: published energy-intensity numbers to place our design (Wh per payload-km) against other eVTOLs.",
+      "credibility": "High; PNAS, open access.",
+      "key_data": [
+        "UAM aircraft consume 130 to ~1,200 Wh/passenger-mile depending on design (abstract)",
+        "Several designs approach viability with current Li-ion on specific power and energy; cycle life remains uncertain (abstract)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BT08",
+      "title": "Lithium-Ion Battery Modeling for Aerospace Applications",
+      "authors": "Clarke, M.; Alonso, J. J.",
+      "year": 2021,
+      "type": "paper (peer-reviewed)",
+      "venue": "Journal of Aircraft 58(6), 1323-1335, doi:10.2514/1.C036209",
+      "url": "https://doi.org/10.2514/1.C036209",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "battery"
+      ],
+      "used_for": [
+        "D",
+        "M"
+      ],
+      "summary": "Equivalent-circuit and thermal battery model as implemented in SUAVE, validated on cell data, for mission analysis of electric aircraft.",
+      "project_use": "WP D: voltage-sag/thermal model form for the mission simulation (R0 + RC model using data-sheet impedance).",
+      "credibility": "High; peer-reviewed, open-source implementation.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BT09",
+      "title": "Means of Compliance with the Special Condition VTOL, MOC-3 SC-VTOL (Issue 2) - incl. MOC VTOL.2440 propulsion battery thermal runaway",
+      "authors": "EASA",
+      "year": 2023,
+      "type": "regulation (EASA means of compliance)",
+      "venue": "EASA, 21 June 2023",
+      "url": "https://www.easa.europa.eu/en/downloads/136701/en",
+      "alt_urls": [
+        "https://www.easa.europa.eu/en/downloads/138076/en"
+      ],
+      "local_copy": null,
+      "topics": [
+        "battery"
+      ],
+      "used_for": [
+        "D",
+        "P",
+        "V"
+      ],
+      "summary": "EASA's accepted means of compliance for VTOL propulsion batteries, including how to address cell thermal runaway and propagation (DO-311A containment test or a time-based continued-safe-flight-and-landing test).",
+      "project_use": "WP D/P/V: pack architecture requirements (cell-to-cell propagation barriers, venting, containment) for our 2 independent packs.",
+      "credibility": "High (regulator). Applies formally to EASA SC-VTOL projects; used here as best-practice design guidance.",
+      "key_data": [
+        "Two compliance routes for propulsion batteries under MOC VTOL.2440: RTCA DO-311A containment test or a CSFL-time-based test (as summarised in the MOC and its CRD)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BT10",
+      "title": "RTCA DO-311A, Minimum Operational Performance Standards for Rechargeable Lithium Batteries and Battery Systems",
+      "authors": "RTCA SC-225",
+      "year": 2017,
+      "type": "standard (paywalled) + secondary summary",
+      "venue": "RTCA, Washington DC",
+      "url": "https://www.rtca.org/",
+      "alt_urls": [
+        "https://www.batterydesign.net/legislation-rules-and-regulations/do-311a/"
+      ],
+      "local_copy": null,
+      "topics": [
+        "battery"
+      ],
+      "used_for": [
+        "P",
+        "V"
+      ],
+      "summary": "The aviation MOPS for rechargeable lithium batteries, including the thermal-runaway containment test referenced by FAA and EASA guidance.",
+      "project_use": "WP P/V: test requirement reference for pack design; we cite it but do not hold the paywalled text.",
+      "credibility": "High (standard) but not held; secondary summary is medium credibility.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BT11",
+      "title": "AC 20-184, Guidance on Testing and Installation of Rechargeable Lithium Battery and Battery Systems on Aircraft",
+      "authors": "FAA",
+      "year": 2015,
+      "type": "regulation (FAA advisory circular)",
+      "venue": "FAA Advisory Circular",
+      "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-184.pdf",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "battery"
+      ],
+      "used_for": [
+        "P",
+        "V"
+      ],
+      "summary": "FAA installation and test guidance for rechargeable lithium batteries, built around DO-311.",
+      "project_use": "WP P/V: installation requirements (venting, isolation, monitoring) for the battery bays.",
+      "credibility": "High (regulator guidance). Written for non-propulsion batteries; propulsion packs need more (see BT09, ST05).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BT12",
+      "title": "Ehang EH216-S eVTOL Battery",
+      "authors": "Battery Design (batterydesign.net)",
+      "year": 2024,
+      "type": "technical blog (secondary)",
+      "venue": "Web article",
+      "url": "https://www.batterydesign.net/ehang-eh216-s-evtol-battery/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "battery"
+      ],
+      "used_for": [
+        "M"
+      ],
+      "summary": "Collects public statements on the EH216-S battery (pack count, energy) with links to the original claims.",
+      "project_use": "WP M: only source found for EH216-S battery energy; used with a low-credibility flag in benchmarks_raw.json.",
+      "credibility": "Low-medium: secondary site; pack mass in the article is an estimate.",
+      "key_data": [
+        "17 kWh total, 12 batteries combined as one system (attributed to EHang)",
+        "21 min flight time with baseline pack"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA01",
+      "title": "Principles of Helicopter Aerodynamics, 2nd ed.",
+      "authors": "Leishman, J. G.",
+      "year": 2006,
+      "type": "book",
+      "venue": "Cambridge University Press, ISBN 978-0-521-85860-1",
+      "url": "https://doi.org/10.1017/S0001924000064058",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "M",
+        "D",
+        "C"
+      ],
+      "summary": "Standard rotor aerodynamics text: momentum theory, figure of merit, blade element and BEMT with tip-loss, rotor wakes, ground effect, rotor-airframe interaction.",
+      "project_use": "WP M: equations for ideal hover power P = T^1.5/sqrt(2 rho A), figure of merit, BEMT and Prandtl tip loss used in methods/EQUATIONS.md and the rotor model. (Link is the Aeronautical Journal review record; the book is not freely available.)",
+      "credibility": "High; standard graduate text.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA02",
+      "title": "Rotorcraft Aeromechanics",
+      "authors": "Johnson, W.",
+      "year": 2013,
+      "type": "book",
+      "venue": "Cambridge University Press, doi:10.1017/CBO9781139235655",
+      "url": "https://doi.org/10.1017/CBO9781139235655",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "M"
+      ],
+      "summary": "Comprehensive reference on rotor performance, induced-power factors, forward-flight rotor theory, wake and interference.",
+      "project_use": "WP M: induced power factor and edgewise-flight rotor power for transition; background to NDARC (SZ05).",
+      "credibility": "High.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA03",
+      "title": "Rotor/Wing Aerodynamic Interactions in Hover",
+      "authors": "Felker, F. F.; Light, J. S.",
+      "year": 1986,
+      "type": "NASA report (technical memorandum)",
+      "venue": "NASA TM-88255",
+      "url": "https://ntrs.nasa.gov/citations/19860018588",
+      "alt_urls": [],
+      "local_copy": "resources/papers/NASA-19860018588_Felker1986_rotor_wing_download.pdf",
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "C",
+        "D",
+        "V"
+      ],
+      "summary": "Experimental and theoretical study of the download a rotor wake produces on a wing below it (tilt-rotor geometry), with effects of flap angle, incidence and rotor-wing spacing.",
+      "project_use": "WP C/D: download allowance for wing area under the lift rotors and for the boom/wing layout; validation case for our hover CFD of the rotor-wing interaction.",
+      "credibility": "High (NASA test data). Tilt-rotor geometry (wing directly under the rotor) is the worst case; lift+cruise booms with rotors outboard of the wing give much smaller download.",
+      "key_data": [
+        "Tilt-rotor wing download can be as large as 15% of rotor thrust in hover (p.1, refs 1-2)",
+        "Download reduced ~30% by a 75 deg flap vs 0 deg; 25% from 0 to 60 deg flap; XV-15 flight data 32% for 0 to 60 deg (p.~8)",
+        "Wing incidence 0 to -8 deg increased download ~6%; 0 to +8 deg reduced it ~10% (p.~8)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA04",
+      "title": "Impact of lift propeller drag on the performance of eVTOL lift+cruise aircraft",
+      "authors": "Bacchini, A.; Cestino, E.; Van Magill, B.; Verstraete, D.",
+      "year": 2021,
+      "type": "paper (peer-reviewed)",
+      "venue": "Aerospace Science and Technology 109, 106429, doi:10.1016/j.ast.2020.106429",
+      "url": "https://doi.org/10.1016/j.ast.2020.106429",
+      "alt_urls": [
+        "https://iris.polito.it/handle/11583/2859251"
+      ],
+      "local_copy": null,
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "M",
+        "C",
+        "D"
+      ],
+      "summary": "Wind-tunnel measurement of the parasitic drag of stopped lift propellers on a lift+cruise model, and its effect on cruise speed and range.",
+      "project_use": "WP M/C/D: stopped-rotor drag increment in the cruise drag build-up; justification for aligning stopped blades with the flow and for the boom/rotor fairing design.",
+      "credibility": "High; peer-reviewed, experimental. Model-scale; the 38% figure is configuration-specific.",
+      "key_data": [
+        "Retracting the lift propellers reduced parasitic drag by 38% (abstract)",
+        "Retraction allows 21% higher cruise speed at the same range or 13% more range at the same speed for a passenger lift+cruise (abstract)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA05",
+      "title": "High-Fidelity Computational Aerodynamics of Multi-Rotor Unmanned Aerial Vehicles",
+      "authors": "Ventura Diaz, P.; Yoon, S.",
+      "year": 2018,
+      "type": "NASA report (conference paper)",
+      "venue": "AIAA SciTech 2018, AIAA 2018-1266, doi:10.2514/6.2018-1266",
+      "url": "https://ntrs.nasa.gov/citations/20180001326",
+      "alt_urls": [],
+      "local_copy": "resources/papers/NASA-20180001326_VenturaDiaz2018_multirotor_CFD.pdf",
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "C"
+      ],
+      "summary": "OVERFLOW overset CFD of small multicopters (DJI Phantom 3, Elytron) in hover and forward flight, including airframe download and rotor-rotor interaction.",
+      "project_use": "WP C: method reference (grid spacing, wake resolution, turbulence model) for rotor CFD; evidence that airframe in the wake gives download but can reduce rotor-rotor interaction.",
+      "credibility": "High (NASA); small-UAV scale.",
+      "key_data": [
+        "Complete Phantom 3 airframe: net thrust 1% lower than simplified airframe because of download on landing gear/battery (p.10)",
+        "Wake region grid spacing 10% of tip chord (p.~4)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA06",
+      "title": "Computational Study of NASA's Quadrotor Urban Air Taxi Concept",
+      "authors": "Ventura Diaz, P.; Yoon, S.",
+      "year": 2020,
+      "type": "NASA report (conference paper)",
+      "venue": "AIAA SciTech 2020, AIAA 2020-0302, doi:10.2514/6.2020-0302",
+      "url": "https://ntrs.nasa.gov/citations/20200000444",
+      "alt_urls": [],
+      "local_copy": "resources/papers/NASA-20200000444_VenturaDiaz2020_quadrotor_air_taxi.pdf",
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "D",
+        "C"
+      ],
+      "summary": "OVERFLOW/CAMRAD II simulation of the NASA 6-passenger quadrotor; studies the effect of raising the rear rotors above the front rotors on cruise power.",
+      "project_use": "WP D/C: guidance on vertical offset of front/rear lift rotors on the booms (fore-aft wake interaction).",
+      "credibility": "High (NASA).",
+      "key_data": [
+        "Raising rear rotors to z = 0.6R above the front rotors reduced total rotor cruise power by 8% (p.~11, Fig. 14)",
+        "Up to 311 million grid points with 10% c_tip off-body spacing (p.~7)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA07",
+      "title": "High-Fidelity Simulations of a Quadrotor Vehicle for Urban Air Mobility",
+      "authors": "Ventura Diaz, P.; Yoon, S.",
+      "year": 2022,
+      "type": "paper (AIAA conference)",
+      "venue": "AIAA SciTech 2022, AIAA 2022-0152, doi:10.2514/6.2022-0152",
+      "url": "https://doi.org/10.2514/6.2022-0152",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "C"
+      ],
+      "summary": "DDES simulations of the NASA quadrotor in hover and cruise with collective trim; compares isolated rotors with the complete vehicle.",
+      "project_use": "WP C: isolated-rotor vs installed-rotor comparison method.",
+      "credibility": "High (NASA authors, AIAA paper).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA08",
+      "title": "High-Fidelity Analysis of Lift+Cruise VTOL Urban Air Mobility Concept Aircraft",
+      "authors": "Liu, Y.; Druyor, C. T.; Wang, L.",
+      "year": 2023,
+      "type": "NASA report (conference paper)",
+      "venue": "AIAA Aviation 2023, AIAA 2023-3671, doi:10.2514/6.2023-3671",
+      "url": "https://ntrs.nasa.gov/citations/20230004303",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "C"
+      ],
+      "summary": "FUN3D overset CFD coupled with comprehensive analysis of the NASA lift+cruise (SZ01) in hover and low-speed flight; compares SA-neg and SA-neg-R turbulence models.",
+      "project_use": "WP C: the closest high-fidelity study of our configuration; turbulence-model choice (rotation correction) for rotor wakes. Link only (NTRS marks it government-permitted, not public).",
+      "credibility": "High (NASA).",
+      "key_data": [
+        "Rotation-corrected SA (SA-neg-R) significantly improves resolution of secondary vortices and wake interactions (abstract)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA09",
+      "title": "Computational Investigation of Multirotor Interactional Aerodynamics with Hub Lateral and Longitudinal Canting",
+      "authors": "Healy, R.; Gandhi, F.; Mistry, M.",
+      "year": 2022,
+      "type": "paper (peer-reviewed)",
+      "venue": "AIAA Journal 60(2), 872-882, doi:10.2514/1.J060530",
+      "url": "https://doi.org/10.2514/1.J060530",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "D",
+        "C"
+      ],
+      "summary": "DES study of a front and aft 5.5 ft rotor in line with the flow at 30 kt (transition-like condition), with canting variations.",
+      "project_use": "WP D/C: aft-rotor lift deficit in transition, used as a margin on the rear rotors of each boom.",
+      "credibility": "High; peer-reviewed.",
+      "key_data": [
+        "Uncanted aft rotor: ~15% lift deficit relative to an isolated rotor at 5 lb/ft2 and 30 kt (abstract)",
+        "Inward longitudinal cant raised the deficit to 21% (abstract)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA10",
+      "title": "Wind Tunnel and Hover Performance Test Results for Multicopter UAS Vehicles",
+      "authors": "Russell, C. R.; Jung, J.; Willink, G.; Glasner, B.",
+      "year": 2016,
+      "type": "NASA report (conference paper)",
+      "venue": "AHS 72nd Annual Forum, West Palm Beach, May 2016",
+      "url": "https://ntrs.nasa.gov/citations/20160007399",
+      "alt_urls": [],
+      "local_copy": "resources/papers/NASA-20160007399_Russell2016_multicopter_tests.pdf",
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "C",
+        "V"
+      ],
+      "summary": "Wind-tunnel and hover test data (forces, moments, electrical power) for five multicopters and their isolated rotors in the 7x10 ft tunnel at NASA Ames.",
+      "project_use": "WP C/V: validation data for small-rotor BEMT/CFD and for the subscale E8-S rotor.",
+      "credibility": "High (NASA test data); small-scale rotors.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA11",
+      "title": "Propeller Performance Data at Low Reynolds Numbers (and UIUC Propeller Data Site)",
+      "authors": "Brandt, J. B.; Selig, M. S.",
+      "year": 2011,
+      "type": "paper (AIAA conference) + database",
+      "venue": "49th AIAA Aerospace Sciences Meeting, AIAA 2011-1255, doi:10.2514/6.2011-1255",
+      "url": "https://m-selig.ae.illinois.edu/props/propDB.html",
+      "alt_urls": [
+        "https://doi.org/10.2514/6.2011-1255"
+      ],
+      "local_copy": null,
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "V",
+        "C"
+      ],
+      "summary": "Measured CT, CP and efficiency of many small propellers; database maintained at UIUC.",
+      "project_use": "WP V/C: validation of the propeller/BEMT model at low Reynolds number (E8-S subscale and pusher model checks).",
+      "credibility": "High (university test data); small propellers only.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA12",
+      "title": "Multirotor Drone Aerodynamic Interaction Investigation",
+      "authors": "Shukla, D.; Komerath, N.",
+      "year": 2018,
+      "type": "paper (peer-reviewed, open access)",
+      "venue": "Drones 2(4), 43, doi:10.3390/drones2040043",
+      "url": "https://doi.org/10.3390/drones2040043",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "D"
+      ],
+      "summary": "PIV and load measurements of side-by-side small rotors at varying tip spacing.",
+      "project_use": "WP D: minimum lateral tip clearance between adjacent lift rotors.",
+      "credibility": "Medium-high: open-access journal, low Reynolds number.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA13",
+      "title": "Modeling Multirotor Aerodynamic Interactions Through the Vortex Particle Method",
+      "authors": "Alvarez, E. J.; Ning, A.",
+      "year": 2019,
+      "type": "paper (AIAA conference)",
+      "venue": "AIAA Aviation 2019, AIAA 2019-2827, doi:10.2514/6.2019-2827",
+      "url": "https://doi.org/10.2514/6.2019-2827",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "C"
+      ],
+      "summary": "Mid-fidelity vortex-particle modelling of rotor-rotor interaction (basis of the open-source FLOWUnsteady code).",
+      "project_use": "WP C: alternative mid-fidelity method to DUST for transition interaction studies.",
+      "credibility": "Medium-high: AIAA conference paper; method later published in journals.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "RA14",
+      "title": "Mid-fidelity numerical approach for the investigation of wing-propeller aerodynamic interaction",
+      "authors": "Niro, C.; Savino, A.; Cocco, A.; Zanotti, A.",
+      "year": 2024,
+      "type": "paper (peer-reviewed)",
+      "venue": "Aerospace Science and Technology 146, 108950, doi:10.1016/j.ast.2024.108950",
+      "url": "https://doi.org/10.1016/j.ast.2024.108950",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "rotor"
+      ],
+      "used_for": [
+        "C"
+      ],
+      "summary": "Validation of the DUST vortex-particle solver for wing-propeller interaction against experiments.",
+      "project_use": "WP C: validation evidence for using DUST (TL06) for boom/wing/rotor interaction.",
+      "credibility": "High; peer-reviewed.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "AE01",
+      "title": "Aircraft Design: A Conceptual Approach, 6th ed.",
+      "authors": "Raymer, D. P.",
+      "year": 2018,
+      "type": "book",
+      "venue": "AIAA Education Series, doi:10.2514/4.104909",
+      "url": "https://doi.org/10.2514/4.104909",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "aero"
+      ],
+      "used_for": [
+        "M",
+        "D"
+      ],
+      "summary": "Standard conceptual-design text: component drag build-up (form factors, interference factors, skin friction), statistical weights (incl. general-aviation equations), tail sizing by volume coefficients, Oswald efficiency estimates, cost models.",
+      "project_use": "WP M/D: drag build-up equations (Cf, FF, Q), GA weight equations for wing/fuselage/tail, tail volume coefficients.",
+      "credibility": "High; standard text.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "AE02",
+      "title": "General Aviation Aircraft Design: Applied Methods and Procedures, 2nd ed.",
+      "authors": "Gudmundsson, S.",
+      "year": 2022,
+      "type": "book",
+      "venue": "Butterworth-Heinemann (Elsevier), ISBN 978-0-12-818465-3",
+      "url": "https://doi.org/10.1016/b978-0-12-818465-3.00001-x",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "aero"
+      ],
+      "used_for": [
+        "M",
+        "P",
+        "D"
+      ],
+      "summary": "GA-focused design text with detailed drag of small-aircraft components (landing gear, antennas, gaps), cost estimation for GA aircraft (Eastlake-type model), structural layout and composite construction.",
+      "project_use": "WP M/P/D: drag of protuberances and gear; GA development/production cost model for the cost objective. (Link is Chapter 1 DOI.)",
+      "credibility": "High; widely used GA design text.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "AE03",
+      "title": "Airplane Design, Parts I-VIII",
+      "authors": "Roskam, J.",
+      "year": 2017,
+      "type": "book",
+      "venue": "DARcorporation, Lawrence KS (reprint editions)",
+      "url": "https://www.darcorp.com/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "aero"
+      ],
+      "used_for": [
+        "M"
+      ],
+      "summary": "Classic multi-volume design method: weight sizing, preliminary configuration, component weights (Cessna/USAF/Torenbeek methods), drag polar estimation.",
+      "project_use": "WP M: alternative component weight equations for cross-checking Raymer.",
+      "credibility": "High; classic text (publisher home page linked).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "AE04",
+      "title": "Fluid-Dynamic Drag: Practical Information on Aerodynamic Drag and Hydrodynamic Resistance",
+      "authors": "Hoerner, S. F.",
+      "year": 1965,
+      "type": "book",
+      "venue": "Hoerner Fluid Dynamics, Bricktown NJ (self-published)",
+      "url": "https://openlibrary.org/search?q=hoerner+fluid-dynamic+drag",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "aero"
+      ],
+      "used_for": [
+        "M",
+        "C"
+      ],
+      "summary": "The empirical drag compendium: drag of bluff bodies, cylinders, struts, fairings, wheels, interference and excrescences.",
+      "project_use": "WP M/C: drag coefficients of round booms, struts, motor pods, landing skids and stopped blades for the parasite-drag build-up.",
+      "credibility": "High as an empirical reference; old data, check Reynolds-number range. Library record linked (book is not freely available).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "AE05",
+      "title": "Estimating the Oswald Factor from Basic Aircraft Geometrical Parameters",
+      "authors": "Nita, M.; Scholz, D.",
+      "year": 2012,
+      "type": "paper (conference)",
+      "venue": "Deutscher Luft- und Raumfahrtkongress 2012, Document ID 281424",
+      "url": "https://www.fzt.haw-hamburg.de/pers/Scholz/OPerA/OPerA_PUB_DLRK_12-09-10.pdf",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "aero"
+      ],
+      "used_for": [
+        "M"
+      ],
+      "summary": "Reviews Oswald-factor estimation methods and proposes one: a theoretical value from taper and sweep, corrected for fuselage, zero-lift drag and Mach effects using statistical data.",
+      "project_use": "WP M: Oswald efficiency estimate for the high-wing with booms; to be cross-checked with AVL/VSPAERO span efficiency.",
+      "credibility": "Medium-high: conference paper, widely cited, transparent method.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "AE06",
+      "title": "UIUC Airfoil Coordinates Database and Summary of Low-Speed Airfoil Data",
+      "authors": "Selig, M. S. et al. (UIUC Applied Aerodynamics Group)",
+      "year": 2026,
+      "type": "database (university)",
+      "venue": "University of Illinois",
+      "url": "https://m-selig.ae.illinois.edu/ads/coord_database.html",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "aero"
+      ],
+      "used_for": [
+        "D",
+        "C",
+        "G"
+      ],
+      "summary": "Coordinates for ~1,600 airfoils and the low-speed wind-tunnel data series.",
+      "project_use": "WP D/C/G: airfoil geometry for the wing, tail and rotor blades; low-Re validation of NeuralFoil/XFOIL.",
+      "credibility": "High (university test programme).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "AE07",
+      "title": "XFOIL: An Analysis and Design System for Low Reynolds Number Airfoils",
+      "authors": "Drela, M.",
+      "year": 1989,
+      "type": "paper (conference)",
+      "venue": "Lecture Notes in Engineering 54, Springer, doi:10.1007/978-3-642-84010-4_1",
+      "url": "https://web.mit.edu/drela/Public/web/xfoil/",
+      "alt_urls": [
+        "https://doi.org/10.1007/978-3-642-84010-4_1"
+      ],
+      "local_copy": null,
+      "topics": [
+        "aero"
+      ],
+      "used_for": [
+        "C",
+        "M"
+      ],
+      "summary": "Panel method with coupled integral boundary layer and e^N transition for airfoil polars.",
+      "project_use": "WP C/M: airfoil polars (and the training reference for NeuralFoil).",
+      "credibility": "High; standard tool, decades of validation.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "AE08",
+      "title": "NASA Turbulence Modeling Resource (TMR) - verification and validation cases",
+      "authors": "Rumsey, C. L.; Smith, B. R.; Huang, G. P.",
+      "year": 2010,
+      "type": "NASA web resource + paper",
+      "venue": "NASA Langley web site; described in AIAA 2010-4742, doi:10.2514/6.2010-4742",
+      "url": "https://turbmodels.larc.nasa.gov/",
+      "alt_urls": [
+        "https://doi.org/10.2514/6.2010-4742"
+      ],
+      "local_copy": null,
+      "topics": [
+        "aero"
+      ],
+      "used_for": [
+        "C",
+        "V"
+      ],
+      "summary": "Reference definitions of RANS turbulence models and verification/validation cases (flat plate, NACA 0012, bump) with grids and reference results from CFL3D/FUN3D.",
+      "project_use": "WP C/V: OpenFOAM/SU2 set-up verification (flat plate skin friction, NACA 0012 CL/CD vs alpha) before aircraft runs.",
+      "credibility": "High (NASA). Note: the site did not answer automated checks from our network on 2026-11-12; the URL is the long-standing official address.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "AE09",
+      "title": "Retrospective on the Common Research Model for Computational Fluid Dynamics Validation Studies",
+      "authors": "Vassberg, J. C.; DeHaan, M. A.; Rivers, S. M.; Wahls, R. A.",
+      "year": 2018,
+      "type": "paper (peer-reviewed)",
+      "venue": "Journal of Aircraft 55(4), 1325-1337, doi:10.2514/1.C034906",
+      "url": "https://doi.org/10.2514/1.C034906",
+      "alt_urls": [
+        "https://doi.org/10.2514/6.2008-6919"
+      ],
+      "local_copy": null,
+      "topics": [
+        "aero"
+      ],
+      "used_for": [
+        "C",
+        "V"
+      ],
+      "summary": "History and lessons of the NASA CRM and the AIAA Drag Prediction Workshops: grid convergence practice and the scatter of CFD drag predictions.",
+      "project_use": "WP C/V: grid-convergence practice (Richardson extrapolation, grid families) and realistic expectations on CFD drag accuracy.",
+      "credibility": "High; peer-reviewed. Transonic transport case, so used for practice, not numbers.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "AE10",
+      "title": "Summary of Airfoil Data (NACA Report 824)",
+      "authors": "Abbott, I. H.; von Doenhoff, A. E.; Stivers, L. S.",
+      "year": 1945,
+      "type": "NACA report",
+      "venue": "NACA Report 824",
+      "url": "https://ntrs.nasa.gov/citations/19930090976",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "aero"
+      ],
+      "used_for": [
+        "C",
+        "V"
+      ],
+      "summary": "Wind-tunnel section data for NACA 4-, 5- and 6-series airfoils.",
+      "project_use": "WP C/V: experimental airfoil polars (e.g. NACA 0012, 23012, 63-series) for 2-D validation at Re ~3-9 million.",
+      "credibility": "High (NACA test data); NTRS record verified (title 'Summary of Airfoil Data', 1945). A second NTRS record 19930092747 holds another scan.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST01",
+      "title": "14 CFR Part 103 - Ultralight Vehicles (Sec. 103.1 Applicability)",
+      "authors": "FAA",
+      "year": 2024,
+      "type": "regulation",
+      "venue": "Code of Federal Regulations, 1-1-24 edition (govinfo); eCFR current",
+      "url": "https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-103",
+      "alt_urls": [
+        "https://www.govinfo.gov/content/pkg/CFR-2024-title14-vol2/pdf/CFR-2024-title14-vol2-sec103-1.pdf"
+      ],
+      "local_copy": "resources/papers/14CFR-103.1_2024.pdf",
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "D",
+        "V"
+      ],
+      "summary": "Definition of an ultralight vehicle.",
+      "project_use": "WP D/V: documents why Part 103 does not apply: our aircraft carries 2 occupants / 200 kg payload and has an empty mass far above 254 lb.",
+      "credibility": "High (law).",
+      "key_data": [
+        "Single occupant; recreation/sport only; no airworthiness certificate",
+        "Powered: empty weight < 254 lb (excluding floats and safety devices for potentially catastrophic situations); fuel <= 5 US gal; <= 55 kt CAS at full power; power-off stall <= 24 kt CAS"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST02",
+      "title": "AC 21.17-4, Type Certification - Powered-lift",
+      "authors": "FAA (AIR-600)",
+      "year": 2025,
+      "type": "regulation (FAA advisory circular)",
+      "venue": "FAA Advisory Circular, 18 July 2025",
+      "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_21.17-4.pdf",
+      "alt_urls": [],
+      "local_copy": "resources/papers/FAA_AC_21.17-4_2025.pdf",
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "D",
+        "F",
+        "V"
+      ],
+      "summary": "FAA's certification path for powered-lift under 14 CFR 21.17(b), with Appendix A airworthiness criteria (PL.xxxx) that are performance-based, derived from Part 23 amdt 64.",
+      "project_use": "WP D/F/V: the US certification-basis reference for the design (structures PL.2200-2270, energy system PL.2430, occupant protection). We design to it as a standard even though a kit/experimental route is likely.",
+      "credibility": "High (regulator).",
+      "key_data": [
+        "Applicability: powered-lift <= 12,500 lb max gross weight, <= 6 passenger seats, battery-powered electric engines driving propellers (Sec. 5.2)",
+        "PL.2230: limit loads = structural design loads; ultimate = limit x 1.5 unless otherwise provided (Appendix A)",
+        "PL.2270: emergency landing must include dynamic conditions; occupant loads within human-injury criteria; items of mass near cabin restrained (Appendix A)",
+        "PL.2430(a)(1): energy system independence so that failure of one component does not cause unacceptable loss of energy supply; (b)(2) energy storage isolated from occupant compartments"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST03",
+      "title": "Integration of Powered-Lift: Pilot Certification and Operations; Miscellaneous Amendments Related to Rotorcraft and Airplanes (SFAR No. 120)",
+      "authors": "FAA",
+      "year": 2024,
+      "type": "regulation (federal rule)",
+      "venue": "Federal Register 89 FR 92296, 21 Nov 2024, Doc. 2024-24886, RIN 2120-AL72",
+      "url": "https://www.federalregister.gov/documents/2024/11/21/2024-24886/integration-of-powered-lift-pilot-certification-and-operations-miscellaneous-amendments-related-to",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "V"
+      ],
+      "summary": "Final rule creating SFAR 120 (14 CFR part 194) for powered-lift pilot certification and operations, valid 10 years, effective 21 Jan 2025.",
+      "project_use": "WP V: operational and pilot-certification context for the requirements document; no design numbers.",
+      "credibility": "High (law).",
+      "key_data": [
+        "SFAR valid for 10 years; effective 21 Jan 2025 (Federal Register summary)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST04",
+      "title": "Special Condition SC-VTOL-01, Issue 1: Small-category VTOL aircraft",
+      "authors": "EASA",
+      "year": 2019,
+      "type": "regulation (EASA special condition)",
+      "venue": "EASA, 2 July 2019",
+      "url": "https://www.easa.europa.eu/en/downloads/99956/en",
+      "alt_urls": [
+        "https://www.easa.europa.eu/en/document-library/product-certification-consultations/special-condition-vtol"
+      ],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "D",
+        "F",
+        "V"
+      ],
+      "summary": "EASA's airworthiness basis for person-carrying VTOL aircraft with distributed lift/thrust units; defines Category Basic (controlled emergency landing) and Category Enhanced (continued safe flight and landing).",
+      "project_use": "WP D/F/V: certification basis reference (structures VTOL.2200-2270, lift/thrust system failure, energy storage VTOL.2430). The consultation page also lists the MOC documents (MOC-2 to MOC-5).",
+      "credibility": "High (regulator).",
+      "key_data": [
+        "Applicability: passenger seating <= 9 and MTOM <= 3,175 kg (7,000 lb) (VTOL.2000)",
+        "Category Enhanced: continued safe flight and landing after a failure; Category Basic: controlled emergency landing (VTOL.2000)",
+        "VTOL.2230: ultimate load = limit load x 1.5 factor of safety unless otherwise provided",
+        "VTOL.2270: emergency landing dynamic conditions; occupant loads within human-injury criteria"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST05",
+      "title": "Airworthiness Criteria: Special Class Airworthiness Criteria for the Joby Aero, Inc. Model JAS4-1 Powered-Lift",
+      "authors": "FAA",
+      "year": 2024,
+      "type": "regulation (airworthiness criteria)",
+      "venue": "Federal Register 89 FR 17230, 8 Mar 2024, Doc. 2024-04690, Docket FAA-2021-0638",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2024-03-08/html/2024-04690.htm",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "D",
+        "V",
+        "M"
+      ],
+      "summary": "The first final FAA powered-lift airworthiness criteria for a specific eVTOL; precedent for AC 21.17-4 and source of the Joby MTOW figure.",
+      "project_use": "WP D/V: worked example of a complete powered-lift certification basis; WP M benchmark number (Joby MTOW).",
+      "credibility": "High (regulator).",
+      "key_data": [
+        "JAS4-1 maximum gross takeoff weight 4,800 lb, pilot + 4 passengers, VFR, parts 91/135 (background section)",
+        "Criteria based on part 23 amdt 23-64, part 33 amdt 33-34, part 35 amdt 35-10 plus powered-lift specific criteria"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST06",
+      "title": "14 CFR 23.337 Limit maneuvering load factors (pre-Amendment 23-64 text, 1-1-16 edition)",
+      "authors": "FAA",
+      "year": 2016,
+      "type": "regulation",
+      "venue": "Code of Federal Regulations, 1-1-2016 edition (govinfo)",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2016-title14-vol1/pdf/CFR-2016-title14-vol1-sec23-337.pdf",
+      "alt_urls": [],
+      "local_copy": "resources/papers/14CFR-23.337_2016.pdf",
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "F",
+        "M"
+      ],
+      "summary": "The prescriptive normal-category manoeuvre load factor formula that ASTM F3116 and our requirements (n = +3.8/-1.5) descend from; also contains the 23.341 gust load factor formula.",
+      "project_use": "WP F/M: limit load factors and gust load factor formula (Pratt) for the V-n diagram.",
+      "credibility": "High (law, historical edition). Superseded by performance-based Part 23 amdt 64 + ASTM F3116; numbers still the accepted means.",
+      "key_data": [
+        "Normal category positive limit n >= 2.1 + 24,000/(W + 10,000), W in lb, need not exceed 3.8 (23.337(a)(1))",
+        "Negative limit n >= 0.4 x positive for normal category (23.337(b)(1))",
+        "Gust: n = 1 + Kg Ude V a / (498 W/S), Kg = 0.88 mu_g/(5.3 + mu_g), mu_g = 2(W/S)/(rho C a g) (23.341(c))"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST07",
+      "title": "14 CFR 23.562 Emergency landing dynamic conditions (1-1-16 edition)",
+      "authors": "FAA",
+      "year": 2016,
+      "type": "regulation",
+      "venue": "Code of Federal Regulations, 1-1-2016 edition (govinfo)",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2016-title14-vol1/pdf/CFR-2016-title14-vol1-sec23-562.pdf",
+      "alt_urls": [
+        "https://www.ecfr.gov/current/title-14/section-27.562"
+      ],
+      "local_copy": "resources/papers/14CFR-23.562_2016.pdf",
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "F",
+        "P"
+      ],
+      "summary": "Dynamic seat test conditions and injury criteria for small aeroplanes (rotorcraft equivalent is 27.562).",
+      "project_use": "WP F/P: energy-absorbing seat requirement (vertical 60 deg pitched test and longitudinal test), lumbar load and HIC limits for seat selection/design.",
+      "credibility": "High (law, historical edition; carried into ASTM F3083 / AC 23.562-1 practice).",
+      "key_data": [
+        "Test 1: dV >= 31 ft/s, 60 deg pitch, peak >= 19 g (first row) within 0.05 s",
+        "Test 2: dV >= 42 ft/s, 10 deg yaw, peak >= 26 g (first row) within 0.05 s",
+        "HIC <= 1,000; shoulder strap <= 1,750 lb (single) / 2,000 lb (dual); pelvis-lumbar compressive load <= 1,500 lb; 170 lb ATD (49 CFR 572 subpart B)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST08",
+      "title": "AC 23.562-1, Dynamic Testing of Part 23 Airplane Seat/Restraint Systems and Occupant Protection",
+      "authors": "FAA (ACE-100)",
+      "year": 1989,
+      "type": "regulation (FAA advisory circular)",
+      "venue": "FAA Advisory Circular, 22 June 1989",
+      "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_23_562-1.pdf",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "F",
+        "P"
+      ],
+      "summary": "Acceptable means of compliance and test procedures for 23.562 dynamic seat tests.",
+      "project_use": "WP F/P: seat and floor attachment design, test pulse shapes for the seat FEA load cases.",
+      "credibility": "High (regulator guidance).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST09",
+      "title": "CS-23 Amendment 5 (and Amendment 4 for the prescriptive load formulas)",
+      "authors": "EASA",
+      "year": 2017,
+      "type": "regulation (EASA certification specification)",
+      "venue": "EASA Certification Specifications for Normal-Category Aeroplanes",
+      "url": "https://www.easa.europa.eu/en/document-library/certification-specifications/cs-23-amendment-5",
+      "alt_urls": [
+        "https://www.easa.europa.eu/en/document-library/certification-specifications/cs-23-amendment-4"
+      ],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "F",
+        "V"
+      ],
+      "summary": "Amendment 5 is the performance-based CS-23 whose AMC accepts ASTM consensus standards; Amendment 4 retains the prescriptive CS 23.337 load factors.",
+      "project_use": "WP F/V: European normal-category reference; same load factor values as ST06.",
+      "credibility": "High (regulator).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST10",
+      "title": "ASTM F3264, Standard Specification for Normal Category Aeroplanes Certification (and referenced F3116 design loads, F3114 structures)",
+      "authors": "ASTM Committee F44",
+      "year": 2023,
+      "type": "standard (paywalled)",
+      "venue": "ASTM International",
+      "url": "https://store.astm.org/f3264-23.html",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "F",
+        "V"
+      ],
+      "summary": "Umbrella standard listing which ASTM F44 standards satisfy each Part 23 amdt 64 requirement; F3116 holds the design load values (not held, so not quoted here).",
+      "project_use": "WP F/V: compliance mapping for structural requirements. Not held (paywalled).",
+      "credibility": "High (consensus standard) but not held; values in requirements.yaml are taken from ST06 until F3116 is purchased.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST11",
+      "title": "ASTM F2316-12, Standard Specification for Airframe Emergency Parachutes for Light Sport Aircraft",
+      "authors": "ASTM Committee F37",
+      "year": 2012,
+      "type": "standard (paywalled)",
+      "venue": "ASTM International",
+      "url": "https://store.astm.org/f2316-12.html",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "P",
+        "F"
+      ],
+      "summary": "Design and test standard for whole-airframe emergency parachutes; cited by Galaxy GRS for its 1.5 safety coefficient.",
+      "project_use": "WP P/F: parachute selection and hard-point load requirement.",
+      "credibility": "High (standard), not held.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST12",
+      "title": "Galaxy GRS 6/800-990 SDS (175 m2) whole-aircraft rescue system - product data",
+      "authors": "Galaxy Holding s.r.o.",
+      "year": 2026,
+      "type": "datasheet",
+      "venue": "Manufacturer product page",
+      "url": "https://galaxysky.cz/grs-6-800-990-sds-175m2-p43-en",
+      "alt_urls": [
+        "https://galaxysky.cz/grs-6-750-sds-ff-140m2-p42-en"
+      ],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "P",
+        "D",
+        "F"
+      ],
+      "summary": "Ballistic rescue parachute family covering 650-1,050 kg aircraft, with total system mass, canopy area, maximum deployment speed, descent rate and opening shock.",
+      "project_use": "WP P/D/F: parachute mass in the weight statement; opening shock for the parachute hard-point FEA.",
+      "credibility": "Medium-high: manufacturer data; pages for the same product show some internal inconsistencies (title range 800-990 kg vs table 800/900/1,050 kg).",
+      "key_data": [
+        "GRS 6/800-990 SDS: MTOW variants 800 / 900 / 1,050 kg; total weight 21.7 kg (Soft B2 pack) +/-4%; canopy 175 m2",
+        "Max deployment speed 380 / 350 / 315 km/h; opening shock 46.0 / 45.5 / 47.4 kN at Vne and MTOW; descent 7.1-7.9 m/s at 1,000 m AMSL",
+        "GRS 6/750 SDS: MTOW 650/700/750 kg variants, 14.8 kg, 140 m2, opening shock 28.8 kN at MTOW (search summary of manufacturer page)",
+        "Designed to ASTM F2316-12 with total safety coefficient 1.5"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST13",
+      "title": "BRS Aerospace whole-aircraft recovery parachute systems (BRS-6 family)",
+      "authors": "BRS Aerospace",
+      "year": 2026,
+      "type": "manufacturer web page",
+      "venue": "Manufacturer web site",
+      "url": "https://brsaerospace.com/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "P"
+      ],
+      "summary": "Manufacturer of certified (Cirrus, Cessna 172/182 retrofit) and experimental/LSA whole-aircraft parachutes; BRS-6 models 600-1800 (lb ratings).",
+      "project_use": "WP P: second supplier option; ratings and masses must be obtained from the BRS-6 owner's manual or a quote (not retrieved).",
+      "credibility": "Medium: manufacturer site; no numbers taken.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST14",
+      "title": "MIL-HDBK-5J, Metallic Materials and Elements for Aerospace Vehicle Structures",
+      "authors": "US Department of Defense",
+      "year": 2003,
+      "type": "handbook (public domain)",
+      "venue": "MIL-HDBK-5J (superseded by MMPDS, distribution A)",
+      "url": "https://www.everyspec.com/MIL-HDBK/MIL-HDBK-0001-0099/MIL_HDBK_5J_139/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "F",
+        "P"
+      ],
+      "summary": "A- and B-basis design allowables for aluminium (2024, 6061, 7075...), steel (4130) and fastener/joint data.",
+      "project_use": "WP F/P: allowables for 6061-T6/7075-T6 extrusions and sheet, 4130 tube and rivet/bolt joints.",
+      "credibility": "High; last public edition (MMPDS is the paid successor, values largely unchanged for common alloys).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST15",
+      "title": "Composite Materials Handbook CMH-17 (formerly MIL-HDBK-17)",
+      "authors": "CMH-17 Organization / SAE International",
+      "year": 2026,
+      "type": "handbook (paywalled) / organisation",
+      "venue": "CMH-17 Rev. H",
+      "url": "https://www.cmh17.org/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "F",
+        "P",
+        "V"
+      ],
+      "summary": "Statistically-based composite allowables, test methods, building-block approach and design guidance, including wet-layup and sandwich structures.",
+      "project_use": "WP F/P: B-basis knockdown philosophy and environmental factors for wet-layup laminates; building-block test plan for V&V.",
+      "credibility": "High; not held (paid).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST16",
+      "title": "AC 20-107B (with Change 1), Composite Aircraft Structure",
+      "authors": "FAA",
+      "year": 2010,
+      "type": "regulation (FAA advisory circular)",
+      "venue": "FAA Advisory Circular",
+      "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-107B_with_change_1.pdf",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "F",
+        "P",
+        "V"
+      ],
+      "summary": "FAA guidance on substantiating composite structure: material and process control, allowables, damage tolerance, environmental effects, bonded joints.",
+      "project_use": "WP F/P/V: knock-downs (environment, damage) and process-control expectations for wet-layup parts.",
+      "credibility": "High (regulator).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST17",
+      "title": "Design, Fabrication, and Testing of Composite Energy-Absorbing Keel Beams for General Aviation Type Aircraft",
+      "authors": "Kellas, S.; Knight, N. F., Jr.",
+      "year": 2002,
+      "type": "NASA contractor report",
+      "venue": "NASA CR (NTRS 20030004235)",
+      "url": "https://ntrs.nasa.gov/citations/20030004235",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "F",
+        "P"
+      ],
+      "summary": "Design and test of composite crush structures for GA fuselages.",
+      "project_use": "WP F/P: sub-floor energy absorber concept under the seats.",
+      "credibility": "High (NASA).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "ST18",
+      "title": "EASA TCDS EASA.A.573, Virus SW 121 (incl. Section B: Virus SW 128 Velis Electro), Issue 13",
+      "authors": "EASA",
+      "year": 2025,
+      "type": "regulation (EASA type certificate data sheet)",
+      "venue": "EASA, 19 Nov 2025",
+      "url": "https://www.easa.europa.eu/en/downloads/20704/en",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "structures"
+      ],
+      "used_for": [
+        "M",
+        "V"
+      ],
+      "summary": "Type certificate data sheet of the only type-certificated electric aeroplane; gives masses, wing, motor, propeller, battery and load factors.",
+      "project_use": "WP M: primary-source benchmark for an electric 2-seat aircraft at 600 kg; certification basis example (CS-LSA + special conditions for lithium propulsion batteries).",
+      "credibility": "High (regulator).",
+      "key_data": [
+        "SW 128: MTOW 600 kg; span 10.70 m; wing area 9.51 m2; load factors +4 g / -2 g",
+        "Engine E-811/268MVLC: MTOP 57.6 kW / 2,500 rpm (max 90 s); MCP 49.2 kW / 2,350 rpm",
+        "Propeller P-812/164-F3A: 3 blades, 1,640 mm, fixed pitch, 4.88 kg",
+        "ESS: two lithium batteries in parallel, PB345V124E-L 11.0 kWh each (or PB345V119E-L 10.0 kWh each), 345 V nominal, liquid cooled",
+        "VNE 108 KIAS; certification basis CS-LSA Amdt 1 + SC-LSA-F2480-01, SC-LSA-15-01, SC-ELA.2015-01 (lithium battery installations)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "MF01",
+      "title": "AC 43.13-1B (Change 1), Acceptable Methods, Techniques, and Practices - Aircraft Inspection and Repair",
+      "authors": "FAA",
+      "year": 1998,
+      "type": "regulation (FAA advisory circular)",
+      "venue": "FAA Advisory Circular",
+      "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_43.13-1B_w-chg1.pdf",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "manufacturing"
+      ],
+      "used_for": [
+        "P",
+        "G"
+      ],
+      "summary": "The workshop bible for light aircraft: rivet and bolt practice, edge distances, sheet-metal repairs, welding, composite (fibreglass/carbon) repair and wet lay-up practices, hardware tables.",
+      "project_use": "WP P/G: rivet pitch/edge distance, bolt torque, fastener selection for aluminium parts; wet lay-up practices.",
+      "credibility": "High (regulator guidance).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "MF02",
+      "title": "AC 20-27G, Certification and Operation of Amateur-Built Aircraft",
+      "authors": "FAA",
+      "year": 2009,
+      "type": "regulation (FAA advisory circular)",
+      "venue": "FAA Advisory Circular",
+      "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-27G.pdf",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "manufacturing"
+      ],
+      "used_for": [
+        "V",
+        "P"
+      ],
+      "summary": "Experimental amateur-built certification process (major portion rule, documentation).",
+      "project_use": "WP V/P: realistic first-flight route for an in-house built prototype.",
+      "credibility": "High (regulator guidance).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "MF03",
+      "title": "AC 90-89C, Amateur-Built Aircraft and Ultralight Flight Testing Handbook",
+      "authors": "FAA",
+      "year": 2015,
+      "type": "regulation (FAA advisory circular)",
+      "venue": "FAA Advisory Circular",
+      "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_90-89C.pdf",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "manufacturing"
+      ],
+      "used_for": [
+        "V"
+      ],
+      "summary": "Phase I flight-test programme guidance for experimental aircraft.",
+      "project_use": "WP V: flight test plan structure.",
+      "credibility": "High.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "MF04",
+      "title": "Toray TORAYCA T700S carbon fibre technical data sheet",
+      "authors": "Toray Composite Materials America",
+      "year": 2025,
+      "type": "datasheet",
+      "venue": "Manufacturer data sheet",
+      "url": "https://www.toraycma.com/wp-content/uploads/T700S-Data-Sheet.pdf",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "manufacturing"
+      ],
+      "used_for": [
+        "F",
+        "P"
+      ],
+      "summary": "Fibre and unidirectional composite properties for T700S, the fibre used in most COTS pultruded and roll-wrapped carbon tubes.",
+      "project_use": "WP F/P: upper-bound laminate properties; knock down for wet layup (lower Vf) and tube manufacturing route.",
+      "credibility": "High (manufacturer), but properties are lot averages at 60% Vf, 'not for specification'.",
+      "key_data": [
+        "Fibre: 4,900 MPa tensile strength, 230 GPa modulus, 2.1% strain, 1.80 g/cm3, 7 um",
+        "UD composite (60% Vf, epoxy): 2,860 MPa / 134 GPa tension (D3039), 1,450 MPa compression, 1,690 MPa flexural, ILSS 86.9 MPa"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "MF05",
+      "title": "Diab Divinycell H PVC foam core - product page and data sheet",
+      "authors": "Diab Group",
+      "year": 2026,
+      "type": "manufacturer product page",
+      "venue": "Manufacturer web page",
+      "url": "https://www.diabgroup.com/products-services/divinycell-pvc/divinycell-h/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "manufacturing"
+      ],
+      "used_for": [
+        "F",
+        "P"
+      ],
+      "summary": "Cross-linked PVC foam core grades (H45-H250) with shear/compression properties for sandwich panels.",
+      "project_use": "WP F/P: core properties for sandwich skins, floors and wing ribs (foam-core construction).",
+      "credibility": "High (manufacturer).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "MF06",
+      "title": "Hexcel honeycomb data sheets and sandwich design technology",
+      "authors": "Hexcel Corporation",
+      "year": 2026,
+      "type": "manufacturer technical library",
+      "venue": "Manufacturer data sheet library",
+      "url": "https://www.hexcel.com/Resources/DataSheets/Honeycomb",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "manufacturing"
+      ],
+      "used_for": [
+        "F"
+      ],
+      "summary": "Honeycomb core data and Hexcel's sandwich design guide (face wrinkling, core shear, intra-cell buckling formulas).",
+      "project_use": "WP F: sandwich failure-mode checks.",
+      "credibility": "High (manufacturer).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "MF07",
+      "title": "WEST SYSTEM instruction manuals (incl. Vacuum Bagging Techniques)",
+      "authors": "Gougeon Brothers, Inc.",
+      "year": 2026,
+      "type": "manufacturer manuals",
+      "venue": "Manufacturer manuals",
+      "url": "https://www.westsystem.com/instruction-manuals/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "manufacturing"
+      ],
+      "used_for": [
+        "P"
+      ],
+      "summary": "Practical epoxy wet-layup and vacuum-bagging procedures (bagging materials, pressure, bleed, cure).",
+      "project_use": "WP P: process sheets for wet-layup/vacuum-bag parts in manufacturing/MANUFACTURING.md.",
+      "credibility": "Medium-high: reputable resin manufacturer, practical guidance not test data.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "MF08",
+      "title": "NCAMP - National Center for Advanced Materials Performance (Wichita State NIAR)",
+      "authors": "NIAR / Wichita State University",
+      "year": 2026,
+      "type": "organisation (public allowables)",
+      "venue": "Public material qualification programme",
+      "url": "https://www.wichita.edu/industry_and_defense/NIAR/Research/ncamp.php",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "manufacturing"
+      ],
+      "used_for": [
+        "F"
+      ],
+      "summary": "Publicly released, FAA-accepted statistically based allowables for composite material systems and the shared-database process.",
+      "project_use": "WP F: source of B-basis allowables and knock-down ratios to compare with wet-layup estimates.",
+      "credibility": "High (FAA-recognised programme); mostly prepreg systems, so only indicative for wet layup.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "MF09",
+      "title": "Van's Aircraft kit aircraft (e.g. RV-12iS) - aluminium kit construction reference",
+      "authors": "Van's Aircraft, Inc.",
+      "year": 2026,
+      "type": "manufacturer web site",
+      "venue": "Manufacturer web site",
+      "url": "https://www.vansaircraft.com/rv-12is/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "manufacturing"
+      ],
+      "used_for": [
+        "P",
+        "G"
+      ],
+      "summary": "Matched-hole, pre-punched aluminium kit construction with pulled rivets; reference for low-tooling aluminium structures and builder hours.",
+      "project_use": "WP P/G: design-for-assembly reference for flat-pattern aluminium parts (booms fittings, cabin frame).",
+      "credibility": "Medium: manufacturer marketing; construction practice is well established.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "MF10",
+      "title": "EAA aircraft building resources (composite, metal, wood construction guides)",
+      "authors": "Experimental Aircraft Association",
+      "year": 2026,
+      "type": "organisation (homebuilder resources)",
+      "venue": "EAA web site",
+      "url": "https://www.eaa.org/eaa/aircraft-building",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "manufacturing"
+      ],
+      "used_for": [
+        "P"
+      ],
+      "summary": "Homebuilder guidance including moldless foam-core composite construction (Rutan-style) and sheet-metal techniques.",
+      "project_use": "WP P: practical build methods; low credibility for numbers.",
+      "credibility": "Medium: community resource.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BM01",
+      "title": "Electric VTOL News (Vertical Flight Society) aircraft directory - individual aircraft pages",
+      "authors": "Vertical Flight Society",
+      "year": 2026,
+      "type": "directory (secondary)",
+      "venue": "evtol.news directory (pages listed in benchmarks_raw.json)",
+      "url": "https://evtol.news/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "benchmarks"
+      ],
+      "used_for": [
+        "M"
+      ],
+      "summary": "Curated VFS directory that compiles manufacturer-announced specifications for >1,000 eVTOL concepts.",
+      "project_use": "WP M: main source for benchmark specs when no regulator or manufacturer document gives the number.",
+      "credibility": "Medium: secondary compilation of manufacturer claims; some typos (e.g. Lilium MTOW in 'km', Wisk MTOW labelled as payload). Each number is tagged with the exact page URL in benchmarks_raw.json.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BM02",
+      "title": "EHang EH216-S product page",
+      "authors": "EHang",
+      "year": 2026,
+      "type": "manufacturer web page",
+      "venue": "Manufacturer web page",
+      "url": "https://www.ehang.com/ehang216s/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "benchmarks"
+      ],
+      "used_for": [
+        "M"
+      ],
+      "summary": "Official EH216-S specifications.",
+      "project_use": "WP M: EH216-S MTOW, speed, range.",
+      "credibility": "Medium-high (manufacturer; aircraft is CAAC type-certificated, Oct 2023).",
+      "key_data": [
+        "MTOW 620 kg; max design speed 130 km/h; range 30 km; width 5.73 m; height 1.93 m; coaxial dual-rotor layout"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BM03",
+      "title": "Pipistrel Velis Electro product page",
+      "authors": "Pipistrel (Textron eAviation)",
+      "year": 2026,
+      "type": "manufacturer web page",
+      "venue": "Manufacturer web page",
+      "url": "https://www.pipistrel-aircraft.com/products/velis-electro/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "benchmarks"
+      ],
+      "used_for": [
+        "M"
+      ],
+      "summary": "Manufacturer performance data for the Velis Electro.",
+      "project_use": "WP M: empty mass, cruise power/speed and endurance (complements ST18).",
+      "credibility": "Medium-high (manufacturer).",
+      "key_data": [
+        "Empty 428 kg typical with batteries; MTOW 600 kg; useful load 172 kg",
+        "Cruise 88 KTAS at 35 kW; endurance ~50 min typical (+ VFR reserve)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BM04",
+      "title": "Archer Unveils its Production Aircraft, Midnight (16 Nov 2022)",
+      "authors": "Archer Aviation",
+      "year": 2022,
+      "type": "manufacturer press release",
+      "venue": "Press release (investor site PDF)",
+      "url": "https://s206.q4cdn.com/823642595/files/doc_news/Archer-Unveils-its-Production-Aircraft-Midnight-2022.pdf",
+      "alt_urls": [
+        "https://www.businesswire.com/news/home/20221116006108/en"
+      ],
+      "local_copy": null,
+      "topics": [
+        "benchmarks"
+      ],
+      "used_for": [
+        "M"
+      ],
+      "summary": "Archer's production-aircraft announcement.",
+      "project_use": "WP M: Midnight payload and rotor count.",
+      "credibility": "Medium (manufacturer claims, 'expected').",
+      "key_data": [
+        "Pilot + 4 passengers; expected payload over 1,000 lb; optimised for back-to-back ~20-mile trips; 12 propellers (6 tilt, 6 lift)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BM05",
+      "title": "Update: Archer's Midnight eVTOL Completes First Transition Flight",
+      "authors": "AVweb",
+      "year": 2024,
+      "type": "trade press",
+      "venue": "AVweb news",
+      "url": "https://www.avweb.com/aviation-news/archers-midnight-evtol-completes-first-transition-flight/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "benchmarks"
+      ],
+      "used_for": [
+        "M"
+      ],
+      "summary": "News report quoting Archer's design MTOW.",
+      "project_use": "WP M: Midnight MTOW.",
+      "credibility": "Medium-low: trade press; directory sites quote 7,000 lb instead.",
+      "key_data": [
+        "Design maximum takeoff weight about 6,500 lb (as reported)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BM06",
+      "title": "Wisk - Generation 6 aircraft page",
+      "authors": "Wisk Aero",
+      "year": 2026,
+      "type": "manufacturer web page",
+      "venue": "Manufacturer web page",
+      "url": "https://wisk.aero/aircraft/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "benchmarks"
+      ],
+      "used_for": [
+        "M"
+      ],
+      "summary": "Official Gen 6 performance summary.",
+      "project_use": "WP M: Wisk range, speed, seats.",
+      "credibility": "Medium (manufacturer, pre-certification).",
+      "key_data": [
+        "4 passengers with carry-on luggage; 90 miles with reserves; ~120 kt cruise; 2,500+ ft cruise altitude; ~15 min charge"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BM07",
+      "title": "NAVAIR Office of Small Business Programs - LIFT Aircraft company profile",
+      "authors": "US Navy NAVAIR",
+      "year": 2023,
+      "type": "government web page",
+      "venue": "Company profile",
+      "url": "https://www.navair.navy.mil/osbp/node/10826",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "benchmarks"
+      ],
+      "used_for": [
+        "M"
+      ],
+      "summary": "Company-supplied profile of LIFT Aircraft hosted by NAVAIR.",
+      "project_use": "WP M: Hexa battery mass and useful load.",
+      "credibility": "Medium: company-supplied text on a government site.",
+      "key_data": [
+        "HEXA empty weight 432 lb including ~133 lb of batteries; useful load 220 lb; range 10 nm; ~18 min operating time"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "BM08",
+      "title": "Vertical reveals second eVTOL prototype ahead of flight testing (AIN FutureFlight, 18 Jul 2024)",
+      "authors": "AIN",
+      "year": 2024,
+      "type": "trade press",
+      "venue": "AIN Online",
+      "url": "https://www.ainonline.com/aviation-news/futureflight/2024-07-18/vertical-reveals-second-evtol-prototype-ahead-flight-testing",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "benchmarks"
+      ],
+      "used_for": [
+        "M"
+      ],
+      "summary": "Trade report on the VX4 prototype.",
+      "project_use": "WP M: confirms VX4 MTOW is not publicly disclosed.",
+      "credibility": "Medium (trade press).",
+      "key_data": [
+        "VX4 MTOW not disclosed by Vertical (as reported)"
+      ],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "TL01",
+      "title": "OpenFOAM v2412 (ESI/OpenCFD) release and documentation",
+      "authors": "OpenCFD Ltd",
+      "year": 2024,
+      "type": "tool doc",
+      "venue": "openfoam.com",
+      "url": "https://www.openfoam.com/news/main-news/openfoam-v2412",
+      "alt_urls": [
+        "https://www.openfoam.com/"
+      ],
+      "local_copy": null,
+      "topics": [
+        "tools"
+      ],
+      "used_for": [
+        "C"
+      ],
+      "summary": "Finite-volume CFD toolbox installed in ~/tools/envs/cfd; simpleFoam/pimpleFoam, actuator-disk and MRF/AMI rotor options, snappyHexMesh.",
+      "project_use": "WP C: main RANS solver for the airframe, with actuator-disk lift rotors; verification against AE08 cases.",
+      "credibility": "High (widely validated open-source code).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "TL02",
+      "title": "SU2: An Open-Source Suite for Multiphysics Simulation and Design",
+      "authors": "Economon, T. D.; Palacios, F.; Copeland, S. R.; Lukaczyk, T. W.; Alonso, J. J.",
+      "year": 2016,
+      "type": "tool doc + paper",
+      "venue": "AIAA Journal 54(3), 828-846, doi:10.2514/1.J053813",
+      "url": "https://su2code.github.io/",
+      "alt_urls": [
+        "https://github.com/su2code/SU2",
+        "https://doi.org/10.2514/1.J053813"
+      ],
+      "local_copy": null,
+      "topics": [
+        "tools"
+      ],
+      "used_for": [
+        "C",
+        "V"
+      ],
+      "summary": "Open-source compressible/incompressible RANS solver with adjoint capability.",
+      "project_use": "WP C/V: independent second CFD code for cross-checking OpenFOAM drag.",
+      "credibility": "High.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "TL03",
+      "title": "AeroSandbox (Python aircraft design optimisation library)",
+      "authors": "Sharpe, P. D.",
+      "year": 2026,
+      "type": "tool doc",
+      "venue": "GitHub / ReadTheDocs",
+      "url": "https://github.com/peterdsharpe/AeroSandbox",
+      "alt_urls": [
+        "https://aerosandbox.readthedocs.io/"
+      ],
+      "local_copy": null,
+      "topics": [
+        "tools"
+      ],
+      "used_for": [
+        "D",
+        "C"
+      ],
+      "summary": "Differentiable aircraft design framework with vortex-lattice, lifting-line, drag build-up, propulsion and mission tools (installed in ~/tools/cadenv).",
+      "project_use": "WP D: optimisation framework for sizing; WP C: quick VLM checks.",
+      "credibility": "Medium-high: MIT-developed, well documented; not an industry-validated code.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "TL04",
+      "title": "NeuralFoil: An Airfoil Aerodynamics Analysis Tool Using Physics-Informed Machine Learning",
+      "authors": "Sharpe, P.; Hansman, R. J.",
+      "year": 2025,
+      "type": "paper (preprint) + tool",
+      "venue": "arXiv:2503.16323",
+      "url": "https://arxiv.org/abs/2503.16323",
+      "alt_urls": [
+        "https://github.com/peterdsharpe/NeuralFoil"
+      ],
+      "local_copy": null,
+      "topics": [
+        "tools"
+      ],
+      "used_for": [
+        "D",
+        "C"
+      ],
+      "summary": "Neural-network surrogate trained on XFOIL data that returns airfoil polars with uncertainty estimates.",
+      "project_use": "WP D/C: fast airfoil polars inside the optimiser; validated against XFOIL/UIUC data (AE06, AE07).",
+      "credibility": "Medium: preprint; accuracy bounded by XFOIL training data.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "TL05",
+      "title": "AVL (Athena Vortex Lattice)",
+      "authors": "Drela, M.; Youngren, H.",
+      "year": 2022,
+      "type": "tool doc",
+      "venue": "MIT",
+      "url": "https://web.mit.edu/drela/Public/web/avl/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "tools"
+      ],
+      "used_for": [
+        "M",
+        "C",
+        "D"
+      ],
+      "summary": "Vortex-lattice code for lift distribution, span efficiency, stability derivatives and trim.",
+      "project_use": "WP M/C/D: span efficiency, neutral point, tail sizing and control derivatives.",
+      "credibility": "High (widely used).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "TL06",
+      "title": "OpenVSP and VSPAERO",
+      "authors": "NASA / OpenVSP community",
+      "year": 2026,
+      "type": "tool doc",
+      "venue": "openvsp.org",
+      "url": "https://openvsp.org/",
+      "alt_urls": [
+        "https://github.com/OpenVSP/OpenVSP",
+        "https://openvsp.org/wiki/doku.php?id=vspaerotutorial"
+      ],
+      "local_copy": null,
+      "topics": [
+        "tools"
+      ],
+      "used_for": [
+        "G",
+        "M",
+        "C"
+      ],
+      "summary": "NASA parametric geometry tool with wetted-area, parasite-drag build-up and the VSPAERO VLM/panel solver with actuator disks.",
+      "project_use": "WP G/M/C: wetted areas for the drag build-up and a quick rotor-wing interaction estimate.",
+      "credibility": "High (NASA-originated).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "TL07",
+      "title": "DUST - mid-fidelity vortex-particle aerodynamic solver (Politecnico di Milano)",
+      "authors": "Politecnico di Milano DAER",
+      "year": 2026,
+      "type": "tool doc",
+      "venue": "GitLab repository",
+      "url": "https://public.gitlab.polimi.it/DAER/dust",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "tools"
+      ],
+      "used_for": [
+        "C"
+      ],
+      "summary": "Open-source mid-fidelity solver (panels/lifting lines + vortex particle wake) for rotorcraft and interacting rotor/wing configurations.",
+      "project_use": "WP C: transition and rotor-boom-wing interaction where RANS is too costly; validated in RA14.",
+      "credibility": "Medium-high: research code with journal validation. Host was intermittently unreachable during the check on 2026-11-12.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "TL08",
+      "title": "CalculiX CrunchiX 2.23 user's manual",
+      "authors": "Dhondt, G.",
+      "year": 2025,
+      "type": "tool doc",
+      "venue": "calculix.de / dhondt.de",
+      "url": "https://www.dhondt.de/ccx_2.23.pdf",
+      "alt_urls": [
+        "http://www.calculix.de/"
+      ],
+      "local_copy": null,
+      "topics": [
+        "tools"
+      ],
+      "used_for": [
+        "F"
+      ],
+      "summary": "Open-source implicit FE solver (Abaqus-like input), shells, composites, buckling, modal.",
+      "project_use": "WP F: structural FEA of the wing spar, booms, fittings and seat structure.",
+      "credibility": "High (mature open-source FE code).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "TL09",
+      "title": "Gmsh: a 3-D finite element mesh generator with built-in pre- and post-processing facilities",
+      "authors": "Geuzaine, C.; Remacle, J.-F.",
+      "year": 2009,
+      "type": "tool doc + paper",
+      "venue": "Int. J. Numer. Meth. Eng. 79(11), 1309-1331, doi:10.1002/nme.2579",
+      "url": "https://gmsh.info/",
+      "alt_urls": [
+        "https://doi.org/10.1002/nme.2579"
+      ],
+      "local_copy": null,
+      "topics": [
+        "tools"
+      ],
+      "used_for": [
+        "F",
+        "C"
+      ],
+      "summary": "Mesh generator with OpenCASCADE geometry kernel and Python API.",
+      "project_use": "WP F/C: FE and CFD meshing from STEP.",
+      "credibility": "High.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "TL10",
+      "title": "build123d (Python CAD on OpenCASCADE) and FreeCAD",
+      "authors": "build123d contributors; FreeCAD project",
+      "year": 2026,
+      "type": "tool doc",
+      "venue": "ReadTheDocs / freecad.org",
+      "url": "https://build123d.readthedocs.io/en/latest/",
+      "alt_urls": [
+        "https://github.com/gumyr/build123d",
+        "https://www.freecad.org/"
+      ],
+      "local_copy": null,
+      "topics": [
+        "tools"
+      ],
+      "used_for": [
+        "G"
+      ],
+      "summary": "Code-based parametric CAD producing STEP/STL; FreeCAD as interactive viewer/editor.",
+      "project_use": "WP G: all parts and the assembly built from design/geometry.json.",
+      "credibility": "Medium-high: active open-source projects.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "TL11",
+      "title": "SUAVE / RCAIDE: open-source conceptual vehicle design environments",
+      "authors": "Lukaczyk, T. W.; Wendorff, A. D.; Colonno, M.; Economon, T. D.; Alonso, J. J.",
+      "year": 2015,
+      "type": "tool doc + paper",
+      "venue": "AIAA 2015-3087, doi:10.2514/6.2015-3087",
+      "url": "https://github.com/suavecode/SUAVE",
+      "alt_urls": [
+        "https://suave.stanford.edu/",
+        "https://github.com/leadsgroup/RCAIDE_LEADS",
+        "https://doi.org/10.2514/6.2015-3087"
+      ],
+      "local_copy": null,
+      "topics": [
+        "tools"
+      ],
+      "used_for": [
+        "V",
+        "D"
+      ],
+      "summary": "Stanford conceptual design environment with eVTOL (lift+cruise) examples, battery and propeller models; RCAIDE is its maintained successor.",
+      "project_use": "WP V: independent mission-energy cross-check of the sizing result using a third-party code.",
+      "credibility": "Medium-high: academic code, published validation.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "TL12",
+      "title": "OpenMDAO: an open-source framework for multidisciplinary design, analysis, and optimization",
+      "authors": "Gray, J. S.; Hwang, J. T.; Martins, J. R. R. A.; Moore, K. T.; Naylor, B. A.",
+      "year": 2019,
+      "type": "tool doc + paper",
+      "venue": "Structural and Multidisciplinary Optimization 59, doi:10.1007/s00158-019-02211-z",
+      "url": "https://openmdao.org/",
+      "alt_urls": [
+        "https://github.com/OpenMDAO/OpenMDAO"
+      ],
+      "local_copy": null,
+      "topics": [
+        "tools"
+      ],
+      "used_for": [
+        "D"
+      ],
+      "summary": "NASA Glenn MDO framework with analytic derivatives and many optimisers.",
+      "project_use": "WP D: optional optimiser wrapper if the sizing outgrows AeroSandbox.",
+      "credibility": "High (NASA, peer-reviewed).",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    },
+    {
+      "id": "TL13",
+      "title": "NDARC software page (NASA Ames)",
+      "authors": "NASA Ames Aeromechanics Office",
+      "year": 2026,
+      "type": "tool doc",
+      "venue": "rotorcraft.arc.nasa.gov",
+      "url": "https://rotorcraft.arc.nasa.gov/ndarc/",
+      "alt_urls": [],
+      "local_copy": null,
+      "topics": [
+        "tools"
+      ],
+      "used_for": [
+        "M"
+      ],
+      "summary": "Distribution page for NDARC (export-controlled software; theory manuals public).",
+      "project_use": "WP M: reference only; we implement the published equations ourselves.",
+      "credibility": "High.",
+      "key_data": [],
+      "link_checked": "2026-11-12"
+    }
+  ]
+}

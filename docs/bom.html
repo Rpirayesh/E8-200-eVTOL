@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E8-200 Bill of Materials</title>
+<link rel="stylesheet" href="site.css">
+<style>
+.pt{font-size:11px;color:var(--muted)}
+.est{color:#c2410c}
+td.num,th.num{text-align:right}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.filters input,.filters select{padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit;font-size:13px}
+.bar{height:8px;background:var(--accent);border-radius:4px}
+</style>
+</head>
+<body>
+<header><h1>E8-200 lift + cruise eVTOL</h1>
+<nav><a href="index.html">3-D viewer</a><a href="bom.html" aria-current="page">Bill of materials</a><a href="analysis.html">Analysis</a><a href="https://github.com/Rpirayesh/E8-200-eVTOL">Repository</a></nav></header>
+<main class="doc">
+  <h2>Prototype bill of materials</h2>
+  <p>One prototype, cash only (labour hours are in the manufacturing plan). Prices are listings checked in November 2026 or,
+  where marked <span class="est">estimate</span>, a quote-required figure with its basis given in the notes. EUR and GBP are
+  converted at 1.10 and 1.27 (estimate). Download as <a href="https://github.com/Rpirayesh/E8-200-eVTOL/blob/main/bom/BOM.csv">CSV</a>;
+  method and reconciliation in <a href="https://github.com/Rpirayesh/E8-200-eVTOL/blob/main/bom/BOM.md">BOM.md</a>; open vendor
+  questions in <a href="https://github.com/Rpirayesh/E8-200-eVTOL/blob/main/manufacturing/QUOTES_TO_REQUEST.md">QUOTES_TO_REQUEST.md</a>.</p>
+  <p id="warn" style="color:#c2410c"></p>
+  <div id="total" class="kpis"></div>
+  <div class="wrap" id="cats"></div>
+  <h2>Reconciliation with the sizing cost model</h2>
+  <div class="wrap" id="rec"></div>
+  <h2>Purchased items and raw stock</h2>
+  <div class="filters"><input id="q" type="search" placeholder="Filter items, IDs, categories"><select id="g"><option value="">all groups</option><option>purchased</option><option>material</option><option>tooling</option><option>outsourced</option></select></div>
+  <div class="wrap" id="buy"></div>
+  <h2>Carbon tube cut list</h2>
+  <div class="wrap" id="cut"></div>
+  <h2>Laminates derived from the CAD</h2>
+  <div class="wrap" id="lam"></div>
+  <h2>Parts we make</h2>
+  <p>Machined (CNC), printed (FDM), laid-up and outsourced parts from <code>cad/parts.json</code>. Click a name to see it in the 3-D viewer.</p>
+  <div class="wrap" id="make"></div>
+</main>
+<script type="module">
+const d = await (await fetch('data/bom.json')).json();
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const money = x => x == null ? 'quote' : '$' + Number(x).toLocaleString('en-US', {maximumFractionDigits: 0});
+const money2 = x => x == null ? 'quote' : '$' + Number(x).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+document.getElementById('warn').textContent = d.cad_warning || '';
+const isEst = t => !['retail', 'list', 'dealer', 'reseller'].includes(t);
+const estTotal = d.rows.filter(r => isEst(r.price_type)).reduce((a, r) => a + r.total_usd, 0);
+document.getElementById('total').innerHTML =
+  `<div><b>${money(d.total_usd)}</b><span>prototype cash total</span></div>` +
+  `<div><b>${money(estTotal)}</b><span>of which estimates / quote items</span></div>` +
+  `<div><b>${money(d.wp_d_prototype_cash_usd)}</b><span>sizing model prototype cash</span></div>` +
+  `<div><b>${d.design_mtow_kg.toFixed(0)} kg</b><span>MTOW of the frozen design</span></div>` +
+  `<div><b>${d.rows.length}</b><span>BOM rows</span></div>` +
+  `<div><b>${d.made.length}</b><span>made part types</span></div>`;
+const cats = Object.entries(d.by_category).sort((a, b) => b[1] - a[1]);
+const max = cats[0][1];
+document.getElementById('cats').innerHTML = `<table><thead><tr><th>Category</th><th class="num">USD</th><th class="num">share</th><th style="width:40%"></th></tr></thead><tbody>${
+  cats.map(([k, v]) => `<tr><td>${esc(k)}</td><td class="num">${money(v)}</td><td class="num">${(100 * v / d.total_usd).toFixed(1)} %</td><td><div class="bar" style="width:${(100 * v / max).toFixed(1)}%"></div></td></tr>`).join('')}</tbody></table>`;
+document.getElementById('rec').innerHTML = `<table><thead><tr><th>Item</th><th class="num">sizing model USD</th><th class="num">BOM USD</th><th class="num">delta</th></tr></thead><tbody>${
+  d.reconciliation.map(r => `<tr><td>${esc(r.item)}</td><td class="num">${money(r.wp_d_usd)}</td><td class="num">${money(r.bom_usd)}</td><td class="num">${(r.delta_usd >= 0 ? '+' : '') + r.delta_usd.toLocaleString('en-US')}</td></tr>`).join('')}
+  <tr><th>total</th><th class="num">${money(d.reconciliation_total.wp_d)}</th><th class="num">${money(d.reconciliation_total.bom)}</th><th class="num">${(d.reconciliation_total.bom - d.reconciliation_total.wp_d).toLocaleString('en-US')}</th></tr></tbody></table>`;
+const link = s => s && s.startsWith('http') ? `<a href="${esc(s)}">source</a>` : '';
+function renderBuy() {
+  const q = document.getElementById('q').value.toLowerCase(), g = document.getElementById('g').value;
+  const rows = d.rows.filter(r => (!g || r.group === g) && (!q || JSON.stringify(r).toLowerCase().includes(q)));
+  document.getElementById('buy').innerHTML = `<table><thead><tr><th>Category</th><th>Item</th><th class="num">Qty</th><th class="num">Unit</th><th class="num">Total</th><th>Lead time / export</th><th>Notes</th><th></th></tr></thead><tbody>${
+    rows.map(r => `<tr><td>${esc(r.category)}</td><td>${esc(r.item)}<div class="pt">${esc(r.catalog_id)} ${r.cad_ids ? '· CAD ' + esc(r.cad_ids) : ''}</div></td><td class="num">${r.qty} ${esc(r.unit)}</td><td class="num ${isEst(r.price_type) ? 'est' : ''}">${money2(r.unit_price_usd)}<div class="pt">${esc(r.price_type)}</div></td><td class="num">${money(r.total_usd)}</td><td class="pt">${esc(r.lead_time)}<br>${esc(r.export_control)}</td><td class="pt">${esc(r.note)}</td><td>${link(r.source)}</td></tr>`).join('')}</tbody></table>`;
+}
+document.getElementById('q').addEventListener('input', renderBuy);
+document.getElementById('g').addEventListener('change', renderBuy);
+renderBuy();
+document.getElementById('cut').innerHTML = `<table><thead><tr><th>Stock</th><th>Part</th><th>Use</th><th class="num">Cut length mm</th><th class="num">Offcut mm</th></tr></thead><tbody>${
+  d.cut_list.map(c => `<tr><td>${esc(c.stock)}</td><td>${esc(c.part)}</td><td>${esc(c.name)}</td><td class="num">${c.length_mm}</td><td class="num">${c.offcut_mm ?? '-'}</td></tr>`).join('')}</tbody></table>`;
+document.getElementById('lam').innerHTML = `<table><thead><tr><th>Laminate</th><th class="num">laminate kg</th><th class="num">fibre mass fraction</th><th class="num">fibre kg</th><th class="num">fabric to buy m²</th><th class="num">resin in laminate kg</th></tr></thead><tbody>${
+  Object.entries(d.laminate).map(([k, v]) => `<tr><td>${esc(k)}</td><td class="num">${v.laminate_kg}</td><td class="num">${v.fmf}</td><td class="num">${v.fibre_kg}</td><td class="num">${v.m2}</td><td class="num">${v.resin_kg}</td></tr>`).join('')}</tbody></table>`;
+const RAW = 'https://github.com/Rpirayesh/E8-200-eVTOL/raw/main/';
+document.getElementById('make').innerHTML = `<table><thead><tr><th></th><th>ID</th><th>Part</th><th>Material</th><th class="num">Qty</th><th class="num">kg each</th><th>Envelope mm</th><th>Files</th></tr></thead><tbody>${
+  d.made.map(p => `<tr><td><span class="b ${esc(p.process)}">${esc(p.process)}</span></td><td>${esc(p.id)}</td><td><a href="index.html?part=${encodeURIComponent(p.id)}">${esc(p.name)}</a></td><td>${esc(p.material)}</td><td class="num">${p.qty}</td><td class="num">${p.mass_kg_each}</td><td>${p.size_mm.join(' × ')}</td><td>${p.files && p.files.step ? `<a href="${RAW + p.files.stl}">STL</a> · <a href="${RAW + p.files.step}">STEP</a>` : ''}</td></tr>`).join('')}</tbody></table>`;
+</script>
+</body>
+</html>

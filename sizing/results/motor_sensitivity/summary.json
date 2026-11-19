@@ -1,0 +1,247 @@
+{
+ "about": "REB 60 rating sensitivity (summary block vs MGM 25 C table) for the frozen iteration 3.2 design T8, and re-optimisation with the table ratings (3.2 rules, 8 rotors, all catalogue motors). Superseded runs in superseded/ (REB 90 twin rating bug, fixed).",
+ "cases": {
+  "M_e228": {
+   "feasible": false,
+   "mtow": 1120.2,
+   "cost_N10": 459597,
+   "prototype_cash": 352849,
+   "range_km": 20.37,
+   "lift_motor": "MOT-EMRAX228",
+   "pusher": "2 x EMRAX 228 MV LC on the boom tails (twin pusher)",
+   "violated": {
+    "oei_torque": 0.0046,
+    "hover_cont_power": 0.2707,
+    "tip_mach_oei": 0.0278,
+    "pusher_cont_power": 0.1509
+   },
+   "x": {
+    "D": 1.8,
+    "vtip": 190.0,
+    "span": 9.0,
+    "chord": 1.25,
+    "V": 39.166666666666664,
+    "Dp": 1.4000000000000001,
+    "delta_w": 0.1,
+    "nb": 2,
+    "flap": 0,
+    "lm": 6,
+    "pm": 7,
+    "pnb": 2,
+    "cell": 0,
+    "npk": 7,
+    "airfoil": 4
+   }
+  },
+  "M_e268": {
+   "feasible": false,
+   "mtow": 1306.5,
+   "cost_N10": 500185,
+   "prototype_cash": 391138,
+   "range_km": 21.62,
+   "lift_motor": "MOT-EMRAX268",
+   "pusher": "2 x MGM REB 90 on the boom tails (twin pusher)",
+   "violated": {
+    "parachute": 1.0
+   },
+   "x": {
+    "D": 1.9000000000000001,
+    "vtip": 182.0,
+    "span": 7.800000000000001,
+    "chord": 1.3,
+    "V": 45.833333333333336,
+    "Dp": 1.55,
+    "delta_w": 0.15000000000000002,
+    "nb": 3,
+    "flap": 1,
+    "lm": 5,
+    "pm": 6,
+    "pnb": 3,
+    "cell": 0,
+    "npk": 6,
+    "airfoil": 4
+   }
+  },
+  "M_free": {
+   "feasible": false,
+   "mtow": 1134.4,
+   "cost_N10": 445952,
+   "prototype_cash": 346556,
+   "range_km": 20.14,
+   "lift_motor": "MOT-EMRAX228",
+   "pusher": "2 x MGM REB 90 on the boom tails (twin pusher)",
+   "violated": {
+    "oei_torque": 0.0191,
+    "oei_flare_torque": 0.0041,
+    "hover_cont_power": 0.289,
+    "tip_mach_oei": 0.0278,
+    "stall_margin": 0.0006
+   },
+   "x": {
+    "D": 1.75,
+    "vtip": 190.0,
+    "span": 7.4,
+    "chord": 1.1500000000000001,
+    "V": 45.27777777777778,
+    "Dp": 1.7000000000000002,
+    "delta_w": 0.1,
+    "nb": 2,
+    "flap": 0,
+    "lm": 6,
+    "pm": 6,
+    "pnb": 2,
+    "cell": 0,
+    "npk": 5,
+    "airfoil": 4
+   }
+  },
+  "M_free_fair": {
+   "feasible": false,
+   "mtow": 1125.2,
+   "cost_N10": 451024,
+   "prototype_cash": 347901,
+   "range_km": 20.08,
+   "lift_motor": "MOT-REB50",
+   "pusher": "2 x MGM REB 90 on the boom tails (twin pusher)",
+   "violated": {
+    "oei_power": 0.0261,
+    "oei_torque": 0.1398,
+    "oei_flare_power": 0.0124,
+    "oei_flare_torque": 0.1246,
+    "tip_mach_oei": 0.0278
+   },
+   "x": {
+    "D": 2.0500000000000003,
+    "vtip": 190.0,
+    "span": 7.1000000000000005,
+    "chord": 1.1500000000000001,
+    "V": 46.11111111111111,
+    "Dp": 1.7000000000000002,
+    "delta_w": 0.2,
+    "nb": 2,
+    "flap": 0,
+    "lm": 1,
+    "pm": 6,
+    "pnb": 2,
+    "cell": 0,
+    "npk": 7,
+    "airfoil": 4
+   }
+  },
+  "M_reb90": {
+   "feasible": false,
+   "mtow": 1322.4,
+   "cost_N10": 490461,
+   "prototype_cash": 380169,
+   "range_km": 20.99,
+   "lift_motor": "MOT-REB90",
+   "pusher": "2 x MGM REB 90 on the boom tails (twin pusher)",
+   "violated": {
+    "parachute": 1.0
+   },
+   "x": {
+    "D": 1.85,
+    "vtip": 182.0,
+    "span": 8.1,
+    "chord": 1.25,
+    "V": 46.11111111111111,
+    "Dp": 1.5,
+    "delta_w": 0.15000000000000002,
+    "nb": 2,
+    "flap": 2,
+    "lm": 3,
+    "pm": 6,
+    "pnb": 3,
+    "cell": 0,
+    "npk": 6,
+    "airfoil": 4
+   }
+  },
+  "M_reb90_single": {
+   "feasible": false,
+   "mtow": 1242.1,
+   "cost_N10": 454772,
+   "prototype_cash": 348181,
+   "range_km": 20.07,
+   "lift_motor": "MOT-REB90",
+   "pusher": "MGM COMPRO REB 90 (80 kW)",
+   "violated": {
+    "pusher_cont_power": 0.5387,
+    "one_pack_out_cell_current": 0.0047,
+    "pusher_climb": 1.2252,
+    "stall_margin": 0.0129,
+    "parachute": 1.0
+   },
+   "x": {
+    "D": 2.1,
+    "vtip": 184.0,
+    "span": 9.0,
+    "chord": 1.35,
+    "V": 39.166666666666664,
+    "Dp": 1.4000000000000001,
+    "delta_w": 0.30000000000000004,
+    "nb": 2,
+    "flap": 0,
+    "lm": 3,
+    "pm": 2,
+    "pnb": 2,
+    "cell": 0,
+    "npk": 4,
+    "airfoil": 4
+   }
+  },
+  "M_reb90_twin": {
+   "feasible": false,
+   "mtow": 1323.1,
+   "cost_N10": 493230,
+   "prototype_cash": 382370,
+   "range_km": 21.54,
+   "lift_motor": "MOT-REB90",
+   "pusher": "2 x MGM REB 90 on the boom tails (twin pusher)",
+   "violated": {
+    "parachute": 1.0
+   },
+   "x": {
+    "D": 1.85,
+    "vtip": 183.0,
+    "span": 8.3,
+    "chord": 1.2000000000000002,
+    "V": 50.27777777777778,
+    "Dp": 1.6,
+    "delta_w": 0.15000000000000002,
+    "nb": 3,
+    "flap": 0,
+    "lm": 3,
+    "pm": 6,
+    "pnb": 3,
+    "cell": 0,
+    "npk": 6,
+    "airfoil": 2
+   }
+  },
+  "T8_frozen_summary": {
+   "feasible": true,
+   "mtow": 1169.5,
+   "cost_N10": 442286,
+   "prototype_cash": 335187,
+   "range_km": 21.23,
+   "violated": {}
+  },
+  "T8_frozen_table": {
+   "feasible": false,
+   "mtow": 1169.5,
+   "cost_N10": 442286,
+   "prototype_cash": 335187,
+   "range_km": 21.23,
+   "violated": {
+    "oei_power": 0.7283,
+    "oei_torque": 0.8716,
+    "oei_flare_power": 0.7031,
+    "oei_flare_torque": 0.8443,
+    "hover_cont_power": 0.7777,
+    "pusher_cont_power": 1.3314,
+    "pusher_climb": 2.5504
+   }
+  }
+ }
+}

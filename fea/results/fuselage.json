@@ -1,0 +1,207 @@
+{
+ "global_ultimate": {
+  "My_Nm": 28913.21044159017,
+  "Mz_Nm": 11467.503525104854,
+  "Vz_N": 99113.81426123278,
+  "Vy_N": 10560.21638704108,
+  "T_Nm": 17648.97085173498
+ },
+ "checks": [
+  {
+   "item": "keel UD caps (40 mm wide)",
+   "demand_MPa": 409.307700152006,
+   "allow_MPa": 460.0,
+   "MS": 0.1238488790442207,
+   "t_cap_mm": 4.5
+  },
+  {
+   "item": "keel web faces (shear)",
+   "plies_each_face": 6,
+   "demand_MPa": 93.65626801328135,
+   "allow_MPa": 108.01224755700326,
+   "MS": 0.15328370271689762
+  },
+  {
+   "item": "keel web shear buckling",
+   "demand_MPa": 93.65626801328135,
+   "allow_MPa": 1562.4538839277122,
+   "MS": 15.682854410834963
+  },
+  {
+   "item": "floor faces (cargo 6 g)",
+   "demand_MPa": 100.27154556213017,
+   "allow_MPa": 142.05363425993556,
+   "MS": 0.41668938544401324
+  },
+  {
+   "item": "floor core shear H80",
+   "demand_MPa": 0.27853207100591715,
+   "allow_MPa": 0.76,
+   "MS": 1.7285906332267729
+  },
+  {
+   "item": "floor face wrinkling",
+   "demand_MPa": 100.27154556213017,
+   "allow_MPa": 138.84280411397728,
+   "MS": 0.38466803653632353
+  },
+  {
+   "item": "wing-root frame UD strap (60 mm, each side, each frame)",
+   "demand_MPa": 470.3481151410876,
+   "allow_MPa": 575.0,
+   "MS": 0.22249878651585675,
+   "t_mm": 2.6999999999999997,
+   "design_vertical_N": 76196.39465285618
+  },
+  {
+   "item": "wing-root frame side post faces (lateral lug load)",
+   "demand_MPa": 29.743440289918837,
+   "allow_MPa": 108.01224755700326,
+   "MS": 2.631464501220212
+  },
+  {
+   "item": "frame-lug bolts 8 x AN5 double shear",
+   "demand_N": 76196.39465285618,
+   "allow_N": 409409.1724757609,
+   "MS": 4.37307800901856
+  },
+  {
+   "item": "battery bracket bolts AN4 (shear, 18 g fwd)",
+   "demand_N": 2746.5244392075,
+   "allow_N": 16376.366899030436,
+   "MS": 4.9625782553589
+  },
+  {
+   "item": "battery bracket bearing 6061-T6 3 mm",
+   "demand_N": 2746.5244392075,
+   "allow_N": 11558.3706348,
+   "MS": 3.2083625653573744
+  },
+  {
+   "item": "keel potted insert bearing (battery bracket)",
+   "demand_N": 2746.5244392075,
+   "allow_N": 19440.0,
+   "MS": 6.078036416675522,
+   "note": "faces 6 plies each; add 2 local +-45 doubler plies at each insert if MS < 0"
+  },
+  {
+   "item": "battery box floor shear (2 mm 6061-T6)",
+   "demand_MPa": 11.556203811532257,
+   "allow_MPa": 186.158439,
+   "MS": 15.108961215639631
+  },
+  {
+   "item": "battery box front wall 2.5 mm between stiffeners (18 g)",
+   "demand_MPa": 82.5472478484206,
+   "allow_MPa": 289.579794,
+   "MS": 2.5080490452176916
+  },
+  {
+   "item": "seat-leg fitting bolts 2 x AN5 (shear + tension interaction)",
+   "demand_ratio": 0.05005713443183976,
+   "MS": 3.469583013235524,
+   "basis": "max(9 g x 1.33, 26 g dynamic) on 110 kg"
+  },
+  {
+   "item": "seat rail insert in keel cap region (bearing)",
+   "demand_N": 7049.044536625,
+   "allow_N": 16200.0,
+   "MS": 1.298183805738355
+  },
+  {
+   "item": "seat rear leg through-bolted to keel cap with backing plate",
+   "demand_N": 15037.961678133332,
+   "allow_N": 146574.14684588538,
+   "MS": 8.746942436953974
+  },
+  {
+   "item": "pusher motor plate to boom-end plug: 4 x AN5 (shear)",
+   "demand_N": 3878.4579118848515,
+   "allow_N": 102352.29311894023,
+   "MS": 25.389945551632685
+  },
+  {
+   "item": "rear parachute frame UD straps (2 x 60 mm)",
+   "demand_MPa": 458.4027777777777,
+   "allow_MPa": 575.0,
+   "MS": 0.25435540069686424,
+   "t_mm": 0.9
+  }
+ ],
+ "panels": {
+  "keel": {
+   "type": "sandwich_panel",
+   "core": "pvc_h80",
+   "core_t": 0.0127,
+   "face_material": "cf_fabric_wet",
+   "face_layup": "6 plies quasi-iso",
+   "face_t": 0.0015,
+   "caps": {
+    "material": "cf_ud_wet",
+    "b": 0.04,
+    "t": 0.0045
+   },
+   "depth": 0.22,
+   "y": [
+    -0.36,
+    0.36
+   ],
+   "x": [
+    0.47,
+    3.5
+   ]
+  },
+  "floor": {
+   "type": "sandwich_panel",
+   "core": "pvc_h80",
+   "core_t": 0.019,
+   "face_material": "cf_fabric_wet",
+   "face_layup": "[0/90,+-45]",
+   "face_t": 0.0005,
+   "z": 0.62
+  },
+  "wing_root_frames": {
+   "x": [
+    1.8336,
+    2.3136
+   ],
+   "strap": {
+    "material": "cf_ud_wet",
+    "b": 0.06,
+    "t": 0.0026999999999999997
+   },
+   "post_core": "pvc_h100",
+   "post_core_t": 0.019,
+   "post_face_plies": 4,
+   "doublers": "2 x 6 mm 6061-T6 each side at the lug clevis"
+  },
+  "battery_box": {
+   "material": "al6061_t6_sheet",
+   "floor_t": 0.002,
+   "walls_t": 0.0025,
+   "cell_frames": "G10 every 0.21 m bolted to the floor",
+   "brackets": "6 x 3 mm 6061-T6 angles per pack, AN4 bolts into potted keel inserts",
+   "g_design": {
+    "fwd": 18.0,
+    "down": 6.0,
+    "side": 4.5
+   }
+  },
+  "tail_cone": {
+   "parachute_frame_straps": {
+    "material": "cf_ud_wet",
+    "b": 0.06,
+    "t": 0.0009,
+    "n": 2
+   },
+   "pusher_bolts": "4 x AN5 (boom-end plug, iteration 3.2)"
+  }
+ },
+ "mass_estimate_kg": {
+  "keels": 10.62953088,
+  "floor": 6.907679999999999,
+  "wing_root_frames": 9.668399999999998,
+  "battery_boxes": 19.912799999999997,
+  "note": "primary members only; bonding, tapes, inserts +15 % included in the core factor"
+ }
+}

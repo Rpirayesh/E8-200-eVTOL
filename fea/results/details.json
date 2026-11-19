@@ -1,0 +1,170 @@
+{
+ "checks": [
+  {
+   "item": "wing upper skin (+-45, 0.5 mm) wrinkling on xps_foam (peak at x/c 0.40)",
+   "demand_MPa": 52.88895828600489,
+   "allow_MPa": 30.96916444808492,
+   "MS": -0.4144493396785286,
+   "wrinkle_half_wave_mm": 14.678093566540262,
+   "note": "ultimate cap strain 0.359 % x skin/cap height ratio 1.22; foam depth needed ~0.5 x half-wave << 30 mm kept by the voids"
+  },
+  {
+   "item": "wing upper skin (+-45, 0.5 mm) wrinkling on pvc_h45 (peak at x/c 0.40)",
+   "demand_MPa": 52.88895828600489,
+   "allow_MPa": 64.4184579818956,
+   "MS": 0.21799445611205304,
+   "wrinkle_half_wave_mm": 15.265832490501316,
+   "note": "ultimate cap strain 0.359 % x skin/cap height ratio 1.22; foam depth needed ~0.5 x half-wave << 30 mm kept by the voids"
+  },
+  {
+   "item": "wing upper skin (+-45, 0.5 mm) wrinkling on pvc_h80 (peak at x/c 0.40)",
+   "demand_MPa": 52.88895828600489,
+   "allow_MPa": 96.93598159077997,
+   "MS": 0.8328207764385198,
+   "wrinkle_half_wave_mm": 11.985291202120903,
+   "note": "ultimate cap strain 0.359 % x skin/cap height ratio 1.22; foam depth needed ~0.5 x half-wave << 30 mm kept by the voids"
+  },
+  {
+   "item": "main-spar +-45 webs on H45 box foam: wrinkling under web shear",
+   "demand_MPa": 93.62163475406653,
+   "allow_MPa": 104.77371677386606,
+   "MS": 0.11911864227851598,
+   "note": "principal compression = tau, along the fibres (E1 of the fabric)"
+  },
+  {
+   "item": "main-spar box (2 webs + H45) shear buckling as a sandwich panel",
+   "demand_MPa": 93.62163475406653,
+   "allow_MPa": 108473.04471636779,
+   "MS": 1157.6322435120283
+  },
+  {
+   "item": "pylon head flange 8 mm between isolators (PY-HEAD, -25 %)",
+   "demand_MPa": 173.3688707132138,
+   "allow_MPa": 262.000766,
+   "MS": 0.5112330427150373,
+   "note": "isolator load 2773 N ultimate x 1.15 as a cantilever strip"
+  },
+  {
+   "item": "skid clamp (LG-SKCL, -30 %): 2 x AN4 double shear",
+   "demand_N": 13412.841653735743,
+   "allow_N": 65505.46759612174,
+   "MS": 3.883787439470529
+  },
+  {
+   "item": "skid clamp socket bond (60 mm, EA 9394, factor 1.5)",
+   "demand_N": 13412.841653735743,
+   "allow_N": 79077.65700203938,
+   "MS": 4.89566767755099,
+   "note": "bond and bolts are redundant paths; the bolts alone carry the load"
+  },
+  {
+   "item": "skid clamp wall (12 mm -> 8.4 mm, 60 mm long), shear",
+   "demand_MPa": 13.306390529499746,
+   "allow_MPa": 165.474168,
+   "MS": 11.435691529806695
+  },
+  {
+   "item": "tail spar bearing in the TL-CLAMP socket (110 mm, moment by end bearing)",
+   "demand_MPa": 24.529245659727746,
+   "allow_MPa": 32.4,
+   "MS": 0.32087225385795315,
+   "note": "M 2445 N m, V 1524 N ultimate x 1.15; the bond carries axial load and torsion only"
+  },
+  {
+   "item": "TL-CLAMP socket wall 6 mm after pocketing, bending",
+   "demand_MPa": 181.1266284273941,
+   "allow_MPa": 262.000766,
+   "MS": 0.446506061945634
+  },
+  {
+   "item": "damper upper fitting (LG-DUP): 4 x AN5 single shear",
+   "demand_N": 27369.78905536246,
+   "allow_N": 102352.29311894023,
+   "MS": 2.7396084022389178
+  },
+  {
+   "item": "damper hard point inserts in the cabin side panel (4 x 25 mm, 8-ply local faces)",
+   "demand_N": 27369.78905536246,
+   "allow_N": 129600.0,
+   "MS": 3.735147930364043
+  },
+  {
+   "item": "gear leg pivot pin 19 mm 4130 double shear",
+   "demand_N": 17692.38850540164,
+   "allow_N": 222854.23882040993,
+   "MS": 11.596051615776503
+  },
+  {
+   "item": "pusher boom-end plug bond (150 mm, EA 9394, factor 1.5): thrust + torque",
+   "demand_MPa": 0.34570243067300227,
+   "allow_MPa": 5.52,
+   "MS": 14.967489697002833,
+   "note": "cross-bolts redundant"
+  },
+  {
+   "item": "boom wall bearing at the pusher plug (gyroscopic + inertia moment by end bearing)",
+   "demand_MPa": 2.3532133592805993,
+   "allow_MPa": 32.4,
+   "MS": 12.7684073023897,
+   "note": "plug moment 897 N m ultimate x 1.15"
+  },
+  {
+   "item": "pusher plug 6061 (15 mm wall) bending at the boom end",
+   "demand_MPa": 11.55865245369587,
+   "allow_MPa": 262.000766,
+   "MS": 21.667068419054804
+  },
+  {
+   "item": "parachute cradle beam 8 mm, section solid 100 mm",
+   "demand_MPa": 272.4822505381339,
+   "allow_MPa": 262.000766,
+   "MS": -0.03846666899379181,
+   "note": "18 g forward x 1.15 on the 28.2 kg canister; post couple into the beam"
+  },
+  {
+   "item": "parachute cradle beam 8 mm, section through a 76 mm lightening hole (as drawn)",
+   "demand_MPa": 1135.3427105755577,
+   "allow_MPa": 262.000766,
+   "MS": -0.76923200055851,
+   "note": "18 g forward x 1.15 on the 28.2 kg canister; post couple into the beam"
+  },
+  {
+   "item": "parachute cradle posts 24 x 24 mm (shear + push-pull)",
+   "demand_MPa": 10.690945510136718,
+   "allow_MPa": 165.474168,
+   "MS": 14.477973191716687
+  },
+  {
+   "item": "damper collar LG-DCL bond on the 76 mm leg (96 mm, EA 9394, factor 1.5)",
+   "demand_N": 27369.78905536246,
+   "allow_N": 126524.25120326305,
+   "MS": 3.6227704184104272,
+   "note": "collar also pinned (redundant)"
+  }
+ ],
+ "cradle_requirement": {
+  "item": "parachute cradle posts (CH-CRADLE, -40 %): required section modulus per post",
+  "design_load_N": 7464.22377435,
+  "Z_required_mm3": 1709.3592255413482,
+  "note": "18 g forward on the 28.2 kg canister, two posts 120 mm high; confirm on the CAD part"
+ },
+ "skin_support_region": {
+  "item": "H45 support region needed under the upper skin (XPS would wrinkle there)",
+  "x_c_from": 0.08499999999999999,
+  "x_c_to": 0.7349999999999999,
+  "eta_to": 0.725,
+  "y_to_m": 2.9,
+  "cad_strips_W_SPM_S": {
+   "x_c_from": 0.1403695652173913,
+   "x_c_to": 0.2596304347826087
+  },
+  "satisfied_by_cad_strips": false
+ },
+ "loads": {
+  "skid_clamp_N": 13412.841653735743,
+  "tail_clamp_M_Nm": 2445.4171348262157,
+  "damper_hard_point_N": 27369.78905536246,
+  "gear_pivot_N": 17692.38850540164,
+  "ultimate_cap_strain": 0.0035899987492187388
+ }
+}

@@ -1,0 +1,536 @@
+{
+ "MP": {
+  "part": "MP",
+  "material": "Aluminium 6061-T6/T6511 extrusion (AMS-QQ-A-200/8)",
+  "elems": 20265,
+  "vm_max_all": 182.75652680289616,
+  "vm_peak_away_from_bc": 107.67938197004429,
+  "peak_at_mm": [
+   249.30509577777,
+   171.53232875734,
+   3.0
+  ],
+  "umax_mm": 0.0943005832373846,
+  "reaction": [
+   -731.4112,
+   0.06513926,
+   -7313.87
+  ],
+  "MS_ultimate": 1.4331562942373397,
+  "MS_yield_limit": 2.361597511775272,
+  "applied_N": [
+   731.4111816724022,
+   -0.06513926664114322,
+   7313.8701183861585
+  ],
+  "source": "cad/parts/MP/MP.step",
+  "volume_mm3": 307324.5279997704,
+  "mass_kg": 0.8297762255993802
+ },
+ "PY-C": {
+  "part": "PY-C",
+  "material": "Aluminium 6061-T6/T6511 extrusion (AMS-QQ-A-200/8)",
+  "elems": 28562,
+  "vm_max_all": 177.15840076129024,
+  "vm_peak_away_from_bc": 177.15840076129024,
+  "peak_at_mm": [
+   0.077101673197106,
+   72.006510410104,
+   222.3000001
+  ],
+  "umax_mm": 0.40978247820674757,
+  "reaction": [
+   -2788.538,
+   -7.422726e-10,
+   243.2884
+  ],
+  "MS_ultimate": 0.47890681375606614,
+  "MS_yield_limit": 1.0432265190050916,
+  "applied_N": [
+   1970.6625227926656,
+   -5.020410753786611e-11,
+   -248.30843292265126
+  ],
+  "source": "cad/parts/PY-C/PY-C.step",
+  "volume_mm3": 1015501.7842129783,
+  "mass_kg": 2.741854817375042
+ },
+ "LG-SADDLE": {
+  "part": "LG-SADDLE",
+  "material": "Aluminium 6061-T6/T6511 extrusion (AMS-QQ-A-200/8)",
+  "elems": 15294,
+  "vm_max_all": 218.56858625992868,
+  "vm_peak_away_from_bc": 136.1440351553469,
+  "peak_at_mm": [
+   127.95575511671,
+   75.300166368834,
+   90.0
+  ],
+  "umax_mm": 0.182430168228284,
+  "reaction": [
+   -16.82666,
+   9236.789,
+   15089.8
+  ],
+  "MS_ultimate": 0.92443808280726,
+  "MS_yield_limit": 1.658763140720557,
+  "applied_N": [
+   16.826663141109197,
+   -9236.788968611418,
+   -15089.799781269932
+  ],
+  "source": "cad/parts/LG-SADDLE/LG-SADDLE.step",
+  "volume_mm3": 324732.167409992,
+  "mass_kg": 0.8767768520069785
+ },
+ "W-FIT-MS": {
+  "part": "W-FIT-MS",
+  "material": "Aluminium 7075-T6 sheet (QQ-A-250/12), 1.0-3.2 mm",
+  "elems": 15198,
+  "vm_max_all": 779.9805605130199,
+  "vm_peak_away_from_bc": 319.7036066393371,
+  "peak_at_mm": [
+   9.3402439052293,
+   99.422454825541,
+   27.144398210528
+  ],
+  "umax_mm": 0.501322523337023,
+  "reaction": [
+   -4852.913,
+   -10389.13,
+   76069.6
+  ],
+  "MS_ultimate": 0.682155079991609,
+  "MS_yield_limit": 1.23209039460425,
+  "note": "peak evaluated >= 6 mm from the supports and the pin-bearing surface (outside the idealised cosine-pressure bearing zone; bearing checked with Fbru)",
+  "applied_N": [
+   4852.912678803266,
+   10389.129112503382,
+   -76069.60387812681
+  ],
+  "source": "cad/parts/W-FIT-MS/W-FIT-MS.step",
+  "volume_mm3": 427678.8667811314,
+  "mass_kg": 1.197500826987168
+ },
+ "W-FIT-RS": {
+  "part": "W-FIT-RS",
+  "material": "Aluminium 7075-T6 sheet (QQ-A-250/12), 1.0-3.2 mm",
+  "elems": 10378,
+  "vm_max_all": 495.6314814249013,
+  "vm_peak_away_from_bc": 373.4433127726349,
+  "peak_at_mm": [
+   2.0,
+   55.0,
+   65.0
+  ],
+  "umax_mm": 1.068356038116643,
+  "reaction": [
+   5134.2,
+   8036.305,
+   -64702.84
+  ],
+  "MS_ultimate": 0.4400874981725156,
+  "MS_yield_limit": 0.9108853341135301,
+  "note": "peak evaluated >= 6 mm from the supports and the pin-bearing surface (outside the idealised cosine-pressure bearing zone; bearing checked with Fbru)",
+  "applied_N": [
+   -5134.2000959579345,
+   -8036.305329263344,
+   64702.83797691382
+  ],
+  "source": "cad/parts/W-FIT-RS/W-FIT-RS.step",
+  "volume_mm3": 283803.6593920296,
+  "mass_kg": 0.794650246297683
+ },
+ "BC-W": {
+  "part": "BC-W",
+  "material": "Aluminium 6061-T6/T6511 extrusion (AMS-QQ-A-200/8)",
+  "elems": 12314,
+  "vm_max_all": 68.78285176574973,
+  "vm_peak_away_from_bc": 36.10455061501472,
+  "peak_at_mm": [
+   16.88095257345,
+   125.11169825427,
+   134.3
+  ],
+  "umax_mm": 0.01922281768970054,
+  "reaction": [
+   -917.0578,
+   829.8419,
+   -43848.1
+  ],
+  "MS_ultimate": 6.256724195067042,
+  "MS_yield_limit": 9.025737374763677,
+  "applied_N": [
+   933.6387034716334,
+   -839.3242906106162,
+   44202.46756952864
+  ],
+  "source": "cad/parts/BC-W/BC-W.step",
+  "volume_mm3": 932741.1074965477,
+  "mass_kg": 2.5184009902406794
+ },
+ "BC-WR": {
+  "part": "BC-WR",
+  "material": "Aluminium 6061-T6/T6511 extrusion (AMS-QQ-A-200/8)",
+  "elems": 12641,
+  "vm_max_all": 76.18423046497222,
+  "vm_peak_away_from_bc": 71.41064573021028,
+  "peak_at_mm": [
+   33.767093372204,
+   133.32280685008,
+   28.998299000742
+  ],
+  "umax_mm": 0.06262714108508816,
+  "reaction": [
+   -1.130225e-10,
+   -935.5452,
+   62223.63
+  ],
+  "MS_ultimate": 2.66893147822581,
+  "MS_yield_limit": 4.068918489654079,
+  "applied_N": [
+   1.495863185865566e-10,
+   959.9223356632983,
+   -62988.788511385086
+  ],
+  "source": "cad/parts/BC-WR/BC-WR.step",
+  "volume_mm3": 915717.107496552,
+  "mass_kg": 2.472436190240691
+ },
+ "CH-ATT-R": {
+  "part": "CH-ATT-R",
+  "material": "4130 steel, normalized tube/sheet (MIL-T-6736 / AMS 6350), t <= 4.8 mm",
+  "elems": 11061,
+  "vm_max_all": 424.86354236774656,
+  "vm_peak_away_from_bc": 416.2217391469195,
+  "peak_at_mm": [
+   28.0,
+   1.8301270189222,
+   71.830127018922
+  ],
+  "umax_mm": 0.17350019847971357,
+  "reaction": [
+   -35007.09,
+   -4950.75,
+   -35007.09
+  ],
+  "MS_ultimate": 0.5736850178524553,
+  "MS_yield_limit": 0.8635743632463286,
+  "applied_N": [
+   35007.088969592965,
+   4950.749999999998,
+   35007.08896959298
+  ],
+  "source": "cad/parts/CH-ATT-R/CH-ATT-R.step",
+  "volume_mm3": 179460.04133050508,
+  "mass_kg": 1.408761324444465
+ },
+ "W-CHUTE-FIT": {
+  "part": "W-CHUTE-FIT",
+  "material": "4130 steel, normalized tube/sheet (MIL-T-6736 / AMS 6350), t <= 4.8 mm",
+  "elems": 11074,
+  "vm_max_all": 419.8254219270495,
+  "vm_peak_away_from_bc": 404.3826915740796,
+  "peak_at_mm": [
+   28.0,
+   1.8301270189222,
+   71.830127018922
+  ],
+  "umax_mm": 0.1711093284559904,
+  "reaction": [
+   -32479.86,
+   -4950.75,
+   -37363.77
+  ],
+  "MS_ultimate": 0.6197575431588644,
+  "MS_yield_limit": 0.9181339326881288,
+  "applied_N": [
+   32479.85720270013,
+   4950.749999999999,
+   37363.76619902601
+  ],
+  "source": "cad/parts/W-CHUTE-FIT/W-CHUTE-FIT.step",
+  "volume_mm3": 179460.04133050508,
+  "mass_kg": 1.408761324444465
+ },
+ "SEAT-FIT": {
+  "part": "SEAT-FIT",
+  "material": "Aluminium 7075-T6 sheet (QQ-A-250/12), 1.0-3.2 mm",
+  "elems": 6521,
+  "vm_max_all": 497.18580673721027,
+  "vm_peak_away_from_bc": 319.5437332869595,
+  "peak_at_mm": [
+   25.0,
+   19.239545336776,
+   11.30031302532
+  ],
+  "umax_mm": 0.13023456859012342,
+  "reaction": [
+   -7049.045,
+   -1.456035e-11,
+   -15037.96
+  ],
+  "MS_ultimate": 0.6829966917769223,
+  "MS_yield_limit": 1.2332071487039928,
+  "applied_N": [
+   7049.044536625003,
+   0.0,
+   15037.961678133333
+  ],
+  "source": "cad/parts/SEAT-FIT/SEAT-FIT.step",
+  "volume_mm3": 71398.79920144823,
+  "mass_kg": 0.19991663776405505
+ },
+ "F-CLV-MS": {
+  "part": "F-CLV-MS",
+  "material": "Aluminium 7075-T6 sheet (QQ-A-250/12), 1.0-3.2 mm",
+  "elems": 28868,
+  "vm_max_all": 348.27157686242094,
+  "vm_peak_away_from_bc": 197.91594498521485,
+  "peak_at_mm": [
+   76.0,
+   33.619869926495,
+   242.78235815914
+  ],
+  "umax_mm": 0.4014184042741439,
+  "reaction": [
+   4850.675,
+   10385.47,
+   -76043.26
+  ],
+  "MS_ultimate": 1.7172699301219785,
+  "MS_yield_limit": 2.6056081765080092,
+  "applied_N": [
+   -4850.675119565357,
+   -10385.474474687377,
+   76043.25966311335
+  ],
+  "source": "cad/parts/F-CLV-MS/F-CLV-MS.step",
+  "volume_mm3": 1041864.4008617803,
+  "mass_kg": 2.917220322412985
+ },
+ "LG-LEGEND": {
+  "part": "LG-LEGEND",
+  "material": "Aluminium 6061-T6/T6511 extrusion (AMS-QQ-A-200/8)",
+  "elems": 8483,
+  "vm_max_all": 136.91782615865145,
+  "vm_peak_away_from_bc": 136.91782615865145,
+  "peak_at_mm": [
+   25.225010970866,
+   41.265042208081,
+   57.487
+  ],
+  "umax_mm": 0.05377700531812667,
+  "reaction": [
+   16.82666,
+   -9236.789,
+   -15089.8
+  ],
+  "MS_ultimate": 0.9135621222645662,
+  "MS_yield_limit": 1.6437371426023613,
+  "applied_N": [
+   -16.826663141109186,
+   9236.788968611416,
+   15089.799781269936
+  ],
+  "source": "cad/parts/LG-LEGEND/LG-LEGEND.step",
+  "volume_mm3": 215749.81141862093,
+  "mass_kg": 0.5825244908302765
+ },
+ "LG-DUP": {
+  "part": "LG-DUP",
+  "material": "Aluminium 7075-T6 sheet (QQ-A-250/12), 1.0-3.2 mm",
+  "elems": 8884,
+  "vm_max_all": 298.4736844748126,
+  "vm_peak_away_from_bc": 298.4736844748126,
+  "peak_at_mm": [
+   18.682109796689,
+   11.47414107248,
+   35.0
+  ],
+  "umax_mm": 0.3795218068034729,
+  "reaction": [
+   6.869456e-10,
+   -6887.165,
+   -26489.1
+  ],
+  "MS_ultimate": 0.8018038908397729,
+  "MS_yield_limit": 1.390855162845083,
+  "applied_N": [
+   -3.608420229284093e-10,
+   6887.16544199514,
+   26489.097853827072
+  ],
+  "source": "cad/parts/LG-DUP/LG-DUP.step",
+  "volume_mm3": 195453.12254395112,
+  "mass_kg": 0.5472687431230632
+ },
+ "LG-SKCL": {
+  "part": "LG-SKCL",
+  "material": "Aluminium 6061-T6/T6511 extrusion (AMS-QQ-A-200/8)",
+  "elems": 11364,
+  "vm_max_all": 52.303082209631775,
+  "vm_peak_away_from_bc": 19.29825534007173,
+  "peak_at_mm": [
+   72.880964091798,
+   12.195130857525,
+   45.196690927057
+  ],
+  "umax_mm": 0.006426775425308254,
+  "reaction": [
+   -3094.369,
+   240.3376,
+   -12381.09
+  ],
+  "MS_ultimate": 12.57639648678346,
+  "MS_yield_limit": 17.756863567266624,
+  "applied_N": [
+   3187.0562128543875,
+   -252.8610563993455,
+   13026.244862217642
+  ],
+  "source": "cad/parts/LG-SKCL/LG-SKCL.step",
+  "volume_mm3": 455822.09309902054,
+  "mass_kg": 1.2307196513673555
+ },
+ "TL-CLAMP": {
+  "part": "TL-CLAMP",
+  "material": "Aluminium 6061-T6/T6511 extrusion (AMS-QQ-A-200/8)",
+  "elems": 22418,
+  "vm_max_all": 115.54304192483205,
+  "vm_peak_away_from_bc": 115.54304192483205,
+  "peak_at_mm": [
+   20.131008917547,
+   94.495457312728,
+   167.71424154954
+  ],
+  "umax_mm": 0.25674635053211564,
+  "reaction": [
+   1107.039,
+   162.6605,
+   671.8099
+  ],
+  "MS_ultimate": 1.2675598775601546,
+  "MS_yield_limit": 2.1328129887344245,
+  "applied_N": [
+   -1283.5740432769076,
+   -163.82813206706206,
+   -759.0803461213121
+  ],
+  "source": "cad/parts/TL-CLAMP/TL-CLAMP.step",
+  "volume_mm3": 833325.017368047,
+  "mass_kg": 2.249977546893727
+ },
+ "CH-CRADLE": {
+  "part": "CH-CRADLE",
+  "material": "Aluminium 6061-T6/T6511 extrusion (AMS-QQ-A-200/8)",
+  "elems": 22943,
+  "vm_max_all": 192.1572483974258,
+  "vm_peak_away_from_bc": 157.18677684776796,
+  "peak_at_mm": [
+   112.0,
+   193.28787750498,
+   51.865116361817
+  ],
+  "umax_mm": 1.3830517420346389,
+  "reaction": [
+   7464.224,
+   1.126352e-10,
+   414.6791
+  ],
+  "MS_ultimate": 0.6668117462179541,
+  "MS_yield_limit": 1.302832017801121,
+  "applied_N": [
+   -7464.223774350045,
+   0.0,
+   -414.6790985749966
+  ],
+  "source": "cad/parts/CH-CRADLE/CH-CRADLE.step",
+  "volume_mm3": 1885699.6202662122,
+  "mass_kg": 5.0913889747187735
+ },
+ "F-CLV-RS": {
+  "part": "F-CLV-RS",
+  "material": "Aluminium 7075-T6 sheet (QQ-A-250/12), 1.0-3.2 mm",
+  "elems": 26105,
+  "vm_max_all": 441.9612195850672,
+  "vm_peak_away_from_bc": 184.4898679058216,
+  "peak_at_mm": [
+   54.513628362309,
+   21.599999999995,
+   165.8315045671
+  ],
+  "umax_mm": 0.5693672842638572,
+  "reaction": [
+   -5134.2,
+   -8036.305,
+   64702.84
+  ],
+  "MS_ultimate": 1.9150167003996756,
+  "MS_yield_limit": 2.868002929376492,
+  "applied_N": [
+   5134.200095957928,
+   8036.305329263345,
+   -64702.83797691377
+  ],
+  "source": "cad/parts/F-CLV-RS/F-CLV-RS.step",
+  "volume_mm3": 927053.351122223,
+  "mass_kg": 2.5957493831422247
+ },
+ "PB-PLUG": {
+  "part": "PB-PLUG",
+  "material": "Aluminium 6061-T6/T6511 extrusion (AMS-QQ-A-200/8)",
+  "elems": 30908,
+  "vm_max_all": 47.836020454883155,
+  "vm_peak_away_from_bc": 31.175391957414103,
+  "peak_at_mm": [
+   195.0000001,
+   71.04698258226,
+   147.23526130055
+  ],
+  "umax_mm": 0.08718382122023444,
+  "reaction": [
+   3976.987,
+   0.01708081,
+   1538.421
+  ],
+  "MS_ultimate": 7.404088915959603,
+  "MS_yield_limit": 10.610912318102084,
+  "applied_N": [
+   -3976.986870210655,
+   -0.017080816571730773,
+   -1538.4210057113057
+  ],
+  "source": "cad/parts/PB-PLUG/PB-PLUG.step",
+  "volume_mm3": 1468877.9430546002,
+  "mass_kg": 3.965970446247421
+ },
+ "MP-EMX": {
+  "part": "MP-EMX",
+  "material": "Aluminium 6061-T6/T6511 extrusion (AMS-QQ-A-200/8)",
+  "elems": 14318,
+  "vm_max_all": 64.48016639614619,
+  "vm_peak_away_from_bc": 33.82236240985053,
+  "peak_at_mm": [
+   201.14575746323,
+   102.47297127242,
+   12.0
+  ],
+  "umax_mm": 0.024998553470071107,
+  "reaction": [
+   -731.4956,
+   -0.156216,
+   -7314.071
+  ],
+  "MS_ultimate": 6.746376874126749,
+  "MS_yield_limit": 9.702231207675114,
+  "applied_N": [
+   731.4955623575637,
+   0.15621603518439375,
+   7314.071143524868
+  ],
+  "source": "cad/parts/MP-EMX/MP-EMX.step",
+  "volume_mm3": 216157.65952137433,
+  "mass_kg": 0.5836256807077107
+ }
+}

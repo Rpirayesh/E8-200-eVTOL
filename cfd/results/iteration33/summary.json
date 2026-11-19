@@ -1,0 +1,357 @@
+{
+ "design": {
+  "mtow_kg": 1350.378,
+  "S_ref": 9.2,
+  "c_ref": 1.15,
+  "b_ref": 8.0,
+  "x_cg": 2.5622
+ },
+ "sizing": {
+  "CD0": 0.0751,
+  "oswald": 0.756,
+  "CL_alpha_per_rad": 4.5574,
+  "CLmax_clean": 1.6393,
+  "CLmax_flaps": 1.5193,
+  "cruise_CL": 1.1373,
+  "cruise_drag_n": 1785.795,
+  "cruise_LD": 7.4156,
+  "Cm0": -0.1195,
+  "x_np_m": 2.6751,
+  "static_margin": 0.0982,
+  "download_fraction": 0.0332,
+  "drag_area_m2": 0.6907,
+  "breakdown_m2": {
+   "wing": 0.07,
+   "fuselage": 0.0896,
+   "booms": 0.0188,
+   "tail_h": 0.012,
+   "tail_v": 0.0064,
+   "stopped_rotors": 0.174,
+   "landing_gear": 0.1012,
+   "cooling_inlets": 0.01,
+   "pusher_pods": 0.0344
+  }
+ },
+ "cfd_production_mesh": {
+  "CL_alpha_per_rad": 4.625910323247647,
+  "CL0": 0.5689316982951674,
+  "alpha_zero_lift_deg": -7.0466962966627955,
+  "CD0": 0.0725190421236218,
+  "oswald_e": 0.6579404184130646,
+  "dCm_dCL": -0.19490450923945166,
+  "Cm0": 0.2543291010463072,
+  "x_neutral_point_m": 2.7863401856253693,
+  "static_margin": 0.19490450923945166,
+  "CLmax_mean": 1.7135955839999997,
+  "alpha_CLmax": 16.0,
+  "cruise_CL": 1.1373,
+  "cruise_alpha_deg": 7.039718157321005,
+  "cruise_CD": 0.16247325180377337,
+  "cruise_drag_n": 1891.8332887584497,
+  "cruise_LD": 6.999921447830508,
+  "fitted_alphas": [
+   2.0,
+   5.0,
+   8.0,
+   11.0
+  ],
+  "static_margin_mac": 0.19490450923945166,
+  "CD0_incl_pods": 0.07643208560188267,
+  "cruise_CD_incl_pods": 0.16638629528203425,
+  "cruise_LD_incl_pods": 6.835298532683907,
+  "cruise_drag_n_incl_pods": 1937.3966404507876
+ },
+ "cfd_coarse_mesh_L0": null,
+ "CD0_band": {
+  "drag_area_cfd_m2": 0.6671751875373205,
+  "attached_m2": 0.22423107868354347,
+  "bluff_m2": 0.44294410885377705,
+  "low": 0.05563791815356882,
+  "high": 0.08818151892691639,
+  "rel_low": -0.23278194906761265,
+  "rel_high": 0.2159774363345158
+ },
+ "flaps": {
+  "note": "no flaps on this design"
+ },
+ "hover": {
+  "raw_download_fraction": 0.029157193005260536,
+  "corrected_download_fraction": 0.01997068014058941,
+  "band": [
+   0.013979476098412585,
+   0.025961884182766234
+  ],
+  "by_region_n": {
+   "fuselage": -7.839297464239998,
+   "wing": 8.263275154400002,
+   "tail": 7.285413537400001,
+   "booms": -402.4630906199997,
+   "rotors": 46.902404252,
+   "pusher": 0.43392950917999973,
+   "gear": -51.539339972
+  }
+ },
+ "inverter_pods_drag_area_m2": 0.036,
+ "mission_check": {
+  "sizing_model": {
+   "CD0": 0.07507996925374795,
+   "oswald": 0.755999310808236,
+   "CL_cruise": 1.1373122774944373,
+   "LD": 7.415571604490473,
+   "D_cruise_N": 1785.7945460700726,
+   "P_cruise_kW": 121.49238103349529,
+   "range_km": 24.192480968407327,
+   "E_nom_kWh": 63.0
+  },
+  "check_same_inputs": {
+   "CD0": 0.07507996925374795,
+   "oswald": 0.755999310808236,
+   "CL_cruise": 1.1373122774944373,
+   "CDi": 0.0782881509874135,
+   "LD": 7.415571604490473,
+   "D_cruise_N": 1785.7945460700726,
+   "P_cruise_kW": 121.49238103349529,
+   "download": 0.0332,
+   "E_hover_kWh": 12.172342063700388,
+   "E_transitions_kWh": 4.034030272300754,
+   "range_km": 24.439482679858504,
+   "range_km_scaled_to_published": 24.192
+  },
+  "cfd_nominal": {
+   "CD0": 0.07643,
+   "oswald": 0.6579,
+   "CL_cruise": 1.1373122774944373,
+   "CDi": 0.08996167835679544,
+   "LD": 6.835151184999087,
+   "D_cruise_N": 1937.4388318365998,
+   "P_cruise_kW": 131.68177205795158,
+   "download": 0.02,
+   "E_hover_kWh": 11.939820826911959,
+   "E_transitions_kWh": 4.1646645489229694,
+   "range_km": 22.71890822296857,
+   "range_km_scaled_to_published": 22.488848676940883
+  },
+  "cfd_worst_band": {
+   "CD0": 0.09423819,
+   "oswald": 0.605268,
+   "CL_cruise": 1.1373122774944373,
+   "CDi": 0.09778443299651678,
+   "LD": 5.92280357255128,
+   "D_cruise_N": 2235.8815660649743,
+   "P_cruise_kW": 151.73494914991704,
+   "download": 0.026000000000000002,
+   "E_hover_kWh": 12.045326964063769,
+   "E_transitions_kWh": 4.515070038393094,
+   "range_km": 19.1491690440567,
+   "inputs": {
+    "cd0": 0.09423819,
+    "e": 0.605268,
+    "dl": 0.026000000000000002
+   },
+   "range_km_scaled_to_published": 18.955257915324324
+  },
+  "cfd_best_band": {
+   "CD0": 0.058621809999999996,
+   "oswald": 0.710532,
+   "CL_cruise": 1.1373122774944373,
+   "CDi": 0.08329785033036614,
+   "LD": 8.013775363095975,
+   "D_cruise_N": 1652.4904589008986,
+   "P_cruise_kW": 112.5353177161465,
+   "download": 0.013999999999999999,
+   "E_hover_kWh": 11.834624547372139,
+   "E_transitions_kWh": 3.8293638051824734,
+   "range_km": 27.323637326384663,
+   "inputs": {
+    "cd0": 0.058621809999999996,
+    "e": 0.710532,
+    "dl": 0.013999999999999999
+   },
+   "range_km_scaled_to_published": 27.046948696040275
+  },
+  "published_range_km": 24.192,
+  "required_range_km": 20.0,
+  "inputs": {
+   "cd0": 0.07643,
+   "e": 0.6579,
+   "download": 0.02,
+   "bands": {
+    "cd0": 0.233,
+    "e": 0.08,
+    "download": 0.3
+   }
+  },
+  "note": "range_km is the still-air range the battery supports with the full mission energy rules of the sizing model (hover, transitions, climb, 20 % reserve, end-of-life capacity); it must be >= required_range_km"
+ },
+ "pusher": {
+  "alpha_deg": 5.0,
+  "airframe_drag_change_n": 34.57129117868549,
+  "thrust_total_n": 1785.795,
+  "thrust_deduction": 0.019359048031092868,
+  "drag_area_change_by_region_m2": {
+   "fuselage": 0.003049810598523439,
+   "wing": 0.005135207879606973,
+   "tail": 0.003260207510183844,
+   "booms": 6.139460778911525e-05,
+   "rotors": 0.003871473806851322,
+   "pusher": 0.005269437278012226,
+   "gear": 0.004081014875560729
+  },
+  "tail": {
+   "lift_on_n": 62.15467315739221,
+   "lift_off_n": 77.26963710310946,
+   "drag_area_on_m2": 0.0324912136262481,
+   "drag_area_off_m2": 0.029231006116064256
+  },
+  "Cm_on": 0.07637197453899999,
+  "Cm_off": 0.070901260977,
+  "inflow": {
+   "no_pusher": {
+    "mean_axial_over_Vinf": 0.9508777693770178,
+    "min_over_Vinf": 0.2098867470383859,
+    "max_over_Vinf": 1.0506401481853573,
+    "nonuniformity_std_over_mean": 0.09837275482903701,
+    "n_points": 144,
+    "freestream_axial_over_Vinf": 0.9961946980917455
+   },
+   "pusher_on": {
+    "mean_axial_over_Vinf": 1.00170761051183,
+    "min_over_Vinf": 0.2305684834024028,
+    "max_over_Vinf": 1.075001611620411,
+    "nonuniformity_std_over_mean": 0.10708802873136995,
+    "n_points": 144,
+    "freestream_axial_over_Vinf": 0.9961946980917455
+   }
+  },
+  "wake_fraction": 0.04549003202038138,
+  "rpm_cruise": 2073.562,
+  "spin_directions": [
+   1,
+   1
+  ],
+  "note_swirl": "actuator disks carry thrust only (no swirl); with both pushers turning the same way the reaction torques add (net rolling moment = 2 Q), which the disks do not model; the props are aft of the tail surfaces, so their swirl does not reach the H-tail or fins",
+  "sizing_pusher_margin": 0.028,
+  "shaft_power": {
+   "sizing (T as sized, free-stream inflow)": {
+    "thrust_per_pusher_n": 892.8975,
+    "inflow_ms": 47.778,
+    "eta_prop": 0.8422090572007408,
+    "shaft_kw_per_pusher": 50.65352407488034,
+    "useful_power_kw_per_pusher": 42.660856755,
+    "torque_nm_per_pusher": 233.27275697205673,
+    "torque_margin": 0.22242414342647754,
+    "power_ratio_to_sizing": 1.0,
+    "margin_on_sizing_basis": 0.028000000000000025,
+    "continuous_margin": 0.1557745987519944
+   },
+   "CFD drag, free-stream inflow": {
+    "thrust_per_pusher_n": 968.6983202253938,
+    "inflow_ms": 47.778,
+    "eta_prop": 0.8379373890084518,
+    "shaft_kw_per_pusher": 55.233802609638694,
+    "useful_power_kw_per_pusher": 46.282468343728866,
+    "torque_nm_per_pusher": 254.36614032527683,
+    "torque_margin": 0.15211286558241055,
+    "power_ratio_to_sizing": 1.0904236895341655,
+    "margin_on_sizing_basis": -0.05989182622720879,
+    "continuous_margin": 0.0794366231726884
+   },
+   "CFD drag, CFD wake inflow": {
+    "thrust_per_pusher_n": 968.6983202253938,
+    "inflow_ms": 45.60457725013022,
+    "eta_prop": 0.832725604393021,
+    "shaft_kw_per_pusher": 53.051181738300585,
+    "useful_power_kw_per_pusher": 46.282468343728866,
+    "torque_nm_per_pusher": 244.31459904792894,
+    "torque_margin": 0.18561800317357025,
+    "power_ratio_to_sizing": 1.0473344689675654,
+    "margin_on_sizing_basis": -0.018009103836473583,
+    "continuous_margin": 0.1158136376949902
+   }
+  },
+  "rho_cruise": 1.1088868324809746,
+  "continuous_kw_per_pusher": 60.0
+ },
+ "gci_lifting_surface_refinement": {
+  "alpha_deg": 5.0,
+  "h_over_c": [
+   0.00390625,
+   0.0078125,
+   0.015625
+  ],
+  "note": "refinement of the wing and tail surface mesh only (ratio 2); fuselage, booms, rotors and gear at c/64 on all three meshes",
+  "cases": [
+   "cruise_L+0w2_a+05.0",
+   "cruise_L+0w1_a+05.0",
+   "cruise_L+0_a+05.0"
+  ],
+  "CL": {
+   "h": [
+    0.00390625,
+    0.0078125,
+    0.015625
+   ],
+   "f": [
+    0.99591956224,
+    0.9753314516750001,
+    1.01890109725
+   ],
+   "r21": 2.0,
+   "r32": 2.0,
+   "p": 1.0815119420124435,
+   "p_used": 1.0815119420124435,
+   "oscillatory": true,
+   "f_ext": 1.0143635128487045,
+   "ea21": 0.020672463264697356,
+   "eext21": 0.01818278198602308,
+   "gci21": 0.02314939793834975,
+   "gci32": 0.050024098354810885,
+   "asymptotic_ratio": 1.021108834878279
+  },
+  "CD": {
+   "h": [
+    0.00390625,
+    0.0078125,
+    0.015625
+   ],
+   "f": [
+    0.14001531614,
+    0.13813456722,
+    0.1475619636
+   ],
+   "r21": 2.0,
+   "r32": 2.0,
+   "p": 2.3255521263460257,
+   "p_used": 2.0,
+   "oscillatory": true,
+   "f_ext": 0.14064223244666668,
+   "ea21": 0.013432451333534575,
+   "eext21": 0.0044575252807111405,
+   "gci21": 0.0055968547223060735,
+   "gci32": 0.028436631786335886,
+   "asymptotic_ratio": 1.0136153387081206
+  },
+  "Cm": {
+   "h": [
+    0.00390625,
+    0.0078125,
+    0.015625
+   ],
+   "f": [
+    0.029570418549,
+    0.07637197453899999,
+    0.0596890213505
+   ],
+   "r21": 2.0,
+   "r32": 2.0,
+   "p": null,
+   "note": "not converging monotonically (|e21| >= |e32|): GCI = 3 |e21| / |f1|",
+   "f_ext": null,
+   "ea21": 1.5827153718655331,
+   "gci21": 4.748146115596599,
+   "gci32": null,
+   "asymptotic_ratio": null,
+   "oscillatory": true
+  }
+ }
+}

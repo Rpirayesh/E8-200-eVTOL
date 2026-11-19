@@ -1,0 +1,91 @@
+{
+ "sizing_model": {
+  "CD0": 0.07507996925374795,
+  "oswald": 0.755999310808236,
+  "CL_cruise": 1.1373122774944373,
+  "LD": 7.415571604490473,
+  "D_cruise_N": 1785.7945460700726,
+  "P_cruise_kW": 121.49238103349529,
+  "range_km": 24.192480968407327,
+  "E_nom_kWh": 63.0
+ },
+ "check_same_inputs": {
+  "CD0": 0.07507996925374795,
+  "oswald": 0.755999310808236,
+  "CL_cruise": 1.1373122774944373,
+  "CDi": 0.0782881509874135,
+  "LD": 7.415571604490473,
+  "D_cruise_N": 1785.7945460700726,
+  "P_cruise_kW": 121.49238103349529,
+  "download": 0.0332,
+  "E_hover_kWh": 12.172342063700388,
+  "E_transitions_kWh": 4.034030272300754,
+  "range_km": 24.439482679858504,
+  "range_km_scaled_to_published": 24.192
+ },
+ "cfd_nominal": {
+  "CD0": 0.07643,
+  "oswald": 0.6579,
+  "CL_cruise": 1.1373122774944373,
+  "CDi": 0.08996167835679544,
+  "LD": 6.835151184999087,
+  "D_cruise_N": 1937.4388318365998,
+  "P_cruise_kW": 131.68177205795158,
+  "download": 0.02,
+  "E_hover_kWh": 11.939820826911959,
+  "E_transitions_kWh": 4.1646645489229694,
+  "range_km": 22.71890822296857,
+  "range_km_scaled_to_published": 22.488848676940883
+ },
+ "cfd_worst_band": {
+  "CD0": 0.09423819,
+  "oswald": 0.605268,
+  "CL_cruise": 1.1373122774944373,
+  "CDi": 0.09778443299651678,
+  "LD": 5.92280357255128,
+  "D_cruise_N": 2235.8815660649743,
+  "P_cruise_kW": 151.73494914991704,
+  "download": 0.026000000000000002,
+  "E_hover_kWh": 12.045326964063769,
+  "E_transitions_kWh": 4.515070038393094,
+  "range_km": 19.1491690440567,
+  "inputs": {
+   "cd0": 0.09423819,
+   "e": 0.605268,
+   "dl": 0.026000000000000002
+  },
+  "range_km_scaled_to_published": 18.955257915324324
+ },
+ "cfd_best_band": {
+  "CD0": 0.058621809999999996,
+  "oswald": 0.710532,
+  "CL_cruise": 1.1373122774944373,
+  "CDi": 0.08329785033036614,
+  "LD": 8.013775363095975,
+  "D_cruise_N": 1652.4904589008986,
+  "P_cruise_kW": 112.5353177161465,
+  "download": 0.013999999999999999,
+  "E_hover_kWh": 11.834624547372139,
+  "E_transitions_kWh": 3.8293638051824734,
+  "range_km": 27.323637326384663,
+  "inputs": {
+   "cd0": 0.058621809999999996,
+   "e": 0.710532,
+   "dl": 0.013999999999999999
+  },
+  "range_km_scaled_to_published": 27.046948696040275
+ },
+ "published_range_km": 24.192,
+ "required_range_km": 20.0,
+ "inputs": {
+  "cd0": 0.07643,
+  "e": 0.6579,
+  "download": 0.02,
+  "bands": {
+   "cd0": 0.233,
+   "e": 0.08,
+   "download": 0.3
+  }
+ },
+ "note": "range_km is the still-air range the battery supports with the full mission energy rules of the sizing model (hover, transitions, climb, 20 % reserve, end-of-life capacity); it must be >= required_range_km"
+}

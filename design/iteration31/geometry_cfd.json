@@ -1,0 +1,1897 @@
+{
+ "_about": "CFD view of design/geometry.json (generated together with it): lift_rotors[].spin as 'ccw'/'cw', landing_gear as skids/struts.",
+ "units": "m, kg, N, N m, rpm, deg",
+ "frame": "x aft from the fuselage nose, y right, z up from the skid bottom (ground)",
+ "mtow_kg": 1078.24,
+ "cg_mtow_m": [
+  2.0959,
+  0.0,
+  1.3065
+ ],
+ "cg": {
+  "x": 2.0959,
+  "y": 0.0,
+  "z": 1.3065
+ },
+ "limits": {
+  "n_pos": 3.8,
+  "n_neg": -1.5,
+  "n_land": 3.0
+ },
+ "aero": {
+  "CLalpha_per_rad": 4.6933,
+  "CLmax": 1.6393,
+  "CLmin": -0.8,
+  "Cm0": -0.1195,
+  "VC_ms": 37.529,
+  "VD_ms": 52.54,
+  "cruise_thrust_N": 1095.58,
+  "gust_altitude_m": 500.0,
+  "cruise_speed_ms": 39.444,
+  "cruise_CL": 1.1843,
+  "CD0": 0.0528,
+  "oswald": 0.8155,
+  "note": "CLalpha: Helmbold finite wing; CLmax clean = 0.9 x NeuralFoil section clmax; Cm0: section value about c/4"
+ },
+ "reference": {
+  "S_ref": 10.35,
+  "c_ref": 1.15,
+  "b_ref": 9.0,
+  "x_ref": 2.0959,
+  "z_ref": 1.3065
+ },
+ "wing": {
+  "span": 9.0,
+  "span_m": 9.0,
+  "root_chord": 1.15,
+  "root_chord_m": 1.15,
+  "tip_chord": 1.15,
+  "tip_chord_m": 1.15,
+  "area": 10.35,
+  "x_le_root": 1.6775,
+  "le_root_x_m": 1.6775,
+  "z_root": 1.9875,
+  "z_m": 1.9875,
+  "y_root": 0.0,
+  "sweep_le_deg": 0.0,
+  "dihedral_deg": 0.0,
+  "incidence_deg": 4.0,
+  "fuselage_angle_in_cruise_deg": 5.64,
+  "twist_tip_deg": 0.0,
+  "airfoil": "ls417",
+  "t_c": 0.1698,
+  "max_thickness_x_c": 0.4,
+  "mass_kg": 73.896,
+  "root_fittings_y": 0.38,
+  "spar_x_c": [
+   0.2,
+   0.7
+  ],
+  "front_spar_x_c": 0.2,
+  "rear_spar_x_c": 0.7,
+  "construction": "constant-chord foam core (hot-wire cut, XPS with spanwise lightening voids: 30 mm of foam kept under each skin, solid at ribs, spar box and hinge lines) with wet-laid carbon skins; main-spar box foam H45; one piece, removable",
+  "root_fairing": "the fuselage OML rises into the wing between x_le-0.10 and the trailing edge (shoulder-wing fairing); the root fittings at y = root_fittings_y lie inside it",
+  "spars": [
+   {
+    "name": "main",
+    "x_c": 0.2,
+    "section_root": {
+     "type": "cap_web",
+     "h": 0.1797,
+     "b_cap": 0.08,
+     "t_cap": 0.0052,
+     "n_web": 2,
+     "t_web": 0.002,
+     "cap_material": "cf_ud_wet",
+     "web_material": "cf_fabric_wet",
+     "web_layup": "+-45"
+    },
+    "section_tip": {
+     "type": "cap_web",
+     "h": 0.1797,
+     "b_cap": 0.05,
+     "t_cap": 0.0015,
+     "n_web": 2,
+     "t_web": 0.001,
+     "cap_material": "cf_ud_wet",
+     "web_material": "cf_fabric_wet",
+     "web_layup": "+-45"
+    }
+   },
+   {
+    "name": "rear",
+    "x_c": 0.7,
+    "section_root": {
+     "type": "cap_web",
+     "h": 0.1172,
+     "b_cap": 0.05,
+     "t_cap": 0.0032,
+     "n_web": 1,
+     "t_web": 0.0015,
+     "cap_material": "cf_ud_wet",
+     "web_material": "cf_fabric_wet",
+     "web_layup": "+-45"
+    },
+    "section_tip": {
+     "type": "cap_web",
+     "h": 0.1172,
+     "b_cap": 0.03,
+     "t_cap": 0.001,
+     "n_web": 1,
+     "t_web": 0.001,
+     "cap_material": "cf_ud_wet",
+     "web_material": "cf_fabric_wet",
+     "web_layup": "+-45"
+    }
+   }
+  ],
+  "torsion_box": {
+   "skin_t": 0.0008,
+   "skin_material": "cf_fabric_wet",
+   "skin_layup": "+-45",
+   "depth_factor": 0.85
+  },
+  "control_surfaces": {
+   "ailerons": {
+    "y_from": 2.79,
+    "y_to": 4.365,
+    "chord_fraction": 0.3
+   },
+   "flaps": {
+    "y_from": 0.51,
+    "y_to": 2.7,
+    "chord_fraction": 0.3
+   }
+  },
+  "sizing_note": "initial spar caps from ultimate root bending 33.9 kN m (n = 5.7, elliptic load, boom/rotor relief), UD wet lay-up design stress 380 MPa, main spar 80 % of the moment; WP F to size"
+ },
+ "fuselage": {
+  "x_nose": 0.0,
+  "x_tail": 4.7,
+  "z_axis": 1.1874,
+  "mass_kg": 62.356,
+  "length_m": 4.7,
+  "max_width_m": 0.92,
+  "max_height_m": 1.5748,
+  "wetted_area_m2": 16.144,
+  "section": {
+   "type": "rect_tube",
+   "b": 0.92,
+   "h": 1.5748,
+   "t_web": 0.0015,
+   "t_flange": 0.0015,
+   "material": "cf_fabric_wet_qi"
+  },
+  "shape_exponent": 4.0,
+  "stations": [
+   {
+    "x": 0.0,
+    "width": 0.0,
+    "height": 0.0,
+    "z_center": 0.98
+   },
+   {
+    "x": 0.06,
+    "width": 0.4232,
+    "height": 0.38,
+    "z_center": 0.99
+   },
+   {
+    "x": 0.3,
+    "width": 0.7544,
+    "height": 0.93,
+    "z_center": 1.015
+   },
+   {
+    "x": 0.75,
+    "width": 0.92,
+    "height": 1.4812,
+    "z_center": 1.1406
+   },
+   {
+    "x": 1.5775,
+    "width": 0.92,
+    "height": 1.5373,
+    "z_center": 1.1687
+   },
+   {
+    "x": 1.9069,
+    "width": 0.92,
+    "height": 1.5748,
+    "z_center": 1.1874
+   },
+   {
+    "x": 2.4805,
+    "width": 0.92,
+    "height": 1.5748,
+    "z_center": 1.1874
+   },
+   {
+    "x": 2.9275,
+    "width": 0.92,
+    "height": 1.5548,
+    "z_center": 1.1774
+   },
+   {
+    "x": 3.1776,
+    "width": 0.8556,
+    "height": 1.4648,
+    "z_center": 1.1624
+   },
+   {
+    "x": 3.4276,
+    "width": 0.736,
+    "height": 1.1266,
+    "z_center": 1.1633
+   },
+   {
+    "x": 4.1,
+    "width": 0.4784,
+    "height": 0.6,
+    "z_center": 1.2
+   },
+   {
+    "x": 4.38,
+    "width": 0.32,
+    "height": 0.32,
+    "z_center": 1.2
+   },
+   {
+    "x": 4.58,
+    "width": 0.32,
+    "height": 0.32,
+    "z_center": 1.2
+   },
+   {
+    "x": 4.68,
+    "width": 0.3,
+    "height": 0.3,
+    "z_center": 1.2
+   }
+  ],
+  "cabin": {
+   "seating": "tandem",
+   "floor_z": 0.6468,
+   "belly_z": 0.4,
+   "canopy": "polycarbonate (CAB-PC-SHEET), 2-piece, hinged right",
+   "passenger_door": {
+    "x_from": 1.9422,
+    "x_to": 2.4378,
+    "sill_z": 1.1768,
+    "note": "between the main- and rear-spar posts"
+   }
+  },
+  "tail_cone_cowl": {
+   "x_from": 4.38,
+   "x_to": 4.68,
+   "width": 0.32,
+   "height": 0.32,
+   "note": "REB 90 (270 mm) cowl is part of the OML"
+  },
+  "construction": "wet-laid carbon/foam sandwich shell over CNC-cut tooling-foam plugs, two halves"
+ },
+ "booms": [
+  {
+   "name": "boom_L",
+   "y": -1.535,
+   "z": 1.8005,
+   "x_front": -1.3605,
+   "x_aft": 6.8644,
+   "x_start": -1.3605,
+   "x_end": 6.8644,
+   "diameter": 0.11,
+   "mirror": false,
+   "mass_kg": 24.421,
+   "section": {
+    "type": "tube",
+    "od": 0.11,
+    "t": 0.0042,
+    "material": "cf_tube_rollwrapped_ud"
+   },
+   "construction": "COTS 4 in ID roll-wrapped carbon tube (MAT-TUBE-DP-4x96, 1.6 mm wall) spliced with internal sleeves, in-house UD over-wrap to 4.2 mm between the inner rotors; wall from the boom bending (1.5 x rotor-out thrust with control margin on both rotors of an arm, 300 MPa)",
+   "attach_x": [
+    1.9022,
+    2.4778
+   ]
+  },
+  {
+   "name": "boom_R",
+   "y": 1.535,
+   "z": 1.8005,
+   "x_front": -1.3605,
+   "x_aft": 6.8644,
+   "x_start": -1.3605,
+   "x_end": 6.8644,
+   "diameter": 0.11,
+   "mirror": false,
+   "mass_kg": 24.421,
+   "section": {
+    "type": "tube",
+    "od": 0.11,
+    "t": 0.0042,
+    "material": "cf_tube_rollwrapped_ud"
+   },
+   "construction": "COTS 4 in ID roll-wrapped carbon tube (MAT-TUBE-DP-4x96, 1.6 mm wall) spliced with internal sleeves, in-house UD over-wrap to 4.2 mm between the inner rotors; wall from the boom bending (1.5 x rotor-out thrust with control margin on both rotors of an arm, 300 MPa)",
+   "attach_x": [
+    1.9022,
+    2.4778
+   ]
+  }
+ ],
+ "lift_rotors": [
+  {
+   "id": "LR_L1",
+   "name": "LR_L1",
+   "hub": [
+    -1.2105,
+    -1.535,
+    2.3505
+   ],
+   "diameter_m": 1.85,
+   "spin": "cw",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "blade_chord": 0.1929,
+   "hub_diameter": 0.29,
+   "hub_height": 0.14,
+   "stopped_azimuth_deg": 0.0,
+   "mast_thickness": 0.116,
+   "mast_chord": 0.4,
+   "pylon": {
+    "tube_od": 0.1,
+    "tube_t": 0.0016,
+    "fairing_thickness": 0.116,
+    "fairing_chord": 0.4,
+    "from_z": 1.8005,
+    "to_z": 2.2805,
+    "note": "faired 6061 pylon tube (WP F section)"
+   },
+   "blade_pitch_deg": 10.0,
+   "thrust_hover_n": 1383.946,
+   "max_thrust_n": 2232.764,
+   "max_torque_nm": 250.0,
+   "rotor_inertia_kgm2": 0.8728,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "id": "LR_L2",
+   "name": "LR_L2",
+   "hub": [
+    0.7395,
+    -1.535,
+    2.3505
+   ],
+   "diameter_m": 1.85,
+   "spin": "ccw",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "blade_chord": 0.1929,
+   "hub_diameter": 0.29,
+   "hub_height": 0.14,
+   "stopped_azimuth_deg": 0.0,
+   "mast_thickness": 0.116,
+   "mast_chord": 0.4,
+   "pylon": {
+    "tube_od": 0.1,
+    "tube_t": 0.0016,
+    "fairing_thickness": 0.116,
+    "fairing_chord": 0.4,
+    "from_z": 1.8005,
+    "to_z": 2.2805,
+    "note": "faired 6061 pylon tube (WP F section)"
+   },
+   "blade_pitch_deg": 10.0,
+   "thrust_hover_n": 1383.946,
+   "max_thrust_n": 2232.764,
+   "max_torque_nm": 250.0,
+   "rotor_inertia_kgm2": 0.8728,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "id": "LR_L3",
+   "name": "LR_L3",
+   "hub": [
+    3.4525,
+    -1.535,
+    2.3505
+   ],
+   "diameter_m": 1.85,
+   "spin": "ccw",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "blade_chord": 0.1929,
+   "hub_diameter": 0.29,
+   "hub_height": 0.14,
+   "stopped_azimuth_deg": 0.0,
+   "mast_thickness": 0.116,
+   "mast_chord": 0.4,
+   "pylon": {
+    "tube_od": 0.1,
+    "tube_t": 0.0016,
+    "fairing_thickness": 0.116,
+    "fairing_chord": 0.4,
+    "from_z": 1.8005,
+    "to_z": 2.2805,
+    "note": "faired 6061 pylon tube (WP F section)"
+   },
+   "blade_pitch_deg": 10.0,
+   "thrust_hover_n": 1383.946,
+   "max_thrust_n": 2232.764,
+   "max_torque_nm": 250.0,
+   "rotor_inertia_kgm2": 0.8728,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "id": "LR_L4",
+   "name": "LR_L4",
+   "hub": [
+    5.4025,
+    -1.535,
+    2.3505
+   ],
+   "diameter_m": 1.85,
+   "spin": "cw",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "blade_chord": 0.1929,
+   "hub_diameter": 0.29,
+   "hub_height": 0.14,
+   "stopped_azimuth_deg": 0.0,
+   "mast_thickness": 0.116,
+   "mast_chord": 0.4,
+   "pylon": {
+    "tube_od": 0.1,
+    "tube_t": 0.0016,
+    "fairing_thickness": 0.116,
+    "fairing_chord": 0.4,
+    "from_z": 1.8005,
+    "to_z": 2.2805,
+    "note": "faired 6061 pylon tube (WP F section)"
+   },
+   "blade_pitch_deg": 10.0,
+   "thrust_hover_n": 1383.946,
+   "max_thrust_n": 2232.764,
+   "max_torque_nm": 250.0,
+   "rotor_inertia_kgm2": 0.8728,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "id": "LR_R1",
+   "name": "LR_R1",
+   "hub": [
+    -1.2105,
+    1.535,
+    2.3505
+   ],
+   "diameter_m": 1.85,
+   "spin": "ccw",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "blade_chord": 0.1929,
+   "hub_diameter": 0.29,
+   "hub_height": 0.14,
+   "stopped_azimuth_deg": 0.0,
+   "mast_thickness": 0.116,
+   "mast_chord": 0.4,
+   "pylon": {
+    "tube_od": 0.1,
+    "tube_t": 0.0016,
+    "fairing_thickness": 0.116,
+    "fairing_chord": 0.4,
+    "from_z": 1.8005,
+    "to_z": 2.2805,
+    "note": "faired 6061 pylon tube (WP F section)"
+   },
+   "blade_pitch_deg": 10.0,
+   "thrust_hover_n": 1383.946,
+   "max_thrust_n": 2232.764,
+   "max_torque_nm": 250.0,
+   "rotor_inertia_kgm2": 0.8728,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "id": "LR_R2",
+   "name": "LR_R2",
+   "hub": [
+    0.7395,
+    1.535,
+    2.3505
+   ],
+   "diameter_m": 1.85,
+   "spin": "cw",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "blade_chord": 0.1929,
+   "hub_diameter": 0.29,
+   "hub_height": 0.14,
+   "stopped_azimuth_deg": 0.0,
+   "mast_thickness": 0.116,
+   "mast_chord": 0.4,
+   "pylon": {
+    "tube_od": 0.1,
+    "tube_t": 0.0016,
+    "fairing_thickness": 0.116,
+    "fairing_chord": 0.4,
+    "from_z": 1.8005,
+    "to_z": 2.2805,
+    "note": "faired 6061 pylon tube (WP F section)"
+   },
+   "blade_pitch_deg": 10.0,
+   "thrust_hover_n": 1383.946,
+   "max_thrust_n": 2232.764,
+   "max_torque_nm": 250.0,
+   "rotor_inertia_kgm2": 0.8728,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "id": "LR_R3",
+   "name": "LR_R3",
+   "hub": [
+    3.4525,
+    1.535,
+    2.3505
+   ],
+   "diameter_m": 1.85,
+   "spin": "cw",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "blade_chord": 0.1929,
+   "hub_diameter": 0.29,
+   "hub_height": 0.14,
+   "stopped_azimuth_deg": 0.0,
+   "mast_thickness": 0.116,
+   "mast_chord": 0.4,
+   "pylon": {
+    "tube_od": 0.1,
+    "tube_t": 0.0016,
+    "fairing_thickness": 0.116,
+    "fairing_chord": 0.4,
+    "from_z": 1.8005,
+    "to_z": 2.2805,
+    "note": "faired 6061 pylon tube (WP F section)"
+   },
+   "blade_pitch_deg": 10.0,
+   "thrust_hover_n": 1383.946,
+   "max_thrust_n": 2232.764,
+   "max_torque_nm": 250.0,
+   "rotor_inertia_kgm2": 0.8728,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "id": "LR_R4",
+   "name": "LR_R4",
+   "hub": [
+    5.4025,
+    1.535,
+    2.3505
+   ],
+   "diameter_m": 1.85,
+   "spin": "ccw",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "blade_chord": 0.1929,
+   "hub_diameter": 0.29,
+   "hub_height": 0.14,
+   "stopped_azimuth_deg": 0.0,
+   "mast_thickness": 0.116,
+   "mast_chord": 0.4,
+   "pylon": {
+    "tube_od": 0.1,
+    "tube_t": 0.0016,
+    "fairing_thickness": 0.116,
+    "fairing_chord": 0.4,
+    "from_z": 1.8005,
+    "to_z": 2.2805,
+    "note": "faired 6061 pylon tube (WP F section)"
+   },
+   "blade_pitch_deg": 10.0,
+   "thrust_hover_n": 1383.946,
+   "max_thrust_n": 2232.764,
+   "max_torque_nm": 250.0,
+   "rotor_inertia_kgm2": 0.8728,
+   "diameter": 1.85,
+   "blades": 2
+  }
+ ],
+ "rotors": [
+  {
+   "name": "LR_L1",
+   "boom": "boom_L",
+   "x": -1.2105,
+   "y": -1.535,
+   "z": 2.3505,
+   "spin": -1,
+   "max_thrust_N": 2232.764,
+   "max_torque_Nm": 250.0,
+   "rpm_max": 2294.719,
+   "rpm_hover": 1806.624,
+   "rotor_inertia_kgm2": 0.8728,
+   "mass_kg": 29.034,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "torque_per_thrust_m": 0.1118,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "name": "LR_L2",
+   "boom": "boom_L",
+   "x": 0.7395,
+   "y": -1.535,
+   "z": 2.3505,
+   "spin": 1,
+   "max_thrust_N": 2232.764,
+   "max_torque_Nm": 250.0,
+   "rpm_max": 2294.719,
+   "rpm_hover": 1806.624,
+   "rotor_inertia_kgm2": 0.8728,
+   "mass_kg": 29.034,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "torque_per_thrust_m": 0.1118,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "name": "LR_L3",
+   "boom": "boom_L",
+   "x": 3.4525,
+   "y": -1.535,
+   "z": 2.3505,
+   "spin": 1,
+   "max_thrust_N": 2232.764,
+   "max_torque_Nm": 250.0,
+   "rpm_max": 2294.719,
+   "rpm_hover": 1806.624,
+   "rotor_inertia_kgm2": 0.8728,
+   "mass_kg": 29.034,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "torque_per_thrust_m": 0.1118,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "name": "LR_L4",
+   "boom": "boom_L",
+   "x": 5.4025,
+   "y": -1.535,
+   "z": 2.3505,
+   "spin": -1,
+   "max_thrust_N": 2232.764,
+   "max_torque_Nm": 250.0,
+   "rpm_max": 2294.719,
+   "rpm_hover": 1806.624,
+   "rotor_inertia_kgm2": 0.8728,
+   "mass_kg": 29.034,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "torque_per_thrust_m": 0.1118,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "name": "LR_R1",
+   "boom": "boom_R",
+   "x": -1.2105,
+   "y": 1.535,
+   "z": 2.3505,
+   "spin": 1,
+   "max_thrust_N": 2232.764,
+   "max_torque_Nm": 250.0,
+   "rpm_max": 2294.719,
+   "rpm_hover": 1806.624,
+   "rotor_inertia_kgm2": 0.8728,
+   "mass_kg": 29.034,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "torque_per_thrust_m": 0.1118,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "name": "LR_R2",
+   "boom": "boom_R",
+   "x": 0.7395,
+   "y": 1.535,
+   "z": 2.3505,
+   "spin": -1,
+   "max_thrust_N": 2232.764,
+   "max_torque_Nm": 250.0,
+   "rpm_max": 2294.719,
+   "rpm_hover": 1806.624,
+   "rotor_inertia_kgm2": 0.8728,
+   "mass_kg": 29.034,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "torque_per_thrust_m": 0.1118,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "name": "LR_R3",
+   "boom": "boom_R",
+   "x": 3.4525,
+   "y": 1.535,
+   "z": 2.3505,
+   "spin": -1,
+   "max_thrust_N": 2232.764,
+   "max_torque_Nm": 250.0,
+   "rpm_max": 2294.719,
+   "rpm_hover": 1806.624,
+   "rotor_inertia_kgm2": 0.8728,
+   "mass_kg": 29.034,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "torque_per_thrust_m": 0.1118,
+   "diameter": 1.85,
+   "blades": 2
+  },
+  {
+   "name": "LR_R4",
+   "boom": "boom_R",
+   "x": 5.4025,
+   "y": 1.535,
+   "z": 2.3505,
+   "spin": 1,
+   "max_thrust_N": 2232.764,
+   "max_torque_Nm": 250.0,
+   "rpm_max": 2294.719,
+   "rpm_hover": 1806.624,
+   "rotor_inertia_kgm2": 0.8728,
+   "mass_kg": 29.034,
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "torque_per_thrust_m": 0.1118,
+   "diameter": 1.85,
+   "blades": 2
+  }
+ ],
+ "pusher": {
+  "name": "pusher",
+  "hub": [
+   4.82,
+   0.0,
+   1.2
+  ],
+  "x": 4.82,
+  "y": 0.0,
+  "z": 1.2,
+  "axis": [
+   -1.0,
+   0.0,
+   0.0
+  ],
+  "diameter": 1.65,
+  "blades": 2,
+  "spinner_diameter": 0.28,
+  "blades_in_cfd": false,
+  "spin": 1,
+  "max_thrust_N": 2305.44,
+  "max_torque_Nm": 300.0,
+  "rpm_max": 2419.155,
+  "rpm_cruise": 2199.232,
+  "rotor_inertia_kgm2": 0.6998,
+  "mass_kg": 34.04,
+  "attach": "fuselage",
+  "motor": "MOT-REB90",
+  "motor_diameter_m": 0.2702,
+  "propeller": "PROP-DUC-SWIRL"
+ },
+ "tail": {
+  "type": "H",
+  "x_ac": 6.3984,
+  "x_spar": 6.4211,
+  "z": 1.8005,
+  "span": 3.07,
+  "mass_kg": 10.737,
+  "area_h_m2": 1.344,
+  "chord_h": 0.4544,
+  "area_v_total_m2": 0.8415,
+  "span_exposed_h": 2.958,
+  "height_exposed_v": 0.7944,
+  "area_note": "areas are exposed areas (H-tail between the boom surfaces, fins below the boom underside)",
+  "volume_h": 0.5,
+  "volume_v": 0.04,
+  "arm_h_m": 4.428,
+  "spar_section": {
+   "type": "tube",
+   "od": 0.05,
+   "t": 0.002,
+   "material": "cf_tube_rollwrapped_twill"
+  },
+  "fins": [
+   {
+    "boom": "boom_L"
+   },
+   {
+    "boom": "boom_R"
+   }
+  ],
+  "horizontal": [
+   {
+    "airfoil": "naca0014",
+    "span": 3.07,
+    "root_chord": 0.4544,
+    "tip_chord": 0.4544,
+    "x_le_root": 6.2848,
+    "z_root": 1.8005,
+    "y_root": 0.0,
+    "incidence_deg": 0.0,
+    "mirror": true,
+    "elevator_chord_fraction": 0.35
+   }
+  ],
+  "vertical": [
+   {
+    "airfoil": "naca0012",
+    "x_le_root": 6.2848,
+    "y": -1.535,
+    "z_root": 0.9501,
+    "height": 0.8504,
+    "root_chord": 0.5296,
+    "tip_chord": 0.5296,
+    "sweep_le_deg": 0.0,
+    "mirror": false,
+    "rudder_chord_fraction": 0.35,
+    "note": "ventral fin under the boom (clear of the rear lift-rotor disc)"
+   },
+   {
+    "airfoil": "naca0012",
+    "x_le_root": 6.2848,
+    "y": 1.535,
+    "z_root": 0.9501,
+    "height": 0.8504,
+    "root_chord": 0.5296,
+    "tip_chord": 0.5296,
+    "sweep_le_deg": 0.0,
+    "mirror": false,
+    "rudder_chord_fraction": 0.35,
+    "note": "ventral fin under the boom (clear of the rear lift-rotor disc)"
+   }
+  ]
+ },
+ "landing_gear": {
+  "type": "skid",
+  "material": "6061-T6 tube",
+  "skids": [
+   {
+    "y": 0.7,
+    "z": 0.03,
+    "x_start": 0.45,
+    "x_end": 3.3476,
+    "diameter": 0.06,
+    "mirror": true
+   }
+  ],
+  "struts": [
+   {
+    "p1": [
+     0.85,
+     0.7,
+     0.06
+    ],
+    "p2": [
+     0.85,
+     0.3,
+     0.44
+    ],
+    "diameter": 0.076,
+    "mirror": true
+   },
+   {
+    "p1": [
+     2.9476,
+     0.7,
+     0.06
+    ],
+    "p2": [
+     2.9476,
+     0.3,
+     0.44
+    ],
+    "diameter": 0.076,
+    "mirror": true
+   }
+  ],
+  "dampers": [
+   {
+    "p1": [
+     0.85,
+     0.55,
+     0.22
+    ],
+    "p2": [
+     0.85,
+     0.42,
+     0.72
+    ],
+    "stroke_m": 0.08,
+    "type": "oleo-pneumatic",
+    "mirror": true
+   },
+   {
+    "p1": [
+     2.9476,
+     0.55,
+     0.22
+    ],
+    "p2": [
+     2.9476,
+     0.42,
+     0.72
+    ],
+    "stroke_m": 0.08,
+    "type": "oleo-pneumatic",
+    "mirror": true
+   }
+  ],
+  "cross_tube": {
+   "od": 0.076,
+   "t": 0.00582,
+   "faired": true,
+   "note": "WP F section; legs faired (LG-FAIR); dampers in parallel with each leg (>= 75 mm stroke)"
+  },
+  "faired": true
+ },
+ "gear_strut_section": {
+  "type": "tube",
+  "od": 0.076,
+  "t": 0.00582,
+  "material": "al6061_t6_extr"
+ },
+ "battery_packs": [
+  {
+   "name": "battery_A",
+   "x": 1.0684,
+   "y": 0.0,
+   "z": 0.5473,
+   "length": 0.2368,
+   "width": 0.62,
+   "height": 0.189,
+   "tiers": 2,
+   "cells_across": 26,
+   "rows_per_tier": 7,
+   "series": 175,
+   "parallel": 2,
+   "cell": "CELL-P50B",
+   "kg": 33.133,
+   "bms": "BMS-ORION2",
+   "contactors": "2 x HV-EV200",
+   "fuse": "HV-FUSE"
+  },
+  {
+   "name": "battery_B",
+   "x": 1.3452,
+   "y": 0.0,
+   "z": 0.5473,
+   "length": 0.2368,
+   "width": 0.62,
+   "height": 0.189,
+   "tiers": 2,
+   "cells_across": 26,
+   "rows_per_tier": 7,
+   "series": 175,
+   "parallel": 2,
+   "cell": "CELL-P50B",
+   "kg": 33.133,
+   "bms": "BMS-ORION2",
+   "contactors": "2 x HV-EV200",
+   "fuse": "HV-FUSE"
+  },
+  {
+   "name": "battery_C",
+   "x": 1.622,
+   "y": 0.0,
+   "z": 0.5473,
+   "length": 0.2368,
+   "width": 0.62,
+   "height": 0.189,
+   "tiers": 2,
+   "cells_across": 26,
+   "rows_per_tier": 7,
+   "series": 175,
+   "parallel": 2,
+   "cell": "CELL-P50B",
+   "kg": 33.133,
+   "bms": "BMS-ORION2",
+   "contactors": "2 x HV-EV200",
+   "fuse": "HV-FUSE"
+  },
+  {
+   "name": "battery_D",
+   "x": 1.8988,
+   "y": 0.0,
+   "z": 0.5473,
+   "length": 0.2368,
+   "width": 0.62,
+   "height": 0.189,
+   "tiers": 2,
+   "cells_across": 26,
+   "rows_per_tier": 7,
+   "series": 175,
+   "parallel": 2,
+   "cell": "CELL-P50B",
+   "kg": 33.133,
+   "bms": "BMS-ORION2",
+   "contactors": "2 x HV-EV200",
+   "fuse": "HV-FUSE"
+  },
+  {
+   "name": "battery_E",
+   "x": 2.1756,
+   "y": 0.0,
+   "z": 0.5473,
+   "length": 0.2368,
+   "width": 0.62,
+   "height": 0.189,
+   "tiers": 2,
+   "cells_across": 26,
+   "rows_per_tier": 7,
+   "series": 175,
+   "parallel": 2,
+   "cell": "CELL-P50B",
+   "kg": 33.133,
+   "bms": "BMS-ORION2",
+   "contactors": "2 x HV-EV200",
+   "fuse": "HV-FUSE"
+  },
+  {
+   "name": "battery_F",
+   "x": 2.4524,
+   "y": 0.0,
+   "z": 0.5473,
+   "length": 0.2368,
+   "width": 0.62,
+   "height": 0.189,
+   "tiers": 2,
+   "cells_across": 26,
+   "rows_per_tier": 7,
+   "series": 175,
+   "parallel": 2,
+   "cell": "CELL-P50B",
+   "kg": 33.133,
+   "bms": "BMS-ORION2",
+   "contactors": "2 x HV-EV200",
+   "fuse": "HV-FUSE"
+  },
+  {
+   "name": "battery_G",
+   "x": 2.7292,
+   "y": 0.0,
+   "z": 0.5473,
+   "length": 0.2368,
+   "width": 0.62,
+   "height": 0.189,
+   "tiers": 2,
+   "cells_across": 26,
+   "rows_per_tier": 7,
+   "series": 175,
+   "parallel": 2,
+   "cell": "CELL-P50B",
+   "kg": 33.133,
+   "bms": "BMS-ORION2",
+   "contactors": "2 x HV-EV200",
+   "fuse": "HV-FUSE"
+  }
+ ],
+ "masses": [
+  {
+   "name": "battery_A",
+   "kg": 33.133,
+   "x": 1.0684,
+   "y": 0.0,
+   "z": 0.5473,
+   "attach": "fuselage"
+  },
+  {
+   "name": "battery_B",
+   "kg": 33.133,
+   "x": 1.3452,
+   "y": 0.0,
+   "z": 0.5473,
+   "attach": "fuselage"
+  },
+  {
+   "name": "battery_C",
+   "kg": 33.133,
+   "x": 1.622,
+   "y": 0.0,
+   "z": 0.5473,
+   "attach": "fuselage"
+  },
+  {
+   "name": "battery_D",
+   "kg": 33.133,
+   "x": 1.8988,
+   "y": 0.0,
+   "z": 0.5473,
+   "attach": "fuselage"
+  },
+  {
+   "name": "battery_E",
+   "kg": 33.133,
+   "x": 2.1756,
+   "y": 0.0,
+   "z": 0.5473,
+   "attach": "fuselage"
+  },
+  {
+   "name": "battery_F",
+   "kg": 33.133,
+   "x": 2.4524,
+   "y": 0.0,
+   "z": 0.5473,
+   "attach": "fuselage"
+  },
+  {
+   "name": "battery_G",
+   "kg": 33.133,
+   "x": 2.7292,
+   "y": 0.0,
+   "z": 0.5473,
+   "attach": "fuselage"
+  },
+  {
+   "name": "avionics (FCC, EFIS, radios)",
+   "kg": 14.052,
+   "x": 0.41,
+   "y": 0.0,
+   "z": 1.04,
+   "attach": "fuselage"
+  },
+  {
+   "name": "LV electrical",
+   "kg": 10.0,
+   "x": 0.53,
+   "y": 0.0,
+   "z": 0.73,
+   "attach": "fuselage"
+  },
+  {
+   "name": "flap actuators L (2)",
+   "kg": 2.0,
+   "x": 2.5055,
+   "y": -1.0,
+   "z": 1.9375,
+   "attach": "wing"
+  },
+  {
+   "name": "flap actuators R (2)",
+   "kg": 2.0,
+   "x": 2.5055,
+   "y": 1.0,
+   "z": 1.9375,
+   "attach": "wing"
+  },
+  {
+   "name": "flight controls: inceptors",
+   "kg": 3.0,
+   "x": 1.45,
+   "y": 0.0,
+   "z": 0.9468,
+   "attach": "fuselage"
+  },
+  {
+   "name": "flight controls: misc wiring/panel",
+   "kg": 1.6,
+   "x": 1.6,
+   "y": 0.0,
+   "z": 0.95,
+   "attach": "fuselage"
+  },
+  {
+   "name": "aileron actuator L",
+   "kg": 1.0,
+   "x": 2.5055,
+   "y": -2.97,
+   "z": 1.9375,
+   "attach": "wing"
+  },
+  {
+   "name": "aileron actuator R",
+   "kg": 1.0,
+   "x": 2.5055,
+   "y": 2.97,
+   "z": 1.9375,
+   "attach": "wing"
+  },
+  {
+   "name": "tail actuators",
+   "kg": 2.4,
+   "x": 6.5574,
+   "y": 0.0,
+   "z": 1.8005,
+   "attach": "tail"
+  },
+  {
+   "name": "furnishings",
+   "kg": 4.0,
+   "x": 1.8,
+   "y": 0.0,
+   "z": 0.6968,
+   "attach": "fuselage"
+  },
+  {
+   "name": "parachute (canister, cradle, hard points)",
+   "kg": 34.789,
+   "x": 3.0747,
+   "y": 0.0,
+   "z": 1.42,
+   "attach": "fuselage"
+  },
+  {
+   "name": "HV harness in boom_L",
+   "kg": 3.28,
+   "x": 2.096,
+   "y": -1.535,
+   "z": 1.8005,
+   "attach": "boom_L"
+  },
+  {
+   "name": "HV harness in boom_R",
+   "kg": 3.28,
+   "x": 2.096,
+   "y": 1.535,
+   "z": 1.8005,
+   "attach": "boom_R"
+  },
+  {
+   "name": "HV harness in the wing",
+   "kg": 1.433,
+   "x": 2.5975,
+   "y": 0.0,
+   "z": 1.9875,
+   "attach": "wing"
+  },
+  {
+   "name": "HV risers and pusher run",
+   "kg": 1.194,
+   "x": 1.9075,
+   "y": 0.0,
+   "z": 1.3,
+   "attach": "fuselage"
+  },
+  {
+   "name": "cooling_L (cold plates, pump, radiator)",
+   "kg": 5.772,
+   "x": 2.176,
+   "y": -1.535,
+   "z": 1.6905,
+   "attach": "boom_L"
+  },
+  {
+   "name": "cooling_R (cold plates, pump, radiator)",
+   "kg": 5.772,
+   "x": 2.176,
+   "y": 1.535,
+   "z": 1.6905,
+   "attach": "boom_R"
+  },
+  {
+   "name": "growth allowance",
+   "kg": 30.777,
+   "x": 2.096,
+   "y": 0.0,
+   "z": 1.15,
+   "attach": "fuselage"
+  }
+ ],
+ "seats": [
+  {
+   "name": "seat_1_pilot",
+   "x": 1.15,
+   "y": 0.0,
+   "z": 1.1268,
+   "occupant_kg": 100.0,
+   "seat_kg": 10.585,
+   "attach": "fuselage",
+   "seat_reference_point_z": 0.8468
+  },
+  {
+   "name": "seat_2_passenger",
+   "x": 2.05,
+   "y": 0.0,
+   "z": 1.1268,
+   "occupant_kg": 100.0,
+   "seat_kg": 10.585,
+   "attach": "fuselage",
+   "seat_reference_point_z": 0.8468
+  }
+ ],
+ "cargo_bay": {
+  "x_center": 2.1,
+  "y": 0.0,
+  "z_floor": 0.6468,
+  "length": 0.65,
+  "width": 0.6,
+  "height": 0.55,
+  "note": "second seat removed; tie-downs on the seat rails; min 0.6 x 0.5 x 0.5 m required"
+ },
+ "parachute": {
+  "model": "GRS-6-990-1190-SDS-FF (sourced, not in catalog)",
+  "kg": 34.789,
+  "canister": {
+   "x": 3.0747,
+   "y": 0.0,
+   "z": 1.42,
+   "diameter": 0.32,
+   "length": 0.5,
+   "fire_direction": [
+    0.3,
+    0.0,
+    0.95
+   ],
+   "note": "inside the OML under a frangible hatch"
+  },
+  "n_open_limit": 4.62,
+  "attach": [
+   {
+    "name": "chute_front_L",
+    "x": 1.9022,
+    "y": -0.3,
+    "z": 1.9248
+   },
+   {
+    "name": "chute_front_R",
+    "x": 1.9022,
+    "y": 0.3,
+    "z": 1.9248
+   },
+   {
+    "name": "chute_rear",
+    "x": 3.8747,
+    "y": 0.0,
+    "z": 1.47
+   }
+  ],
+  "note": "n_open_limit = vendor opening shock at VNE and MTOW / weight: GRS 6 800-990/1050 47.4 kN (ST12), GRS 6 990-1190 48.8 kN (galaxysky.cz p44)"
+ },
+ "mass_items": [
+  {
+   "name": "rotor_L1",
+   "kg": 29.034,
+   "x": -1.2105,
+   "y": -1.535,
+   "z": 2.1505,
+   "group": "rotor",
+   "attach": "boom_L"
+  },
+  {
+   "name": "rotor_L2",
+   "kg": 29.034,
+   "x": 0.7395,
+   "y": -1.535,
+   "z": 2.1505,
+   "group": "rotor",
+   "attach": "boom_L"
+  },
+  {
+   "name": "rotor_L3",
+   "kg": 29.034,
+   "x": 3.4525,
+   "y": -1.535,
+   "z": 2.1505,
+   "group": "rotor",
+   "attach": "boom_L"
+  },
+  {
+   "name": "rotor_L4",
+   "kg": 29.034,
+   "x": 5.4025,
+   "y": -1.535,
+   "z": 2.1505,
+   "group": "rotor",
+   "attach": "boom_L"
+  },
+  {
+   "name": "rotor_R1",
+   "kg": 29.034,
+   "x": -1.2105,
+   "y": 1.535,
+   "z": 2.1505,
+   "group": "rotor",
+   "attach": "boom_R"
+  },
+  {
+   "name": "rotor_R2",
+   "kg": 29.034,
+   "x": 0.7395,
+   "y": 1.535,
+   "z": 2.1505,
+   "group": "rotor",
+   "attach": "boom_R"
+  },
+  {
+   "name": "rotor_R3",
+   "kg": 29.034,
+   "x": 3.4525,
+   "y": 1.535,
+   "z": 2.1505,
+   "group": "rotor",
+   "attach": "boom_R"
+  },
+  {
+   "name": "rotor_R4",
+   "kg": 29.034,
+   "x": 5.4025,
+   "y": 1.535,
+   "z": 2.1505,
+   "group": "rotor",
+   "attach": "boom_R"
+  },
+  {
+   "name": "wing structure",
+   "kg": 73.896,
+   "x": 2.1663,
+   "y": 0.0,
+   "z": 1.9425,
+   "group": "structure",
+   "attach": "wing"
+  },
+  {
+   "name": "boom_L",
+   "kg": 24.421,
+   "x": 2.752,
+   "y": -1.535,
+   "z": 1.8005,
+   "group": "structure",
+   "attach": "boom_L"
+  },
+  {
+   "name": "boom_R",
+   "kg": 24.421,
+   "x": 2.752,
+   "y": 1.535,
+   "z": 1.8005,
+   "group": "structure",
+   "attach": "boom_R"
+  },
+  {
+   "name": "tail structure",
+   "kg": 10.737,
+   "x": 6.4711,
+   "y": 0.0,
+   "z": 1.6905,
+   "group": "structure",
+   "attach": "tail"
+  },
+  {
+   "name": "fuselage structure",
+   "kg": 62.356,
+   "x": 1.9129,
+   "y": 0.0,
+   "z": 1.17,
+   "group": "structure",
+   "attach": "fuselage"
+  },
+  {
+   "name": "pusher unit",
+   "kg": 34.04,
+   "x": 4.57,
+   "y": 0.0,
+   "z": 1.2,
+   "group": "pusher",
+   "attach": "fuselage"
+  },
+  {
+   "name": "seat_1 (pilot)",
+   "kg": 10.585,
+   "x": 1.15,
+   "y": 0.0,
+   "z": 0.7968,
+   "group": "seat",
+   "attach": "fuselage"
+  },
+  {
+   "name": "seat_2 (passenger / removable)",
+   "kg": 10.585,
+   "x": 2.05,
+   "y": 0.0,
+   "z": 0.7968,
+   "group": "seat",
+   "attach": "fuselage"
+  },
+  {
+   "name": "occupant_1 (pilot)",
+   "kg": 100.0,
+   "x": 1.15,
+   "y": 0.0,
+   "z": 1.1268,
+   "group": "payload",
+   "attach": "fuselage"
+  },
+  {
+   "name": "occupant_2 (passenger)",
+   "kg": 100.0,
+   "x": 2.05,
+   "y": 0.0,
+   "z": 1.1268,
+   "group": "payload",
+   "attach": "fuselage"
+  },
+  {
+   "name": "battery_A",
+   "kg": 33.133,
+   "x": 1.0684,
+   "y": 0.0,
+   "z": 0.5473,
+   "group": "battery",
+   "attach": "fuselage"
+  },
+  {
+   "name": "battery_B",
+   "kg": 33.133,
+   "x": 1.3452,
+   "y": 0.0,
+   "z": 0.5473,
+   "group": "battery",
+   "attach": "fuselage"
+  },
+  {
+   "name": "battery_C",
+   "kg": 33.133,
+   "x": 1.622,
+   "y": 0.0,
+   "z": 0.5473,
+   "group": "battery",
+   "attach": "fuselage"
+  },
+  {
+   "name": "battery_D",
+   "kg": 33.133,
+   "x": 1.8988,
+   "y": 0.0,
+   "z": 0.5473,
+   "group": "battery",
+   "attach": "fuselage"
+  },
+  {
+   "name": "battery_E",
+   "kg": 33.133,
+   "x": 2.1756,
+   "y": 0.0,
+   "z": 0.5473,
+   "group": "battery",
+   "attach": "fuselage"
+  },
+  {
+   "name": "battery_F",
+   "kg": 33.133,
+   "x": 2.4524,
+   "y": 0.0,
+   "z": 0.5473,
+   "group": "battery",
+   "attach": "fuselage"
+  },
+  {
+   "name": "battery_G",
+   "kg": 33.133,
+   "x": 2.7292,
+   "y": 0.0,
+   "z": 0.5473,
+   "group": "battery",
+   "attach": "fuselage"
+  },
+  {
+   "name": "avionics (FCC, EFIS, radios)",
+   "kg": 14.052,
+   "x": 0.41,
+   "y": 0.0,
+   "z": 1.04,
+   "group": "systems",
+   "attach": "fuselage"
+  },
+  {
+   "name": "LV electrical",
+   "kg": 10.0,
+   "x": 0.53,
+   "y": 0.0,
+   "z": 0.73,
+   "group": "systems",
+   "attach": "fuselage"
+  },
+  {
+   "name": "flap actuators L (2)",
+   "kg": 2.0,
+   "x": 2.5055,
+   "y": -1.0,
+   "z": 1.9375,
+   "group": "systems",
+   "attach": "wing"
+  },
+  {
+   "name": "flap actuators R (2)",
+   "kg": 2.0,
+   "x": 2.5055,
+   "y": 1.0,
+   "z": 1.9375,
+   "group": "systems",
+   "attach": "wing"
+  },
+  {
+   "name": "flight controls: inceptors",
+   "kg": 3.0,
+   "x": 1.45,
+   "y": 0.0,
+   "z": 0.9468,
+   "group": "systems",
+   "attach": "fuselage"
+  },
+  {
+   "name": "flight controls: misc wiring/panel",
+   "kg": 1.6,
+   "x": 1.6,
+   "y": 0.0,
+   "z": 0.95,
+   "group": "systems",
+   "attach": "fuselage"
+  },
+  {
+   "name": "aileron actuator L",
+   "kg": 1.0,
+   "x": 2.5055,
+   "y": -2.97,
+   "z": 1.9375,
+   "group": "systems",
+   "attach": "wing"
+  },
+  {
+   "name": "aileron actuator R",
+   "kg": 1.0,
+   "x": 2.5055,
+   "y": 2.97,
+   "z": 1.9375,
+   "group": "systems",
+   "attach": "wing"
+  },
+  {
+   "name": "tail actuators",
+   "kg": 2.4,
+   "x": 6.5574,
+   "y": 0.0,
+   "z": 1.8005,
+   "group": "systems",
+   "attach": "tail"
+  },
+  {
+   "name": "furnishings",
+   "kg": 4.0,
+   "x": 1.8,
+   "y": 0.0,
+   "z": 0.6968,
+   "group": "systems",
+   "attach": "fuselage"
+  },
+  {
+   "name": "parachute (canister, cradle, hard points)",
+   "kg": 34.789,
+   "x": 3.0747,
+   "y": 0.0,
+   "z": 1.42,
+   "group": "systems",
+   "attach": "fuselage"
+  },
+  {
+   "name": "HV harness in boom_L",
+   "kg": 3.28,
+   "x": 2.096,
+   "y": -1.535,
+   "z": 1.8005,
+   "group": "systems",
+   "attach": "boom_L"
+  },
+  {
+   "name": "HV harness in boom_R",
+   "kg": 3.28,
+   "x": 2.096,
+   "y": 1.535,
+   "z": 1.8005,
+   "group": "systems",
+   "attach": "boom_R"
+  },
+  {
+   "name": "HV harness in the wing",
+   "kg": 1.433,
+   "x": 2.5975,
+   "y": 0.0,
+   "z": 1.9875,
+   "group": "systems",
+   "attach": "wing"
+  },
+  {
+   "name": "HV risers and pusher run",
+   "kg": 1.194,
+   "x": 1.9075,
+   "y": 0.0,
+   "z": 1.3,
+   "group": "systems",
+   "attach": "fuselage"
+  },
+  {
+   "name": "cooling_L (cold plates, pump, radiator)",
+   "kg": 5.772,
+   "x": 2.176,
+   "y": -1.535,
+   "z": 1.6905,
+   "group": "systems",
+   "attach": "boom_L"
+  },
+  {
+   "name": "cooling_R (cold plates, pump, radiator)",
+   "kg": 5.772,
+   "x": 2.176,
+   "y": 1.535,
+   "z": 1.6905,
+   "group": "systems",
+   "attach": "boom_R"
+  },
+  {
+   "name": "growth allowance",
+   "kg": 30.777,
+   "x": 2.096,
+   "y": 0.0,
+   "z": 1.15,
+   "group": "systems",
+   "attach": "fuselage"
+  },
+  {
+   "name": "landing gear",
+   "kg": 35.644,
+   "x": 1.8988,
+   "y": 0.0,
+   "z": 0.31,
+   "group": "structure",
+   "attach": "fuselage"
+  }
+ ],
+ "loading_cases": {
+  "pilot + passenger (MTOW)": {
+   "mass_kg": 1078.24,
+   "cg_m": [
+    2.0959,
+    0.0,
+    1.3065
+   ],
+   "static_margin": 0.1001,
+   "oei_worst_failed_rotor": "L1",
+   "oei_max_thrust_N": 1845.384,
+   "oei_thrust_ratio_to_hover": 1.3334,
+   "oei_shaft_power_kw_1000m": 52.796,
+   "oei_torque_Nm_1000m": 230.423,
+   "oei_rpm": 2188.003,
+   "oei_power_margin": 0.1201,
+   "oei_torque_margin": 0.0783,
+   "hover_max_rotor_thrust_all_rotors_N": 1383.984,
+   "hover_mean_rotor_thrust_N": 1383.946,
+   "oei_flare_worst_failed_rotor": "R1",
+   "oei_flare_max_thrust_N": 2214.461,
+   "oei_flare_thrust_ratio_to_hover": 1.6001,
+   "oei_flare_shaft_power_kw_500m": 59.264,
+   "oei_flare_torque_Nm_500m": 247.639,
+   "oei_flare_rpm": 2285.294,
+   "oei_flare_power_margin": 0.0123,
+   "oei_flare_torque_margin": 0.0094
+  },
+  "pilot + cargo (MTOW)": {
+   "mass_kg": 1078.24,
+   "cg_m": [
+    2.101,
+    0.0,
+    1.2861
+   ],
+   "static_margin": 0.0956,
+   "oei_worst_failed_rotor": "L4",
+   "oei_max_thrust_N": 1852.114,
+   "oei_thrust_ratio_to_hover": 1.3383,
+   "oei_shaft_power_kw_1000m": 53.085,
+   "oei_torque_Nm_1000m": 231.263,
+   "oei_rpm": 2191.989,
+   "oei_power_margin": 0.1152,
+   "oei_torque_margin": 0.0749,
+   "hover_max_rotor_thrust_all_rotors_N": 1386.054,
+   "hover_mean_rotor_thrust_N": 1383.946,
+   "oei_flare_worst_failed_rotor": "R4",
+   "oei_flare_max_thrust_N": 2222.537,
+   "oei_flare_thrust_ratio_to_hover": 1.6059,
+   "oei_flare_shaft_power_kw_500m": 59.588,
+   "oei_flare_torque_Nm_500m": 248.542,
+   "oei_flare_rpm": 2289.458,
+   "oei_flare_power_margin": 0.0069,
+   "oei_flare_torque_margin": 0.0058
+  },
+  "pilot only": {
+   "mass_kg": 978.24,
+   "cg_m": [
+    2.1006,
+    0.0,
+    1.3248
+   ],
+   "static_margin": 0.096,
+   "oei_worst_failed_rotor": "L4",
+   "oei_max_thrust_N": 1679.805,
+   "oei_thrust_ratio_to_hover": 1.2138,
+   "oei_shaft_power_kw_1000m": 45.852,
+   "oei_torque_Nm_1000m": 209.748,
+   "oei_rpm": 2087.536,
+   "oei_power_margin": 0.2358,
+   "oei_torque_margin": 0.161,
+   "hover_max_rotor_thrust_all_rotors_N": 1257.341,
+   "hover_mean_rotor_thrust_N": 1255.594,
+   "oei_flare_worst_failed_rotor": "L4",
+   "oei_flare_max_thrust_N": 2015.766,
+   "oei_flare_thrust_ratio_to_hover": 1.4565,
+   "oei_flare_shaft_power_kw_500m": 51.469,
+   "oei_flare_torque_Nm_500m": 225.419,
+   "oei_flare_rpm": 2180.36,
+   "oei_flare_power_margin": 0.1422,
+   "oei_flare_torque_margin": 0.0983
+  }
+ },
+ "mass": {
+  "mtow_kg": 1078.24,
+  "x_cg": 2.0959,
+  "z_cg": 1.3065
+ },
+ "operating": {
+  "cruise_speed_ms": 39.444,
+  "hover_thrust_per_lift_rotor_n": 1383.946,
+  "cruise_thrust_pusher_n": 1095.58
+ },
+ "neutral_point_x_m": 2.211
+}

@@ -1,0 +1,87 @@
+{
+ "W-FIT-MS": {
+  "part": "W-FIT-MS",
+  "material": "Aluminium 7075-T6 sheet (QQ-A-250/12), 1.0-3.2 mm",
+  "elems": 14959,
+  "vm_max_all": 761.4115080708852,
+  "vm_peak_away_from_bc": 384.94528426043985,
+  "peak_at_mm": [
+   22.0,
+   88.644118540693,
+   18.360043593321
+  ],
+  "umax_mm": 0.437622267960898,
+  "reaction": [
+   -4850.675,
+   -10385.47,
+   76043.26
+  ],
+  "MS_ultimate": 0.3970584080103976,
+  "MS_yield_limit": 0.8537890413984122,
+  "note": "peak evaluated >= 6 mm from the supports and the pin-bearing surface (outside the idealised cosine-pressure bearing zone; bearing checked with Fbru)",
+  "applied_N": [
+   4850.675119565362,
+   10385.474474687377,
+   -76043.25966311333
+  ],
+  "source": "cad/parts/W-FIT-MS/W-FIT-MS.step",
+  "volume_mm3": 427644.0859246729,
+  "mass_kg": 1.197403440589084
+ },
+ "PY-C": {
+  "part": "PY-C",
+  "material": "Aluminium 6061-T6/T6511 extrusion (AMS-QQ-A-200/8)",
+  "elems": 28685,
+  "vm_max_all": 181.91496688900938,
+  "vm_peak_away_from_bc": 181.91496688900938,
+  "peak_at_mm": [
+   -1.9228983268029,
+   77.993489589896,
+   222.3
+  ],
+  "umax_mm": 0.42119114943656416,
+  "reaction": [
+   -2706.647,
+   -9.133443e-10,
+   552.4111
+  ],
+  "MS_ultimate": 0.4402375487875765,
+  "MS_yield_limit": 0.9898018766144148,
+  "applied_N": [
+   1967.4827913907789,
+   -9.739352422133285e-10,
+   -563.2904686979941
+  ],
+  "source": "cad/parts/PY-C/PY-C.step",
+  "volume_mm3": 1015501.781164695,
+  "mass_kg": 2.7418548091446766
+ },
+ "CH-CRADLE": {
+  "part": "CH-CRADLE",
+  "material": "Aluminium 6061-T6/T6511 extrusion (AMS-QQ-A-200/8)",
+  "elems": 23081,
+  "vm_max_all": 179.0981901371982,
+  "vm_peak_away_from_bc": 179.0981901371982,
+  "peak_at_mm": [
+   113.83679768819,
+   198.07356783663,
+   103.14675477874
+  ],
+  "umax_mm": 1.3338932638606986,
+  "reaction": [
+   7464.224,
+   -4.089671e-09,
+   414.6791
+  ],
+  "MS_ultimate": 0.4628889649822494,
+  "MS_yield_limit": 1.0210965963570553,
+  "applied_N": [
+   -7464.22377435001,
+   0.0,
+   -414.6790985749958
+  ],
+  "source": "cad/parts/CH-CRADLE/CH-CRADLE.step",
+  "volume_mm3": 1893551.1926411663,
+  "mass_kg": 5.112588220131149
+ }
+}

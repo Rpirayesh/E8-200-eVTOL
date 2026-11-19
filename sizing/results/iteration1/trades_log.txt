@@ -1,0 +1,70 @@
+('config', '8 rotors')                        feas=True  obj=   445312 cost=   386812 mtow= 1001.7 E= 53.8 D=1.75 lm=1 V=150 span=8.8 viol={}
+('config', '6 rotors')                        feas=False obj=   429402 cost=   368902 mtow=  979.1 E= 51.8 D=2.45 lm=2 V=163 span=8.9 viol={'oei_power': 0.2628, 'oei_torque': 0.5212, 'hover_rpm_min': 0.0126, 'tip_mach_oei': 0.0875}
+('config', '4 coaxial pairs')                 feas=False obj=   467416 cost=   410416 mtow= 1047.3 E= 57.0 D=2.00 lm=2 V=163 span=9.0 viol={'oei_torque': 0.0163}
+('config', '4 rotors')                        feas=False obj=   379287 cost=   333787 mtow=  899.8 E= 44.9 D=2.50 lm=3 V=162 span=8.6 viol={'oei_power': 0.8955, 'oei_torque': 1.242, 'hover_rpm_min': 0.0323, 'tip_mach_oei': 0.2557, 'oei_trim': 1.0}
+('lift_motor', 'MOT-REB30')                   feas=False obj=   409597 cost=   339597 mtow=  909.4 E= 49.1 D=1.85 lm=0 V=150 span=8.9 viol={'oei_power': 0.0138, 'oei_torque': 0.1162, 'inverter_current': 0.1617, 'pusher_cont_power': 0.4696}
+('lift_motor', 'MOT-REB50')                   feas=True  obj=   445312 cost=   386812 mtow= 1001.7 E= 53.8 D=1.75 lm=1 V=150 span=8.8 viol={}
+('lift_motor', 'MOT-REB60')                   feas=True  obj=   462481 cost=   403981 mtow= 1049.2 E= 56.1 D=1.85 lm=2 V=159 span=9.0 viol={}
+('lift_motor', 'MOT-REB90')                   feas=False obj=   505459 cost=   445459 mtow= 1216.0 E= 69.1 D=1.80 lm=3 V=153 span=9.0 viol={'pusher_cont_power': 0.0943, 'pusher_climb': 0.1546, 'stall_margin': 0.0031, 'parachute': 1.0}
+('diameter', 1.5)                             feas=False obj=   457909 cost=   399409 mtow= 1017.7 E= 57.3 D=1.50 lm=1 V=161 span=8.9 viol={'oei_power': 0.1256, 'hover_cont_power': 0.0561}
+('diameter', 1.55)                            feas=False obj=   456751 cost=   397751 mtow= 1009.0 E= 55.7 D=1.55 lm=1 V=160 span=9.0 viol={'oei_power': 0.0868, 'hover_cont_power': 0.0197}
+('diameter', 1.6)                             feas=False obj=   456576 cost=   397576 mtow= 1006.7 E= 55.1 D=1.60 lm=1 V=160 span=9.0 viol={'oei_power': 0.0533}
+('diameter', 1.65)                            feas=False obj=   458303 cost=   399303 mtow= 1002.2 E= 54.4 D=1.65 lm=1 V=163 span=9.0 viol={'oei_power': 0.0118}
+('diameter', 1.7)                             feas=True  obj=   445925 cost=   387425 mtow= 1004.6 E= 54.4 D=1.70 lm=1 V=150 span=8.8 viol={}
+('diameter', 1.75)                            feas=True  obj=   445312 cost=   386812 mtow= 1001.7 E= 53.8 D=1.75 lm=1 V=150 span=8.8 viol={}
+('diameter', 1.8)                             feas=True  obj=   445314 cost=   386814 mtow= 1001.9 E= 53.8 D=1.80 lm=1 V=151 span=8.7 viol={}
+('diameter', 1.85)                            feas=True  obj=   445895 cost=   387395 mtow=  999.3 E= 52.8 D=1.85 lm=1 V=152 span=8.9 viol={}
+('diameter', 1.9)                             feas=True  obj=   447770 cost=   389270 mtow= 1003.6 E= 53.3 D=1.90 lm=1 V=157 span=8.8 viol={}
+('diameter', 1.95)                            feas=True  obj=   458975 cost=   394475 mtow= 1004.9 E= 53.8 D=1.95 lm=1 V=153 span=8.7 viol={}
+('diameter', 2.0)                             feas=True  obj=   469946 cost=   404946 mtow= 1003.8 E= 52.5 D=2.00 lm=1 V=159 span=9.0 viol={}
+('span', 7.0)                                 feas=False obj=   458764 cost=   399264 mtow= 1044.7 E= 64.8 D=1.80 lm=1 V=161 span=7.0 viol={'oei_power': 0.0212, 'tip_mach_oei': 0.0253, 'pusher_cont_power': 0.1775, 'pusher_climb': 0.3898, 'stall_margin': 0.0877}
+('span', 7.5)                                 feas=False obj=   466580 cost=   401080 mtow= 1036.1 E= 61.9 D=1.80 lm=1 V=158 span=7.5 viol={'oei_torque': 0.0267, 'pusher_cont_power': 0.086, 'stall_margin': 0.0054}
+('span', 8.0)                                 feas=True  obj=   447800 cost=   389300 mtow= 1012.4 E= 57.3 D=1.80 lm=1 V=158 span=8.0 viol={}
+('span', 8.5)                                 feas=True  obj=   446499 cost=   387999 mtow= 1008.1 E= 55.7 D=1.70 lm=1 V=153 span=8.5 viol={}
+('span', 9.0)                                 feas=True  obj=   446419 cost=   387919 mtow= 1002.7 E= 53.5 D=1.75 lm=1 V=150 span=9.0 viol={}
+('speed_kmh', 150)                            feas=True  obj=   444968 cost=   386468 mtow= 1001.1 E= 53.5 D=1.80 lm=1 V=150 span=8.8 viol={}
+('speed_kmh', 160)                            feas=True  obj=   449326 cost=   390826 mtow=  996.9 E= 52.8 D=1.80 lm=1 V=160 span=8.9 viol={}
+('speed_kmh', 170)                            feas=True  obj=   453851 cost=   395351 mtow= 1000.7 E= 53.8 D=1.90 lm=1 V=170 span=8.7 viol={}
+('speed_kmh', 180)                            feas=False obj=   467725 cost=   408725 mtow= 1012.0 E= 55.1 D=1.80 lm=1 V=180 span=9.0 viol={'pusher_cont_power': 0.0503}
+('speed_kmh', 190)                            feas=False obj=   472730 cost=   413730 mtow= 1023.3 E= 57.3 D=1.80 lm=1 V=190 span=9.0 viol={'pusher_cont_power': 0.1661, 'pusher_climb': 0.1841}
+('speed_kmh', 200)                            feas=False obj=   479186 cost=   420186 mtow= 1038.9 E= 59.0 D=1.85 lm=1 V=200 span=9.0 viol={'oei_torque': 0.0099, 'pusher_cont_power': 0.2855, 'pusher_climb': 0.7693}
+('packs', 2)                                  feas=True  obj=   445312 cost=   386812 mtow= 1001.7 E= 53.8 D=1.75 lm=1 V=150 span=8.8 viol={}
+('packs', 3)                                  feas=True  obj=   451018 cost=   392018 mtow= 1003.9 E= 54.4 D=1.75 lm=1 V=151 span=8.7 viol={}
+('packs', 4)                                  feas=True  obj=   456824 cost=   397324 mtow= 1007.7 E= 54.0 D=1.80 lm=1 V=150 span=8.9 viol={}
+('cell', 'CELL-P50B')                         feas=True  obj=   445314 cost=   386814 mtow= 1001.9 E= 53.8 D=1.80 lm=1 V=151 span=8.7 viol={}
+('cell', 'CELL-P45B')                         feas=False obj=   468353 cost=   408853 mtow= 1041.0 E= 55.4 D=1.80 lm=1 V=164 span=9.0 viol={'oei_power': 0.0022, 'oei_torque': 0.0064, 'stall_margin': 0.0081}
+('cell', 'CELL-SAM50S')                       feas=False obj=   474361 cost=   408861 mtow= 1042.9 E= 58.7 D=2.00 lm=1 V=162 span=8.5 viol={'footprint_length': 0.0008, 'oei_torque': 0.0575}
+('airfoil', 'naca4415')                       feas=True  obj=   450495 cost=   391995 mtow= 1009.1 E= 54.1 D=1.75 lm=1 V=155 span=8.9 viol={}
+('airfoil', 'naca2415')                       feas=True  obj=   454428 cost=   389928 mtow= 1012.7 E= 55.1 D=1.80 lm=1 V=150 span=8.6 viol={}
+('airfoil', 'naca23015')                      feas=True  obj=   455090 cost=   390590 mtow= 1017.1 E= 56.1 D=1.75 lm=1 V=150 span=8.5 viol={}
+('airfoil', 'naca4412')                       feas=True  obj=   456033 cost=   397533 mtow= 1012.0 E= 53.5 D=1.80 lm=1 V=159 span=9.0 viol={}
+('airfoil', 'ls417')                          feas=True  obj=   445314 cost=   386814 mtow= 1001.9 E= 53.8 D=1.80 lm=1 V=151 span=8.7 viol={}
+('pusher_motor', 'MOT-REB50')                 feas=False obj=   442838 cost=   388838 mtow=  986.6 E= 53.5 D=1.75 lm=1 V=150 span=9.0 viol={'pusher_cont_power': 0.6598, 'pusher_climb': 0.983, 'stall_margin': 0.0006}
+('pusher_motor', 'MOT-REB60')                 feas=False obj=   443533 cost=   385033 mtow=  988.9 E= 52.8 D=1.80 lm=1 V=150 span=9.0 viol={'pusher_cont_power': 0.371, 'pusher_climb': 0.1634, 'stall_margin': 0.0018}
+('pusher_motor', 'MOT-REB90')                 feas=True  obj=   445314 cost=   386814 mtow= 1001.9 E= 53.8 D=1.80 lm=1 V=151 span=8.7 viol={}
+('pusher_motor', 'MOT-EMRAX228')              feas=False obj=   409334 cost=   339334 mtow=  908.6 E= 49.1 D=1.85 lm=0 V=150 span=9.0 viol={'oei_power': 0.0064, 'oei_torque': 0.108, 'inverter_current': 0.1531, 'pusher_cont_power': 0.4727, 'stall_margin': 0.0062}
+('pusher_motor', 'MOT-EMRAX208')              feas=False obj=   401551 cost=   337551 mtow=  901.7 E= 49.1 D=1.75 lm=0 V=150 span=9.0 viol={'oei_power': 0.0415, 'oei_torque': 0.0847, 'inverter_current': 0.1934, 'pusher_cont_power': 1.2589, 'pusher_climb': 1.4743, 'stall_margin': 0.0011}
+('flap', 0)                                   feas=True  obj=   445430 cost=   386930 mtow= 1002.9 E= 53.8 D=1.80 lm=1 V=150 span=8.8 viol={}
+('flap', 1)                                   feas=True  obj=   451666 cost=   387166 mtow= 1001.1 E= 53.5 D=1.85 lm=1 V=150 span=8.7 viol={}
+('blades', 2)                                 feas=True  obj=   445430 cost=   386930 mtow= 1002.9 E= 53.8 D=1.80 lm=1 V=150 span=8.8 viol={}
+('blades', 3)                                 feas=True  obj=   451987 cost=   393487 mtow= 1015.8 E= 55.4 D=1.75 lm=1 V=152 span=8.7 viol={}
+('seating', 'side-by-side')                   feas=True  obj=   454806 cost=   396306 mtow= 1026.0 E= 56.5 D=1.80 lm=1 V=158 span=8.9 viol={}
+('seating', 'tandem')                         feas=True  obj=   445312 cost=   386812 mtow= 1001.7 E= 53.8 D=1.75 lm=1 V=150 span=8.8 viol={}
+('range', 20)                                 feas=True  obj=   419867 cost=   360867 mtow=  829.8 E= 29.8 D=1.85 lm=1 V=150 span=7.0 viol={}
+('range_minmass', 20)                         feas=True  obj=      821 cost=   367129 mtow=  820.5 E= 28.5 D=1.85 lm=1 V=160 span=7.6 viol={}
+('range', 30)                                 feas=True  obj=   424757 cost=   366257 mtow=  897.6 E= 40.8 D=1.80 lm=1 V=151 span=7.2 viol={}
+('range_minmass', 30)                         feas=True  obj=      872 cost=   380586 mtow=  872.4 E= 35.9 D=1.85 lm=1 V=161 span=8.0 viol={}
+('range', 40)                                 feas=True  obj=   432144 cost=   373644 mtow=  930.9 E= 44.6 D=1.80 lm=1 V=150 span=8.2 viol={}
+('range_minmass', 40)                         feas=True  obj=      927 cost=   379876 mtow=  926.7 E= 43.6 D=1.85 lm=1 V=161 span=8.5 viol={}
+('range', 50)                                 feas=True  obj=   445312 cost=   386812 mtow= 1001.7 E= 53.8 D=1.75 lm=1 V=150 span=8.8 viol={}
+('range_minmass', 50)                         feas=True  obj=      997 cost=   398129 mtow=  997.3 E= 53.1 D=1.75 lm=1 V=162 span=9.0 viol={}
+('range', 60)                                 feas=False obj=   483837 cost=   418837 mtow= 1149.1 E= 71.3 D=1.80 lm=2 V=150 span=9.0 viol={'pusher_climb': 0.0034, 'parachute': 1.0}
+('range_minmass', 60)                         feas=False obj=     1149 cost=   418837 mtow= 1149.1 E= 71.3 D=1.80 lm=2 V=150 span=9.0 viol={'pusher_climb': 0.0034, 'parachute': 1.0}
+('range', 70)                                 feas=False obj=   493421 cost=   428421 mtow= 1171.3 E= 77.8 D=2.15 lm=1 V=162 span=9.0 viol={'footprint_length': 0.0605, 'oei_power': 0.0665, 'oei_torque': 0.2457, 'hover_cont_power': 0.0007, 'tip_mach_oei': 0.0253, 'pusher_cont_power': 0.0928, 'pusher_climb': 0.1005, 'stall_margin': 0.0005, 'parachute': 1.0}
+('range_minmass', 70)                         feas=False obj=     1171 cost=   428421 mtow= 1171.3 E= 77.8 D=2.15 lm=1 V=162 span=9.0 viol={'footprint_length': 0.0605, 'oei_power': 0.0665, 'oei_torque': 0.2457, 'hover_cont_power': 0.0007, 'tip_mach_oei': 0.0253, 'pusher_cont_power': 0.0928, 'pusher_climb': 0.1005, 'stall_margin': 0.0005, 'parachute': 1.0}
+('range', 80)                                 feas=False obj=   487364 cost=   428864 mtow= 1266.5 E= 95.6 D=1.80 lm=1 V=166 span=9.0 viol={'oei_power': 0.3443, 'oei_torque': 0.3145, 'hover_cont_power': 0.2614, 'tip_mach_oei': 0.0253, 'pusher_cont_power': 0.2094, 'pusher_climb': 0.5308, 'stall_margin': 0.0474, 'parachute': 1.0}
+('range_minmass', 80)                         feas=False obj=     1267 cost=   428864 mtow= 1266.5 E= 95.6 D=1.80 lm=1 V=166 span=9.0 viol={'oei_power': 0.3443, 'oei_torque': 0.3145, 'hover_cont_power': 0.2614, 'tip_mach_oei': 0.0253, 'pusher_cont_power': 0.2094, 'pusher_climb': 0.5308, 'stall_margin': 0.0474, 'parachute': 1.0}
+('range', 90)                                 feas=False obj=   543622 cost=   484122 mtow= 1461.2 E=114.7 D=2.40 lm=2 V=174 span=9.0 viol={'footprint_length': 0.2297, 'oei_power': 0.065, 'oei_torque': 0.3329, 'tip_mach_oei': 0.0253, 'pusher_cont_power': 0.4674, 'pusher_climb': 1.8049, 'stall_margin': 0.0734, 'parachute': 1.0}
+('range_minmass', 90)                         feas=False obj=     1461 cost=   484122 mtow= 1461.2 E=114.7 D=2.40 lm=2 V=174 span=9.0 viol={'footprint_length': 0.2297, 'oei_power': 0.065, 'oei_torque': 0.3329, 'tip_mach_oei': 0.0253, 'pusher_cont_power': 0.4674, 'pusher_climb': 1.8049, 'stall_margin': 0.0734, 'parachute': 1.0}
+('range', 100)                                feas=False obj=   552176 cost=   493676 mtow= 1582.3 E=133.8 D=2.40 lm=2 V=182 span=9.0 viol={'footprint_length': 0.2183, 'oei_power': 0.2028, 'oei_torque': 0.5055, 'hover_cont_power': 0.1286, 'tip_mach_oei': 0.0253, 'pusher_cont_power': 0.6403, 'pusher_climb': 2.5239, 'stall_margin': 0.0678, 'parachute': 1.0}
+('range_minmass', 100)                        feas=False obj=     1582 cost=   493676 mtow= 1582.3 E=133.8 D=2.40 lm=2 V=182 span=9.0 viol={'footprint_length': 0.2183, 'oei_power': 0.2028, 'oei_torque': 0.5055, 'hover_cont_power': 0.1286, 'tip_mach_oei': 0.0253, 'pusher_cont_power': 0.6403, 'pusher_climb': 2.5239, 'stall_margin': 0.0678, 'parachute': 1.0}

@@ -1,0 +1,19 @@
+aircraft,configuration,seats,status,mtow,empty_mass_incl_battery,payload,battery_mass,battery_energy,range,cruise_speed,lift_rotors,rotor_diameter,installed_power,installed_power_lift,span,mtow_note,mtow_used,quality_set,quality_class,empty_fraction,payload_fraction,power_loading_N_per_kW,power_basis,battery_Wh_per_kg_MTOW,disk_loading_N_m2,battery_mass_fraction
+Jetson One,multicopter (4 coaxial pairs),1,"production, ultralight",,115,95,,,,,8,,76.1,,,derived: empty + payload,210,claim+secondary,claim/secondary,0.5476,0.4524,27.0617,total installed power,,,
+Opener/Pivotal BlackFly,"tandem tilt-wing, 8 rotors",1,"production, ultralight",255,142,113,,12,64,130,8,0.91,250.4,,4.14,,255,secondary,claim/secondary,0.5569,0.4431,9.9868,total installed power,47.0588,480.616,
+Pivotal Helix,"tandem tilt-wing, 8 rotors",1,"production, ultralight",258,158,100,,8,32,101,8,,,,,,258,claim,claim/secondary,0.6124,0.3876,,,31.0078,,
+Volocopter 2X,"multicopter, 18 rotors",2,prototype,450,290,160,,,27,70,18,1.8,,,,,450,secondary,claim/secondary,0.6444,0.3556,,,,96.3442,
+Volocopter VoloCity,"multicopter, 18 rotors",2,certification programme,900,700,200,,,35,,18,2.3,,,,,900,document,document/certified,0.7778,0.2222,,,,118.0172,
+EHang EH216-S,multicopter (8 coaxial pairs),2,type certified (CAAC),620,400,220,,17,35,,16,,,,,,620,claim+derived+secondary,claim/secondary,0.6452,0.3548,,,27.4194,,
+Wisk Cora (Gen 5),"lift + cruise, 12 lift + 1 pusher",2,prototype,,,181,,,100,180,12,,,,11,,,claim,claim/secondary,,,,,,,
+Kitty Hawk Heaviside 2 Block 2,"tilt-rotor, 8 rotors (6 wing, 2 canard)",1,prototype (programme ended),400,310,80,,18,129,178,8,,224,,6.5,,400,document,document/certified,0.775,0.2,17.5119,total installed power,45.0,,
+CityAirbus NextGen,"lift + cruise-like, 8 propellers incl. 2 pushers",4,demonstrator,,2000,,,,80,120,8,,,,12,,,claim,claim/secondary,,,,,,,
+Beta Alia A250,"lift + cruise, 4 lift + 1 pusher",6,prototype,2720,,,,,463,270,4,,,,15,,2720,secondary,claim/secondary,,,,,,,
+Joby S4,"tilt-rotor, 6 propellers",5,certification programme,2404,1950,453,,,161,322,6,,1416,,,,2404,claim,claim/secondary,0.8111,0.1884,16.6491,total installed power,,,
+Archer Midnight,"tilt + lift, 6 tilting + 6 lift",5,certification programme,2948,,454,,,161,,12,,,,14.3,,2948,claim+secondary,claim/secondary,,0.154,,,,,
+Vertical VX4,"tilt + lift, 8 propellers",5,prototype,,,450,,,161,241,8,,,,15,,,secondary,claim/secondary,,,,,,,
+LIFT Hexa,"multicopter, 18 rotors",1,"production, ultralight",309,196,113,60.3,,18,72,18,,,,,,309,claim+derived+secondary,claim/secondary,0.6343,0.3657,,,,,0.1951
+Airbus Vahana Alpha,"tilt-wing, 8 rotors",1,demonstrator (ended),815,695,90,,,50,200,,1.5,,,6.25,,815,secondary,claim/secondary,0.8528,0.1104,,,,,
+Pipistrel Velis Electro,"conventional take-off, 1 propeller",2,type certified (EASA),600,428,172,140,24.8,142,170,,,57.6,,10.71,,600,certified+derived+secondary,document/certified,0.7133,0.2867,,,41.3333,,0.2333
+NASA Lift+Cruise E (2018),"lift + cruise, 8 lift + 1 pusher",6,design study (NDARC),3724,3176,544,768,399,139,207,8,3.048,1297.5,829.2,,,3724,study,study,0.8528,0.1461,44.0424,lift power,107.1429,625.6343,0.2062
+NASA Lift+Cruise E (2022),"lift + cruise, 8 lift + 1 pusher",6,design study (NDARC),4301,3753,544,933,,139,154,8,3.048,1752.4,1127.5,,,4301,study,study,0.8726,0.1265,37.4088,lift power,,722.5707,0.2169

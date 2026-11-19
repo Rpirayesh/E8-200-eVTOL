@@ -1,0 +1,41 @@
+{
+ "case": "aluminium box 200x120 mm (outer), webs 2 mm, flanges 3 mm, L 1.5 m, end torque 2 kN m, root clamped",
+ "twist_rate_ref": 8.815579047815947e-06,
+ "J_bredt_mm4": 8621101.30120482,
+ "tau_web_ref": 21.58335491668825,
+ "tau_flange_ref": 14.388903277792167,
+ "formula": "Bredt-Batho: q = T/(2 Am), J = 4 Am^2 / sum(s/t); twist rate measured between 0.4 L and 0.8 L (away from root warping restraint)",
+ "mesh": [
+  {
+   "mesh": "15 x (2,2)",
+   "twist_rate": 8.829419162230343e-06,
+   "err_twist_rate_pct": 0.15699608998259423,
+   "tau_web": 21.587115614865844,
+   "err_tau_web_pct": 0.017424066796427242,
+   "tau_flange": 14.372339022852884,
+   "err_tau_flange_pct": -0.11511825897702772,
+   "applied_torque_check": 1.0
+  },
+  {
+   "mesh": "30 x (4,3)",
+   "twist_rate": 8.823523663540792e-06,
+   "err_twist_rate_pct": 0.09012018021451979,
+   "tau_web": 21.58953206526303,
+   "err_tau_web_pct": 0.028619964776663082,
+   "tau_flange": 14.368247939124313,
+   "err_tau_flange_pct": -0.14355047267385376,
+   "applied_torque_check": 0.9999999999999997
+  },
+  {
+   "mesh": "60 x (8,6)",
+   "twist_rate": 8.822344481508593e-06,
+   "err_twist_rate_pct": 0.07674406475117337,
+   "tau_web": 21.59008220119052,
+   "err_tau_web_pct": 0.031168854555910692,
+   "tau_flange": 14.366647735947511,
+   "err_tau_flange_pct": -0.15467156471198834,
+   "applied_torque_check": 0.9999999999999996
+  }
+ ],
+ "_wall_s": 2.5
+}

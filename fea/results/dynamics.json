@@ -1,0 +1,1721 @@
+{
+ "modes": [
+  {
+   "f_hz": 2.038443425052421,
+   "shape": {
+    "booms": 0.555,
+    "wing": 0.325,
+    "tail": 0.077
+   }
+  },
+  {
+   "f_hz": 2.155386104616111,
+   "shape": {
+    "hubs": 0.387,
+    "booms": 0.32,
+    "tail": 0.29
+   }
+  },
+  {
+   "f_hz": 3.059533023532741,
+   "shape": {
+    "booms": 0.443,
+    "wing": 0.242,
+    "hubs": 0.216,
+    "tail": 0.074
+   }
+  },
+  {
+   "f_hz": 3.3067260458118732,
+   "shape": {
+    "booms": 0.739,
+    "hubs": 0.118,
+    "tail": 0.114
+   }
+  },
+  {
+   "f_hz": 3.330543563276812,
+   "shape": {
+    "wing": 0.401,
+    "booms": 0.379,
+    "tail": 0.127
+   }
+  },
+  {
+   "f_hz": 3.393511263572453,
+   "shape": {
+    "booms": 0.585,
+    "wing": 0.187,
+    "hubs": 0.089,
+    "tail": 0.071,
+    "fuselage": 0.069
+   }
+  },
+  {
+   "f_hz": 3.9958984439656384,
+   "shape": {
+    "wing": 0.531,
+    "booms": 0.394
+   }
+  },
+  {
+   "f_hz": 4.3647276059127815,
+   "shape": {
+    "booms": 0.468,
+    "wing": 0.425,
+    "hubs": 0.061
+   }
+  },
+  {
+   "f_hz": 4.856406189107857,
+   "shape": {
+    "wing": 0.384,
+    "booms": 0.365,
+    "fuselage": 0.161
+   }
+  },
+  {
+   "f_hz": 6.7902296122389005,
+   "shape": {
+    "booms": 0.568,
+    "tail": 0.309,
+    "hubs": 0.123
+   }
+  },
+  {
+   "f_hz": 7.901225940901912,
+   "shape": {
+    "booms": 0.509,
+    "hubs": 0.213,
+    "wing": 0.184,
+    "tail": 0.084
+   }
+  },
+  {
+   "f_hz": 9.49549908603631,
+   "shape": {
+    "wing": 0.96
+   }
+  },
+  {
+   "f_hz": 9.833944659213198,
+   "shape": {
+    "booms": 0.701,
+    "hubs": 0.155,
+    "wing": 0.1
+   }
+  },
+  {
+   "f_hz": 9.92451851955059,
+   "shape": {
+    "booms": 0.556,
+    "wing": 0.312,
+    "hubs": 0.125
+   }
+  },
+  {
+   "f_hz": 10.788485340846275,
+   "shape": {
+    "tail": 0.622,
+    "hubs": 0.193,
+    "booms": 0.161
+   }
+  },
+  {
+   "f_hz": 11.299985005879575,
+   "shape": {
+    "hubs": 0.616,
+    "booms": 0.324
+   }
+  },
+  {
+   "f_hz": 11.652036769137998,
+   "shape": {
+    "booms": 0.784,
+    "hubs": 0.139,
+    "wing": 0.065
+   }
+  },
+  {
+   "f_hz": 11.784638910060158,
+   "shape": {
+    "booms": 0.6,
+    "tail": 0.182,
+    "hubs": 0.143,
+    "wing": 0.061
+   }
+  },
+  {
+   "f_hz": 12.043280802396419,
+   "shape": {
+    "tail": 0.663,
+    "booms": 0.265,
+    "hubs": 0.065
+   }
+  },
+  {
+   "f_hz": 13.21863292848978,
+   "shape": {
+    "wing": 0.88,
+    "booms": 0.115
+   }
+  },
+  {
+   "f_hz": 14.436424815382285,
+   "shape": {
+    "wing": 0.614,
+    "booms": 0.211,
+    "tail": 0.111,
+    "hubs": 0.054
+   }
+  },
+  {
+   "f_hz": 14.4686775621363,
+   "shape": {
+    "booms": 0.478,
+    "wing": 0.402,
+    "hubs": 0.111
+   }
+  },
+  {
+   "f_hz": 14.523843515045575,
+   "shape": {
+    "tail": 0.693,
+    "booms": 0.166,
+    "wing": 0.123
+   }
+  },
+  {
+   "f_hz": 17.590261145690544,
+   "shape": {
+    "tail": 0.641,
+    "booms": 0.343
+   }
+  },
+  {
+   "f_hz": 18.4143428004021,
+   "shape": {
+    "wing": 0.644,
+    "fuselage": 0.202,
+    "booms": 0.081,
+    "hubs": 0.07
+   }
+  },
+  {
+   "f_hz": 18.794997961142222,
+   "shape": {
+    "booms": 0.495,
+    "wing": 0.436
+   }
+  },
+  {
+   "f_hz": 20.53916276667342,
+   "shape": {
+    "hubs": 0.525,
+    "wing": 0.347,
+    "booms": 0.107
+   }
+  },
+  {
+   "f_hz": 20.613393915063668,
+   "shape": {
+    "hubs": 0.711,
+    "booms": 0.233
+   }
+  },
+  {
+   "f_hz": 21.028003705924444,
+   "shape": {
+    "wing": 0.496,
+    "hubs": 0.31,
+    "booms": 0.097,
+    "fuselage": 0.092
+   }
+  },
+  {
+   "f_hz": 21.246012715633046,
+   "shape": {
+    "hubs": 0.427,
+    "booms": 0.387,
+    "wing": 0.164
+   }
+  },
+  {
+   "f_hz": 21.352611262770413,
+   "shape": {
+    "hubs": 0.356,
+    "booms": 0.263,
+    "wing": 0.242,
+    "fuselage": 0.12
+   }
+  },
+  {
+   "f_hz": 22.512407406884368,
+   "shape": {
+    "booms": 0.924,
+    "tail": 0.06
+   }
+  },
+  {
+   "f_hz": 22.8814805718116,
+   "shape": {
+    "booms": 0.497,
+    "wing": 0.436,
+    "hubs": 0.062
+   }
+  },
+  {
+   "f_hz": 23.16650435023168,
+   "shape": {
+    "wing": 0.626,
+    "booms": 0.292,
+    "hubs": 0.077
+   }
+  },
+  {
+   "f_hz": 24.030441591507408,
+   "shape": {
+    "tail": 0.935,
+    "booms": 0.056
+   }
+  },
+  {
+   "f_hz": 25.74500606873891,
+   "shape": {
+    "wing": 0.62,
+    "booms": 0.308
+   }
+  },
+  {
+   "f_hz": 25.98152848364315,
+   "shape": {
+    "wing": 0.769,
+    "booms": 0.194
+   }
+  },
+  {
+   "f_hz": 28.151754756643744,
+   "shape": {
+    "wing": 0.866,
+    "booms": 0.118
+   }
+  },
+  {
+   "f_hz": 29.33431160541926,
+   "shape": {
+    "wing": 0.605,
+    "booms": 0.339
+   }
+  },
+  {
+   "f_hz": 29.60650390621974,
+   "shape": {
+    "tail": 0.33,
+    "wing": 0.319,
+    "booms": 0.317
+   }
+  },
+  {
+   "f_hz": 30.260424519266977,
+   "shape": {
+    "wing": 0.417,
+    "tail": 0.315,
+    "booms": 0.238
+   }
+  },
+  {
+   "f_hz": 30.79010030052031,
+   "shape": {
+    "wing": 0.793,
+    "booms": 0.187
+   }
+  },
+  {
+   "f_hz": 33.01451386905128,
+   "shape": {
+    "wing": 0.607,
+    "fuselage": 0.293,
+    "booms": 0.085
+   }
+  },
+  {
+   "f_hz": 34.125990897515386,
+   "shape": {
+    "fuselage": 0.477,
+    "wing": 0.376,
+    "booms": 0.124
+   }
+  },
+  {
+   "f_hz": 35.480782229644745,
+   "shape": {
+    "booms": 0.665,
+    "tail": 0.329
+   }
+  },
+  {
+   "f_hz": 35.66435413717156,
+   "shape": {
+    "booms": 0.515,
+    "wing": 0.414
+   }
+  },
+  {
+   "f_hz": 36.16643425568157,
+   "shape": {
+    "tail": 0.974
+   }
+  },
+  {
+   "f_hz": 36.35287080518084,
+   "shape": {
+    "booms": 0.75,
+    "tail": 0.24
+   }
+  },
+  {
+   "f_hz": 36.42825460240902,
+   "shape": {
+    "booms": 0.962
+   }
+  },
+  {
+   "f_hz": 36.45168339320262,
+   "shape": {
+    "booms": 0.681,
+    "wing": 0.276
+   }
+  },
+  {
+   "f_hz": 36.79265229579221,
+   "shape": {
+    "booms": 0.938
+   }
+  },
+  {
+   "f_hz": 36.972058111531055,
+   "shape": {
+    "booms": 0.872,
+    "wing": 0.063,
+    "tail": 0.061
+   }
+  },
+  {
+   "f_hz": 37.63652751651903,
+   "shape": {
+    "booms": 0.851,
+    "wing": 0.111
+   }
+  },
+  {
+   "f_hz": 41.29169985010826,
+   "shape": {
+    "booms": 0.773,
+    "tail": 0.163,
+    "wing": 0.058
+   }
+  },
+  {
+   "f_hz": 44.41801271227878,
+   "shape": {
+    "wing": 0.764,
+    "tail": 0.14,
+    "booms": 0.095
+   }
+  },
+  {
+   "f_hz": 47.59903739035727,
+   "shape": {
+    "wing": 0.816,
+    "booms": 0.166
+   }
+  },
+  {
+   "f_hz": 48.07347631351929,
+   "shape": {
+    "tail": 0.571,
+    "wing": 0.359,
+    "booms": 0.068
+   }
+  },
+  {
+   "f_hz": 49.03762246198952,
+   "shape": {
+    "wing": 0.795,
+    "booms": 0.111,
+    "tail": 0.09
+   }
+  },
+  {
+   "f_hz": 49.70087173871555,
+   "shape": {
+    "wing": 0.849,
+    "booms": 0.137
+   }
+  },
+  {
+   "f_hz": 51.53391665679864,
+   "shape": {
+    "booms": 0.992
+   }
+  },
+  {
+   "f_hz": 52.804919898837916,
+   "shape": {
+    "wing": 0.692,
+    "fuselage": 0.15,
+    "tail": 0.085,
+    "booms": 0.072
+   }
+  },
+  {
+   "f_hz": 53.335980746701985,
+   "shape": {
+    "tail": 0.975
+   }
+  },
+  {
+   "f_hz": 54.41308907691706,
+   "shape": {
+    "wing": 0.851,
+    "fuselage": 0.134
+   }
+  },
+  {
+   "f_hz": 58.371413250487464,
+   "shape": {
+    "wing": 0.846,
+    "fuselage": 0.095,
+    "booms": 0.053
+   }
+  },
+  {
+   "f_hz": 58.45596884952645,
+   "shape": {
+    "wing": 0.601,
+    "fuselage": 0.242,
+    "booms": 0.144
+   }
+  },
+  {
+   "f_hz": 67.43077542310145,
+   "shape": {
+    "booms": 0.899,
+    "tail": 0.077
+   }
+  },
+  {
+   "f_hz": 72.58287354390683,
+   "shape": {
+    "booms": 0.993
+   }
+  },
+  {
+   "f_hz": 78.37158098795304,
+   "shape": {
+    "wing": 0.701,
+    "fuselage": 0.275
+   }
+  },
+  {
+   "f_hz": 88.50873389082523,
+   "shape": {
+    "wing": 0.855,
+    "booms": 0.13
+   }
+  },
+  {
+   "f_hz": 89.41317352119185,
+   "shape": {
+    "wing": 0.862,
+    "booms": 0.128
+   }
+  }
+ ],
+ "excitation": {
+  "lift": {
+   "rpm_min": 1398.01688,
+   "rpm_hover": 1889.212,
+   "rpm_max": 2974.518,
+   "blades": 2
+  },
+  "pusher": {
+   "rpm_min": 1244.1372,
+   "rpm_cruise": 2073.562,
+   "rpm_max": 2280.918,
+   "blades": 2
+  }
+ },
+ "campbell_flags": [
+  {
+   "mode_hz": 18.794997961142222,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1127.6998776685334,
+   "shape": {
+    "booms": 0.495,
+    "wing": 0.436
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 20.53916276667342,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1232.3497660004052,
+   "shape": {
+    "hubs": 0.525,
+    "wing": 0.347,
+    "booms": 0.107
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 20.613393915063668,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1236.80363490382,
+   "shape": {
+    "hubs": 0.711,
+    "booms": 0.233
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 21.028003705924444,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1261.6802223554666,
+   "shape": {
+    "wing": 0.496,
+    "hubs": 0.31,
+    "booms": 0.097,
+    "fuselage": 0.092
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 21.028003705924444,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1261.6802223554666,
+   "shape": {
+    "wing": 0.496,
+    "hubs": 0.31,
+    "booms": 0.097,
+    "fuselage": 0.092
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 21.246012715633046,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1274.7607629379827,
+   "shape": {
+    "hubs": 0.427,
+    "booms": 0.387,
+    "wing": 0.164
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 21.246012715633046,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1274.7607629379827,
+   "shape": {
+    "hubs": 0.427,
+    "booms": 0.387,
+    "wing": 0.164
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 21.352611262770413,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1281.1566757662247,
+   "shape": {
+    "hubs": 0.356,
+    "booms": 0.263,
+    "wing": 0.242,
+    "fuselage": 0.12
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 21.352611262770413,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1281.1566757662247,
+   "shape": {
+    "hubs": 0.356,
+    "booms": 0.263,
+    "wing": 0.242,
+    "fuselage": 0.12
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 22.512407406884368,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1350.744444413062,
+   "shape": {
+    "booms": 0.924,
+    "tail": 0.06
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 22.512407406884368,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1350.744444413062,
+   "shape": {
+    "booms": 0.924,
+    "tail": 0.06
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 22.8814805718116,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1372.888834308696,
+   "shape": {
+    "booms": 0.497,
+    "wing": 0.436,
+    "hubs": 0.062
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 22.8814805718116,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1372.888834308696,
+   "shape": {
+    "booms": 0.497,
+    "wing": 0.436,
+    "hubs": 0.062
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 23.16650435023168,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1389.9902610139009,
+   "shape": {
+    "wing": 0.626,
+    "booms": 0.292,
+    "hubs": 0.077
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 23.16650435023168,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1389.9902610139009,
+   "shape": {
+    "wing": 0.626,
+    "booms": 0.292,
+    "hubs": 0.077
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 24.030441591507408,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1441.8264954904446,
+   "shape": {
+    "tail": 0.935,
+    "booms": 0.056
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 24.030441591507408,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1441.8264954904446,
+   "shape": {
+    "tail": 0.935,
+    "booms": 0.056
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 25.74500606873891,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1544.7003641243346,
+   "shape": {
+    "wing": 0.62,
+    "booms": 0.308
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 25.74500606873891,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1544.7003641243346,
+   "shape": {
+    "wing": 0.62,
+    "booms": 0.308
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 25.98152848364315,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1558.891709018589,
+   "shape": {
+    "wing": 0.769,
+    "booms": 0.194
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 25.98152848364315,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1558.891709018589,
+   "shape": {
+    "wing": 0.769,
+    "booms": 0.194
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 28.151754756643744,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1689.1052853986246,
+   "shape": {
+    "wing": 0.866,
+    "booms": 0.118
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 28.151754756643744,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1689.1052853986246,
+   "shape": {
+    "wing": 0.866,
+    "booms": 0.118
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 29.33431160541926,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1760.0586963251556,
+   "shape": {
+    "wing": 0.605,
+    "booms": 0.339
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 29.33431160541926,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1760.0586963251556,
+   "shape": {
+    "wing": 0.605,
+    "booms": 0.339
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 29.60650390621974,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1776.3902343731843,
+   "shape": {
+    "tail": 0.33,
+    "wing": 0.319,
+    "booms": 0.317
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 29.60650390621974,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1776.3902343731843,
+   "shape": {
+    "tail": 0.33,
+    "wing": 0.319,
+    "booms": 0.317
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 30.260424519266977,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1815.6254711560186,
+   "shape": {
+    "wing": 0.417,
+    "tail": 0.315,
+    "booms": 0.238
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 30.260424519266977,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1815.6254711560186,
+   "shape": {
+    "wing": 0.417,
+    "tail": 0.315,
+    "booms": 0.238
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 30.79010030052031,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1847.4060180312188,
+   "shape": {
+    "wing": 0.793,
+    "booms": 0.187
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 30.79010030052031,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1847.4060180312188,
+   "shape": {
+    "wing": 0.793,
+    "booms": 0.187
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 33.01451386905128,
+   "excitation": "lift 1P",
+   "crossing_rpm": 1980.8708321430768,
+   "shape": {
+    "wing": 0.607,
+    "fuselage": 0.293,
+    "booms": 0.085
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 33.01451386905128,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 1980.8708321430768,
+   "shape": {
+    "wing": 0.607,
+    "fuselage": 0.293,
+    "booms": 0.085
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 34.125990897515386,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2047.559453850923,
+   "shape": {
+    "fuselage": 0.477,
+    "wing": 0.376,
+    "booms": 0.124
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 34.125990897515386,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 2047.559453850923,
+   "shape": {
+    "fuselage": 0.477,
+    "wing": 0.376,
+    "booms": 0.124
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 35.480782229644745,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2128.8469337786846,
+   "shape": {
+    "booms": 0.665,
+    "tail": 0.329
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 35.480782229644745,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 2128.8469337786846,
+   "shape": {
+    "booms": 0.665,
+    "tail": 0.329
+   },
+   "severity": "HIGH"
+  },
+  {
+   "mode_hz": 35.66435413717156,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2139.8612482302933,
+   "shape": {
+    "booms": 0.515,
+    "wing": 0.414
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 35.66435413717156,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 2139.8612482302933,
+   "shape": {
+    "booms": 0.515,
+    "wing": 0.414
+   },
+   "severity": "HIGH"
+  },
+  {
+   "mode_hz": 36.16643425568157,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2169.9860553408944,
+   "shape": {
+    "tail": 0.974
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 36.16643425568157,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 2169.9860553408944,
+   "shape": {
+    "tail": 0.974
+   },
+   "severity": "HIGH"
+  },
+  {
+   "mode_hz": 36.35287080518084,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2181.1722483108506,
+   "shape": {
+    "booms": 0.75,
+    "tail": 0.24
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 36.35287080518084,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 2181.1722483108506,
+   "shape": {
+    "booms": 0.75,
+    "tail": 0.24
+   },
+   "severity": "HIGH"
+  },
+  {
+   "mode_hz": 36.42825460240902,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2185.6952761445414,
+   "shape": {
+    "booms": 0.962
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 36.42825460240902,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 2185.6952761445414,
+   "shape": {
+    "booms": 0.962
+   },
+   "severity": "HIGH"
+  },
+  {
+   "mode_hz": 36.45168339320262,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2187.101003592157,
+   "shape": {
+    "booms": 0.681,
+    "wing": 0.276
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 36.45168339320262,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 2187.101003592157,
+   "shape": {
+    "booms": 0.681,
+    "wing": 0.276
+   },
+   "severity": "HIGH"
+  },
+  {
+   "mode_hz": 36.79265229579221,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2207.5591377475325,
+   "shape": {
+    "booms": 0.938
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 36.79265229579221,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 2207.5591377475325,
+   "shape": {
+    "booms": 0.938
+   },
+   "severity": "HIGH"
+  },
+  {
+   "mode_hz": 36.972058111531055,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2218.3234866918633,
+   "shape": {
+    "booms": 0.872,
+    "wing": 0.063,
+    "tail": 0.061
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 36.972058111531055,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 2218.3234866918633,
+   "shape": {
+    "booms": 0.872,
+    "wing": 0.063,
+    "tail": 0.061
+   },
+   "severity": "HIGH"
+  },
+  {
+   "mode_hz": 37.63652751651903,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2258.191650991142,
+   "shape": {
+    "booms": 0.851,
+    "wing": 0.111
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 37.63652751651903,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 2258.191650991142,
+   "shape": {
+    "booms": 0.851,
+    "wing": 0.111
+   },
+   "severity": "HIGH"
+  },
+  {
+   "mode_hz": 37.63652751651903,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 1129.095825495571,
+   "shape": {
+    "booms": 0.851,
+    "wing": 0.111
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 41.29169985010826,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2477.5019910064957,
+   "shape": {
+    "booms": 0.773,
+    "tail": 0.163,
+    "wing": 0.058
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 41.29169985010826,
+   "excitation": "pusher 1P",
+   "crossing_rpm": 2477.5019910064957,
+   "shape": {
+    "booms": 0.773,
+    "tail": 0.163,
+    "wing": 0.058
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 41.29169985010826,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 1238.7509955032479,
+   "shape": {
+    "booms": 0.773,
+    "tail": 0.163,
+    "wing": 0.058
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 44.41801271227878,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2665.0807627367267,
+   "shape": {
+    "wing": 0.764,
+    "tail": 0.14,
+    "booms": 0.095
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 44.41801271227878,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 1332.5403813683633,
+   "shape": {
+    "wing": 0.764,
+    "tail": 0.14,
+    "booms": 0.095
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 44.41801271227878,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 1332.5403813683633,
+   "shape": {
+    "wing": 0.764,
+    "tail": 0.14,
+    "booms": 0.095
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 47.59903739035727,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2855.942243421436,
+   "shape": {
+    "wing": 0.816,
+    "booms": 0.166
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 47.59903739035727,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 1427.971121710718,
+   "shape": {
+    "wing": 0.816,
+    "booms": 0.166
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 47.59903739035727,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 1427.971121710718,
+   "shape": {
+    "wing": 0.816,
+    "booms": 0.166
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 48.07347631351929,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2884.4085788111574,
+   "shape": {
+    "tail": 0.571,
+    "wing": 0.359,
+    "booms": 0.068
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 48.07347631351929,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 1442.2042894055787,
+   "shape": {
+    "tail": 0.571,
+    "wing": 0.359,
+    "booms": 0.068
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 48.07347631351929,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 1442.2042894055787,
+   "shape": {
+    "tail": 0.571,
+    "wing": 0.359,
+    "booms": 0.068
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 49.03762246198952,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2942.2573477193714,
+   "shape": {
+    "wing": 0.795,
+    "booms": 0.111,
+    "tail": 0.09
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 49.03762246198952,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 1471.1286738596857,
+   "shape": {
+    "wing": 0.795,
+    "booms": 0.111,
+    "tail": 0.09
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 49.03762246198952,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 1471.1286738596857,
+   "shape": {
+    "wing": 0.795,
+    "booms": 0.111,
+    "tail": 0.09
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 49.70087173871555,
+   "excitation": "lift 1P",
+   "crossing_rpm": 2982.0523043229327,
+   "shape": {
+    "wing": 0.849,
+    "booms": 0.137
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 49.70087173871555,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 1491.0261521614664,
+   "shape": {
+    "wing": 0.849,
+    "booms": 0.137
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 49.70087173871555,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 1491.0261521614664,
+   "shape": {
+    "wing": 0.849,
+    "booms": 0.137
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 51.53391665679864,
+   "excitation": "lift 1P",
+   "crossing_rpm": 3092.0349994079183,
+   "shape": {
+    "booms": 0.992
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 51.53391665679864,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 1546.0174997039592,
+   "shape": {
+    "booms": 0.992
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 51.53391665679864,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 1546.0174997039592,
+   "shape": {
+    "booms": 0.992
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 52.804919898837916,
+   "excitation": "lift 1P",
+   "crossing_rpm": 3168.2951939302748,
+   "shape": {
+    "wing": 0.692,
+    "fuselage": 0.15,
+    "tail": 0.085,
+    "booms": 0.072
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 52.804919898837916,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 1584.1475969651374,
+   "shape": {
+    "wing": 0.692,
+    "fuselage": 0.15,
+    "tail": 0.085,
+    "booms": 0.072
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 52.804919898837916,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 1584.1475969651374,
+   "shape": {
+    "wing": 0.692,
+    "fuselage": 0.15,
+    "tail": 0.085,
+    "booms": 0.072
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 53.335980746701985,
+   "excitation": "lift 1P",
+   "crossing_rpm": 3200.158844802119,
+   "shape": {
+    "tail": 0.975
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 53.335980746701985,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 1600.0794224010594,
+   "shape": {
+    "tail": 0.975
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 53.335980746701985,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 1600.0794224010594,
+   "shape": {
+    "tail": 0.975
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 54.41308907691706,
+   "excitation": "lift 1P",
+   "crossing_rpm": 3264.785344615024,
+   "shape": {
+    "wing": 0.851,
+    "fuselage": 0.134
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 54.41308907691706,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 1632.392672307512,
+   "shape": {
+    "wing": 0.851,
+    "fuselage": 0.134
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 54.41308907691706,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 1632.392672307512,
+   "shape": {
+    "wing": 0.851,
+    "fuselage": 0.134
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 58.371413250487464,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 1751.142397514624,
+   "shape": {
+    "wing": 0.846,
+    "fuselage": 0.095,
+    "booms": 0.053
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 58.371413250487464,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 1751.142397514624,
+   "shape": {
+    "wing": 0.846,
+    "fuselage": 0.095,
+    "booms": 0.053
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 58.45596884952645,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 1753.6790654857934,
+   "shape": {
+    "wing": 0.601,
+    "fuselage": 0.242,
+    "booms": 0.144
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 58.45596884952645,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 1753.6790654857934,
+   "shape": {
+    "wing": 0.601,
+    "fuselage": 0.242,
+    "booms": 0.144
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 67.43077542310145,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 2022.9232626930436,
+   "shape": {
+    "booms": 0.899,
+    "tail": 0.077
+   },
+   "severity": "HIGH"
+  },
+  {
+   "mode_hz": 67.43077542310145,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 2022.9232626930436,
+   "shape": {
+    "booms": 0.899,
+    "tail": 0.077
+   },
+   "severity": "HIGH"
+  },
+  {
+   "mode_hz": 72.58287354390683,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 2177.486206317205,
+   "shape": {
+    "booms": 0.993
+   },
+   "severity": "MEDIUM"
+  },
+  {
+   "mode_hz": 72.58287354390683,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 2177.486206317205,
+   "shape": {
+    "booms": 0.993
+   },
+   "severity": "HIGH"
+  },
+  {
+   "mode_hz": 78.37158098795304,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 2351.1474296385913,
+   "shape": {
+    "wing": 0.701,
+    "fuselage": 0.275
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 78.37158098795304,
+   "excitation": "pusher 2P (blade pass)",
+   "crossing_rpm": 2351.1474296385913,
+   "shape": {
+    "wing": 0.701,
+    "fuselage": 0.275
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 88.50873389082523,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 2655.262016724757,
+   "shape": {
+    "wing": 0.855,
+    "booms": 0.13
+   },
+   "severity": "LOW"
+  },
+  {
+   "mode_hz": 89.41317352119185,
+   "excitation": "lift 2P (blade pass)",
+   "crossing_rpm": 2682.3952056357557,
+   "shape": {
+    "wing": 0.862,
+    "booms": 0.128
+   },
+   "severity": "LOW"
+  }
+ ],
+ "divergence": {
+  "q_div_Pa": 182734.28303164485,
+  "V_div_EAS_ms": 546.2066335941713,
+  "VD_EAS": 63.64,
+  "required_EAS": 76.368,
+  "margin": 6.152297213416239,
+  "a0_per_rad": 6.283185307179586,
+  "note": "strip theory, 2-D lift slope 2 pi (conservative vs the 3-D 4.62), ac at c/4, elastic axis at the box line"
+ },
+ "flutter_modal": {
+  "V_flutter_TAS_ms": 171.95628428539732,
+  "f_flutter_hz": 5.219576415798209,
+  "required_EAS": 76.368,
+  "margin": 1.2516798172715973,
+  "modes_used_hz": [
+   2.038443424628871,
+   2.1553861040814923,
+   3.0595330228787767,
+   3.3067260455220295,
+   3.330543562653245,
+   3.393511263048231,
+   3.9958984409508687,
+   4.3647276055392545,
+   4.856406190811027,
+   6.790229612878201,
+   7.901225936996355,
+   9.495499086128303,
+   9.83394465900739,
+   9.924518511502516,
+   10.788485341298854,
+   11.299985002837635,
+   11.652036768623,
+   11.78463889251472,
+   12.043280786762766,
+   13.218632928769386,
+   14.4364248137055,
+   14.468677560103954,
+   14.523843513381186,
+   17.590261147989917
+  ],
+  "note": "24 free-free elastic modes, strip Theodorsen aerodynamics on the wing (sea level), k-method, g = 0.02; booms, rotors and tail carry inertia only"
+ },
+ "pusher_whirl": {
+  "mount": {
+   "pitch": {
+    "pivot_distance_m": 3.4598659625546833,
+    "K_Nm_per_rad": 102732.65045568086
+   },
+   "yaw": {
+    "pivot_distance_m": 3.603151751549193,
+    "K_Nm_per_rad": 221904.48942487742
+   }
+  },
+  "K_used": 102732.65045568086,
+  "pivot_distance_m": 3.5315088570519384,
+  "I_pitch_kgm2": 454.3050926753024,
+  "Ip": 0.8704,
+  "rpm": 2280.918,
+  "sweep": [
+   {
+    "V": 5.0,
+    "max_real": -0.1717474261973786,
+    "freqs_hz": [
+     2.37,
+     2.42
+    ]
+   },
+   {
+    "V": 11.294012504747931,
+    "max_real": -0.1819964806629637,
+    "freqs_hz": [
+     2.37,
+     2.42
+    ]
+   },
+   {
+    "V": 17.588025009495862,
+    "max_real": -0.19126866017766742,
+    "freqs_hz": [
+     2.37,
+     2.42
+    ]
+   },
+   {
+    "V": 23.88203751424379,
+    "max_real": -0.1995947363763566,
+    "freqs_hz": [
+     2.37,
+     2.42
+    ]
+   },
+   {
+    "V": 30.176050018991724,
+    "max_real": -0.20705745924337382,
+    "freqs_hz": [
+     2.37,
+     2.43
+    ]
+   },
+   {
+    "V": 36.47006252373966,
+    "max_real": -0.21375235026405015,
+    "freqs_hz": [
+     2.37,
+     2.43
+    ]
+   },
+   {
+    "V": 42.76407502848758,
+    "max_real": -0.2197663993760881,
+    "freqs_hz": [
+     2.37,
+     2.44
+    ]
+   },
+   {
+    "V": 49.058087533235515,
+    "max_real": -0.22517044105035122,
+    "freqs_hz": [
+     2.37,
+     2.44
+    ]
+   },
+   {
+    "V": 55.35210003798345,
+    "max_real": -0.23001861199086715,
+    "freqs_hz": [
+     2.37,
+     2.44
+    ]
+   },
+   {
+    "V": 61.64611254273138,
+    "max_real": -0.2343505806872903,
+    "freqs_hz": [
+     2.38,
+     2.45
+    ]
+   },
+   {
+    "V": 67.94012504747931,
+    "max_real": -0.23819445923762572,
+    "freqs_hz": [
+     2.38,
+     2.46
+    ]
+   },
+   {
+    "V": 74.23413755222724,
+    "max_real": -0.24156956360806126,
+    "freqs_hz": [
+     2.38,
+     2.46
+    ]
+   },
+   {
+    "V": 80.52815005697516,
+    "max_real": -0.2444887624235328,
+    "freqs_hz": [
+     2.39,
+     2.47
+    ]
+   },
+   {
+    "V": 86.8221625617231,
+    "max_real": -0.24696038331146108,
+    "freqs_hz": [
+     2.39,
+     2.48
+    ]
+   }
+  ],
+  "stable_to_1p2VD": true,
+  "stiffness_fraction_still_stable_at_1p2VD": 0.07184038353377802,
+  "note": "quasi-steady blade-element derivatives, 1 % structural damping; stiffness margin = 1 / fraction"
+ },
+ "lift_rotor_whirl": "not applicable as classical whirl flutter: lift rotors see edgewise flow in transition and are stopped and locked in cruise; pylon/boom frequency placement is covered by the Campbell diagram"
+}

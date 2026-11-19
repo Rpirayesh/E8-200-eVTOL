@@ -1,0 +1,40 @@
+{
+  "_note": "EXAMPLE ONLY for testing the CFD pipeline before the sizing package releases design/geometry.json. Not a design.",
+  "units": "m",
+  "axes": "x aft from the nose, y right, z up",
+  "reference": {"S_ref": 8.17, "c_ref": 0.955, "b_ref": 8.6, "x_ref": 2.55, "z_ref": 1.3},
+  "wing": {"airfoil": "ls417", "span": 8.6, "root_chord": 1.05, "tip_chord": 0.85, "x_le_root": 2.3, "z_root": 1.55,
+           "y_root": 0.0, "sweep_le_deg": 0.0, "dihedral_deg": 1.5, "incidence_deg": 2.0, "twist_tip_deg": -2.0},
+  "fuselage": {"shape_exponent": 2.5, "stations": [
+      {"x": 0.0, "width": 0.0, "height": 0.0, "z_center": 1.0},
+      {"x": 0.15, "width": 0.55, "height": 0.6, "z_center": 1.02},
+      {"x": 0.5, "width": 0.9, "height": 1.0, "z_center": 1.08},
+      {"x": 1.2, "width": 1.15, "height": 1.3, "z_center": 1.15},
+      {"x": 2.2, "width": 1.2, "height": 1.4, "z_center": 1.2},
+      {"x": 3.2, "width": 1.1, "height": 1.3, "z_center": 1.25},
+      {"x": 4.2, "width": 0.65, "height": 0.75, "z_center": 1.35},
+      {"x": 5.0, "width": 0.3, "height": 0.35, "z_center": 1.42},
+      {"x": 5.15, "width": 0.0, "height": 0.0, "z_center": 1.42}]},
+  "booms": [{"y": 2.2, "z": 1.45, "x_start": -0.7, "x_end": 7.5, "diameter": 0.14, "mirror": true}],
+  "lift_rotors": [
+      {"name": "LR1", "hub": [-0.4, 2.2, 1.62], "axis": [0, 0, 1], "diameter": 2.4, "blades": 2, "blade_chord": 0.14,
+       "hub_diameter": 0.25, "hub_height": 0.15, "spin": "ccw", "stopped_azimuth_deg": 0.0},
+      {"name": "LR2", "hub": [5.2, 2.2, 1.62], "axis": [0, 0, 1], "diameter": 2.4, "blades": 2, "blade_chord": 0.14,
+       "hub_diameter": 0.25, "hub_height": 0.15, "spin": "cw", "stopped_azimuth_deg": 0.0},
+      {"name": "LR3", "hub": [-0.4, -2.2, 1.62], "axis": [0, 0, 1], "diameter": 2.4, "blades": 2, "blade_chord": 0.14,
+       "hub_diameter": 0.25, "hub_height": 0.15, "spin": "cw", "stopped_azimuth_deg": 0.0},
+      {"name": "LR4", "hub": [5.2, -2.2, 1.62], "axis": [0, 0, 1], "diameter": 2.4, "blades": 2, "blade_chord": 0.14,
+       "hub_diameter": 0.25, "hub_height": 0.15, "spin": "ccw", "stopped_azimuth_deg": 0.0}],
+  "pusher": {"hub": [5.3, 0.0, 1.42], "axis": [-1, 0, 0], "diameter": 1.5, "blades": 3, "spinner_diameter": 0.26, "blades_in_cfd": false},
+  "tail": {
+      "horizontal": [{"airfoil": "naca0012", "span": 4.4, "root_chord": 0.7, "tip_chord": 0.7, "x_le_root": 6.65, "z_root": 2.4,
+                      "y_root": 0.0, "incidence_deg": 0.0, "mirror": true}],
+      "vertical": [{"airfoil": "naca0012", "x_le_root": 6.55, "y": 2.2, "z_root": 1.45, "height": 0.97, "root_chord": 0.85,
+                    "tip_chord": 0.7, "sweep_le_deg": 8.0, "mirror": true}]},
+  "landing_gear": {
+      "skids": [{"y": 0.75, "z": 0.08, "x_start": 0.7, "x_end": 3.7, "diameter": 0.06, "mirror": true}],
+      "struts": [{"p1": [1.2, 0.75, 0.08], "p2": [1.2, 0.45, 0.75], "diameter": 0.05, "mirror": true},
+                 {"p1": [3.2, 0.75, 0.08], "p2": [3.2, 0.45, 0.8], "diameter": 0.05, "mirror": true}]},
+  "mass": {"mtow_kg": 720, "x_cg": 2.55, "z_cg": 1.25},
+  "operating": {"cruise_speed_ms": 45.0, "hover_thrust_per_lift_rotor_n": 1766.0, "cruise_thrust_pusher_n": 900.0}
+}
